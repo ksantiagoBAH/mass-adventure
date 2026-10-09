@@ -18,9 +18,13 @@ Further hardening: detach cancelled narration callbacks, ignore stale callbacks,
 
 ## Narration improvement
 
-Parent Corner now has an English voice picker and spoken preview. Automatic selection prefers natural/neural/enhanced/premium voices when offered, avoids novelty voices as the default, and uses a 0.95× conversational pace with normal pitch. Voice availability updates asynchronously. A parent’s selection applies to all cards for the current visit and resets on refresh. No audio autoplays.
+All 26 lessons and the Parent Corner preview now have locally bundled MP3 recordings generated offline with Kokoro's `af_heart` neural voice at 0.92× speed. The default is this recorded narrator. Parent Corner identifies the AI voice and offers optional device voices. Recordings need no SpeechSynthesis API, backend, API key, microphone, or external audio request. Text matching prevents an outdated recording from playing after a lesson is edited.
 
-Voice preference, preview parameters, cancellation, asynchronous voice loading, fallback, errors, and retry are tested with controlled speech stubs. Headless Chrome did not expose real English voices on this host, so these checks do **not** confirm audible playback or subjective voice quality. Use Parent Corner’s preview on the intended device. A prerecorded narrator would provide consistent voice quality across devices and still work as static local assets.
+`scripts/narration.mjs` passed in Chrome and WebKit: all 27 MP3s match the current source text, decode with audible signal and no clipped peaks, and every lesson plays its own recording. Checks cover no autoplay/prefetch, stop, navigation cancellation, preview, natural completion, late callbacks, playback rejection, browser fallback, retry, and playback with SpeechSynthesis absent. Existing device-voice preference and failure cases also passed. These automated checks verify media playback and file integrity; they do **not** judge pronunciation or subjective voice quality. Listen to Parent Corner’s preview and the liturgical terms on target devices.
+
+## Parent reference links
+
+Every CCC number in the Parent Corner guide now links to the corresponding official Vatican Catechism section. Sources cover all 26 lessons and were checked against the Vatican pages. Links have 44px tap targets, keyboard focus styles, new-tab labels, and `noopener noreferrer`. The guide explains that parents should find the specified paragraph on the linked section page. Lesson cards and other child-facing screens have no external links. The app does not load external pages until a reference is followed.
 
 ## Performance
 

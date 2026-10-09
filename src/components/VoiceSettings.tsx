@@ -11,6 +11,7 @@ export function VoiceSettings({
   const { speaking, audioMessage, read } = useNarration(
     narratorCopy.sample,
     voice,
+    selected === "" ? "preview" : undefined,
   );
   return (
     <section
@@ -27,7 +28,9 @@ export function VoiceSettings({
       >
         <option value="">
           {narratorCopy.automatic}
-          {voice ? ` (${voice.name})` : ""}
+        </option>
+        <option value="device">
+          {narratorCopy.device}{voice ? ` (${voice.name})` : ""}
         </option>
         {voices.map((v) => (
           <option value={v.voiceURI} key={`${v.voiceURI}-${v.lang}`}>

@@ -555,7 +555,66 @@ export const referenceSources = [
     paragraphs: "1385–1387; 1391; 1396",
     url: "https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_3/vi_the_paschal_banquet.html",
   },
+  {
+    name: "Liturgical signs, responses, and music",
+    paragraphs: "1153–1157",
+    url: "https://www.vatican.va/content/catechism/en/part_two/section_one/chapter_two/article_1/ii_how_is_the_liturgy_celebrated.html",
+  },
+  {
+    name: "The Sign of the Cross",
+    paragraphs: "2157",
+    url: "https://www.vatican.va/content/catechism/en/part_three/section_two/chapter_one/article_2/iii_the_christian_name.html",
+  },
+  {
+    name: "Interior repentance",
+    paragraphs: "1431",
+    url: "https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_two/article_4/iv_interior_penance.html",
+  },
+  {
+    name: "Prayer of praise",
+    paragraphs: "2639",
+    url: "https://www.vatican.va/content/catechism/en/part_four/section_one/chapter_one/article_3/v_prayer_of_praise.html",
+  },
+  {
+    name: "Blessing and adoration",
+    paragraphs: "2627",
+    url: "https://www.vatican.va/content/catechism/en/part_four/section_one/chapter_one/article_3/i_blessing_and_adoration.html",
+  },
+  {
+    name: "The Creeds",
+    paragraphs: "185",
+    url: "https://www.vatican.va/content/catechism/en/part_one/section_two.index.html",
+  },
+  {
+    name: "Jesus, the Lamb of God",
+    paragraphs: "608",
+    url: "https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_two/article_4/paragraph_2_jesus_died_crucified.html",
+  },
+  {
+    name: "The Lord’s Prayer",
+    paragraphs: "2759",
+    url: "https://www.vatican.va/content/catechism/en/part_four/section_two.index.html",
+  },
+  {
+    name: "Mass and mission",
+    paragraphs: "1332",
+    url: "https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_3/ii_what_is_this_sacrament_called.html",
+  },
 ];
+
+export function getCatechismLinks(references: string) {
+  const range = (label: string) => label.split(/[–-]/).map(Number);
+  return references.split(/;\s*/).map((paragraphs) => {
+    const [first, last = first] = range(paragraphs);
+    const source = referenceSources.find((source) =>
+      source.paragraphs.split(/;\s*/).some((label) => {
+        const [start, end = start] = range(label);
+        return first >= start && last <= end;
+      }),
+    );
+    return { paragraphs, url: source?.url, name: source?.name };
+  });
+}
 
 export const ui = {
   headerNote: "A journey with Jesus",
@@ -592,6 +651,8 @@ export const ui = {
   referenceTitle: "Catechism reference guide",
   referenceNote:
     "CCC = Catechism of the Catholic Church. References checked against the Holy See’s English Catechism.",
+  referenceLinkNote:
+    "For grown-ups: tap a CCC reference to read its section on the Vatican website. Links open in a new tab; find the paragraph number on that page.",
   reviewTitle: "Parish review",
   footer: "♡ Learning with love. Growing in faith.",
   parentLink: "A note for parents",
@@ -605,6 +666,8 @@ export const ui = {
     "Read aloud is unavailable in this browser. Ask a grown-up to read with you.",
   voiceUnavailable:
     "The voice is unavailable. Try again or read with a grown-up.",
+  recordingFallback:
+    "The recording could not play. Let’s try your device’s voice.",
   referenceDefault:
     "This reference supports the teaching in this card. Explore together with your child.",
 } as const;
@@ -620,19 +683,27 @@ export const phrases = {
   explore: (name: string) => `Explore ${name}`,
   backTo: (name: string) => `Back to ${name}`,
   parentReference: (ccc: string) => `For grown-ups · CCC ${ccc}`,
+  catechismLink: (ccc: string, part: string) => `CCC ${ccc} for ${part} on the Vatican website (opens in a new tab)`,
 };
 
 export const narratorCopy = {
   title: "A voice for your adventure",
   description:
-    "Choose the voice your family likes best. We automatically prefer natural or enhanced English voices when your device offers them.",
+    "Listen with our warm, gently paced narrator, or choose a voice from your device. The lesson recordings use an AI-generated voice.",
   label: "Narrator voice",
-  automatic: "Choose automatically",
+  automatic: "Warm storybook narrator (recorded)",
+  device: "Choose a device voice automatically",
   noVoices:
-    "Your browser has not listed its English voices yet. You can still try its default voice below.",
+    "Your device has not listed its English voices yet. Our recorded narrator is still available.",
   preview: "Listen to a preview",
   stop: "Stop preview",
   sample:
     "Welcome to Mass Adventure! Let’s take a little journey together. At Mass, we gather as God’s family, listen to his Word, and grow closer to Jesus. Take your time. There is so much to discover.",
-  note: "This choice lasts for this visit. Voices come from your browser or device; quality varies. If none sounds natural, a prerecorded narrator is the next step.",
+  note: "Recordings are included with the app and play only when you tap. No microphone or voice account is needed. Device voices are a fallback; their quality varies. Your choice lasts for this visit.",
 } as const;
+
+// Shared by playback and the offline audio generator. Edit lesson copy above;
+// generated recordings fall back to device narration if their text is outdated.
+export function getNarrationText(part: Part) {
+  return `${part.name}. ${ui.happening} ${part.happening} ${ui.why} ${part.why} ${ui.try} ${part.action}${part.glossary ? `. Big word: ${part.glossary[0]}. ${part.glossary[1]}` : ""}`;
+}

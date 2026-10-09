@@ -60,6 +60,8 @@ const answers = [
   [1, 0, 2],
 ];
 await page.evaluate(() => {
+  // This suite checks the device fallback's text; narration.mjs exercises MP3s.
+  window.Audio = undefined;
   window.__utterances = [];
   window.speechSynthesis.speak = (u) =>
     window.__utterances.push({ text: u.text, rate: u.rate });
@@ -132,6 +134,19 @@ await page
   .click();
 await check("parents");
 assert.equal(await page.locator("dt").count(), 26);
+assert.equal(await page.locator('.reference-group dd > span').count(), 0, "Every CCC reference has a mapped link");
+const parentLinks = await page.locator('.reference-group dd a').evaluateAll(links =>
+  links.map(link => ({ href: link.href, target: link.target, rel: link.rel, label: link.getAttribute("aria-label"), height: link.getBoundingClientRect().height })),
+);
+assert(parentLinks.length >= 26);
+for (const link of parentLinks) {
+  assert(link.href.startsWith("https://www.vatican.va/content/catechism/en/"));
+  assert.equal(link.target, "_blank");
+  assert.match(link.rel, /noopener/);
+  assert.match(link.rel, /noreferrer/);
+  assert.match(link.label, /opens in a new tab/);
+  assert(link.height >= 44);
+}
 await page.setViewportSize({ width: 820, height: 1180 });
 await check("parents tablet");
 await page.getByRole("button", { name: "Home", exact: true }).first().click();

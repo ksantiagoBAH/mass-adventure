@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { copy, sections, ui, phrases, artDescriptions } from "./data/massParts";
+import { copy, sections, ui, phrases, artDescriptions, getCatechismLinks } from "./data/massParts";
 import { Illustration } from "./components/Illustration";
 import { Icon } from "./components/Icon";
 import PartCard from "./components/PartCard";
@@ -327,6 +327,7 @@ export default function App() {
                   index={card}
                   onSwipe={move}
                   voice={narrator.voice}
+                  useRecording={narrator.selected === ""}
                 />
                 <div className="card-controls">
                   <button
@@ -535,6 +536,7 @@ export default function App() {
             <VoiceSettings preferences={narrator} />
             <h2>{ui.referenceTitle}</h2>
             <p>{ui.referenceNote}</p>
+            <p>{ui.referenceLinkNote}</p>
             {sections.map((s) => (
               <details key={s.id} className="reference-group" open>
                 <summary>
@@ -547,7 +549,22 @@ export default function App() {
                         {p.name}
                         {p.note && <small>{p.note}</small>}
                       </dt>
-                      <dd>CCC {p.ccc}</dd>
+                      <dd>
+                        {getCatechismLinks(p.ccc).map((reference) =>
+                          reference.url ? (
+                            <a
+                              key={reference.paragraphs}
+                              href={reference.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label={phrases.catechismLink(reference.paragraphs, p.name)}
+                              title={reference.name}
+                            >
+                              CCC {reference.paragraphs} <span aria-hidden="true">↗</span>
+                            </a>
+                          ) : <span key={reference.paragraphs}>CCC {reference.paragraphs}</span>,
+                        )}
+                      </dd>
                     </div>
                   ))}
                 </dl>

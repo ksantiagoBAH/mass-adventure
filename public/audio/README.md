@@ -1,0 +1,29 @@
+# Recorded narration
+
+These 26 lesson clips and one Parent Corner preview were synthesized locally
+with Kokoro-82M v1.0, voice `af_heart`, using kokoro-js 1.2.1, the ONNX q8 model,
+and speed 0.92. They use an AI-generated voice, not a human recording or a
+voice cloned for this project. No speech model runs in the children's app.
+
+Editorial source: `src/data/massParts.ts`. `scripts/generate-narration.mjs`
+builds the script with `getNarrationText`, inserts short sentence pauses, and
+exports mono 24 kHz, 64 kbps MP3s normalized to -18 LUFS with a -2 dB true-peak
+target. Hashed filenames allow updated clips to bypass old browser caches.
+The generated manifest records the exact text for each clip. If a lesson is
+edited without regenerating its audio, the app uses current device narration
+rather than playing an outdated recording.
+
+Audio is loaded only after a tap and served from the same GitHub Pages site.
+Stop, changing cards, changing narrator, and leaving the screen cancel playback.
+A failed recording falls back to the browser voice with a friendly message.
+
+## Model and authoring-library sources
+
+- Kokoro model and weights (Apache 2.0): https://huggingface.co/hexgrad/Kokoro-82M
+- ONNX conversion (Apache 2.0): https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX
+- Authoring library (Apache 2.0): https://github.com/hexgrad/kokoro/tree/main/kokoro.js
+
+The Apache 2.0 license is included alongside the recordings for provenance.
+The model, package dependencies, and temporary WAVs are not committed or shipped.
+Review pronunciation of liturgical terms and the calm, reverent delivery with
+a parent or catechist before classroom use.

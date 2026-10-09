@@ -26,11 +26,11 @@ npm run preview
 
 - Home → Start → four-stop Adventure Map. Every stop is available immediately.
 - Each section has swipeable illustrated lesson cards. Back/Next buttons work with touch and keyboard; larger screens also show a lesson list.
-- Read aloud uses the browser SpeechSynthesis API and cancels when you change cards or screens. Available voices and actual playback depend on your browser/OS. Speech text is tested; listen on your target device before classroom use. There is a friendly message when speech is unavailable.
+- Read aloud plays locally bundled neural-voice recordings and cancels when you change cards or screens. Browser SpeechSynthesis remains a fallback or an optional device voice. Audio never autoplays.
 - Three questions per section. Incorrect choices get a helpful hint and can be retried; no score or penalty.
 - Answer the three questions to finish the section, fill the map progress, earn a star and a sticker, and see confetti. Finishing again does not duplicate stickers.
 - Sticker Book → tap an earned or unearned sticker to revisit that stop.
-- Parent Corner contains a reference for every lesson, seasonal notes, Communion guidance, and parish review suggestions.
+- Parent Corner contains a reference for every lesson, seasonal notes, Communion guidance, and parish review suggestions. Every CCC number links to the relevant official Vatican section; parent-facing links open in a new tab.
 
 ## Structure
 
@@ -41,6 +41,7 @@ npm run preview
 - `src/components/Icon.tsx`: original inline SVG interface icons.
 - `src/style.css`: responsive layout, palette, focus states, animations, and reduced-motion support.
 - `public/fonts/`: locally hosted Nunito variable font, distributed under the included SIL Open Font License. No Google Fonts network requests.
+- `public/audio/`: 26 lesson MP3s and one preview, generated offline with a warm AI voice. Provenance and license information are included. `src/generated/narration.json` connects clips to their exact source text.
 - `public/artwork/`: two storybook illustrations created from your parish photographs with the built-in image generation tool. The church appears on Home; the altar appears on the Presentation of the Gifts card. The full generation prompts are saved in `public/artwork/README.md`; artwork paths and alt text are editable in `src/data/massParts.ts`.
 - `screenshots/`: four captured key screens.
 - `scripts/verify.mjs`: reproducible browser checks and screenshot capture.
@@ -49,7 +50,7 @@ npm run preview
 
 Semantic headings, labeled SVGs, visible focus states, skip link, keyboard-operable buttons, progress labels, live quiz feedback, and reduced-motion support. Automated WCAG A/AA checks cover phone screens and representative tablet/desktop screens. This is not a substitute for a manual assistive-technology audit. Tap controls are at least 44px tall. Decorative illustration colors do not convey essential information.
 
-No backend, login, analytics, ads, cookies, form submission, or local/session storage. There are no external links in the app. Progress is React state only: refresh resets it. The web app requests only its local assets; SpeechSynthesis voice implementation is browser/OS-controlled. No speech recognition or microphone access.
+No backend, login, analytics, ads, cookies, form submission, or local/session storage. External links appear only in Parent Corner’s Catechism guide, labeled for grown-ups and marked as opening a new tab. The Vatican site is opened only when a parent follows a reference. Progress is React state only: refresh resets it. The web app requests only its local assets; optional SpeechSynthesis voice implementation is browser/OS-controlled. No speech recognition or microphone access.
 
 ## Browser verification
 
@@ -69,7 +70,26 @@ A priest or catechist should review the simplified explanation of the Real Prese
 
 ## Narrator voices
 
-Parent Corner now includes an English voice picker and a spoken preview. The app prefers voice names marked Natural, Neural, Premium, or Enhanced and uses a conversational 0.95× pace with normal pitch. This is a best-effort choice among browser/device voices, not a guarantee of studio-quality narration. English voices can arrive asynchronously, so the app listens for `voiceschanged`. The selected voice applies to every lesson and resets on refresh. Audio does not autoplay; leaving a card or preview stops it. Voice settings stay in memory.
+The default is a warm, gently paced AI-generated narrator: Kokoro `af_heart`, recorded offline at 0.92× speed. All 26 lessons include their explanations, actions, and glossary terms. Parent Corner identifies the AI voice and offers a recorded preview, automatic device narration, and individual English device voices. Recordings work without SpeechSynthesis. Failed or outdated recordings fall back to current lesson text through the browser voice. The selected narrator applies to every lesson and resets on refresh. Audio does not autoplay; leaving a card or preview stops it. Voice settings stay in memory.
+
+To regenerate after editing `src/data/massParts.ts`, install the authoring tool in an isolated folder (not an app dependency). Requires Node.js and FFmpeg on your PATH; first generation downloads the open neural model. Generation runs locally and needs no API key.
+
+```sh
+npm install --prefix /private/tmp/mass-adventure-narration kokoro-js@1.2.1
+NARRATION_RUNTIME=/private/tmp/mass-adventure-narration node scripts/generate-narration.mjs
+npm run build
+```
+
+Commit the new MP3s and generated manifest together. Unchanged clips are reused. Older hashed MP3s can be removed after confirming the manifest no longer references them. The app checks the exact text before playing a recording, so changes never silently play an old lesson. Listen to regenerated clips to review pronunciation and delivery.
+
+With the production preview server running:
+
+```sh
+npm run test:narration
+TEST_BROWSER=webkit npm run test:narration
+```
+
+This suite checks that all 27 recordings match current content, decode with an audible and unclipped signal, and play on every card. It also tests lazy loading, stop/navigation, preview, completion, stale callbacks, failed-playback fallback, retry, absence of SpeechSynthesis, and same-origin requests. It does not judge voice quality or pronunciation.
 
 ## Production stress tests
 

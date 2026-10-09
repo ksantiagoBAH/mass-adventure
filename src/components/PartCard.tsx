@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { ui, phrases } from "../data/massParts";
+import { ui, phrases, getNarrationText } from "../data/massParts";
 import type { Part } from "../data/massParts";
 import { Illustration } from "./Illustration";
 import { Icon } from "./Icon";
@@ -10,15 +10,17 @@ export default function PartCard({
   index,
   onSwipe,
   voice,
+  useRecording,
 }: {
   part: Part;
   index: number;
   onSwipe: (direction: number) => void;
   voice: SpeechSynthesisVoice | null;
+  useRecording: boolean;
 }) {
   const touch = useRef<{ x: number; y: number } | null>(null);
-  const text = `${part.name}. ${ui.happening} ${part.happening} ${ui.why} ${part.why} ${ui.try} ${part.action}${part.glossary ? `. Big word: ${part.glossary[0]}. ${part.glossary[1]}` : ""}`;
-  const { speaking, audioMessage, read } = useNarration(text, voice);
+  const text = getNarrationText(part);
+  const { speaking, audioMessage, read } = useNarration(text, voice, useRecording ? part.id : undefined);
   return (
     <article
       className="part-card"

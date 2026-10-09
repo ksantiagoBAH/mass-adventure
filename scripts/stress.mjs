@@ -21,6 +21,10 @@ async function test(name, fn) {
   const errors = [];
   page.on("pageerror", (e) => errors.push(e.message));
   try {
+    if (/speech/i.test(name)) {
+      // Exercise SpeechSynthesis fallback independently of the MP3 suite.
+      await page.addInitScript(() => { window.Audio = undefined; });
+    }
     await fn(page);
     assert.deepEqual(errors, [], "No uncaught browser errors");
     results.push({ name, status: "PASS" });
@@ -471,13 +475,14 @@ await test("Natural voice selection, asynchronous loading, preview, and visit-on
     .first()
     .waitFor({ state: "attached" });
   assert.match(
-    await p.locator("#narrator-voice option").first().innerText(),
+    await p.locator('#narrator-voice option[value="device"]').innerText(),
     /Samantha/,
   );
   assert.equal(
     await p.locator('#narrator-voice option[value="french"]').count(),
     0,
   );
+  await p.locator("#narrator-voice").selectOption("device");
   await p.getByRole("button", { name: "Listen to a preview" }).click();
   assert.equal(
     await p.evaluate(() => window.__voices.at(-1).voice.voiceURI),
