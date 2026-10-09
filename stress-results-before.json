@@ -1,0 +1,62 @@
+{
+  "url": "http://127.0.0.1:4173",
+  "results": [
+    {
+      "name": "Responsive layouts at 320–1440px including navigation breakpoint",
+      "status": "PASS"
+    },
+    {
+      "name": "Browser Back/Forward follows app navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "Next card resets reading position",
+      "status": "PASS"
+    },
+    {
+      "name": "Absent speech API produces a friendly fallback",
+      "status": "PASS"
+    },
+    {
+      "name": "Synchronous speech failure is recoverable",
+      "status": "PASS"
+    },
+    {
+      "name": "Stale speech callback cannot overwrite a new card",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing parish images fall back to inline SVG",
+      "status": "FAIL",
+      "detail": "Altar needs image fallback"
+    },
+    {
+      "name": "Cancelled or multi-touch gestures do not turn cards",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated quiz completion is idempotent, out-of-order sections work",
+      "status": "PASS"
+    },
+    {
+      "name": "300 deterministic random navigation/card actions do not crash",
+      "status": "PASS"
+    },
+    {
+      "name": "WCAG AA on narrow layout and navigation breakpoint",
+      "status": "PASS"
+    },
+    {
+      "name": "Cold production load has no failing assets, third-party requests, or storage",
+      "status": "PASS"
+    },
+    {
+      "name": "Speech error feedback recovers on retry",
+      "status": "PASS"
+    },
+    {
+      "name": "Swipe bounds remain valid under 40 rapid gestures",
+      "status": "PASS"
+    }
+  ]
+}

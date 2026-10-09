@@ -1,0 +1,14 @@
+# Parish artwork
+
+Created with the built-in image generation tool from user-provided photographs. Original photographs are unchanged.
+
+## Altar
+File: parish-altar-storybook.png
+
+Use case: style-transfer. Asset type: Catholic children's learning app illustration for Mass Adventure, ages 5–10. Edit target: the supplied altar photograph. Transform this photo into an original polished 2D storybook cartoon, with rounded clean contours, subtle paper texture, simplified details, warm cream, golden yellow, gentle coral, grass green, soft purple accents. Preserve the recognizable composition: central white-clothed altar with lace edge, two generous floral arrangements, warm brick sanctuary wall, elevated crucifix with Jesus depicted reverently, small statues on each side, green liturgical banners, candles, and the tabernacle behind the altar. Show the crucifix fully inside the image with enough breathing room at the top. Keep the crucifix's distinctive icon-like silhouette without copying tiny painted inscriptions or decorative scenes verbatim. Jesus has a dignified, peaceful expression and modest covering; no cartoon jokes, exaggerated faces, or graphic wounds. Straight-on centered view, square composition, clear silhouettes legible on a phone. Joyful, welcoming, sacred, respectful. No added characters, no lettering, no logos, no watermark. Deliver one finished illustration, not a collage or UI mockup.
+
+## Church
+File: parish-church-storybook.png
+
+Use case: style-transfer. Asset type: church exterior illustration for Mass Adventure, a Catholic learning app for children ages 5–10. Edit target: supplied photograph of the red-brick parish church seen from a slightly elevated front view. Transform it into an original polished 2D storybook cartoon with rounded clean contours, subtle paper texture, warm cream sunlight, coral-red bricks, muted taupe pitched roofs, sky blue, lively grass green, soft golden accents. Preserve the actual recognizable building: broad main peaked roof and its small rooftop cross and white curved skylight, lower projecting polygonal front sanctuary with a round divided dark stained-glass window and a gold crucifix, side wings, covered entrance at right, mature trees, lawn and curving front walk. Simplify rooftop utility equipment and distant road clutter. Keep architecture proportions recognizable, with a warm gentle cartoon look matching an illustrated altar scene with golden brick walls and flowers. Show entire church with breathing room around rooftop cross; 3:2 landscape composition with softly illustrated sky and greenery. Keep the gold crucifix reverent, no funny faces on sacred figures or building. No people, no added buildings, no lettering, no logos, no watermark, no collage or app interface. One finished landscape illustration, suitable for a responsive hero image.
+
