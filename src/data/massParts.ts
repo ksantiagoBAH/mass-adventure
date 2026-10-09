@@ -663,7 +663,7 @@ export const ui = {
   referenceLinkNote:
     "For grown-ups: tap a CCC reference to read its section on the Vatican website. Links open in a new tab; find the paragraph number on that page.",
   reviewTitle: "Parish review",
-  footer: "♡ Learning with love. Growing in faith.",
+  footer: "Kenny & Edith Santiago ♡",
   parentLink: "A note for parents",
   happening: "What is happening?",
   why: "Why do we do this?",
