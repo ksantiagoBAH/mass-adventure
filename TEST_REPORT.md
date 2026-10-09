@@ -52,3 +52,7 @@ WebKit touch-handler tests use portable synthetic touch event payloads because t
 - When hosting is selected, check that host’s HTTPS, caching, and security headers. This local test does not verify a deployment.
 
 Passing automated tests is useful evidence, not a blanket claim that the app is production-ready on every device.
+
+## GitHub Pages verification
+
+Published at https://ksantiagobah.github.io/mass-adventure/ on October 9, 2026. The initial GitHub Actions build and deployment completed successfully. GitHub Pages reports HTTPS enforced. The complete `scripts/verify.mjs` suite passed against the live HTTPS site, including all 26 cards, 12 quiz questions, four completions, artwork/font loading, responsive checks, narration handling, accessibility checks, and absence of third-party app requests. Screenshots were refreshed from the live site. This verifies deployment; the manual device, listening, and pastoral checks above still apply.
