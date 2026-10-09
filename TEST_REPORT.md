@@ -2,6 +2,14 @@
 
 ## Release verification — October 9, 2026
 
+The Church Explorer reward adds a fifth sticker for opening all seven
+unique sanctuary discoveries. The production build, full lesson/quiz
+suite, and Chrome/WebKit activity suites passed. Reward checks cover locked state,
+six-item boundary, numbered and named controls, duplicate taps, retention
+across screens, focus when reopening from the book, no repeated celebration,
+WCAG AA checks, and visit-only reset without storage. Updated screenshots
+include `screenshots/11-explorer-sticker.png`.
+
 Follow-up correction: incorrect selected answers now have soft red
 backgrounds and red borders in both response practice and quizzes;
 correct choices remain green. Retry text and a response retry symbol

@@ -115,7 +115,7 @@ export const copy = {
   mapIntro: "Four stops. One beautiful celebration. Where shall we go?",
   stickerTitle: "Your little treasures",
   stickerIntro:
-    "Finish a stop to collect a sticker. Each one is a reminder of what you discovered!",
+    "Finish a stop or explore every item in our church to collect a sticker. Each one is a reminder of what you discovered!",
   parentTitle: "For the grown-ups",
   parentIntro:
     "Explore together, then notice these moments at your parish. This learning companion is for use before or after Mass. Help your child follow your parish’s gestures and instructions.",
@@ -688,7 +688,7 @@ export const phrases = {
   lessonProgress: (index: number, total: number) =>
     `Part ${index + 1} of ${total}`,
   questionCount: (index: number) => `QUESTION ${index + 1} OF 3`,
-  stickerCount: (count: number) => `${count} / 4 treasures collected`,
+  stickerCount: (count: number) => `${count} / 5 treasures collected`,
   explore: (name: string) => `Explore ${name}`,
   backTo: (name: string) => `Back to ${name}`,
   parentReference: (ccc: string) => `For grown-ups · CCC ${ccc}`,
@@ -771,6 +771,19 @@ export const churchDiscoveries = [
   { id: "paten", name: "Paten", x: 38, y: 83, targetX: 47, targetY: 56,
     text: "A paten is a small plate used to hold the host. After the consecration, the host is truly the Body of Jesus. We treat the Eucharist with great love and respect.", ccc: "1374, 1378" },
 ] as const;
+
+export const explorerReward = {
+  name: "Church Explorer",
+  alt: "A welcoming church sticker for exploring every sanctuary item.",
+  hint: "Explore every item to earn your Church Explorer sticker!",
+  progress: (count: number, total: number) => `${count} of ${total} items explored`,
+  earned: "You earned your Church Explorer sticker!",
+  note: "You discovered every special item in our church. Well done!",
+  locked: "Explore all the items in our church",
+  visited: "Already explored",
+  openEarned: "Church Explorer, earned, explore again",
+  openLocked: "Church Explorer, not yet earned, explore our church",
+} as const;
 
 export const lessonScenes: Record<string, {
   kind: "procession" | "book" | "reading" | "song" | "candle" | "sun";

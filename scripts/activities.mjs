@@ -26,18 +26,39 @@ assert(await page.locator('.explorer-art').evaluate(img => img.complete && img.n
 assert.equal(await page.locator('.explorer-hotspot').count(), 7);
 await page.locator('.explorer-legend').getByRole('button', { name: 'Ambo', exact: true }).click();
 assert.equal(await page.locator('.explorer-discovery h3').innerText(), 'Ambo', "Named labels select discoveries");
+await page.getByRole('button', { name: '2. Ambo', exact: true }).click();
+assert.equal(await page.locator('.explorer-progress progress').getAttribute('value'), '1', 'Repeated taps count once');
+await nav('Sticker Book');
+assert.equal(await page.locator('.sticker').count(), 5);
+assert.equal(await page.locator('.earned-sticker').count(), 0, 'Explorer sticker starts locked');
+await nav('Church Explorer, not yet earned, explore our church');
+assert.equal(await page.locator('.explorer-progress progress').getAttribute('value'), '1', 'Progress survives navigation');
+assert(await page.locator('.church-explorer h2').evaluate(el => el === document.activeElement), 'Sticker opens and focuses explorer');
 for (const [i, name] of ["Altar", "Ambo", "Candles", "Chalice", "Tabernacle", "Crucifix", "Paten"].entries()) {
   const hotspot = page.getByRole("button", { name: `${i + 1}. ${name}`, exact: true });
   await hotspot.focus();
   await page.keyboard.press("Enter");
   assert.equal(await page.locator(".explorer-discovery h3").innerText(), name);
   assert.equal(await page.locator('.explorer-hotspot[aria-pressed="true"]').count(), 1);
+  assert.equal(await page.locator('.explorer-progress progress').getAttribute('value'), String(i === 0 ? 2 : i + 1));
+  if (i < 6) assert.equal(await page.locator('.explorer-reward').count(), 0, 'All seven unique items are required');
   assert(await page.evaluate(() => window.__audios.every(a => a.paused)), "Changing discovery cancels prior audio");
   await nav("Listen to this discovery");
   await audioPlaying();
   assert((await page.evaluate(() => window.__audios.at(-1).src)).includes(`explorer-${name.toLowerCase()}-`));
 }
 await nav("Stop discovery");
+await axe('Earned explorer reward accessibility');
+assert.equal(await page.locator('.explorer-check').count(), 7);
+await nav('See my sticker');
+assert.equal(await page.locator('.earned-sticker').count(), 1);
+assert.match(await page.locator('.sticker-count').innerText(), /1 \/ 5/);
+await axe('Five-sticker book accessibility');
+await page.screenshot({ path: 'screenshots/11-explorer-sticker.png', fullPage: true });
+await nav('Church Explorer, earned, explore again');
+await page.getByRole('button', { name: '7. Paten', exact: true }).click();
+assert.equal(await page.locator('.explorer-progress progress').getAttribute('value'), '7');
+assert.equal(await page.locator('.explorer-reward .confetti').count(), 0, 'Revisits do not repeat the reward celebration');
 await page.locator(".church-explorer").screenshot({ path: "screenshots/06-church-explorer.png" });
 for (const width of [320, 390, 820, 1440]) {
   await page.setViewportSize({ width, height: 844 });
@@ -151,5 +172,10 @@ for (const width of [320, 390, 820, 1440]) {
 assert.deepEqual(errors, []);
 assert(requests.every(url => new URL(url).origin === new URL(base).origin));
 assert.equal(await page.evaluate(() => document.cookie.length + localStorage.length + sessionStorage.length), 0);
+await nav('Home'); await page.reload();
+assert.equal(await page.locator('.explorer-progress progress').getAttribute('value'), '0', 'Explorer progress remains visit-only');
+await nav('Sticker Book');
+assert.equal(await page.locator('.earned-sticker').count(), 0, 'Reload starts a new visit');
+console.log('PASS explorer sticker: seven unique items, no duplicates, navigation retention, accessible book entry, and visit-only reset');
 console.log("PASS all four practice cues, scene replay, reduced motion, no external requests or storage");
 await browser.close();

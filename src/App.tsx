@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { copy, sections, ui, phrases, artDescriptions, getCatechismLinks } from "./data/massParts";
+import { copy, sections, ui, phrases, artDescriptions, getCatechismLinks, churchDiscoveries, explorerReward } from "./data/massParts";
 import { Illustration } from "./components/Illustration";
 import { Icon } from "./components/Icon";
 import PartCard from "./components/PartCard";
@@ -20,6 +20,9 @@ export default function App() {
   const [question, setQuestion] = useState(0);
   const [choice, setChoice] = useState<number | null>(null);
   const [done, setDone] = useState<string[]>([]);
+  const [explored, setExplored] = useState<string[]>([]);
+  const explorerEarned = explored.length === churchDiscoveries.length;
+  const focusExplorer = useRef(false);
   const [celebrate, setCelebrate] = useState(false);
   const heading = useRef<HTMLHeadingElement>(null);
   const section = sections[selected];
@@ -97,6 +100,16 @@ export default function App() {
     window.scrollTo(0, 0);
     heading.current?.focus({ preventScroll: true });
   }, [screen, selected]);
+  useEffect(() => {
+    if (screen !== "home" || !focusExplorer.current) return;
+    focusExplorer.current = false;
+    const explorer = document.querySelector<HTMLElement>(".church-explorer");
+    explorer?.scrollIntoView({ block: "start" });
+    explorer?.querySelector<HTMLElement>("h2")?.focus({ preventScroll: true });
+  }, [screen]);
+  useEffect(() => {
+    if (explorerEarned) setCelebrate(true);
+  }, [explorerEarned]);
   const move = (d: number) => {
     setCard((c) => Math.max(0, Math.min(section.parts.length - 1, c + d)));
   };
@@ -226,7 +239,10 @@ export default function App() {
             <div className="bottom-note">
               <span>✦</span> {ui.homeFooter} <span>✦</span>
             </div>
-            <ChurchExplorer voice={narrator.voice} useRecording={narrator.selected === ""} />
+            <ChurchExplorer voice={narrator.voice} useRecording={narrator.selected === ""}
+              explored={explored} celebrate={celebrate}
+              onExplore={id => setExplored(items => items.includes(id) ? items : [...items, id])}
+              onSeeSticker={() => go("stickers")} />
           </>
         ) : screen === "map" ? (
           <section className="page map-page">
@@ -490,7 +506,7 @@ export default function App() {
               <p>{copy.stickerIntro}</p>
             </div>
             <div className="sticker-count">
-              ★ {phrases.stickerCount(done.length)}
+              ★ {phrases.stickerCount(done.length + Number(explorerEarned))}
             </div>
             <div className="sticker-grid">
               {sections.map((s, i) => {
@@ -515,6 +531,16 @@ export default function App() {
                   </button>
                 );
               })}
+              <button className={`sticker blue ${explorerEarned ? "earned-sticker" : "unearned"}`}
+                aria-label={explorerEarned ? explorerReward.openEarned : explorerReward.openLocked}
+                onClick={() => { focusExplorer.current = true; go("home"); }}>
+                <span className="sticker-graphic">
+                  <Illustration kind="church" alt={explorerReward.alt} />
+                  {!explorerEarned && <span className="sticker-lock">✦</span>}
+                </span>
+                <h2>{explorerReward.name}</h2>
+                <p>{explorerEarned ? ui.stickerEarned : explorerReward.locked}</p>
+              </button>
             </div>
             <p className="privacy-note">{copy.privacy}</p>
             <button className="primary centered" onClick={() => go("map")}>
