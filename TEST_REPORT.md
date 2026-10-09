@@ -2,6 +2,13 @@
 
 ## Release verification — October 9, 2026
 
+All five collectibles now have distinct original SVG medallions in
+`StickerArtwork.tsx`, with descriptive alternative text in the single data
+file. Build and activity checks passed; the full quiz/reward suite checks
+that all five rewards coexist and all five SVG drawings have different
+geometry, plus WCAG AA checks for the complete collection. The gallery is
+saved as `screenshots/12-sticker-collection.png`.
+
 The Church Explorer reward adds a fifth sticker for opening all seven
 unique sanctuary discoveries. The production build, full lesson/quiz
 suite, and Chrome/WebKit activity suites passed. Reward checks cover locked state,

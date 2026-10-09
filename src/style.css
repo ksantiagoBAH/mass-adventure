@@ -875,7 +875,7 @@ footer svg {
 }
 .sticker-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 20px;
 }
 .sticker {
@@ -1061,6 +1061,7 @@ footer svg {
   }
 }
 @media (max-width: 1050px) {
+  .sticker-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .header-note {
     display: none;
   }

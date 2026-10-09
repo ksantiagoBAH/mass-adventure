@@ -7,6 +7,7 @@ import { ParishArtwork } from "./components/ParishArtwork";
 import { useNarratorVoices } from "./hooks/useNarratorVoices";
 import { VoiceSettings } from "./components/VoiceSettings";
 import { ChurchExplorer } from "./components/ChurchExplorer";
+import { StickerArtwork } from "./components/StickerArtwork";
 import {
   writeNavigationHistory,
   cancelPendingHistory,
@@ -412,11 +413,7 @@ export default function App() {
                   </div>
                 )}
                 <span className="eyebrow">{ui.stopComplete}</span>
-                <Illustration
-                  kind={section.art}
-                  alt={`${section.sticker} sticker earned`}
-                  variant={selected}
-                />
+                <StickerArtwork kind={section.id} />
                 <h1 ref={heading} tabIndex={-1}>
                   {copy.complete}
                 </h1>
@@ -519,11 +516,7 @@ export default function App() {
                     aria-label={`${s.sticker}, ${earned ? "earned, explore again" : "not yet earned, explore " + s.name}`}
                   >
                     <span className="sticker-graphic">
-                      <Illustration
-                        kind={s.art}
-                        alt={artDescriptions[s.art]}
-                        variant={i}
-                      />
+                      <StickerArtwork kind={s.id} />
                       {!earned && <span className="sticker-lock">✦</span>}
                     </span>
                     <h2>{s.sticker}</h2>
@@ -535,7 +528,7 @@ export default function App() {
                 aria-label={explorerEarned ? explorerReward.openEarned : explorerReward.openLocked}
                 onClick={() => { focusExplorer.current = true; go("home"); }}>
                 <span className="sticker-graphic">
-                  <Illustration kind="church" alt={explorerReward.alt} />
+                  <StickerArtwork kind="explorer" />
                   {!explorerEarned && <span className="sticker-lock">✦</span>}
                 </span>
                 <h2>{explorerReward.name}</h2>

@@ -34,6 +34,7 @@ npm run preview
 - Three questions per section. Incorrect choices in quizzes and response practice turn soft red; correct choices turn green. Helpful retry text also explains the result, so feedback does not rely on color alone. There is no score or penalty.
 - Answer the three questions to finish the section, fill the map progress, earn a star and a sticker, and see confetti. Finishing again does not duplicate stickers.
 - Open all seven different church explorer items to earn the fifth sticker, Church Explorer. Numbered markers and named labels count equally; revisiting an item does not add progress. The progress bar and earned sticker remain available across screens during the current visit and reset on reload, like the section stickers. No account or storage is used.
+- Each collectible has its own original SVG medallion: parish friends around a heart, a Bible and heart, a chalice and host with wheat and grapes, a dove and olive branch, or a church with a compass and magnifying glass. Matching artwork appears when each reward is earned and in the Sticker Book.
 - Sticker Book → tap an earned or unearned sticker to revisit that stop.
 - Parent Corner contains a reference for every lesson, seasonal notes, Communion guidance, and parish review suggestions. Every CCC number links to the relevant official Vatican section; parent-facing links open in a new tab.
 

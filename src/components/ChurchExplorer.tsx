@@ -1,6 +1,6 @@
 import { useId, useState } from "react";
 import { activityCopy, churchDiscoveries, parishArtwork, explorerReward, ui } from "../data/massParts";
-import { Illustration } from "./Illustration";
+import { StickerArtwork } from "./StickerArtwork";
 import { useNarration } from "../hooks/useNarration";
 
 export function ChurchExplorer({ voice, useRecording, explored, onExplore, onSeeSticker, celebrate }: {
@@ -47,7 +47,7 @@ export function ChurchExplorer({ voice, useRecording, explored, onExplore, onSee
       {earned && <div className="explorer-reward">
         {celebrate && <div className="confetti" aria-hidden="true">{Array.from({ length: 18 }, (_, i) => <i key={i}
           style={{ left: `${(i * 37) % 100}%`, background: ["#eabc4e", "#769e75", "#e48b76", "#8aaed0"][i % 4], animationDelay: `${(i % 6) * 0.08}s` }} />)}</div>}
-        <Illustration kind="church" alt={explorerReward.alt} />
+        <StickerArtwork kind="explorer" />
         <div role="status"><h3>{explorerReward.earned}</h3><p>{explorerReward.note}</p></div>
         <button className="activity-listen" onClick={onSeeSticker}>{ui.seeSticker}</button>
       </div>}

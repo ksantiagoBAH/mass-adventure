@@ -130,6 +130,17 @@ for (let s = 0; s < 4; s++) {
     s + 1,
   );
 }
+await page.getByRole('button', { name: 'Home', exact: true }).first().click();
+for (let i = 0; i < 7; i++) await page.locator('.explorer-hotspot').nth(i).click();
+await page.getByRole('button', { name: 'See my sticker', exact: true }).click();
+assert.equal(await page.locator('.earned-sticker').count(), 5, 'All five rewards coexist');
+const designs = await page.locator('.sticker-artwork').evaluateAll(images => images.map(svg => [...svg.querySelectorAll('path')].map(path => path.getAttribute('d')).join('|')));
+assert.equal(new Set(designs).size, 5, 'Every sticker has distinct artwork geometry');
+await check('All five illustrated stickers');
+await page.setViewportSize({ width: 1120, height: 900 });
+await check('All five illustrated stickers desktop');
+await page.screenshot({ path: 'screenshots/12-sticker-collection.png', fullPage: true });
+await page.setViewportSize({ width: 390, height: 844 });
 await page
   .getByRole("button", { name: "Parent Corner", exact: true })
   .last()
