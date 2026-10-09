@@ -23,7 +23,7 @@ Verified against the Holy See’s English Catechism, October 9, 2026. Numbers ar
 
 ## Primary sources
 
-- [Mass greetings and responses: USCCB General Instruction, Chapter IV](https://www.usccb.org/prayer-and-worship/the-mass/general-instruction-of-the-roman-missal/girm-chapter-4) — reading response (128–130) and greeting (124). Brief responses were checked when added to the Gathering and Listening cards.
+- [Mass greetings and responses: USCCB General Instruction, Chapter IV](https://www.usccb.org/prayer-and-worship/the-mass/general-instruction-of-the-roman-missal/girm-chapter-4) — reading response (128–130), greeting (124), and dismissal response (168). Brief responses were checked when added to the Gathering, Listening, and Going Out cards.
 - [Mass structure and participation: CCC 1345–1355](https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_3/iv_the_liturgical_celebration_of_the_eucharist.html)
 - [Sacrifice and Real Presence: CCC 1367, 1374–1376](https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_3/v_the_sacramental_sacrifice_thanksgiving_memorial_presence.html)
 - [Communion: CCC 1385–1387, 1391, 1396](https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_3/vi_the_paschal_banquet.html)
