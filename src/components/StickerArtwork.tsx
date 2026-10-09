@@ -24,20 +24,23 @@ export function StickerArtwork({ kind }: { kind: string }) {
       <path d="m174 186 2-6 2 6 6 2-6 2-2 6-2-6-6-2z" />
     </g>
     {kind === "gathering" && <g strokeLinecap="round" strokeLinejoin="round">
-      <path d="M80 155q5-44 40-44t40 44v29H80z" fill="#7f9fc0" />
-      <path d="M55 181v-33q0-28 24-28t24 28v33" fill="#85a478" />
-      <path d="M137 181v-34q0-26 24-26t24 26v34" fill="#e8947c" />
-      <circle cx="120" cy="89" r="26" fill="#dfad87" />
-      <path d="M95 87q-5-35 25-35t26 36l-9-14q-20 9-36-1z" fill="#624e40" />
-      <circle cx="79" cy="112" r="20" fill="#bd845f" />
-      <path d="M59 110q-3-26 20-26 24 0 20 27l-7-13q-12 6-26-1z" fill="#4d3a31" />
-      <circle cx="161" cy="113" r="20" fill="#f0c5a0" />
-      <path d="M141 112q-7-29 20-29 26 0 20 29l-6-13q-15 8-28 0z" fill="#996744" />
-      <g fill="#334b42"><circle cx="112" cy="91" r="2" /><circle cx="128" cy="91" r="2" /><circle cx="73" cy="114" r="1.8" /><circle cx="85" cy="114" r="1.8" /><circle cx="155" cy="115" r="1.8" /><circle cx="167" cy="115" r="1.8" /></g>
-      <g fill="none" stroke="#874e3c" strokeWidth="2"><path d="M113 101q7 6 14 0M74 122q5 4 10 0M156 123q5 4 10 0" /></g>
-      <path d="M73 154q16 32 47 30 29 2 47-29" fill="none" stroke="#e5b591" strokeWidth="13" />
-      <path d="M120 182c-11-8-27-19-27-31 0-15 18-20 27-7 9-13 27-8 27 7 0 12-16 23-27 31z" fill="#d87668" stroke="#ad5147" strokeWidth="2" />
-      <path d="M120 151v17m-7-9h14" stroke="#fff2ce" strokeWidth="3" />
+      {/* Two adults embrace their child around a shared heart. */}
+      <path d="M52 180v-48q0-31 30-31t30 31v48" fill="#7f9fc0" />
+      <path d="M132 180v-48q0-31 27-31t29 31v48" fill="#e8947c" />
+      <path d="M129 120V83q0-35 30-35t31 35v42l-16-9h-31z" fill="#996744" />
+      <circle cx="82" cy="83" r="25" fill="#bd845f" />
+      <path d="M57 82q-4-34 25-34t25 34l-9-14q-17 8-33-2z" fill="#4d3a31" />
+      <ellipse cx="159" cy="83" rx="24" ry="27" fill="#f0c5a0" />
+      <path d="M134 79q-2-31 25-31t26 34q-16-2-25-18-8 13-26 15" fill="#996744" />
+      <path d="M138 80q-5 26-2 43m47-43q6 25 2 42" fill="none" stroke="#996744" strokeWidth="9" />
+      <path d="M92 184v-29q0-26 28-26t28 26v29" fill="#85a478" />
+      <circle cx="120" cy="120" r="20" fill="#dfad87" />
+      <path d="M100 118q-3-26 20-26t20 26l-7-13q-12 7-26-1z" fill="#624e40" />
+      <g fill="#334b42"><circle cx="74" cy="85" r="2" /><circle cx="90" cy="85" r="2" /><circle cx="151" cy="85" r="2" /><circle cx="167" cy="85" r="2" /><circle cx="114" cy="122" r="1.8" /><circle cx="126" cy="122" r="1.8" /></g>
+      <g fill="none" stroke="#874e3c" strokeWidth="2"><path d="M75 95q7 6 14 0M152 95q7 6 14 0M115 130q5 4 10 0" /></g>
+      <path d="M67 143q8 35 38 37m68-37q-8 35-38 37" fill="none" stroke="#e5b591" strokeWidth="13" />
+      <path d="M120 190c-11-8-27-19-27-31 0-15 18-20 27-7 9-13 27-8 27 7 0 12-16 23-27 31z" fill="#d87668" stroke="#ad5147" strokeWidth="2" />
+      <path d="M120 159v17m-7-9h14" stroke="#fff2ce" strokeWidth="3" />
     </g>}
     {kind === "listening" && <g strokeLinecap="round" strokeLinejoin="round">
       <path d="M55 113q33-13 65 5 32-18 65-5v69q-34-10-65 8-31-18-65-8z" fill="#648d95" stroke="#446b74" strokeWidth="4" />

@@ -786,7 +786,7 @@ export const explorerReward = {
 } as const;
 
 export const stickerDesigns: Record<string, { alt: string; tint: string; ink: string }> = {
-  gathering: { alt: "God’s family sticker: three smiling parish friends gathered around a heart with a cross, inside a gold medallion.", tint: "#e5edd7", ink: "#62835c" },
+  gathering: { alt: "God’s family sticker: a smiling man, woman, and child gathered around a heart with a cross, inside a gold medallion.", tint: "#e5edd7", ink: "#62835c" },
   listening: { alt: "A listening heart sticker: an open Bible with a ribbon, a coral heart, and golden rays, inside a gold medallion.", tint: "#e1edf4", ink: "#5c8195" },
   sharing: { alt: "A thankful heart sticker: a gold chalice and a white host marked with a cross, with wheat and grapes, inside a gold medallion.", tint: "#fff0da", ink: "#a9783f" },
   going: { alt: "A little peacemaker sticker: a white dove carrying an olive branch in warm sunlight, inside a gold medallion.", tint: "#eee5f5", ink: "#89719c" },
