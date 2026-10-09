@@ -727,7 +727,7 @@ export const activityCopy = {
   again: "Practice again",
   replay: "Replay scene",
   explorerTitle: "Take a little look around",
-  explorerHint: "Find the ambo on the left! Tap a number or a label to explore our church.",
+  explorerHint: "Take a look around our church! Tap a number or a label to learn about the special things we use at Mass.",
   explorerAlt: "An illustrated church sanctuary with an altar, an ambo holding a Bible, candles, and a chalice.",
   explorerChoose: "What would you like to explore?",
   explorerRead: "Listen to this discovery",
