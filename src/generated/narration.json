@@ -106,5 +106,49 @@
   "dismissal": {
     "text": "Dismissal. What is happening? The priest or deacon sends us out with words such as “Go in peace.” We answer “Thanks be to God.” We are ready to love God and serve others. Why do we do this? The Mass sends us to share Christ’s love. Try it! Practice answering “Thanks be to God” after “Go in peace.” Then choose one act of kindness to do today.",
     "file": "audio/dismissal-fcb6d7e60157.mp3"
+  },
+  "response-greeting": {
+    "text": "The priest says: The Lord be with you.",
+    "file": "audio/response-greeting-94f46a212c77.mp3"
+  },
+  "response-first": {
+    "text": "At the end of the reading, the reader says: The word of the Lord.",
+    "file": "audio/response-first-51d5cccdf778.mp3"
+  },
+  "response-second": {
+    "text": "At the end of the reading, the reader says: The word of the Lord.",
+    "file": "audio/response-second-51d5cccdf778.mp3"
+  },
+  "response-dismissal": {
+    "text": "The priest or deacon sends us forth with words such as: Go in peace.",
+    "file": "audio/response-dismissal-27108130df13.mp3"
+  },
+  "explorer-altar": {
+    "text": "The altar is the holy table where the Eucharistic sacrifice is celebrated. At Mass, we gather around it to worship God.",
+    "file": "audio/explorer-altar-34854807035c.mp3"
+  },
+  "explorer-ambo": {
+    "text": "The ambo is the special place where the Bible readings are proclaimed. We listen carefully to God’s Word.",
+    "file": "audio/explorer-ambo-c291298dc469.mp3"
+  },
+  "explorer-candles": {
+    "text": "Candles give light in the church. Their light helps us remember Jesus, the Light of the world.",
+    "file": "audio/explorer-candles-29e225893ae0.mp3"
+  },
+  "explorer-chalice": {
+    "text": "A chalice is the cup used at Mass. After the consecration, it holds the Precious Blood of Jesus.",
+    "file": "audio/explorer-chalice-37a9f8e6ca5a.mp3"
+  },
+  "explorer-tabernacle": {
+    "text": "The tabernacle is the special place where the consecrated hosts are kept. Jesus is truly present in the Eucharist. We can pray quietly to him here.",
+    "file": "audio/explorer-tabernacle-8ee3cec555f9.mp3"
+  },
+  "explorer-crucifix": {
+    "text": "A crucifix is a cross with an image of Jesus on it. It reminds us that Jesus gave his life to save us because he loves us.",
+    "file": "audio/explorer-crucifix-32786462c45b.mp3"
+  },
+  "explorer-paten": {
+    "text": "A paten is a small plate used to hold the host. After the consecration, the host is truly the Body of Jesus. We treat the Eucharist with great love and respect.",
+    "file": "audio/explorer-paten-cc9f7ca7454b.mp3"
   }
 }

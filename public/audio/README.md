@@ -1,6 +1,7 @@
 # Recorded narration
 
-These 26 lesson clips and one Parent Corner preview were synthesized locally
+These 26 lesson clips, one Parent Corner preview, four response-practice cues,
+and seven church discoveries were synthesized locally
 with Kokoro-82M v1.0, voice `af_heart`, using kokoro-js 1.2.1, the ONNX q8 model,
 and speed 0.92. They use an AI-generated voice, not a human recording or a
 voice cloned for this project. No speech model runs in the children's app.

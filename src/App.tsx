@@ -6,6 +6,7 @@ import PartCard from "./components/PartCard";
 import { ParishArtwork } from "./components/ParishArtwork";
 import { useNarratorVoices } from "./hooks/useNarratorVoices";
 import { VoiceSettings } from "./components/VoiceSettings";
+import { ChurchExplorer } from "./components/ChurchExplorer";
 import {
   writeNavigationHistory,
   cancelPendingHistory,
@@ -225,6 +226,7 @@ export default function App() {
             <div className="bottom-note">
               <span>✦</span> {ui.homeFooter} <span>✦</span>
             </div>
+            <ChurchExplorer voice={narrator.voice} useRecording={narrator.selected === ""} />
           </>
         ) : screen === "map" ? (
           <section className="page map-page">
@@ -323,6 +325,7 @@ export default function App() {
               </aside>
               <div>
                 <PartCard
+                  key={section.parts[card].id}
                   part={section.parts[card]}
                   index={card}
                   onSwipe={move}

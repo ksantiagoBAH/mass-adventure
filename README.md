@@ -27,6 +27,10 @@ npm run preview
 - Home → Start → four-stop Adventure Map. Every stop is available immediately.
 - Each section has swipeable illustrated lesson cards. Back/Next buttons work with touch and keyboard; larger screens also show a lesson list.
 - Read aloud plays locally bundled neural-voice recordings and cancels when you change cards or screens. Browser SpeechSynthesis remains a fallback or an optional device voice. Audio never autoplays.
+- Home includes a wide storybook church explorer with an ambo to the left of the altar. Tap seven numbered objects or their named labels to learn about the altar, ambo, candles, chalice, tabernacle (5), crucifix (6), and paten with a host (7), with optional recorded explanations.
+- Greeting, First Reading, Second Reading, and Dismissal cards include “What do we say?” response practice. Listen to the cue, choose a response, retry with encouragement, or reset. It has no score, timer, or required completion.
+- Selected lessons animate the objects in their own illustration: the Entrance procession arrives at an altar inside the church, Bible pages turn, sung responses glow, candle flames flicker, and Dismissal rays brighten. These scenes finish in under four seconds and have a Replay button. Other illustrations remain still.
+- Sign of the Cross shows an original storybook child using their right hand: forehead, chest, left shoulder, right shoulder, then hands together. Next gesture, Play/Pause, and Start again let children follow at their own pace. Reduced-motion mode changes poses without tweening.
 - Three questions per section. Incorrect choices get a helpful hint and can be retried; no score or penalty.
 - Answer the three questions to finish the section, fill the map progress, earn a star and a sticker, and see confetti. Finishing again does not duplicate stickers.
 - Sticker Book → tap an earned or unearned sticker to revisit that stop.
@@ -41,7 +45,7 @@ npm run preview
 - `src/components/Icon.tsx`: original inline SVG interface icons.
 - `src/style.css`: responsive layout, palette, focus states, animations, and reduced-motion support.
 - `public/fonts/`: locally hosted Nunito variable font, distributed under the included SIL Open Font License. No Google Fonts network requests.
-- `public/audio/`: 26 lesson MP3s and one preview, generated offline with a warm AI voice. Provenance and license information are included. `src/generated/narration.json` connects clips to their exact source text.
+- `public/audio/`: 26 lesson MP3s, one preview, four response cues, and seven church discoveries (38 total), generated offline with a warm AI voice. Provenance and license information are included. `src/generated/narration.json` connects clips to their exact source text.
 - `public/artwork/`: two storybook illustrations created from your parish photographs with the built-in image generation tool. The church appears on Home; the altar appears on the Presentation of the Gifts card. The full generation prompts are saved in `public/artwork/README.md`; artwork paths and alt text are editable in `src/data/massParts.ts`.
 - `screenshots/`: four captured key screens.
 - `scripts/verify.mjs`: reproducible browser checks and screenshot capture.
@@ -87,9 +91,11 @@ With the production preview server running:
 ```sh
 npm run test:narration
 TEST_BROWSER=webkit npm run test:narration
+npm run test:activities
+TEST_BROWSER=webkit npm run test:activities
 ```
 
-This suite checks that all 27 recordings match current content, decode with an audible and unclipped signal, and play on every card. It also tests lazy loading, stop/navigation, preview, completion, stale callbacks, failed-playback fallback, retry, absence of SpeechSynthesis, and same-origin requests. It does not judge voice quality or pronunciation.
+The narration suite checks that all 38 recordings match current content, decode with an audible and unclipped signal, and play on every card. It also tests lazy loading, stop/navigation, preview, completion, stale callbacks, failed-playback fallback, retry, absence of SpeechSynthesis, and same-origin requests. The activity suite tests every discovery and practice cue, gentle retry/correct feedback, keyboard use, resetting, touch gestures on controls, exclusive audio playback, scene replay, reduced motion, accessibility, and responsive layouts. These suites do not judge voice quality or pronunciation.
 
 ## Production stress tests
 

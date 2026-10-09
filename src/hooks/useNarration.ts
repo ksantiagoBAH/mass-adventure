@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { ui } from "../data/massParts";
 import recordings from "../generated/narration.json";
 const clips: Record<string, { text: string; file: string }> = recordings;
+// A lesson, response cue, or church discovery may read, but never overlap.
+let currentPlayback: { owner: symbol; stop: () => void } | null = null;
 export function useNarration(
   text: string,
   voice: SpeechSynthesisVoice | null,
@@ -12,7 +14,9 @@ export function useNarration(
   const narration = useRef<SpeechSynthesisUtterance | null>(null);
   const recording = useRef<HTMLAudioElement | null>(null);
   const active = useRef(false);
+  const owner = useRef(Symbol("narration"));
   const cancel = () => {
+    if (currentPlayback?.owner === owner.current) currentPlayback = null;
     active.current = false;
     if (recording.current) {
       const audio = recording.current;
@@ -34,6 +38,10 @@ export function useNarration(
       /* voice service unavailable */
     }
   };
+  const claimPlayback = () => {
+    if (currentPlayback?.owner !== owner.current) currentPlayback?.stop();
+    currentPlayback = { owner: owner.current, stop: () => { cancel(); setSpeaking(false); } };
+  };
   useEffect(() => {
     setSpeaking(false);
     setAudioMessage("");
@@ -50,6 +58,7 @@ export function useNarration(
       return;
     }
     if (fallback) setAudioMessage(ui.recordingFallback);
+    claimPlayback();
     try {
       const utterance = new SpeechSynthesisUtterance(text);
       if (voice) utterance.voice = voice;
@@ -96,6 +105,7 @@ export function useNarration(
       const audio = new Audio(`${import.meta.env.BASE_URL}${clip.file}`);
       audio.preload = "none";
       recording.current = audio;
+      claimPlayback();
       active.current = true;
       setSpeaking(true);
       const fallback = () => {

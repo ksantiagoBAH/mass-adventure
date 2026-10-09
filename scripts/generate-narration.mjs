@@ -14,7 +14,7 @@ const source = (await readFile(join(root, "src/data/massParts.ts"), "utf8"))
 const compiled = ts.transpileModule(source, {
   compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ES2022 },
 }).outputText;
-const { sections, getNarrationText, narratorCopy } = await import(
+const { sections, getNarrationText, narratorCopy, responsePractice, churchDiscoveries } = await import(
   `data:text/javascript;base64,${Buffer.from(compiled).toString("base64")}`
 );
 const { KokoroTTS } = await import(pathToFileURL(join(runtime, "node_modules/kokoro-js/dist/kokoro.js")));
@@ -30,6 +30,8 @@ await mkdir(join(root, "src/generated"), { recursive: true });
 const clips = [
   { id: "preview", text: narratorCopy.sample },
   ...sections.flatMap(section => section.parts.map(part => ({ id: part.id, text: getNarrationText(part) }))),
+  ...Object.entries(responsePractice).map(([id, practice]) => ({ id: `response-${id}`, text: practice.cue })),
+  ...churchDiscoveries.map(item => ({ id: `explorer-${item.id}`, text: item.text })),
 ];
 const manifest = {};
 for (const clip of clips) {

@@ -9,11 +9,13 @@ const source = (await readFile(new URL("../src/data/massParts.ts", import.meta.u
 const compiled = ts.transpileModule(source, {
   compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ES2022 },
 }).outputText;
-const { sections, getNarrationText, narratorCopy } = await import(`data:text/javascript;base64,${Buffer.from(compiled).toString("base64")}`);
+const { sections, getNarrationText, narratorCopy, responsePractice, churchDiscoveries } = await import(`data:text/javascript;base64,${Buffer.from(compiled).toString("base64")}`);
 const manifest = JSON.parse(await readFile(new URL("../src/generated/narration.json", import.meta.url), "utf8"));
 const expected = [{ id: "preview", text: narratorCopy.sample },
-  ...sections.flatMap(s => s.parts.map(p => ({ id: p.id, text: getNarrationText(p) })))];
-assert.equal(Object.keys(manifest).length, 27);
+  ...sections.flatMap(s => s.parts.map(p => ({ id: p.id, text: getNarrationText(p) }))),
+  ...Object.entries(responsePractice).map(([id, practice]) => ({ id: `response-${id}`, text: practice.cue })),
+  ...churchDiscoveries.map(item => ({ id: `explorer-${item.id}`, text: item.text }))];
+assert.equal(Object.keys(manifest).length, expected.length);
 for (const clip of expected) assert.equal(manifest[clip.id]?.text, clip.text, `Current text: ${clip.id}`);
 const browser = process.env.TEST_BROWSER === "webkit"
   ? await webkit.launch() : await chromium.launch({ channel: "chrome", headless: true });
@@ -62,7 +64,7 @@ for (const clip of decoded) {
   assert(clip.duration > 3 && clip.duration < 120, `Duration: ${clip.id}`);
   assert(clip.rms > 0.005 && clip.peak < 1, `Audible, unclipped recording: ${clip.id}`);
 }
-console.log("PASS 27 current recordings decode with audible, unclipped signal");
+console.log(`PASS ${expected.length} current recordings decode with audible, unclipped signal`);
 await page.getByRole("button", { name: "Start the Mass Adventure" }).click();
 for (let s = 0; s < sections.length; s++) {
   await page.locator(".map-stop").nth(s).click();

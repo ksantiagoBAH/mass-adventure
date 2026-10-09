@@ -39,6 +39,34 @@ Verified against the Holy See’s English Catechism, October 9, 2026. Numbers ar
 
 ## Review before parish use
 
+The church explorer adds original explanations of the altar (CCC 1383), ambo
+(CCC 1154), candles as liturgical signs (CCC 1189), and the chalice after
+consecration (CCC 1376). The description of Jesus as the Light of the world is
+supported by [John 8:12](https://bible.usccb.org/bible/john/8). Candles are
+listed in [CCC 1189](https://www.vatican.va/content/catechism/en/part_two/section_one/chapter_two/article_1/in_brief.html).
+Discovery 5 explains the tabernacle as the place where consecrated hosts are
+reserved and affirms Jesus' Real Presence, following
+[CCC 1374 and 1379](https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_3/v_the_sacramental_sacrifice_thanksgiving_memorial_presence.html).
+Discovery 6 explains the crucifix and Christ's loving sacrifice, following
+[CCC 616–617](https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_two/article_4/paragraph_2_jesus_died_crucified.html).
+Discovery 7 shows a host on a paten and teaches that, after consecration,
+the host is truly the Body of Jesus, following
+[CCC 1374 and 1378](https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_3/v_the_sacramental_sacrifice_thanksgiving_memorial_presence.html).
+The response activities reuse the verified Greeting, reading, and dismissal
+responses above. Their alternative answers are genuine Mass responses used
+at other moments, with gentle feedback to teach the appropriate context.
+The short scenes apply to selected parts of the Mass. The Entrance scene
+shows a cross-bearer leading an altar server and the priest toward the altar
+inside the church, following the simplified order in
+[GIRM 120](https://www.usccb.org/prayer-and-worship/the-mass/general-instruction-of-the-roman-missal/girm-chapter-4).
+The Sign of the Cross character uses the right hand for forehead, chest,
+left shoulder, and right shoulder, followed by hands together for Amen.
+[CCC 2157](https://www.vatican.va/content/catechism/en/part_three/section_two/chapter_one/article_2/iii_the_christian_name.html)
+explains the prayer's meaning; the gestures illustrate Latin Catholic practice.
+These simplified illustrations still merit review against parish practice.
+Consecration and Communion illustrations remain still and do not portray
+a visible transformation of bread and wine.
+
 Ask a priest or catechist to review all child-facing texts, especially the Real Presence and Eucharistic sacrifice, repentance and confession, worthy reception and First Communion guidance. The introductory prayer and concluding rite references are thematic. A pastoral reviewer should also check actual gestures, rubrics, and omissions against the current Roman Missal and parish practice.
 
 The four map stops are a learning device. The Mass’s Liturgy of the Word and Liturgy of the Eucharist form one act of worship (CCC 1346). Sanctus and Consecration are within the Eucharistic Prayer, not independent rites after it. The communion cards are labeled Communion Rite. The Gloria is omitted in Advent and Lent and on many weekdays; Alleluia is replaced in Lent; the Second Reading and Creed are especially associated with Sundays and solemnities. This app introduces a typical Sunday Mass. Add or adjust local posture cues with your parish; no universal kneeling cue is imposed.

@@ -1,10 +1,12 @@
 import { useRef } from "react";
-import { ui, phrases, getNarrationText } from "../data/massParts";
+import { ui, phrases, getNarrationText, responsePractice } from "../data/massParts";
 import type { Part } from "../data/massParts";
 import { Illustration } from "./Illustration";
 import { Icon } from "./Icon";
 import { useNarration } from "../hooks/useNarration";
 import { ParishArtwork } from "./ParishArtwork";
+import { ResponsePractice } from "./ResponsePractice";
+import { LessonScene } from "./LessonScene";
 export default function PartCard({
   part,
   index,
@@ -25,6 +27,10 @@ export default function PartCard({
     <article
       className="part-card"
       onTouchStart={(e) => {
+        if ((e.target as Element).closest("button, .response-practice")) {
+          touch.current = null;
+          return;
+        }
         touch.current =
           e.touches.length === 1
             ? { x: e.touches[0].clientX, y: e.touches[0].clientY }
@@ -45,11 +51,13 @@ export default function PartCard({
       }}
     >
       <div className="part-art">
+        <LessonScene partId={part.id}>
         {part.id === "gifts" ? (
           <ParishArtwork kind="altar" />
         ) : (
           <Illustration kind={part.art} alt={part.alt} variant={index} />
         )}
+        </LessonScene>
         {part.rite && <span className="rite">{part.rite}</span>}
       </div>
       <div className="part-body">
@@ -75,6 +83,7 @@ export default function PartCard({
           <span className="try-label">✦ {ui.try}</span>
           <p>{part.action}</p>
         </div>
+        {responsePractice[part.id] && <ResponsePractice key={part.id} partId={part.id} voice={voice} useRecording={useRecording} />}
         {part.glossary && (
           <div className="glossary">
             <span>{ui.glossary}</span>

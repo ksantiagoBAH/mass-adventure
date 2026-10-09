@@ -1,5 +1,62 @@
 # Mass Adventure test report
 
+## Release verification — October 9, 2026
+
+The release includes seven sanctuary discoveries, including 7 · Paten with
+a host, recorded discovery narration, four response activities, the
+storybook Sign of the Cross person, accurate part-specific animation,
+and reference-matched heart-shaped tabernacles. The production build,
+seven-discovery activity suite, and all 38 recording checks passed on the
+compiled localhost:4173 preview. The full 26-card/12-question accessibility
+suite passed after the reference-matched altar update. The user authorized
+the GitHub push and Pages deployment after local review.
+
+## Local interactive preview — October 9, 2026
+
+The sanctuary explorer now uses an expanded storybook image with an ambo on
+the left, six numbered discoveries with tappable named labels, including
+5 · Tabernacle and 6 · Crucifix. The production build and Chrome activity suite
+passed against localhost:5173 after this change. Checks include landscape
+artwork loading, named-label selection, accessibility, narration, and
+non-overlapping 44px discovery markers at 320, 390, 820, and 1440px widths.
+The refreshed explorer screenshot is `screenshots/06-church-explorer.png`.
+The six-discovery update also passed the Chrome activity and narration
+suites on localhost:5173: all 37 clips decode, the two new discovery clips
+play, all six markers respond to keyboard input, and none overlap at the
+four tested viewport widths. The production build passed.
+The tabernacle door's artwork now shows a gold heart with a decorative
+flame above it; marker 5 sits to the left to reveal the detail. The build and
+six-discovery activity suite passed again after this artwork update.
+The subsequent reference-photo correction replaces that box-shaped
+tabernacle in both the explorer and lesson altar illustrations with the
+parish's gold heart-shaped tabernacle, red-and-gold sculpted flame, silver
+rays, and black plinth. Visual review, production build, six-discovery
+activity suite, and the full 26-card/12-question accessibility suite passed
+locally after this correction. Marker 5 points to the silver frame without
+covering the heart.
+
+This update was developed and tested locally before the user authorized
+publication. It adds four narrated response practices,
+a seven-object church explorer, and short replayable scenes for selected parts.
+The Entrance scene shows a procession arriving at an altar inside the church.
+The Sign of the Cross has a storybook child with five poses, manual step
+controls, Play/Pause, reset, and reduced-motion support. Other motion is
+attached to actual illustration objects rather than unrelated overlays.
+
+The TypeScript/production build, complete lesson/quiz/accessibility suite,
+and all 35 recording checks passed. `scripts/activities.mjs` passed in Chrome
+and WebKit: all discovery and response clips play; keyboard controls, selected
+states, gentle retries, reset on revisit, and swipe isolation work. Starting a
+lesson recording cancels an active response cue, so audio never overlaps.
+Replay and reduced-motion behavior passed. New screenshots are saved as
+`06-church-explorer.png`, `07-response-practice.png`,
+`08-entrance-procession.png`, and `09-sign-of-cross.png`.
+The latest full lesson/quiz/accessibility suite also passed against localhost:5173.
+The activity suite verifies all five right-hand positions, pause freezing
+movement, reset, reduced motion, and the interior procession.
+New explorer wording and the visual portrayal of the rites still merit the
+priest/catechist review described in `CONTENT_SOURCES.md`.
+
 Tested October 9, 2026 against the compiled Vite production build on localhost:4173. This report covers the original request to stress-test the mockup and the follow-up request for more natural narration.
 
 ## Bugs found and fixed

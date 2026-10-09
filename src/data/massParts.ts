@@ -26,13 +26,17 @@ export type Part = {
   rite?: string;
 };
 export const parishArtwork = {
+  sanctuary: {
+    src: `${import.meta.env.BASE_URL}artwork/parish-sanctuary-paten.webp`,
+    alt: "A wide storybook church sanctuary. An ambo with an open Bible stands to the left of the white-clothed altar, where a gold paten holds a round white host. Below the crucifix is a heart-shaped gold tabernacle, topped with a red-and-gold sculpted flame, framed by silver rays, and resting on a black base. Flowers, green banners, a chalice, and a candle are nearby.",
+  },
   church: {
     src: `${import.meta.env.BASE_URL}artwork/parish-church-storybook.webp`,
     alt: "Storybook illustration of the red-brick parish church with broad peaked roofs, a rooftop cross, a circular stained-glass window, trees, and a welcoming walkway.",
   },
   altar: {
-    src: `${import.meta.env.BASE_URL}artwork/parish-altar-storybook.webp`,
-    alt: "Storybook illustration of the parish sanctuary: a white-clothed altar, flowers, green banners, candles, a tabernacle, and a crucifix of Jesus on the brick wall.",
+    src: `${import.meta.env.BASE_URL}artwork/parish-altar-reference-tabernacle.webp`,
+    alt: "Storybook illustration of the parish sanctuary: a white-clothed altar, flowers, green banners, candles, and a crucifix of Jesus on the brick wall. The gold tabernacle is shaped like a heart with a red-and-gold sculpted flame, silver rays, and a black base.",
   },
 };
 export type QuizQuestion = {
@@ -364,7 +368,7 @@ export const sections: Section[] = [
       part(
         "offerings",
         "Prayer over the Offerings",
-        "hands",
+        "altar",
         "The priest prays over the gifts. We join his prayer and answer Amen.",
         "We ask God to accept our offering.",
         "Listen and answer “Amen” with everyone.",
@@ -552,7 +556,7 @@ export const referenceSources = [
   },
   {
     name: "Holy Communion and its fruits",
-    paragraphs: "1385–1387; 1391; 1396",
+    paragraphs: "1383; 1385–1387; 1391; 1396",
     url: "https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_3/vi_the_paschal_banquet.html",
   },
   {
@@ -599,6 +603,11 @@ export const referenceSources = [
     name: "Mass and mission",
     paragraphs: "1332",
     url: "https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_3/ii_what_is_this_sacrament_called.html",
+  },
+  {
+    name: "Liturgical signs, including light",
+    paragraphs: "1189",
+    url: "https://www.vatican.va/content/catechism/en/part_two/section_one/chapter_two/article_1/in_brief.html",
   },
 ];
 
@@ -707,3 +716,92 @@ export const narratorCopy = {
 export function getNarrationText(part: Part) {
   return `${part.name}. ${ui.happening} ${part.happening} ${ui.why} ${part.why} ${ui.try} ${part.action}${part.glossary ? `. Big word: ${part.glossary[0]}. ${part.glossary[1]}` : ""}`;
 }
+
+export const activityCopy = {
+  responseTitle: "What do we say?",
+  responseHint: "Listen to the words, then choose our response. You can try again!",
+  listen: "Hear the words",
+  stop: "Stop listening",
+  correct: "Yes! Let’s say it together:",
+  retry: "Let’s discover together. Listen again, then try another response.",
+  again: "Practice again",
+  replay: "Replay scene",
+  explorerTitle: "Take a little look around",
+  explorerHint: "Find the ambo on the left! Tap a number or a label to explore our church.",
+  explorerAlt: "An illustrated church sanctuary with an altar, an ambo holding a Bible, candles, and a chalice.",
+  explorerChoose: "What would you like to explore?",
+  explorerRead: "Listen to this discovery",
+  explorerStop: "Stop discovery",
+};
+
+export const responsePractice: Record<string, {
+  cue: string; options: string[]; answer: number;
+}> = {
+  greeting: {
+    cue: "The priest says: The Lord be with you.",
+    options: ["Thanks be to God.", "And with your spirit.", "Amen."], answer: 1,
+  },
+  first: {
+    cue: "At the end of the reading, the reader says: The word of the Lord.",
+    options: ["Thanks be to God.", "And with your spirit.", "Amen."], answer: 0,
+  },
+  second: {
+    cue: "At the end of the reading, the reader says: The word of the Lord.",
+    options: ["Amen.", "And with your spirit.", "Thanks be to God."], answer: 2,
+  },
+  dismissal: {
+    cue: "The priest or deacon sends us forth with words such as: Go in peace.",
+    options: ["And with your spirit.", "Thanks be to God.", "Amen."], answer: 1,
+  },
+};
+
+export const churchDiscoveries = [
+  { id: "altar", name: "Altar", x: 63, y: 80, targetX: 64, targetY: 69,
+    text: "The altar is the holy table where the Eucharistic sacrifice is celebrated. At Mass, we gather around it to worship God.", ccc: "1383" },
+  { id: "ambo", name: "Ambo", x: 17, y: 68, targetX: 17, targetY: 51,
+    text: "The ambo is the special place where the Bible readings are proclaimed. We listen carefully to God’s Word.", ccc: "1154" },
+  { id: "candles", name: "Candles", x: 92, y: 35, targetX: 91.5, targetY: 49,
+    text: "Candles give light in the church. Their light helps us remember Jesus, the Light of the world.", ccc: "1189" },
+  { id: "chalice", name: "Chalice", x: 85, y: 63, targetX: 85.7, targetY: 52.5,
+    text: "A chalice is the cup used at Mass. After the consecration, it holds the Precious Blood of Jesus.", ccc: "1376" },
+  { id: "tabernacle", name: "Tabernacle", x: 50, y: 44, targetX: 58.5, targetY: 50,
+    text: "The tabernacle is the special place where the consecrated hosts are kept. Jesus is truly present in the Eucharist. We can pray quietly to him here.", ccc: "1374, 1379" },
+  { id: "crucifix", name: "Crucifix", x: 44, y: 18, targetX: 62, targetY: 22,
+    text: "A crucifix is a cross with an image of Jesus on it. It reminds us that Jesus gave his life to save us because he loves us.", ccc: "616–617" },
+  { id: "paten", name: "Paten", x: 38, y: 83, targetX: 47, targetY: 56,
+    text: "A paten is a small plate used to hold the host. After the consecration, the host is truly the Body of Jesus. We treat the Eucharist with great love and respect.", ccc: "1374, 1378" },
+] as const;
+
+export const lessonScenes: Record<string, {
+  kind: "procession" | "book" | "reading" | "song" | "candle" | "sun";
+  caption: string;
+  alt?: string;
+}> = {
+  entrance: { kind: "procession", caption: "The ministers walk toward the altar",
+    alt: "A cross-bearer leads an altar server and a priest toward the altar. Their feet stay on the sanctuary floor." },
+  gloria: { kind: "song", caption: "We sing or say our praise to God" },
+  first: { kind: "reading", caption: "We listen to God’s Word" },
+  psalm: { kind: "song", caption: "We sing or say the psalm response" },
+  second: { kind: "book", caption: "We listen to the Bible reading" },
+  alleluia: { kind: "song", caption: "We welcome the Gospel" },
+  gospel: { kind: "book", caption: "We listen to the Gospel" },
+  offerings: { kind: "candle", caption: "We join the priest’s prayer" },
+  sanctus: { kind: "song", caption: "We join the angels in praising God" },
+  dismissal: { kind: "sun", caption: "We go out to love God and serve others" },
+};
+
+export const signOfCrossCopy = {
+  alt: "A child facing us demonstrates the Sign of the Cross with their right hand. The child’s left shoulder is on the right side of the picture.",
+  instruction: "Use your right hand. Follow one gesture at a time.",
+  play: "Play the gestures",
+  pause: "Pause gestures",
+  next: "Next gesture",
+  reset: "Start again",
+  steps: [
+    { label: "Forehead", words: "In the name of the Father", x: 130, y: 72 },
+    { label: "Chest", words: "and of the Son", x: 130, y: 140 },
+    { label: "Left shoulder", words: "and of the Holy", x: 160, y: 115 },
+    { label: "Right shoulder", words: "Spirit.", x: 100, y: 115 },
+    { label: "Hands together", words: "Amen.", x: 130, y: 153 },
+  ],
+};

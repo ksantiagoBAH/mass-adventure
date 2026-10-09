@@ -35,6 +35,10 @@ export function Illustration({
         strokeWidth="5"
         strokeLinecap="round"
       />
+      <g className="book-turning-leaf">
+        <path d="M130 84q45-25 87-6v105q-43-13-87 10z" fill="#fff8e4" stroke="#426a64" strokeWidth="3" />
+        <path d="m150 103 47-6m-47 27 47-6m-47 27 47-6" stroke="#d2bc90" strokeWidth="5" strokeLinecap="round" />
+      </g>
     </>
   );
   const cup = (
@@ -219,6 +223,7 @@ export function Illustration({
               />
               <path
                 d="M88 108h79m-79 20h67m-67 20h72"
+                className="scripture-lines"
                 stroke="#a88d63"
                 strokeWidth="5"
               />
@@ -270,12 +275,13 @@ export function Illustration({
               />
               <path
                 d="M72 66q-13-9 0-25 13 16 0 25m113 0q-13-9 0-25 13 16 0 25"
+                className="altar-flames"
                 fill="#edb547"
               />
               <path d="M117 93q13-18 27 0v19h-27z" fill="#e4b765" />
             </>
           ) : kind === "music" ? (
-            <>
+            <g className="singing-notes">
               <path
                 d="M95 143V68l90-16v80"
                 fill="none"
@@ -303,7 +309,7 @@ export function Illustration({
                 d="m130 175 8-16 8 16 18 3-13 13 3 18-16-8-16 8 3-18-13-13z"
                 fill="#e9b44f"
               />
-            </>
+            </g>
           ) : kind === "heart" ? (
             <path
               d="M130 191C15 125 67 43 130 90c63-47 115 35 0 101z"
@@ -331,7 +337,7 @@ export function Illustration({
           ) : (
             <>
               <circle cx="130" cy="122" r="49" fill="#f0be56" />
-              <g stroke="#d6a242" strokeWidth="7" strokeLinecap="round">
+              <g className="sun-rays" stroke="#d6a242" strokeWidth="7" strokeLinecap="round">
                 <path d="M130 46V30m0 184v-16M54 122H38m184 0h-16M77 69 65 57m130 130-12-12m0-106 12-12M65 187l12-12" />
               </g>
             </>
