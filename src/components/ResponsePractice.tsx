@@ -23,8 +23,8 @@ export function ResponsePractice({ partId, voice, useRecording }: {
       <div className="response-options" role="group" aria-label={activityCopy.responseTitle}>
         {practice.options.map((option, index) => (
           <button key={option} aria-pressed={choice === index} onClick={() => setChoice(index)}
-            className={choice === index ? "chosen" : ""}>
-            {option}{correct && choice === index && <span aria-hidden="true"> ✦</span>}
+            className={choice === index ? `chosen ${correct ? "correct" : "incorrect"}` : ""}>
+            {option}{choice === index && <span aria-hidden="true">{correct ? " ✦" : " ↻"}</span>}
           </button>
         ))}
       </div>

@@ -108,6 +108,8 @@ for (let s = 0; s < 4; s++) {
       await page.locator(".feedback").innerText(),
       /Let’s discover together/,
     );
+    assert.equal(await page.locator('.answers button.chosen').evaluate(el => getComputedStyle(el).backgroundColor), 'rgb(255, 240, 237)', 'Wrong quiz answer is red');
+    if (j === 0) await check(sectionNames[s] + ' quiz retry contrast');
     await page.locator(".answers button").nth(answers[s][j]).click();
     assert.match(await page.locator(".feedback").innerText(), /Lovely/);
     await page

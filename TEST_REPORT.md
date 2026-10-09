@@ -2,6 +2,13 @@
 
 ## Release verification — October 9, 2026
 
+Follow-up correction: incorrect selected answers now have soft red
+backgrounds and red borders in both response practice and quizzes;
+correct choices remain green. Retry text and a response retry symbol
+provide feedback beyond color. Build, interaction checks, all 12 quiz
+retry paths, and WCAG AA checks in retry states passed locally. The new
+screenshot is `screenshots/10-response-retry.png`.
+
 The release includes seven sanctuary discoveries, including 7 · Paten with
 a host, recorded discovery narration, four response activities, the
 storybook Sign of the Cross person, accurate part-specific animation,

@@ -92,10 +92,14 @@ assert(await page.evaluate(i => window.__audios[i].paused, cueAudio), "Lesson an
 await nav("Stop reading");
 await page.locator(".response-options button").first().click();
 assert.match(await page.locator(".response-feedback").innerText(), /Let’s discover together/);
+assert.equal(await page.locator('.response-options button[aria-pressed="true"]').evaluate(el => getComputedStyle(el).backgroundColor), 'rgb(255, 240, 237)', 'Incorrect response is red, not green');
+await axe('Incorrect response contrast and accessibility');
+await page.locator('.response-practice').screenshot({ path: 'screenshots/10-response-retry.png' });
 const right = page.locator(".response-options button").nth(1);
 await right.focus(); await page.keyboard.press("Space");
 await page.locator(".response-feedback").filter({ hasText: "Yes!" }).waitFor();
 assert.equal(await right.getAttribute("aria-pressed"), "true");
+assert.equal(await right.evaluate(el => getComputedStyle(el).backgroundColor), 'rgb(227, 239, 217)', 'Correct response is green');
 await page.locator(".response-practice").screenshot({ path: "screenshots/07-response-practice.png" });
 
 // A horizontal gesture on an activity control must not accidentally turn a card.

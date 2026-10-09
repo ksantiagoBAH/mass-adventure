@@ -797,7 +797,7 @@ footer svg {
   font-size: 12px;
   flex-shrink: 0;
 }
-.answers button.chosen {
+.answers button.chosen.correct {
   background: #edf3df;
   border-color: #789973;
 }
@@ -1546,7 +1546,9 @@ footer svg {
 .response-practice blockquote { margin: 16px 0; font-size: 17px; font-weight: 800; line-height: 1.5; }
 .response-options { display: grid; gap: 10px; margin-top: 18px; }
 .response-options button { min-height: 48px; padding: 13px 16px; border: 2px solid #b6c5db; border-radius: 13px; background: #fffdf7; color: #334b42; text-align: left; font: inherit; font-size: 15px; font-weight: 800; cursor: pointer; }
-.response-options button.chosen { border-color: #4b6754; background: #e3efd9; }
+.response-options button.chosen.correct { border-color: #4b6754; background: #e3efd9; }
+.response-options button.chosen.incorrect, .answers button.chosen.incorrect { border-color: #b53d3d; background: #fff0ed; color: #813131; }
+.feedback.incorrect { background: #fff0ed; color: #813131; }
 .response-feedback { min-height: 24px; margin-bottom: 0; }
 .response-complete { border-color: #628453; }
 .response-complete .chosen { animation: response-glow 1.2s ease-out; }

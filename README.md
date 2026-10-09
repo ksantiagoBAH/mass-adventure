@@ -31,7 +31,7 @@ npm run preview
 - Greeting, First Reading, Second Reading, and Dismissal cards include “What do we say?” response practice. Listen to the cue, choose a response, retry with encouragement, or reset. It has no score, timer, or required completion.
 - Selected lessons animate the objects in their own illustration: the Entrance procession arrives at an altar inside the church, Bible pages turn, sung responses glow, candle flames flicker, and Dismissal rays brighten. These scenes finish in under four seconds and have a Replay button. Other illustrations remain still.
 - Sign of the Cross shows an original storybook child using their right hand: forehead, chest, left shoulder, right shoulder, then hands together. Next gesture, Play/Pause, and Start again let children follow at their own pace. Reduced-motion mode changes poses without tweening.
-- Three questions per section. Incorrect choices get a helpful hint and can be retried; no score or penalty.
+- Three questions per section. Incorrect choices in quizzes and response practice turn soft red; correct choices turn green. Helpful retry text also explains the result, so feedback does not rely on color alone. There is no score or penalty.
 - Answer the three questions to finish the section, fill the map progress, earn a star and a sticker, and see confetti. Finishing again does not duplicate stickers.
 - Sticker Book → tap an earned or unearned sticker to revisit that stop.
 - Parent Corner contains a reference for every lesson, seasonal notes, Communion guidance, and parish review suggestions. Every CCC number links to the relevant official Vatican section; parent-facing links open in a new tab.

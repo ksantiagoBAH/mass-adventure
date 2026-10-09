@@ -434,7 +434,7 @@ export default function App() {
                     {section.quiz[question].options.map((option, i) => (
                       <button
                         key={option}
-                        className={choice === i ? "chosen" : ""}
+                        className={choice === i ? `chosen ${i === section.quiz[question].answer ? "correct" : "incorrect"}` : ""}
                         disabled={choice === section.quiz[question].answer}
                         onClick={() => setChoice(i)}
                       >
@@ -448,7 +448,7 @@ export default function App() {
                     ))}
                   </div>
                   {choice !== null && (
-                    <div className="feedback" role="status">
+                    <div className={`feedback ${choice === section.quiz[question].answer ? "correct" : "incorrect"}`} role="status">
                       <strong>
                         {choice === section.quiz[question].answer
                           ? ui.quizLovely
