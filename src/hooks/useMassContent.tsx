@@ -5,7 +5,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>("en");
   useEffect(() => {
     document.documentElement.lang = language;
-    document.title = language === "en" ? "Mass Adventure · Little hearts, big faith" : language === "es" ? "Mass Adventure · Corazones pequeños, gran fe" : "Mass Adventure · Małe serca, wielka wiara";
+    document.title = getMassContent(language).languageCopy.pageTitle;
   }, [language]);
   return <LanguageContext.Provider value={{ language, setLanguage }}>{children}</LanguageContext.Provider>;
 }
