@@ -138,3 +138,5 @@ git push origin main
 ```
 
 Check the Deploy Mass Adventure to GitHub Pages workflow in the repository’s Actions tab. GitHub Pages serves the app publicly; GitHub’s hosting infrastructure may process request logs even though the app contains no analytics or data collection.
+
+The browser icon and 1200 × 630 sharing preview live in `public/branding`. Open Graph and social card metadata are in `index.html`, using the public GitHub Pages URL. Regenerate the PNG assets with `node scripts/branding.mjs` (requires the installed Playwright dependency and Chrome). All artwork and fonts are local.
