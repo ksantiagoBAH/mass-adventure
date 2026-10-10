@@ -139,3 +139,7 @@ Passing automated tests is useful evidence, not a blanket claim that the app is 
 ## GitHub Pages verification
 
 Published at https://ksantiagobah.github.io/mass-adventure/ on October 9, 2026. The initial GitHub Actions build and deployment completed successfully. GitHub Pages reports HTTPS enforced. The complete `scripts/verify.mjs` suite passed against the live HTTPS site, including all 26 cards, 12 quiz questions, four completions, artwork/font loading, responsive checks, narration handling, accessibility checks, and absence of third-party app requests. Screenshots were refreshed from the live site. This verifies deployment; the manual device, listening, and pastoral checks above still apply.
+
+## Companion-site footer link
+
+Added a single global footer link to the companion site. Production builds passed for both apps, and adult lint passed. Both links were checked at 375px and 1280px for the correct URL, visibility, a minimum 44px tap target, no horizontal overflow, and automated footer WCAG A/AA checks. Adult footer checks covered both light and dark themes.

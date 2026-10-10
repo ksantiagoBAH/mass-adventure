@@ -664,6 +664,7 @@ export const ui = {
     "For grown-ups: tap a CCC reference to read its section on the Vatican website. Links open in a new tab; find the paragraph number on that page.",
   reviewTitle: "Parish review",
   footer: "Kenny & Edith Santiago ♡",
+  companionLink: "For parents & adults: Explore At the Table",
   parentLink: "A note for parents",
   happening: "What is happening?",
   why: "Why do we do this?",

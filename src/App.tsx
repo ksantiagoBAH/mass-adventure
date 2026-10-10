@@ -604,6 +604,7 @@ export default function App() {
         <button onClick={() => go("parents")}>
           {ui.parentLink} <Icon name="arrow" />
         </button>
+        <a className="footer-companion-link" href="https://ksantiagobah.github.io/at-the-table/"><span>{ui.companionLink}</span> <Icon name="arrow" /></a>
       </footer>
       <nav className="mobile-nav" aria-label="Mobile navigation">
         {nav}
