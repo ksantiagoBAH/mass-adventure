@@ -1612,3 +1612,27 @@ footer{flex-wrap:wrap}
 footer .footer-companion-link{display:flex;align-items:center;gap:8px;flex-basis:100%;min-height:44px;font-size:12px;line-height:1.6;color:#315b49;order:3;text-decoration:none}
 footer .footer-companion-link span{text-decoration:underline;text-underline-offset:4px}
 footer .footer-companion-link svg{flex-shrink:0}
+
+.language-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  max-width: 1280px;
+  margin: 12px auto 0;
+  padding: 0 24px;
+  color: #31473d;
+  font-weight: 800;
+}
+.language-bar select {
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 2px solid #62835c;
+  border-radius: 16px;
+  background: #fffdf7;
+  color: #31473d;
+  font: inherit;
+}
+.mobile-nav button { min-width: 0; }
+.mobile-nav button span { overflow-wrap: anywhere; }
+.language-bar select:focus-visible { outline: 3px solid #2f657b; outline-offset: 5px; }

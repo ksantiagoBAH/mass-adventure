@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { copy, sections, ui, phrases, artDescriptions, getCatechismLinks, churchDiscoveries, explorerReward } from "./data/massParts";
+import { useMassContent } from "./hooks/useMassContent";
 import { Illustration } from "./components/Illustration";
 import { Icon } from "./components/Icon";
 import PartCard from "./components/PartCard";
@@ -14,7 +14,9 @@ import {
 } from "./lib/navigationHistory";
 type Screen = "home" | "map" | "section" | "quiz" | "stickers" | "parents";
 export default function App() {
-  const narrator = useNarratorVoices();
+  const { copy, sections, ui, phrases, artDescriptions, getCatechismLinks, churchDiscoveries, explorerReward, language, setLanguage, languageOptions, languageCopy } = useMassContent();
+
+  const narrator = useNarratorVoices(language);
   const [screen, setScreen] = useState<Screen>("home");
   const [selected, setSelected] = useState(0);
   const [card, setCard] = useState(0);
@@ -156,13 +158,13 @@ export default function App() {
   return (
     <div className="app">
       <a className="skip" href="#main">
-        Skip to content
+        {languageCopy.skip}
       </a>
       <header>
         <button
           className="brand"
           onClick={() => go("home")}
-          aria-label="Mass Adventure home"
+          aria-label={languageCopy.home}
         >
           <span className="brand-mark">✦</span>
           <span>
@@ -170,11 +172,17 @@ export default function App() {
             <small>{copy.tagline}</small>
           </span>
         </button>
-        <nav aria-label="Main navigation">{nav}</nav>
+        <nav aria-label={languageCopy.navigation}>{nav}</nav>
         <span className="header-note">
           {ui.headerNote} <span>♡</span>
         </span>
       </header>
+      <div className="language-bar">
+        <label htmlFor="app-language">{languageCopy.label}</label>
+        <select id="app-language" value={language} onChange={e => setLanguage(e.target.value as typeof language)}>
+          {languageOptions.map(option => <option key={option.value} value={option.value} lang={option.value}>{option.label}</option>)}
+        </select>
+      </div>
       <main id="main">
         {screen === "home" ? (
           <>
@@ -225,7 +233,7 @@ export default function App() {
                     <span className="stop-number">0{i + 1}</span>
                     <Illustration
                       kind={s.art}
-                      alt={`${s.name} illustration`}
+                      alt={`${s.name}: ${languageCopy.illustration}`}
                       variant={i}
                     />
                     <h3>{s.name}</h3>
@@ -261,7 +269,7 @@ export default function App() {
             <div
               className="progress-track"
               role="progressbar"
-              aria-label="Adventure progress"
+              aria-label={languageCopy.progress}
               aria-valuemin={0}
               aria-valuemax={4}
               aria-valuenow={done.length}
@@ -316,7 +324,7 @@ export default function App() {
             </button>
             <div className="lesson-heading">
               <span className="eyebrow small">
-                STOP 0{selected + 1} · {section.subtitle}
+                {languageCopy.stopLabel} 0{selected + 1} · {section.subtitle}
               </span>
               <h1 ref={heading} tabIndex={-1}>
                 {section.name}
@@ -327,7 +335,7 @@ export default function App() {
               </p>
             </div>
             <div className="lesson-layout">
-              <aside className="part-list" aria-label="Parts in this stop">
+              <aside className="part-list" aria-label={languageCopy.parts}>
                 {section.parts.map((p, i) => (
                   <button
                     key={p.id}
@@ -360,7 +368,7 @@ export default function App() {
                   </button>
                   <span
                     role="img"
-                    aria-label={`Part ${card + 1} of ${section.parts.length}`}
+                    aria-label={phrases.lessonProgress(card, section.parts.length)}
                   >
                     {section.parts.map((p, i) => (
                       <span
@@ -431,7 +439,7 @@ export default function App() {
               <>
                 <div className="page-top">
                   <span className="eyebrow small">
-                    {section.name} · MINI QUIZ
+                    {section.name} · {ui.miniQuiz.toUpperCase()}
                   </span>
                   <h1 ref={heading} tabIndex={-1}>
                     {ui.checkTitle}
@@ -513,7 +521,7 @@ export default function App() {
                     key={s.id}
                     className={`sticker ${s.color} ${earned ? "earned-sticker" : "unearned"}`}
                     onClick={() => go("section", i)}
-                    aria-label={`${s.sticker}, ${earned ? "earned, explore again" : "not yet earned, explore " + s.name}`}
+                    aria-label={`${s.sticker}, ${earned ? languageCopy.earned : languageCopy.locked + " " + s.name}`}
                   >
                     <span className="sticker-graphic">
                       <StickerArtwork kind={s.id} />
@@ -606,7 +614,7 @@ export default function App() {
         </button>
         <a className="footer-companion-link" href="https://ksantiagobah.github.io/at-the-table/"><span>{ui.companionLink}</span> <Icon name="arrow" /></a>
       </footer>
-      <nav className="mobile-nav" aria-label="Mobile navigation">
+      <nav className="mobile-nav" aria-label={languageCopy.mobile}>
         {nav}
       </nav>
     </div>

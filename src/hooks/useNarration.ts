@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { ui } from "../data/massParts";
+import { useMassContent } from "./useMassContent";
 import recordings from "../generated/narration.json";
 const clips: Record<string, { text: string; file: string }> = recordings;
 // A lesson, response cue, or church discovery may read, but never overlap.
@@ -9,6 +9,7 @@ export function useNarration(
   voice: SpeechSynthesisVoice | null,
   recordingId?: string,
 ) {
+  const { ui, language } = useMassContent();
   const [speaking, setSpeaking] = useState(false);
   const [audioMessage, setAudioMessage] = useState("");
   const narration = useRef<SpeechSynthesisUtterance | null>(null);
@@ -46,7 +47,7 @@ export function useNarration(
     setSpeaking(false);
     setAudioMessage("");
     return cancel;
-  }, [text, recordingId ? null : voice, recordingId]);
+  }, [text, recordingId ? null : voice, recordingId, language]);
   const speak = (fallback = false) => {
     if (
       !window.speechSynthesis ||
@@ -61,8 +62,8 @@ export function useNarration(
     claimPlayback();
     try {
       const utterance = new SpeechSynthesisUtterance(text);
-      if (voice) utterance.voice = voice;
-      utterance.lang = voice?.lang || "en-US";
+      if (voice && voice.lang.toLowerCase().split(/[-_]/)[0] === language) utterance.voice = voice;
+      utterance.lang = voice?.lang.toLowerCase().split(/[-_]/)[0] === language ? voice.lang : ({en: "en-US", es: "es-MX", pl: "pl-PL"}[language]);
       utterance.rate = 0.95;
       utterance.pitch = 1;
       narration.current = utterance;
@@ -95,7 +96,7 @@ export function useNarration(
     setAudioMessage("");
     setSpeaking(false);
     if (wasActive) return;
-    const clip = recordingId ? clips[recordingId] : undefined;
+    const clip = language === "en" && recordingId ? clips[recordingId] : undefined;
     // Never read an old recording after the editable lesson text changes.
     if (!clip || clip.text !== text || typeof Audio !== "function") {
       speak();

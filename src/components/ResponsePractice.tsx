@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { activityCopy, responsePractice } from "../data/massParts";
+import { useMassContent } from "../hooks/useMassContent";
 import { useNarration } from "../hooks/useNarration";
 
 export function ResponsePractice({ partId, voice, useRecording }: {
   partId: string; voice: SpeechSynthesisVoice | null; useRecording: boolean;
 }) {
+  const { activityCopy, responsePractice } = useMassContent();
   const practice = responsePractice[partId];
   const [choice, setChoice] = useState<number | null>(null);
   const { speaking, audioMessage, read } = useNarration(

@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Illustration } from "./Illustration";
-import { parishArtwork, artDescriptions } from "../data/massParts";
+import { useMassContent } from "../hooks/useMassContent";
 
 /** Keep a lesson usable if a local artwork file fails to load. */
 export function ParishArtwork({ kind }: { kind: "church" | "altar" }) {
+  const { parishArtwork, artDescriptions } = useMassContent();
   const [failed, setFailed] = useState(false);
   const artwork = parishArtwork[kind];
   if (failed) {

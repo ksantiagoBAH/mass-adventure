@@ -1,4 +1,4 @@
-import { narratorCopy } from "../data/massParts";
+import { useMassContent } from "../hooks/useMassContent";
 import type { useNarratorVoices } from "../hooks/useNarratorVoices";
 import { useNarration } from "../hooks/useNarration";
 import { Icon } from "./Icon";
@@ -7,6 +7,7 @@ export function VoiceSettings({
 }: {
   preferences: ReturnType<typeof useNarratorVoices>;
 }) {
+  const { narratorCopy } = useMassContent();
   const { voices, selected, setSelected, voice } = preferences;
   const { speaking, audioMessage, read } = useNarration(
     narratorCopy.sample,

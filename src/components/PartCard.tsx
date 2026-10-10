@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { ui, phrases, getNarrationText, responsePractice } from "../data/massParts";
+import { useMassContent } from "../hooks/useMassContent";
 import type { Part } from "../data/massParts";
 import { Illustration } from "./Illustration";
 import { Icon } from "./Icon";
@@ -20,6 +20,7 @@ export default function PartCard({
   voice: SpeechSynthesisVoice | null;
   useRecording: boolean;
 }) {
+  const { ui, phrases, getNarrationText, responsePractice } = useMassContent();
   const touch = useRef<{ x: number; y: number } | null>(null);
   const text = getNarrationText(part);
   const { speaking, audioMessage, read } = useNarration(text, voice, useRecording ? part.id : undefined);
@@ -66,7 +67,7 @@ export default function PartCard({
           <button
             className="read"
             onClick={read}
-            aria-label={speaking ? "Stop reading" : "Read aloud"}
+            aria-label={speaking ? ui.stopReading : ui.read}
           >
             <Icon name="sound" />
             {speaking ? ui.stop : ui.read}

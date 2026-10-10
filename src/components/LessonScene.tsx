@@ -1,5 +1,5 @@
 import { useId, useState, type ReactNode } from "react";
-import { activityCopy, lessonScenes } from "../data/massParts";
+import { useMassContent } from "../hooks/useMassContent";
 import { SignOfCrossScene } from "./SignOfCrossScene";
 
 function EntranceProcession({ alt }: { alt: string }) {
@@ -44,6 +44,7 @@ function EntranceProcession({ alt }: { alt: string }) {
 
 export function LessonScene({ partId, children }: { partId: string; children: ReactNode }) {
   const [replay, setReplay] = useState(0);
+  const { activityCopy, lessonScenes } = useMassContent();
   const scene = lessonScenes[partId];
   if (partId === "sign") return <SignOfCrossScene />;
   return (

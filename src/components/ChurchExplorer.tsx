@@ -1,5 +1,5 @@
 import { useId, useState } from "react";
-import { activityCopy, churchDiscoveries, parishArtwork, explorerReward, ui } from "../data/massParts";
+import { useMassContent } from "../hooks/useMassContent";
 import { StickerArtwork } from "./StickerArtwork";
 import { useNarration } from "../hooks/useNarration";
 
@@ -7,6 +7,7 @@ export function ChurchExplorer({ voice, useRecording, explored, onExplore, onSee
   voice: SpeechSynthesisVoice | null; useRecording: boolean;
   explored: string[]; onExplore: (id: string) => void; onSeeSticker: () => void; celebrate: boolean;
 }) {
+  const { activityCopy, churchDiscoveries, parishArtwork, explorerReward, ui } = useMassContent();
   const [selected, setSelected] = useState<number | null>(null);
   const title = useId();
   const item = selected === null ? null : churchDiscoveries[selected];

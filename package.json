@@ -10,7 +10,8 @@
     "test": "node scripts/verify.mjs",
     "test:stress": "node scripts/stress.mjs",
     "test:narration": "node scripts/narration.mjs",
-    "test:activities": "node scripts/activities.mjs"
+    "test:activities": "node scripts/activities.mjs",
+    "test:translations": "node scripts/translations.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",

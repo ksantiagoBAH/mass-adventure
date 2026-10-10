@@ -1,8 +1,9 @@
 import { useId } from "react";
-import { stickerDesigns } from "../data/massParts";
+import { useMassContent } from "../hooks/useMassContent";
 
 /** Original vector collectibles, distinct from the lesson illustrations. */
 export function StickerArtwork({ kind }: { kind: string }) {
+  const { stickerDesigns } = useMassContent();
   const id = useId();
   const design = stickerDesigns[kind] || stickerDesigns.gathering;
   const gold = `${id}-gold`, paper = `${id}-paper`, title = `${id}-title`;

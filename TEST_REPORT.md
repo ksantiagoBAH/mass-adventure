@@ -143,3 +143,13 @@ Published at https://ksantiagobah.github.io/mass-adventure/ on October 9, 2026. 
 ## Companion-site footer link
 
 Added a single global footer link to the companion site. Production builds passed for both apps, and adult lint passed. Both links were checked at 375px and 1280px for the correct URL, visibility, a minimum 44px tap target, no horizontal overflow, and automated footer WCAG A/AA checks. Adult footer checks covered both light and dark themes.
+
+## Spanish and Polish translations
+
+- Added English/Español/Polski selector with document language updates and visit-only selection.
+- Checked translated text coverage; preserved part IDs, quiz answers, art references, and CCC numbers.
+- Both languages passed all 26 lesson cards, 12 quiz questions, seven discoveries, and five rewards.
+- Language changes preserve earned stickers and the current lesson; translated narration uses matching device voices without playing English MP3s.
+- Mobile and tablet overflow and WCAG AA checks passed for translated home, lessons, quizzes, stickers, and Parent Corner. English regression suite passed.
+- Screenshots: `translation-es-home.png`, `translation-pl-home.png`, and both translated consecration cards.
+- Native-speaker parish review remains recommended for doctrinal and local liturgical wording; linked Catechism pages remain English.

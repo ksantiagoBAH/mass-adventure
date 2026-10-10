@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import type { Language } from "../data/massParts";
 
 // Voice names are platform-specific. Prefer enhanced/neural English voices when
 // available, without pretending a basic system voice is a studio recording.
@@ -21,10 +22,11 @@ function score(voice: SpeechSynthesisVoice) {
     (voice.default ? 2 : 0)
   );
 }
-export function useNarratorVoices() {
+export function useNarratorVoices(language: Language = "en") {
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [selected, setSelected] = useState("");
   useEffect(() => {
+    setSelected("");
     const synthesis = window.speechSynthesis;
     if (!synthesis) return;
     const refresh = () => {
@@ -32,7 +34,7 @@ export function useNarratorVoices() {
         setVoices(
           synthesis
             .getVoices()
-            .filter((v) => /^en(?:[-_]|$)/i.test(v.lang))
+            .filter((v) => v.lang.toLowerCase().split(/[-_]/)[0] === language)
             .sort(
               (a, b) => score(b) - score(a) || a.name.localeCompare(b.name),
             ),
@@ -49,7 +51,7 @@ export function useNarratorVoices() {
       clearTimeout(timer);
       synthesis.removeEventListener("voiceschanged", refresh);
     };
-  }, []);
+  }, [language]);
   const voice =
     voices.find((v) => v.voiceURI === selected) ||
     voices.find((v) => score(v) > -1000) ||

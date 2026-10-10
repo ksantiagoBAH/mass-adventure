@@ -1,5 +1,5 @@
 import { useEffect, useId, useRef, useState } from "react";
-import { signOfCrossCopy as copy } from "../data/massParts";
+import { useMassContent } from "../hooks/useMassContent";
 
 type Point = { x: number; y: number };
 function elbow(shoulder: Point, hand: Point, direction = 1) {
@@ -12,6 +12,7 @@ function elbow(shoulder: Point, hand: Point, direction = 1) {
 }
 
 export function SignOfCrossScene() {
+  const { signOfCrossCopy: copy } = useMassContent();
   const title = useId();
   const [step, setStep] = useState(0);
   const [playing, setPlaying] = useState(false);
