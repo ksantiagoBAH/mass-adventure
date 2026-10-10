@@ -801,7 +801,7 @@ export const lessonScenes: Record<string, {
   alt?: string;
 }> = {
   entrance: { kind: "procession", caption: "The ministers walk toward the altar",
-    alt: "A cross-bearer leads an altar server and a priest toward the altar. Their feet stay on the sanctuary floor." },
+    alt: "A cross-bearer walks between two candle bearers, followed by the Book of the Gospels and the priest. The view moves closer as they approach the altar, and the priest turns to face everyone." },
   gloria: { kind: "song", caption: "We sing or say our praise to God" },
   first: { kind: "reading", caption: "We listen to God’s Word" },
   psalm: { kind: "song", caption: "We sing or say the psalm response" },

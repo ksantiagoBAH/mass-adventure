@@ -8,6 +8,7 @@ import { useNarratorVoices } from "./hooks/useNarratorVoices";
 import { VoiceSettings } from "./components/VoiceSettings";
 import { ChurchExplorer } from "./components/ChurchExplorer";
 import { StickerArtwork } from "./components/StickerArtwork";
+import { AdventureFooter } from "./components/AdventureFooter";
 import {
   writeNavigationHistory,
   cancelPendingHistory,
@@ -607,13 +608,7 @@ export default function App() {
           </section>
         )}
       </main>
-      <footer>
-        <span>{ui.footer}</span>
-        <button onClick={() => go("parents")}>
-          {ui.parentLink} <Icon name="arrow" />
-        </button>
-        <a className="footer-companion-link" href="https://ksantiagobah.github.io/at-the-table/"><span>{ui.companionLink}</span> <Icon name="arrow" /></a>
-      </footer>
+      <AdventureFooter onParents={() => go("parents")} />
       <nav className="mobile-nav" aria-label={languageCopy.mobile}>
         {nav}
       </nav>

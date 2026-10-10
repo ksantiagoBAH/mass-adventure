@@ -72,7 +72,7 @@ for (let s = 0; s < 4; s++) {
   await check(sectionNames[s] + " lesson");
   for (let c = 0; c < counts[s]; c++) {
     assert.equal(
-      await page.locator('.part-card svg[role="img"], .part-card img').count(),
+      await page.locator('.part-card [role="img"], .part-card img').count(),
       1,
     );
     assert.match(await page.locator(".part-body details").innerText(), /CCC/);

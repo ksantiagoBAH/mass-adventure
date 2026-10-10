@@ -74,8 +74,11 @@ console.log("PASS seven discoveries: keyboard, audio, cancellation, selected sta
 await nav("Start the Mass Adventure");
 await page.locator(".map-stop").first().click();
 assert.equal(await page.locator(".scene-details").count(), 0, "No unrelated illustration overlays");
-await page.locator(".entrance-procession").evaluate(svg => svg.getAnimations({ subtree: true }).forEach(a => a.finish()));
+await page.emulateMedia({ reducedMotion: "reduce" });
+await page.waitForFunction(() => document.querySelector(".entrance-procession")?.dataset.sceneTime === "34.00");
+assert.equal(await page.locator(".entrance-procession").getAttribute("data-zoom"), "1.920", "Altar framing fits the lesson card");
 await page.locator(".part-art").screenshot({ path: "screenshots/08-entrance-procession.png" });
+await page.emulateMedia({ reducedMotion: "no-preference" });
 await nav("Next part");
 await axe("Sign of the Cross person accessibility");
 assert.equal(await page.locator(".cross-right-hand").getAttribute("data-step"), "0");
