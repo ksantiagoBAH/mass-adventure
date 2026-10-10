@@ -24,7 +24,7 @@ export function EntranceProcession({ alt }: { alt: string }) {
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
     let disposed = false, frame = 0, loaded = 0, elapsed = 0, last = 0;
     const duration = 34;
-    const playbackRate = 1.15;
+    const playbackRate = duration / 25;
     function sprite(image: HTMLImageElement, box: Box, size: number, opacity = 1, scale = 1) {
       if (!ctx) return;
       const [sx, sy, sw, sh] = box, width = size * sw / sh;
