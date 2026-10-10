@@ -5,12 +5,12 @@ import {transform} from 'esbuild';
 import {readFile} from 'node:fs/promises';
 const source=(await readFile('src/data/massParts.ts','utf8')).replaceAll('import.meta.env.BASE_URL','"./"');
 const code=(await transform(source,{loader:'ts',format:'esm'})).code;
-const {getMassContent}=await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));
+const {getMassContent,matchesVoiceLanguage}=await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));
 // Every displayed text field is translated; these words are shared across languages.
-const shared = new Set(['Altar', 'Gloria', 'Psalm', 'Sanctus', 'Amen', 'Amen.']);
+const shared = new Set(['Altar', 'Gloria', 'Psalm', 'Sanctus', 'Amen', 'Amen.', 'Ambo']);
 const technical = new Set(['id','art','kind','color','src','url','ccc','paragraphs','tint','ink','brand','footer']);
 const english = getMassContent('en');
-for (const language of ['es','pl']) {
+for (const language of ['es','pl','fil']) {
  const localized = getMassContent(language);
  function compare(original, translated, path='') {
   if (typeof original === 'string') {
@@ -25,7 +25,7 @@ for (const language of ['es','pl']) {
 }
 const browser=await chromium.launch({channel:'chrome',headless:true});
 try {
-for(const lang of ['es','pl']) {
+for(const lang of ['es','pl','fil']) {
  const c=getMassContent(lang);
  const context=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});
  const page=await context.newPage();
@@ -35,7 +35,7 @@ for(const lang of ['es','pl']) {
   window.SpeechSynthesisUtterance=class {constructor(text){this.text=text}};
   window.speechSynthesis.speak=u=>window.__utterances.push({text:u.text,lang:u.lang});
   window.speechSynthesis.cancel=()=>{};
-  window.speechSynthesis.getVoices=()=>[{name:'English',voiceURI:'en',lang:'en-US'},{name:'Spanish',voiceURI:'es',lang:'es-MX'},{name:'Polish',voiceURI:'pl',lang:'pl-PL'}];
+  window.speechSynthesis.getVoices=()=>[{name:'English',voiceURI:'en',lang:'en-US'},{name:'Spanish',voiceURI:'es',lang:'es-MX'},{name:'Polish',voiceURI:'pl',lang:'pl-PL'},{name:'Filipino',voiceURI:'fil',lang:'fil-PH'},{name:'Tagalog',voiceURI:'tl',lang:'tl-PH'}];
   // This suite checks device fallback text; multilingual-narration.mjs checks MP3s.
   window.Audio=undefined;
  });
@@ -63,11 +63,11 @@ for(const lang of ['es','pl']) {
    await page.locator('.part-title .read').click();
    const spoken=await page.evaluate(()=>window.__utterances.at(-1));
    assert(spoken, `Narration missing ${lang} ${part.id}: ${await page.locator('.part-body').innerText()}`);
-   assert(spoken.text.includes(c.ui.happening));assert(spoken.lang.startsWith(lang));
+   assert(spoken.text.includes(c.ui.happening));assert(matchesVoiceLanguage(spoken.lang,lang));
    await page.locator('.part-title .read').click();
    assert.equal(await page.evaluate(()=>window.__audioRequests.length),0,'No English recordings in translated lessons');
    if(part.id==='consecration'){
-    assert.match(part.happening,lang==='es'?/Cuerpo, Sangre, alma y divinidad/:/Ciało, Krew, dusza i Bóstwo/);
+    assert.match(part.happening,lang==='es'?/Cuerpo, Sangre, alma y divinidad/:lang==='pl'?/Ciało, Krew, dusza i Bóstwo/:/Katawan, Dugo, kaluluwa, at pagka-Diyos/);
     await page.screenshot({path:`screenshots/translation-${lang}-consecration.png`,fullPage:true});
    }
    if(p<c.sections[s].parts.length-1)await page.getByRole('button',{name:c.ui.nextPart,exact:true}).click();
@@ -90,7 +90,7 @@ for(const lang of ['es','pl']) {
  await check('parents');
  await page.locator('#narrator-voice').selectOption(lang);
  await page.getByRole('button',{name:c.narratorCopy.preview,exact:true}).click();
- assert((await page.evaluate(()=>window.__utterances.at(-1).lang)).startsWith(lang));
+ assert(matchesVoiceLanguage(await page.evaluate(()=>window.__utterances.at(-1).lang),lang));
  await page.getByRole('button',{name:c.copy.labels.stickers,exact:true}).first().click();
  await check('stickers');
  await page.locator('#app-language').selectOption('en');

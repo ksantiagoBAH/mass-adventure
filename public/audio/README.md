@@ -40,3 +40,16 @@ Sources:
 - https://github.com/Blaizzy/mlx-audio
 
 The generator uses calm delivery (exaggeration 0.25), a 0.95 tempo adjustment, sentence pauses, and the same MP3 loudness/peak targets as English. It transcribes segments locally with Whisper large-v3-turbo and retries speech that does not closely match the script. A fluent speaker should still review pronunciation, phrasing, and the translated Catholic terms. Device narration remains an optional choice and a fallback; the default in all three languages is the recorded narrator.
+
+## Filipino (Tagalog)
+
+`fil/` contains 38 AI-generated recordings authored locally with OmniVoice (`mlx-community/OmniVoice-bfloat16`) through MLX Audio 0.5.8. The language code is `fil`; local Whisper transcription checks use `tl`. A native synthetic voice reference was generated with a warm, calm female voice description. No real person’s voice recording was used.
+
+The exact-text manifest is `src/generated/narration-fil.json`. `scripts/generate-filipino-narration.py` generates short passages, retries failed text checks, adds sentence pauses, slows delivery to 0.97 tempo, and exports mono 24 kHz/64 kbps MP3s normalized to -18 LUFS/-2 dB peak. Transcription is a completeness check, not a substitute for native-speaker listening review.
+
+OmniVoice source: https://github.com/k2-fsa/OmniVoice
+MLX model: https://huggingface.co/mlx-community/OmniVoice-bfloat16
+
+OmniVoice is Apache 2.0; its HiggsAudioV2 tokenizer has separate Boson/Meta community license notices included alongside the audio. See `NOTICE-OMNIVOICE.txt`. No model weights, tokenizer, reference WAV, or inference runtime are shipped in the app.
+
+Built with Higgs Materials licensed from Boson AI USA, Inc., Copyright Boson AI USA, Inc., All Rights Reserved and Meta Llama 3 licensed under the Meta Llama 3 Community License, Copyright Meta Platforms, Inc., All Right Reserved. Based on Meta Llama 3.

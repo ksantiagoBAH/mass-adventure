@@ -5,7 +5,7 @@ const source=(await readFile(new URL('../src/data/massParts.ts',import.meta.url)
 const compiled=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText;
 const {getMassContent}=await import(`data:text/javascript;base64,${Buffer.from(compiled).toString('base64')}`);
 const scripts={};
-for(const language of ['es','pl']){
+for(const language of ['es','pl','fil']){
  const c=getMassContent(language);
  scripts[language]=[
   {id:'preview',text:c.narratorCopy.sample},

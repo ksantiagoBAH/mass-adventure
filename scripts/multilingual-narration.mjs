@@ -8,7 +8,7 @@ const code=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES
 const {getMassContent}=await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));
 const browser=process.env.TEST_BROWSER==='webkit'?await webkit.launch():await chromium.launch({channel:'chrome',headless:true});
 try {
-for(const language of ['es','pl']){
+for(const language of (process.env.TEST_LANGUAGES?.split(',') || ['es','pl','fil'])){
  const content=getMassContent(language);
  const manifest=JSON.parse(await readFile(`src/generated/narration-${language}.json`,'utf8'));
  const expected=[{id:'preview',text:content.narratorCopy.sample},...content.sections.flatMap(s=>s.parts.map(p=>({id:p.id,text:content.getNarrationText(p)}))),...Object.entries(content.responsePractice).map(([id,p])=>({id:`response-${id}`,text:p.cue})),...content.churchDiscoveries.map(d=>({id:`explorer-${d.id}`,text:d.text}))];

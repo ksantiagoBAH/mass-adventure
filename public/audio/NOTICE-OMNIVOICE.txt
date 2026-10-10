@@ -1,0 +1,13 @@
+Filipino narration authoring uses OmniVoice (Apache 2.0) and its HiggsAudioV2 audio tokenizer. Only generated MP3 audio is distributed; no model weights or inference runtime are included in Mass Adventure.
+
+Built with Higgs Materials licensed from Boson AI USA, Inc., Copyright Boson AI USA, Inc., All Rights Reserved and Meta Llama 3 licensed under the Meta Llama 3 Community License, Copyright Meta Platforms, Inc., All Right Reserved. Based on Meta Llama 3.
+
+Meta Llama 3 is licensed under the Meta Llama 3 Community License, Copyright © Meta Platforms, Inc. All Rights Reserved.
+Boson Higgs Audio 2 is licensed under the Boson Community License, Copyright © Boson AI USA, Inc. All Rights Reserved.
+
+Authoring sources:
+https://github.com/k2-fsa/OmniVoice
+https://huggingface.co/mlx-community/OmniVoice-bfloat16
+https://github.com/Blaizzy/mlx-audio
+
+See the accompanying LICENSE-APACHE-OMNIVOICE.txt, LICENSE-HIGGS-AUDIO.txt, and LICENSE-META-LLAMA3.txt notices.

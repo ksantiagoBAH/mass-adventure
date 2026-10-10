@@ -161,3 +161,15 @@ Added 38 bundled MP3s per language, with exact-text manifests and AI voice discl
 Production build and English narration regression passed. Chrome and WebKit verified all 76 new files decode with audible, unclipped signals; actual playback on all 26 lessons, four response cues, seven discoveries, and each preview; stop controls and language cancellation; playback without browser speech services; lazy loading and same-origin requests. Translation coverage, quiz/reward flows, and mobile/tablet accessibility passed.
 
 Automated transcription does not establish natural delivery or flawless pronunciation. The recordings use synthetic AI voices. A fluent Spanish or Polish listener should review pronunciation and pacing; real-device and pastoral review checks above still apply.
+
+## Filipino (Tagalog)
+
+Added the fourth language across all 26 lessons, 12 quiz questions, seven church discoveries, five rewards, glossary, accessibility labels, and parent guidance. Content remains in the single editable data file; all part IDs, correct-answer indices, and CCC references are retained. The Filipino parish responses were checked against the source listed in `CONTENT_SOURCES.md`.
+
+- Translation coverage, lesson/quiz/reward flows, progress retention on language changes, and mobile/tablet WCAG A/AA checks passed for all three translated languages. English regression and recorded-narration suites passed.
+- Added 38 bundled Filipino AI narration clips, with 107 short passages checked by local transcription. Incomplete takes were retried; key Eucharistic words and passage boundaries were checked. Homophone/spelling normalization is documented in the generator.
+- Production build passed. Chrome and WebKit checked all 114 Spanish/Polish/Filipino recordings for exact current scripts, decoding, audible unclipped signals, actual lesson/cue/discovery/preview playback, stopping, language cancellation, lazy loading, and same-origin requests, including playback with no browser speech service.
+- Filipino voice tests passed for both fil-PH and tl-PH. English Philippines (en-PH) is excluded; a missing Filipino device voice produces a helpful message without English speech.
+- Review screenshots: `translation-fil-home.png`, `translation-fil-map.png`, `translation-fil-consecration.png`, and `translation-fil-narrator.png`.
+
+These are synthetic AI recordings. Transcription checks do not guarantee pleasant delivery or flawless pronunciation. A Filipino-speaking priest/catechist should review Real Presence, sacrifice, Communion preparation, local liturgical responses, and the spoken delivery. Actual device and assistive-technology checks above remain applicable.

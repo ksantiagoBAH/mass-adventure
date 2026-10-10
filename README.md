@@ -47,7 +47,7 @@ npm run preview
 - `src/components/Icon.tsx`: original inline SVG interface icons.
 - `src/style.css`: responsive layout, palette, focus states, animations, and reduced-motion support.
 - `public/fonts/`: locally hosted Nunito variable font, distributed under the included SIL Open Font License. No Google Fonts network requests.
-- `public/audio/`: 26 lesson MP3s, one preview, four response cues, and seven church discoveries per language (114 active recordings total), generated offline with a warm AI voice. Provenance and license information are included. `src/generated/narration*.json` connects clips to their exact source text.
+- `public/audio/`: 26 lesson MP3s, one preview, four response cues, and seven church discoveries per language (152 active recordings total), generated offline with a warm AI voice. Provenance and license information are included. `src/generated/narration*.json` connects clips to their exact source text.
 - `public/artwork/`: two storybook illustrations created from your parish photographs with the built-in image generation tool. The church appears on Home; the altar appears on the Presentation of the Gifts card. The full generation prompts are saved in `public/artwork/README.md`; artwork paths and alt text are editable in `src/data/massParts.ts`.
 - `screenshots/`: four captured key screens.
 - `scripts/verify.mjs`: reproducible browser checks and screenshot capture.
@@ -141,7 +141,7 @@ Check the Deploy Mass Adventure to GitHub Pages workflow in the repository’s A
 
 The browser icon and 1200 × 630 sharing preview live in `public/branding`. Open Graph and social card metadata are in `index.html`, using the public GitHub Pages URL. Regenerate the PNG assets with `node scripts/branding.mjs` (requires the installed Playwright dependency and Chrome). All artwork and fonts are local.
 
-Language options: English, Español (Spanish), and Polski (Polish). The selector is available on every screen. Changing language preserves the current activity and visit-only progress; refresh restores English and clears progress. All translated lessons, quizzes, discovery text, accessibility labels, and interface copy are editable in `src/data/massParts.ts`. Spanish uses Latin American forms such as “ustedes.”
+Language options: English, Español (Spanish), Polski (Polish), and Filipino (Tagalog). The selector is available on every screen. Changing language preserves the current activity and visit-only progress; refresh restores English and clears progress. All translated lessons, quizzes, discovery text, accessibility labels, and interface copy are editable in `src/data/massParts.ts`. Spanish uses Latin American forms such as “ustedes.”
 
 English retains the local recorded narrator. Spanish and Polish now default to bundled natural AI narration, with matching browser voices available as a fallback or optional choice. No English recordings play in those languages. Parent Catechism links still lead to the verified English Vatican pages and are labeled accordingly.
 
@@ -165,3 +165,24 @@ TEST_BROWSER=webkit npm run test:multilingual-narration
 ```
 
 Models and intermediate WAVs stay in that temporary folder. Generation is resumable and checks short passages with local Whisper large-v3-turbo transcription, retrying low-confidence passages. The recordings are slowed slightly, normalized to -18 LUFS, and encoded as mono 24 kHz MP3s. Transcription checks do not judge how pleasant a voice sounds; a fluent listener should check pronunciation and delivery. Model license attribution is included in `public/audio/LICENSE-MIT-CHATTERBOX.txt`. Keep each language’s MP3s and manifest together when editing or publishing.
+
+## Filipino (Tagalog)
+
+The fourth language translates every lesson, quiz, church discovery, glossary, interface label, and parent note. It uses Filipino parish responses, including “At sumaiyo rin” and “Salamat sa Diyos.” All content remains in `src/data/massParts.ts`; IDs, CCC numbers, artwork, and visit-only progress stay shared. Parent reference links remain English and are labeled as such.
+
+Filipino defaults to 38 bundled AI narrator recordings generated offline using OmniVoice through MLX Audio. A native Filipino voice was synthesized for the reference; no human recording was supplied. The browser loads only MP3s after a tap, with no speech API key, microphone, or model download. Optional device voices accept both `fil-PH` and `tl-PH`; an English Philippines voice (`en-PH`) is not a Filipino voice. If no matching device voice is available, the app offers a helpful message instead of reading Filipino with an English voice.
+
+Regenerate with the temporary authoring environment described above:
+
+```sh
+node scripts/export-narration.mjs /private/tmp/mass-multilingual-tts/scripts.json
+/private/tmp/mass-multilingual-tts/bin/python scripts/generate-filipino-narration.py --runtime /private/tmp/mass-multilingual-tts
+npm run build
+TEST_LANGUAGES=fil npm run test:multilingual-narration
+TEST_LANGUAGES=fil TEST_BROWSER=webkit npm run test:multilingual-narration
+npm run test:filipino-voices
+```
+
+The authoring tool checks short passages with local Tagalog transcription, retries incomplete takes, and verifies key doctrinal words. Spelling, word spacing, and spoken homophones (such as Jesus/Hesus, Biblia/Bibliya, ng/nang, and pagka-Diyos/pagkadiyos) are normalized only for comparison; the editable script remains unchanged. A fluent Filipino catechist should review wording and voice delivery, especially Real Presence, Eucharistic sacrifice, Communion preparation, and parish responses. Audio authoring attribution and dependency licenses are in `public/audio/NOTICE-OMNIVOICE.txt` and the accompanying license files.
+
+Built with Higgs Materials licensed from Boson AI USA, Inc., Copyright Boson AI USA, Inc., All Rights Reserved and Meta Llama 3 licensed under the Meta Llama 3 Community License, Copyright Meta Platforms, Inc., All Right Reserved. Based on Meta Llama 3. These models are used only for offline authoring.

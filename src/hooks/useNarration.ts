@@ -3,8 +3,10 @@ import { useMassContent } from "./useMassContent";
 import recordings from "../generated/narration.json";
 import spanishRecordings from "../generated/narration-es.json";
 import polishRecordings from "../generated/narration-pl.json";
+import filipinoRecordings from "../generated/narration-fil.json";
+import { matchesVoiceLanguage } from "../data/massParts";
 import type { Language } from "../data/massParts";
-const clips: Record<Language, Record<string, { text: string; file: string }>> = { en: recordings, es: spanishRecordings, pl: polishRecordings };
+const clips: Record<Language, Record<string, { text: string; file: string }>> = { en: recordings, es: spanishRecordings, pl: polishRecordings, fil: filipinoRecordings };
 // A lesson, response cue, or church discovery may read, but never overlap.
 let currentPlayback: { owner: symbol; stop: () => void } | null = null;
 export function useNarration(
@@ -61,12 +63,18 @@ export function useNarration(
       setSpeaking(false);
       return;
     }
+    if (language === "fil" && (!voice || !matchesVoiceLanguage(voice.lang, language))) {
+      setAudioMessage(ui.voiceUnavailable);
+      active.current = false;
+      setSpeaking(false);
+      return;
+    }
     if (fallback) setAudioMessage(ui.recordingFallback);
     claimPlayback();
     try {
       const utterance = new SpeechSynthesisUtterance(text);
-      if (voice && voice.lang.toLowerCase().split(/[-_]/)[0] === language) utterance.voice = voice;
-      utterance.lang = voice?.lang.toLowerCase().split(/[-_]/)[0] === language ? voice.lang : ({en: "en-US", es: "es-MX", pl: "pl-PL"}[language]);
+      if (voice && matchesVoiceLanguage(voice.lang, language)) utterance.voice = voice;
+      utterance.lang = voice && matchesVoiceLanguage(voice.lang, language) ? voice.lang : ({en: "en-US", es: "es-MX", pl: "pl-PL", fil: "fil-PH"}[language]);
       utterance.rate = 0.95;
       utterance.pitch = 1;
       narration.current = utterance;

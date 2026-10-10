@@ -830,13 +830,19 @@ export const signOfCrossCopy = {
 };
 
 // All translated lesson and interface content stays in this editable data file.
-export type Language = "en" | "es" | "pl";
+export type Language = "en" | "es" | "pl" | "fil";
+// Browsers use both fil-PH (Filipino) and tl-PH (Tagalog) for matching voices.
+export function matchesVoiceLanguage(locale: string, language: Language): boolean {
+  const primary = locale.toLowerCase().split(/[-_]/)[0];
+  return language === "fil" ? primary === "fil" || primary === "tl" : primary === language;
+}
 export const languageOptions = [
   { value: "en" as const, label: "English" },
   { value: "es" as const, label: "Español" },
   { value: "pl" as const, label: "Polski" },
+  { value: "fil" as const, label: "Filipino (Tagalog)" },
 ];
-const translatedLessons: Record<"es" | "pl", string> = {
+const translatedLessons: Record<"es" | "pl" | "fil", string> = {
   es: `Procesión y canto de entrada|El sacerdote y sus ayudantes caminan hacia el altar. Nos ponemos de pie y cantamos al comenzar la Misa.|Nos reunimos como familia de Dios para adorarlo.|Ponte de pie y piensa en algo por lo que dar gracias a Dios.|Altar|La mesa sagrada donde se celebra el sacrificio eucarístico.
 Señal de la Cruz|Hacemos la Señal de la Cruz. Comenzamos en el nombre del Padre, del Hijo y del Espíritu Santo.|Recordamos que pertenecemos a Dios.|Con la mano derecha, toca la frente, el pecho, el hombro izquierdo y luego el derecho.
 Saludo|El sacerdote nos saluda. Dice: «El Señor esté con ustedes». Respondemos: «Y con tu espíritu».|Estas palabras nos recuerdan que Dios está con nosotros.|Pide a un adulto que diga: «El Señor esté con ustedes». Responde: «Y con tu espíritu».
@@ -889,6 +895,32 @@ Baranku Boży|Gdy ksiądz łamie konsekrowaną Hostię, nazywamy Jezusa Barankie
 Komunia Święta|Przygotowani katolicy przyjmują Jezusa w Komunii Świętej. Jezus zbliża nas do siebie i do innych.|Jezus karmi nasze życie z Nim.|Podziękuj Jezusowi w ciszy. Jeśli jeszcze nie było Twojej Pierwszej Komunii, zostań z rodziną i módl się.|||Rodzic i ksiądz mogą wyjaśnić przygotowanie, post i godne przyjmowanie Komunii.|Obrzędy Komunii
 Błogosławieństwo końcowe|Ksiądz prosi Boga, aby nas pobłogosławił. Robimy znak krzyża.|Bóg pomaga nam żyć wiarą każdego dnia.|Zrób powoli znak krzyża i odpowiedz: „Amen”.
 Rozesłanie|Ksiądz lub diakon posyła nas słowami takimi jak: „Idźcie w pokoju Chrystusa”. Odpowiadamy: „Bogu niech będą dzięki”. Idziemy kochać Boga i służyć innym.|Msza posyła nas, aby dzielić się miłością Chrystusa.|Po słowach „Idźcie w pokoju Chrystusa” odpowiedz: „Bogu niech będą dzięki”. Wybierz dobry uczynek na dziś.`,
+  fil: `Prusisyon at Awiting Pambungad|Lumalakad ang pari at mga tagapaglingkod papunta sa altar. Tumatayo tayo at umaawit sa simula ng Misa.|Nagtitipon tayo bilang pamilya ng Diyos upang sambahin Siya.|Tumayo at isipin ang isang bagay na nais mong ipagpasalamat sa Diyos.|Altar|Ang banal na hapag kung saan ipinagdiriwang ang sakripisyo ng Eukaristiya.
+Tanda ng Krus|Ginagawa natin ang Tanda ng Krus. Nagsisimula tayo sa ngalan ng Ama, at ng Anak, at ng Espiritu Santo.|Naaalala natin na tayo ay sa Diyos.|Gamit ang kanang kamay, hawakan ang noo, dibdib, kaliwang balikat, at saka ang kanang balikat.
+Pagbati|Binabati tayo ng pari. Sinasabi niya: “Sumainyo ang Panginoon.” Sumasagot tayo: “At sumaiyo rin.”|Ipinapaalala ng mga salitang ito na kasama natin ang Diyos.|Hilingin sa isang nakatatanda na sabihin: “Sumainyo ang Panginoon.” Sumagot: “At sumaiyo rin.”
+Pagsisisi|Inaalala natin ang mga maling nagawa natin. Humihingi tayo ng awa sa Diyos at tulong upang mas magmahal.|Inaanyayahan tayo ng Diyos na bumalik sa Kanya.|Humingi ng tawad sa Diyos nang tahimik at humingi ng tulong upang maging mabait.|||Hindi nito pinapalitan ang sakramento ng Kumpisal para sa mga kasalanang mabigat.
+Papuri (Gloria)|Umaawit o nagdarasal tayo ng masayang awit ng papuri. Pinupuri natin ang Diyos dahil sa Kanyang kabutihan.|Pinupuri natin ang Diyos dahil Siya ay dakila.|Magsabi ng isang maikling papuri sa Diyos.|||Hindi binibigkas ang Gloria sa Adbiyento, Kuwaresma, at sa maraming karaniwang araw.
+Panalanging Pambungad (Kolekta)|Inaanyayahan tayo ng pari na manalangin. Pagkatapos ng sandaling katahimikan, pinagsasama niya ang ating mga panalangin sa isang panalangin sa Diyos.|Sama-sama tayong nananalangin nang may iisang puso.|Isipin ang isang taong nais mong ipagdasal. Makinig at sumagot: “Amen.”|Kolekta|Ang panalanging pambungad na pinagsasama ang ating mga panalangin.
+Unang Pagbasa|Binabasa ng tagabasa ang Bibliya, madalas mula sa Lumang Tipan. Sa dulo, sinasabi niya: “Ang Salita ng Diyos.” Sumasagot tayo: “Salamat sa Diyos.”|Tinuturuan tayo ng Diyos sa pamamagitan ng Banal na Kasulatan.|Umupo at makinig nang tahimik. Pagkatapos ng “Ang Salita ng Diyos,” sumagot: “Salamat sa Diyos.”
+Salmong Tugunan|Nakikinig tayo sa isang panalangin mula sa Aklat ng mga Salmo. Sama-sama nating inaawit o binibigkas ang tugon.|Tumutugon tayo sa Salita ng Diyos sa pamamagitan ng panalangin.|Pakinggan ang inuulit na tugon at sumabay.|Salmo|Isang panalangin o awit mula sa Bibliya.
+Ikalawang Pagbasa|Sa mga Linggo at natatanging araw, nakikinig tayo sa isa pang pagbasa, karaniwang mula sa isang sulat sa Bagong Tipan. Sa dulo, naririnig natin: “Ang Salita ng Diyos.” Sumasagot tayo: “Salamat sa Diyos.”|Tinuturuan tayo ng mga apostol na mamuhay kasama si Hesus.|Makinig kung paano mahalin ang Diyos at ang kapwa. Pagkatapos ng “Ang Salita ng Diyos,” sumagot: “Salamat sa Diyos.”
+Aleluya bago ang Ebanghelyo|Tumatayo tayo upang salubungin ang Ebanghelyo. Karaniwan nating inaawit ang Aleluya, isang salita ng papuri.|Sinasalubong natin si Hesus na nagsasalita sa atin sa Ebanghelyo.|Tumayo at ihanda ang puso upang makinig.|Aleluya|Isang salitang ang ibig sabihin ay “Purihin ang Panginoon!”|Sa Kuwaresma, ibang papuri ang ginagamit sa halip na Aleluya.
+Mabuting Balita (Ebanghelyo)|Binabasa ng pari o diyakono ang Ebanghelyo. Nakikinig tayo sa mga salita at ginawa ni Hesus.|Tinuturuan tayo ni Hesus na sumunod sa Kanya.|Gumawa ng maliit na krus sa noo, labi, at dibdib.|Ebanghelyo|Ang Mabuting Balita tungkol kay Hesus.
+Homiliya|Tinutulungan tayo ng pari o diyakono na maunawaan ang mga pagbasa. Ipinapaliwanag niya kung paano ito nauugnay sa ating buhay.|Tinutulungan tayo ng Salita ng Diyos na magmahal araw-araw.|Tandaan ang isang aral na maaari mong gawin ngayong linggo.|Homiliya|Isang paliwanag na tumutulong sa atin na maunawaan ang Salita ng Diyos.
+Pagpapahayag ng Pananampalataya (Kredo)|Sama-sama nating sinasabi ang ating pinaniniwalaan. Ipinahahayag natin ang pananampalataya sa Ama, Anak, Espiritu Santo, at Simbahan.|Ipinapahayag natin ang pananampalataya ng Simbahan.|Sabihin: “Sumasampalataya ako,” at isipin ang pag-ibig ng Diyos.|Kredo|Isang buod ng pinaniniwalaan ng Simbahan.
+Panalangin ng Bayan|Ipinagdarasal natin ang Simbahan at ang mundo. Inaalala natin ang mga taong nangangailangan ng tulong ng Diyos.|Tinatawag tayo ng Diyos na magmalasakit sa lahat.|Isipin ang isang taong nangangailangan ng tulong at ipagdasal siya.
+Paghahandog ng mga Alay|Dinadala ang tinapay at alak sa altar. Iniaalay din natin ang ating buhay sa Diyos.|Nagpapasalamat tayo sa Diyos para sa Kanyang mga kaloob.|Isipin ang isang mabuting gawa na maiaalay mo sa Diyos ngayon.|Altar|Ang banal na hapag kung saan ipinagdiriwang ang sakripisyo ng Eukaristiya.
+Panalangin sa mga Alay|Ipinagdarasal ng pari ang mga alay. Nakikiisa tayo sa kanyang panalangin at sumasagot ng Amen.|Hinihiling natin sa Diyos na tanggapin ang ating alay.|Makinig at sumagot ng “Amen” kasama ng lahat.
+Panalanging Eukaristiko|Pinangungunahan ng pari ang dakilang panalangin ng pasasalamat sa Ama. Ang nag-iisang sakripisyo ni Hesus ay nagiging kasalukuyan sa Misa.|Nakikiisa tayo kay Hesus sa Kanyang pag-aalay sa Ama.|Makinig nang may payapang puso at magpasalamat sa Diyos.|Eukaristiya|Ang sakramento ng Katawan at Dugo ni Hesus; ang salita ay nangangahulugang pasasalamat.
+Santo (Sanctus)|Kasama ng mga anghel at mga santo, pinupuri natin ang Diyos. Sama-sama nating inaawit o sinasabi na banal ang Diyos.|Sumasamba tayo kasama ng buong Simbahan sa langit at sa lupa.|Sumabay sa pagsabi ng “Santo, Santo, Santo.”|Sanctus|Isang salitang nangangahulugang banal.||Sa loob ng Panalanging Eukaristiko
+Konsekrasyon|Sa mga salita ni Hesus at kapangyarihan ng Espiritu Santo, ang tinapay at alak ay nagiging Katawan at Dugo ni Hesus. Hindi nagbabago ang kanilang hitsura at lasa. Tunay na naroroon si Hesus: ang Kanyang Katawan, Dugo, kaluluwa, at pagka-Diyos.|Ibinibigay ni Hesus ang buong sarili Niya sa atin sa Eukaristiya.|Sambahin si Hesus nang tahimik at sabihin sa iyong puso: “Hesus, mahal Kita.”|Kalis|Ang banal na kopang ginagamit sa Misa.||Sa loob ng Panalanging Eukaristiko
+Dakilang Amen|Nagtatapos ang dakilang panalangin sa pagbibigay ng papuri sa Diyos. Sumasagot tayo ng malinaw na Amen.|Ang ating Amen ay nag-uugnay sa atin sa panalanging ito.|Sabihin ang “Amen” nang malinaw at masaya.|Amen|Isang salitang nagsasabi ng oo sa Diyos: siya nawa.||Katapusan ng Panalanging Eukaristiko
+Ama Namin|Dinadasal natin ang panalanging itinuro ni Hesus. Tinatawag natin ang Diyos na ating Ama at hinihiling ang ating mga kailangan.|Tinuturuan tayo ni Hesus na magtiwala sa ating mapagmahal na Ama.|Magdasal nang dahan-dahan kasama ng pamilya. Isipin ang pagpapatawad sa iba.||||Rito ng Komunyon
+Pagbati ng Kapayapaan|Ipinagdarasal natin ang kapayapaan at pagkakaisa. Maaari tayong magbigay ng simpleng pagbati ng kapayapaan sa mga katabi natin.|Nais nating mamuhay bilang isang pamilya kay Kristo.|Magsanay na sabihin nang magiliw: “Sumaiyo ang kapayapaan.”|||Sundin ang kaugalian ng iyong parokya sa pagbati ng kapayapaan.|Rito ng Komunyon
+Kordero ng Diyos|Habang pinaghahati ng pari ang ostiyang nakonsagra, tinatawag natin si Hesus na Kordero ng Diyos. Humihingi tayo sa Kanya ng awa at kapayapaan.|Ibinigay ni Hesus ang Kanyang buhay upang iligtas tayo.|Sumabay sa panalangin nang mahinahon at may paggalang.|Kordero ng Diyos|Isang tawag kay Hesus, na nag-aalay ng sarili upang iligtas tayo.||Rito ng Komunyon
+Banal na Komunyon|Tinatanggap ng mga Katolikong handa si Hesus sa Banal na Komunyon. Inilalapit tayo ni Hesus sa Kanya at sa isa’t isa.|Pinapalago ni Hesus ang ating buhay kasama Niya.|Magpasalamat kay Hesus nang tahimik. Kung hindi ka pa nakakatanggap ng Unang Komunyon, manatili sa pamilya at magdasal.|||Maipapaliwanag ng magulang at pari ang paghahanda, pag-aayuno, at wastong pagtanggap ng Komunyon.|Rito ng Komunyon
+Pangwakas na Pagpapala|Hinihiling ng pari sa Diyos na pagpalain tayo. Ginagawa natin ang Tanda ng Krus.|Tinutulungan tayo ng Diyos na isabuhay ang pananampalataya araw-araw.|Gawin nang dahan-dahan ang Tanda ng Krus at sumagot: “Amen.”
+Paghayo|Isinusugo tayo ng pari o diyakono sa mga salitang gaya ng “Humayo kayo sa kapayapaan.” Sumasagot tayo: “Salamat sa Diyos.” Lumalabas tayo upang mahalin ang Diyos at maglingkod sa kapwa.|Isinusugo tayo ng Misa upang ibahagi ang pag-ibig ni Kristo.|Pagkatapos ng “Humayo kayo sa kapayapaan,” sumagot: “Salamat sa Diyos.” Pumili ng mabuting gawa para sa araw na ito.`,
 };
 
 // path | Spanish | Polish; paths match the English content objects above.
@@ -1062,7 +1094,7 @@ signOfCrossCopy.steps.3.label|Hombro derecho|Prawe ramię
 signOfCrossCopy.steps.3.words|Santo.|Świętego.
 signOfCrossCopy.steps.4.label|Manos juntas|Złożone dłonie
 signOfCrossCopy.steps.4.words|Amén.|Amen.`;
-const translatedQuizzes: Record<"es" | "pl", string> = {
+const translatedQuizzes: Record<"es" | "pl" | "fil", string> = {
   es: `¿Qué hacemos al comenzar la Misa?|Nos reunimos y cantamos|Nos vamos a casa|Comemos algo|Nos reunimos como familia de Dios y le cantamos.
 La Señal de la Cruz recuerda que pertenecemos a…|Un equipo deportivo|Dios|Un club|Comenzamos en el nombre del Padre, del Hijo y del Espíritu Santo.
 ¿Qué pedimos al decirle a Dios que lo sentimos?|Una pegatina|Un canto más largo|Misericordia y ayuda para amar|Dios nos ayuda a volver a él y a amar mejor.
@@ -1087,6 +1119,18 @@ Kto nauczył nas modlitwy Ojcze nasz?|Lektor|Król|Jezus|Jezus nauczył nas modl
 Co otrzymujemy przed wyjściem?|Listę zakupów|Boże błogosławieństwo|Nowe imię|Boże błogosławieństwo pomaga nam żyć wiarą.
 Do czego posyła nas Msza?|Do miłości i służby|Do zapomnienia o innych|Do zatrzymania miłości dla siebie|Niesiemy miłość Chrystusa do codziennego życia.
 Jak możesz dziś dzielić się miłością Boga?|Zignorować przyjaciela|Kłócić się ze wszystkimi|Pomóc komuś|Mały dobry uczynek może przekazać miłość Boga.`,
+  fil: `Ano ang ginagawa natin sa simula ng Misa?|Nagtitipon at umaawit|Umuwi na|Kumain ng meryenda|Nagtitipon tayo bilang pamilya ng Diyos at umaawit sa Kanya.
+Ipinapaalala ng Tanda ng Krus na tayo ay sa…|Isang koponan|Diyos|Isang samahan|Nagsisimula tayo sa ngalan ng Ama, at ng Anak, at ng Espiritu Santo.
+Ano ang hinihiling natin kapag humihingi ng tawad sa Diyos?|Isang sticker|Mas mahabang awit|Awa at tulong upang magmahal|Tinutulungan tayo ng Diyos na bumalik sa Kanya at mas magmahal.
+Tungkol saan ang Ebanghelyo?|Mga salita at ginawa ni Hesus|Panahon|Listahan ng bibilhin|Ang Ebanghelyo ay ang Mabuting Balita tungkol kay Hesus.
+Ano ang tumutulong sa atin na maunawaan ang mga pagbasa?|Paghayo|Homiliya|Prusisyon sa simula|Tinutulungan tayo ng Homiliya na isabuhay ang Salita ng Diyos.
+Sino ang maaari nating ipagdasal?|Sarili lamang|Mga kaibigan lamang|Lahat ng nangangailangan|Ipinagdarasal natin ang Simbahan at ang buong mundo.
+Anong mga alay ang dinadala sa altar?|Tinapay at alak|Mga laruan|Mga bulaklak lamang|Dinadala ang tinapay at alak para sa Eukaristiya.
+Pagkatapos ng konsekrasyon, sino ang tunay na naroroon?|Isang alaala lamang|Si Hesus, buo at ganap|Isang anghel|Tunay na naroroon si Hesus: ang Kanyang Katawan, Dugo, kaluluwa, at pagka-Diyos.
+Sino ang nagturo sa atin ng Ama Namin?|Isang tagabasa|Isang hari|Si Hesus|Itinuro ni Hesus na manalangin tayo sa ating mapagmahal na Ama.
+Ano ang tinatanggap natin bago umalis?|Listahan ng bibilhin|Pagpapala ng Diyos|Bagong pangalan|Tinutulungan tayo ng pagpapala ng Diyos na isabuhay ang pananampalataya.
+Para saan tayo isinusugo ng Misa?|Magmahal at maglingkod|Kalimutan ang lahat|Sarilinin ang pag-ibig|Dinadala natin ang pag-ibig ni Kristo sa araw-araw na buhay.
+Paano mo maibabahagi ang pag-ibig ng Diyos ngayon?|Balewalain ang kaibigan|Makipagtalo sa lahat|Tulungan ang isang tao|Ang maliit na mabuting gawa ay maaaring magbahagi ng pag-ibig ng Diyos.`,
 };
 const moreTranslationRows = `churchDiscoveries.0.name|Altar|Ołtarz
 churchDiscoveries.0.text|El altar es la mesa sagrada donde se celebra el sacrificio eucarístico. En la Misa nos reunimos a su alrededor para adorar a Dios.|Ołtarz jest świętym stołem, przy którym sprawowana jest Ofiara Eucharystyczna. Podczas Mszy gromadzimy się wokół niego, aby oddawać cześć Bogu.
@@ -1116,7 +1160,207 @@ referenceSources.10.name|La oración del Señor|Modlitwa Pańska
 referenceSources.11.name|La Misa y la misión|Msza i misja
 referenceSources.12.name|Signos litúrgicos, incluida la luz|Znaki liturgiczne, w tym światło`;
 
+// Filipino (Tagalog): path | translation, using parish liturgical responses.
+const filipinoTranslationRows = `copy.tagline|Munting puso. Malaking pananampalataya.
+copy.badge|Munting paglalakbay. Malaking pagmamahal.
+copy.title|Tuklasin ang
+copy.titleAccent|ganda ng Misa.
+copy.intro|Masayang paglalakbay upang matuto, magdasal, at lumago kasama si Hesus. Isang maliit na hakbang sa bawat pagkakataon.
+copy.start|Simulan ang paglalakbay sa Misa
+copy.homeNote|Para sa mga batang mausisa, edad 5–10
+copy.mapTitle|Ang iyong paglalakbay sa Misa
+copy.mapIntro|Apat na hintuan. Isang magandang pagdiriwang. Saan tayo pupunta?
+copy.stickerTitle|Ang iyong munting kayamanan
+copy.stickerIntro|Tapusin ang isang hintuan o tuklasin ang lahat ng bagay sa ating simbahan upang makakuha ng sticker. Bawat isa ay paalala ng iyong natutuhan!
+copy.parentTitle|Para sa mga nakatatanda
+copy.parentIntro|Sama-samang tumuklas at kilalanin ang mga bahaging ito sa inyong parokya. Gamitin ang gabay bago o pagkatapos ng Misa. Tulungan ang bata na sundin ang mga kilos at tagubilin sa inyong parokya.
+copy.parentNote|Sinusuportahan ng mga sanggunian sa Katekismo ang aral sa bawat bahagi; hindi nito inilalarawan ang lahat ng tuntunin ng Misal Romano. Kasama sa gabay sa Misang panlinggo ang mga panalanging hindi ginagamit sa ilang araw. Ang Santo at Konsekrasyon ay bahagi ng Panalanging Eukaristiko, na sinusundan ng Rito ng Komunyon. Kailangan ang wastong paghahanda at disposisyon upang tumanggap ng Komunyon. Ang mga batang hindi pa nakakatanggap ng Unang Komunyon ay maaaring manatili sa pamilya at magdasal. Magtanong sa pari tungkol sa mga kaugalian ng parokya.
+copy.privacy|Walang account, patalastas, o pagsubaybay. Ang progreso ay para lamang sa pagbisitang ito at magsisimulang muli kapag ni-refresh ang pahina.
+copy.review|Para sa pagsusuri ng parokya: mga paliwanag sa bata tungkol sa Tunay na Presensya, sakripisyo ng Eukaristiya, pagsisisi, paghahanda sa Komunyon, mga panalanging hindi ginagamit sa ilang panahon, at mga kilos o kaugalian sa pagbati ng kapayapaan.
+copy.quizIntro|Tingnan natin ang iyong natutuhan. Huwag magmadali. Maaari kang sumubok muli!
+copy.retry|Salamat sa pagsubok! Narito ang isang pahiwatig. Pumili ng ibang sagot.
+copy.complete|Nagawa mo!
+copy.completeNote|Tumuklas ka, nakinig, at natuto. May bagong sticker na naghihintay sa iyong album.
+copy.glossaryLabel|Bagong Salita
+copy.labels.home|Simula
+copy.labels.map|Mapa ng paglalakbay
+copy.labels.stickers|Album ng mga sticker
+copy.labels.parents|Sulok ng mga Magulang
+sections.0.name|Pagtitipon
+sections.0.subtitle|Mga Rito sa Pagsisimula
+sections.0.description|Nagtitipon tayo bilang pamilya ng Diyos.
+sections.0.sticker|Pamilya ng Diyos
+sections.1.name|Pakikinig
+sections.1.subtitle|Liturhiya ng Salita
+sections.1.description|Nangungusap ang Salita ng Diyos sa ating puso.
+sections.1.sticker|Pusong nakikinig
+sections.2.name|Pagbabahagi ng Kaloob
+sections.2.subtitle|Liturhiya ng Eukaristiya
+sections.2.description|Ibinibigay ni Hesus ang sarili Niya sa atin.
+sections.2.sticker|Pusong nagpapasalamat
+sections.3.name|Paghayo
+sections.3.subtitle|Mga Rito sa Pagtatapos
+sections.3.description|Dinadala natin ang pag-ibig ng Diyos sa mundo.
+sections.3.sticker|Munting tagapaghatid ng kapayapaan
+ui.headerNote|Paglalakbay kasama si Hesus
+ui.journeyEyebrow|ANG IYONG PAGLALAKBAY
+ui.journeyTitle|Isang Misa. Apat na magandang hintuan.
+ui.discover|Maraming matutuklasan!
+ui.explore|Tuklasin ang hintuang ito
+ui.homeFooter|Munting aral ngayon. Mas malalim na pagmamahal sa Misa bukas.
+ui.welcomeTag|May lugar ka rito ♡
+ui.walkTag|Maglakbay kasama si Hesus
+ui.mapEyebrow|SAMA-SAMANG TUMUKLAS
+ui.stepHint|Hakbang-hakbang
+ui.mapHint|Bukas ang lahat ng hintuan. Sundan ang landas o piliin ang sarili mong daan!
+ui.again|Tuklasin muli
+ui.discoverStop|Tuklasin natin
+ui.mapBack|Mapa ng paglalakbay
+ui.swipeHint|Mag-swipe o gamitin ang mga arrow upang tumuklas
+ui.back|Bumalik
+ui.nextPart|Susunod na bahagi
+ui.miniQuiz|Munting pagsusulit
+ui.stopComplete|NATAPOS ANG HINTUAN
+ui.seeSticker|Tingnan ang aking sticker
+ui.backAdventure|Bumalik sa paglalakbay
+ui.checkTitle|Tingnan natin ang iyong natutuhan
+ui.quizLovely|Magaling! Naunawaan mo.
+ui.quizHint|Sama-sama nating tuklasin.
+ui.collect|Kunin ang aking sticker
+ui.nextQuestion|Susunod na tanong
+ui.stickerEyebrow|MANGOLEKTA NG MUNTING SAYA
+ui.stickerEarned|★ Nakuha mo ito!
+ui.keepExploring|Magpatuloy sa pagtuklas
+ui.parentEyebrow|SAMA-SAMANG LUMAGO SA PANANAMPALATAYA
+ui.companion|Gabay para sa inyong pamilya
+ui.referenceTitle|Mga Sanggunian sa Katekismo
+ui.referenceNote|CCC = Katekismo ng Simbahang Katolika. Sinuri ang mga numero gamit ang Katekismo sa Ingles ng Santa Sede.
+ui.referenceLinkNote|Para sa mga nakatatanda: pindutin ang sangguniang CCC upang buksan ang kaugnay na bahagi sa website ng Vatican. Magbubukas ang bagong tab; hanapin doon ang numero ng talata. Nasa Ingles ang mga pahinang ito.
+ui.reviewTitle|Pagsusuri ng parokya
+ui.companionLink|Para sa mga magulang at nakatatanda: Tuklasin ang At the Table (sa Ingles)
+ui.parentLink|Paalala para sa mga magulang
+ui.happening|Ano ang nangyayari?
+ui.why|Bakit natin ito ginagawa?
+ui.try|Subukan mo!
+ui.glossary|Bagong Salita
+ui.read|Basahin nang malakas
+ui.stop|Itigil
+ui.stopReading|Itigil ang pagbasa
+ui.audioUnavailable|Hindi makabasa nang malakas ang browser na ito. Hilingin sa isang nakatatanda na magbasa kasama mo.
+ui.voiceUnavailable|Hindi magamit ang boses. Subukang muli o magbasa kasama ng nakatatanda.
+ui.recordingFallback|Hindi nag-play ang recording. Subukan natin ang boses ng iyong device.
+ui.referenceDefault|Sinusuportahan ng sangguniang ito ang aral sa kard. Sama-samang tumuklas kasama ng bata.
+activityCopy.responseTitle|Ano ang isasagot natin?
+activityCopy.responseHint|Makinig at piliin ang ating sagot. Maaari kang sumubok muli!
+activityCopy.listen|Pakinggan ang mga salita
+activityCopy.stop|Itigil ang pakikinig
+activityCopy.correct|Tama! Sabihin natin nang sabay:
+activityCopy.retry|Sama-sama nating tuklasin. Makinig muli at pumili ng ibang sagot.
+activityCopy.again|Magsanay muli
+activityCopy.replay|Ulitin ang eksena
+activityCopy.explorerTitle|Tumingin sa paligid
+activityCopy.explorerHint|Tuklasin ang ating simbahan! Pindutin ang numero o pangalan upang makilala ang mga natatanging bagay na ginagamit sa Misa.
+activityCopy.explorerAlt|Isang iginuhit na santuwaryo na may altar, ambo, Bibliya, mga kandila, at kalis.
+activityCopy.explorerChoose|Ano ang nais mong tuklasin?
+activityCopy.explorerRead|Pakinggan ang natuklasan
+activityCopy.explorerStop|Itigil ang pagbasa
+narratorCopy.title|Boses para sa iyong paglalakbay
+narratorCopy.description|Makinig sa ating mahinahon at magiliw na tagapagsalaysay sa Filipino, o pumili ng boses ng iyong device. Boses na ginawa ng AI ang ginagamit sa mga recording.
+narratorCopy.label|Boses ng tagapagsalaysay
+narratorCopy.automatic|Magiliw na boses (Filipino)
+narratorCopy.device|Boses ng device (awtomatiko)
+narratorCopy.noVoices|Wala pang ipinapakitang boses sa Filipino ang iyong device. Maaari mo pa ring gamitin ang ating recorded na tagapagsalaysay.
+narratorCopy.preview|Pakinggan ang halimbawa
+narratorCopy.stop|Itigil ang halimbawa
+narratorCopy.sample|Maligayang pagdating sa Mass Adventure! Sama-sama tayong maglakbay. Sa Misa, nagtitipon tayo bilang pamilya ng Diyos, nakikinig sa Kanyang Salita, at lumalapit kay Hesus. Marami tayong matutuklasan.
+narratorCopy.note|Kasama sa app ang mga recording at tumutugtog lamang kapag pinindot. Hindi tayo gumagamit ng mikropono o voice account. Maaari ring pumili ng boses ng device; iba-iba ang kalidad nito. Ang iyong pagpili ay para sa pagbisitang ito lamang.
+explorerReward.note|Natuklasan mo ang lahat ng natatanging bagay sa ating simbahan. Magaling!
+explorerReward.name|Tagatuklas ng simbahan
+explorerReward.alt|Sticker ng simbahan para sa pagtuklas sa lahat ng bagay.
+explorerReward.hint|Tuklasin ang lahat ng bagay at kunin ang iyong sticker na Tagatuklas ng simbahan!
+explorerReward.earned|Nakuha mo ang iyong sticker na Tagatuklas ng simbahan!
+explorerReward.locked|Tuklasin ang lahat ng bagay sa ating simbahan
+explorerReward.visited|Natuklasan na
+explorerReward.openEarned|Tagatuklas ng simbahan, nakuha na, tuklasin muli
+explorerReward.openLocked|Tagatuklas ng simbahan, hindi pa nakuha, tuklasin ang simbahan
+artDescriptions.church|Maaliwalas na simbahan na may krus at mga bintanang arko
+artDescriptions.cross|Isang gintong krus
+artDescriptions.hands|Mga kamay na magkadikit sa panalangin
+artDescriptions.music|Mga nota ng musika at gintong bituin
+artDescriptions.bible|Isang bukas na Bibliya
+artDescriptions.scroll|Isang balumbon
+artDescriptions.dove|Puting kalapati na may sanga ng olibo
+artDescriptions.altar|Altar na may puting mantel at dalawang kandila
+artDescriptions.chalice|Tinapay at gintong kalis
+artDescriptions.host|Puting ostiya na may krus sa tabi ng gintong kalis
+artDescriptions.heart|Isang pusong kulay koral
+artDescriptions.lamb|Payapang puting kordero
+artDescriptions.sun|Isang gintong araw
+parishArtwork.church.alt|Larawan ng simbahan na yari sa pulang ladrilyo, may malalapad na bubong, krus, bilog na stained glass, mga puno, at maaliwalas na daan.
+parishArtwork.altar.alt|Iginuhit na santuwaryo na may altar na nakatakip ng puting mantel, bulaklak, kandila, berdeng bandila, at krusipiho. Hugis gintong puso ang tabernakulo, may pula at gintong apoy, pilak na sinag, at itim na patungan.
+parishArtwork.sanctuary.alt|Malawak na santuwaryo: nasa kaliwa ang ambo na may Bibliya. Nasa altar ang patena na may puting ostiya. Nasa ilalim ng krusipiho ang tabernakulong gintong puso na may apoy at pilak na sinag. May bulaklak, berdeng bandila, kalis, at kandila.
+stickerDesigns.gathering.alt|Pamilya ng Diyos: nakangiting lalaki, babae, at bata sa tabi ng pusong may krus, sa gintong medalyon.
+stickerDesigns.listening.alt|Pusong nakikinig: bukas na Bibliya, laso, at pusong koral sa gintong medalyon.
+stickerDesigns.sharing.alt|Pusong nagpapasalamat: gintong kalis, ostiyang may krus, trigo, at ubas sa gintong medalyon.
+stickerDesigns.going.alt|Munting tagapaghatid ng kapayapaan: puting kalapati na may sanga ng olibo sa sikat ng araw, sa gintong medalyon.
+stickerDesigns.explorer.alt|Tagatuklas ng simbahan: simbahan, kompas, daan, at magnifying glass na may krus sa gintong medalyon.
+lessonScenes.entrance.caption|Lumalakad ang mga tagapaglingkod papunta sa altar
+lessonScenes.entrance.alt|Nangunguna ang tagapaglingkod na may krus, kasunod ang isa pang tagapaglingkod at pari papunta sa altar. Nananatili sa sahig ang kanilang mga paa.
+lessonScenes.gloria.caption|Umaawit o nagdarasal tayo ng papuri sa Diyos
+lessonScenes.first.caption|Nakikinig tayo sa Salita ng Diyos
+lessonScenes.psalm.caption|Inaawit o binibigkas natin ang tugon sa salmo
+lessonScenes.second.caption|Nakikinig tayo sa pagbasa ng Bibliya
+lessonScenes.alleluia.caption|Sinasalubong natin ang Ebanghelyo
+lessonScenes.gospel.caption|Nakikinig tayo sa Ebanghelyo
+lessonScenes.offerings.caption|Nakikiisa tayo sa panalangin ng pari
+lessonScenes.sanctus.caption|Pinupuri natin ang Diyos kasama ng mga anghel
+lessonScenes.dismissal.caption|Humahayo tayo upang mahalin ang Diyos at maglingkod sa kapwa
+signOfCrossCopy.alt|Batang nakaharap sa atin na gumagawa ng Tanda ng Krus gamit ang kanang kamay. Ang kaliwang balikat niya ay nasa kanan ng larawan.
+signOfCrossCopy.instruction|Gamitin ang kanang kamay. Sundan ang bawat kilos.
+signOfCrossCopy.play|Ipakita ang mga kilos
+signOfCrossCopy.pause|I-pause ang mga kilos
+signOfCrossCopy.next|Susunod na kilos
+signOfCrossCopy.reset|Magsimula muli
+signOfCrossCopy.steps.0.label|Noo
+signOfCrossCopy.steps.0.words|Sa ngalan ng Ama
+signOfCrossCopy.steps.1.label|Dibdib
+signOfCrossCopy.steps.1.words|at ng Anak
+signOfCrossCopy.steps.2.label|Kaliwang balikat
+signOfCrossCopy.steps.2.words|at ng Espiritu
+signOfCrossCopy.steps.3.label|Kanang balikat
+signOfCrossCopy.steps.3.words|Santo.
+signOfCrossCopy.steps.4.label|Magkadikit na kamay
+signOfCrossCopy.steps.4.words|Amen.
+churchDiscoveries.0.name|Altar
+churchDiscoveries.0.text|Ang altar ang banal na hapag kung saan ipinagdiriwang ang sakripisyo ng Eukaristiya. Sa Misa, nagtitipon tayo sa paligid nito upang sambahin ang Diyos.
+churchDiscoveries.1.name|Ambo
+churchDiscoveries.1.text|Ang ambo ay ang natatanging lugar kung saan binabasa ang Bibliya. Nakikinig tayong mabuti sa Salita ng Diyos.
+churchDiscoveries.2.name|Mga kandila
+churchDiscoveries.2.text|Nagbibigay ng liwanag sa simbahan ang mga kandila. Ipinapaalala ng liwanag nito si Hesus, ang Ilaw ng mundo.
+churchDiscoveries.3.name|Kalis
+churchDiscoveries.3.text|Ang kalis ay ang kopang ginagamit sa Misa. Pagkatapos ng konsekrasyon, taglay nito ang Mahal na Dugo ni Hesus.
+churchDiscoveries.4.name|Tabernakulo
+churchDiscoveries.4.text|Sa tabernakulo iniingatan ang mga ostiyang nakonsagra. Tunay na naroon si Hesus sa Eukaristiya. Maaari tayong manalangin sa Kanya nang tahimik dito.
+churchDiscoveries.5.name|Krusipiho
+churchDiscoveries.5.text|Ang krusipiho ay krus na may larawan ni Hesus. Ipinapaalala nito na ibinigay ni Hesus ang Kanyang buhay upang iligtas tayo dahil mahal Niya tayo.
+churchDiscoveries.6.name|Patena
+churchDiscoveries.6.text|Ang patena ay maliit na platito para sa ostiya. Pagkatapos ng konsekrasyon, ang ostiya ay tunay na Katawan ni Hesus. Iginagalang at minamahal natin ang Eukaristiya.
+referenceSources.0.name|Pagdiriwang at balangkas ng Eukaristiya
+referenceSources.1.name|Sakripisyo ng Eukaristiya at Tunay na Presensya
+referenceSources.2.name|Banal na Komunyon at mga bunga nito
+referenceSources.3.name|Mga tanda sa liturhiya, tugon, at musika
+referenceSources.4.name|Tanda ng Krus
+referenceSources.5.name|Pagsisisi sa puso
+referenceSources.6.name|Panalangin ng papuri
+referenceSources.7.name|Pagpapala at pagsamba
+referenceSources.8.name|Mga pagpapahayag ng pananampalataya
+referenceSources.9.name|Si Hesus, ang Kordero ng Diyos
+referenceSources.10.name|Panalangin ng Panginoon
+referenceSources.11.name|Ang Misa at misyon
+referenceSources.12.name|Mga tanda sa liturhiya, kabilang ang liwanag`;
+
 export const languageCopy = {
+  fil: { pageTitle: "Mass Adventure · Munting puso, malaking pananampalataya", stopLabel: "HINTUAN", label: "Wika", skip: "Lumaktaw sa nilalaman", home: "Simula ng Mass Adventure", navigation: "Pangunahing nabigasyon", mobile: "Nabigasyon sa mobile", progress: "Progreso ng paglalakbay", parts: "Mga bahagi sa hintuang ito", earned: "nakuha na, tuklasin muli", locked: "hindi pa nakuha, tuklasin", illustration: "larawan" },
   en: { pageTitle: "Mass Adventure · Little hearts, big faith", stopLabel: "STOP", label: "Language", skip: "Skip to content", home: "Mass Adventure home", navigation: "Main navigation", mobile: "Mobile navigation", progress: "Adventure progress", parts: "Parts in this stop", earned: "earned, explore again", locked: "not yet earned, explore", illustration: "illustration" },
   es: { pageTitle: "Mass Adventure · Corazones pequeños, gran fe", stopLabel: "PARADA", label: "Idioma", skip: "Saltar al contenido", home: "Inicio de Mass Adventure", navigation: "Navegación principal", mobile: "Navegación móvil", progress: "Progreso de la aventura", parts: "Partes de esta parada", earned: "ganada, explorar de nuevo", locked: "aún no ganada, explorar", illustration: "ilustración" },
   pl: { pageTitle: "Mass Adventure · Małe serca, wielka wiara", stopLabel: "PRZYSTANEK", label: "Język", skip: "Przejdź do treści", home: "Strona główna Mass Adventure", navigation: "Nawigacja główna", mobile: "Nawigacja mobilna", progress: "Postęp przygody", parts: "Części tego przystanku", earned: "zdobyta, odkryj ponownie", locked: "jeszcze niezdobyta, poznaj", illustration: "ilustracja" },
@@ -1138,13 +1382,15 @@ export function getMassContent(language: Language): MassContent {
   if (cached) return cached;
   const content = cloneContent(englishContent);
   if (language !== "en") {
-    for (const row of `${translationRows}\n${moreTranslationRows}`.split("\n")) {
+    const localizedRows = language === "fil" ? filipinoTranslationRows : `${translationRows}\n${moreTranslationRows}`;
+    for (const row of localizedRows.split("\n")) {
       const [path, es, pl] = row.split("|");
       const keys = path.split(".");
       let target: Record<string, unknown> = content as unknown as Record<string, unknown>;
       for (const key of keys.slice(0, -1)) target = target[key] as Record<string, unknown>;
-      if (!(keys.at(-1)! in target) || !es || !pl) throw new Error(`Invalid translation: ${path}`);
-      target[keys.at(-1)!] = language === "es" ? es : pl;
+      const translated = language === "fil" || language === "es" ? es : pl;
+      if (!(keys.at(-1)! in target) || !translated) throw new Error(`Invalid translation: ${path}`);
+      target[keys.at(-1)!] = translated;
     }
     const parts = content.sections.flatMap(section => section.parts);
     const rows = translatedLessons[language].split("\n");
@@ -1165,29 +1411,30 @@ export function getMassContent(language: Language): MassContent {
       Object.assign(quizzes[index], {question, options: [a, b, c], feedback});
     });
     const es = language === "es";
-    const thanks = es ? "Te alabamos, Señor." : "Bogu niech będą dzięki.";
-    const spirit = es ? "Y con tu espíritu." : "I z duchem twoim.";
+    const fil = language === "fil";
+    const thanks = fil ? "Salamat sa Diyos." : es ? "Te alabamos, Señor." : "Bogu niech będą dzięki.";
+    const spirit = fil ? "At sumaiyo rin." : es ? "Y con tu espíritu." : "I z duchem twoim.";
     const amen = es ? "Amén." : "Amen.";
-    content.responsePractice.greeting.cue = es ? "El sacerdote dice: El Señor esté con ustedes." : "Ksiądz mówi: Pan z wami.";
-    content.responsePractice.first.cue = content.responsePractice.second.cue = es ? "Al terminar la lectura, el lector dice: Palabra de Dios." : "Na końcu czytania lektor mówi: Oto słowo Boże.";
-    content.responsePractice.dismissal.cue = es ? "El sacerdote o el diácono nos envía con palabras como: Pueden ir en paz." : "Ksiądz lub diakon posyła nas słowami takimi jak: Idźcie w pokoju Chrystusa.";
+    content.responsePractice.greeting.cue = fil ? "Pakinggan ang pagbati: Sumainyo ang Panginoon." : es ? "El sacerdote dice: El Señor esté con ustedes." : "Ksiądz mówi: Pan z wami.";
+    content.responsePractice.first.cue = content.responsePractice.second.cue = fil ? "Sa dulo ng pagbasa, sinasabi ng tagabasa: Ang Salita ng Diyos." : es ? "Al terminar la lectura, el lector dice: Palabra de Dios." : "Na końcu czytania lektor mówi: Oto słowo Boże.";
+    content.responsePractice.dismissal.cue = fil ? "Isinusugo tayo ng pari o diyakono sa mga salitang gaya ng: Humayo kayo sa kapayapaan." : es ? "El sacerdote o el diácono nos envía con palabras como: Pueden ir en paz." : "Ksiądz lub diakon posyła nas słowami takimi jak: Idźcie w pokoju Chrystusa.";
     content.responsePractice.greeting.options = [es ? "Demos gracias a Dios." : thanks, spirit, amen];
     content.responsePractice.first.options = [thanks, spirit, amen];
     content.responsePractice.second.options = [amen, spirit, thanks];
     content.responsePractice.dismissal.options = [spirit, es ? "Demos gracias a Dios." : thanks, amen];
     content.phrases = {
-      progress: count => es ? `${count} de 4 paradas completadas` : `${count} z 4 przystanków ukończonych`,
-      mapStop: (index, count) => es ? `PARADA 0${index + 1} · ${count} PARTES` : `PRZYSTANEK 0${index + 1} · CZĘŚCI: ${count}`,
-      lessonProgress: (index, total) => es ? `Parte ${index + 1} de ${total}` : `Część ${index + 1} z ${total}`,
-      questionCount: index => es ? `PREGUNTA ${index + 1} DE 3` : `PYTANIE ${index + 1} Z 3`,
-      stickerCount: count => es ? `${count} / 5 tesoros recogidos` : `Zebrane skarby: ${count} / 5`,
-      explore: name => es ? `Explorar: ${name}` : `Poznaj: ${name}`,
-      backTo: name => es ? `Volver a: ${name}` : `Wróć: ${name}`,
-      parentReference: ccc => es ? `Para adultos · CCC ${ccc}` : `Dla dorosłych · CCC ${ccc}`,
-      catechismLink: (ccc, part) => es ? `CCC ${ccc}: ${part}, en el sitio del Vaticano (abre una pestaña nueva, en inglés)` : `CCC ${ccc}: ${part}, na stronie Watykanu (nowa karta, po angielsku)`,
+      progress: count => fil ? `${count} sa 4 na hintuan ang natapos` : es ? `${count} de 4 paradas completadas` : `${count} z 4 przystanków ukończonych`,
+      mapStop: (index, count) => fil ? `HINTUAN 0${index + 1} · ${count} BAHAGI` : es ? `PARADA 0${index + 1} · ${count} PARTES` : `PRZYSTANEK 0${index + 1} · CZĘŚCI: ${count}`,
+      lessonProgress: (index, total) => fil ? `Bahagi ${index + 1} sa ${total}` : es ? `Parte ${index + 1} de ${total}` : `Część ${index + 1} z ${total}`,
+      questionCount: index => fil ? `TANONG ${index + 1} SA 3` : es ? `PREGUNTA ${index + 1} DE 3` : `PYTANIE ${index + 1} Z 3`,
+      stickerCount: count => fil ? `${count} / 5 kayamanang nakolekta` : es ? `${count} / 5 tesoros recogidos` : `Zebrane skarby: ${count} / 5`,
+      explore: name => fil ? `Tuklasin: ${name}` : es ? `Explorar: ${name}` : `Poznaj: ${name}`,
+      backTo: name => fil ? `Bumalik sa: ${name}` : es ? `Volver a: ${name}` : `Wróć: ${name}`,
+      parentReference: ccc => fil ? `Para sa mga nakatatanda · CCC ${ccc}` : es ? `Para adultos · CCC ${ccc}` : `Dla dorosłych · CCC ${ccc}`,
+      catechismLink: (ccc, part) => fil ? `CCC ${ccc}: ${part}, sa website ng Vatican (bagong tab, sa Ingles)` : es ? `CCC ${ccc}: ${part}, en el sitio del Vaticano (abre una pestaña nueva, en inglés)` : `CCC ${ccc}: ${part}, na stronie Watykanu (nowa karta, po angielsku)`,
     };
     // Avoid Polish plural-case ambiguity by placing the count after the noun.
-    (content.explorerReward as {progress: (count: number, total: number) => string}).progress = (count, total) => es ? `${count} de ${total} objetos explorados` : `Poznane przedmioty: ${count} z ${total}`;
+    (content.explorerReward as {progress: (count: number, total: number) => string}).progress = (count, total) => fil ? `${count} sa ${total} bagay ang natuklasan` : es ? `${count} de ${total} objetos explorados` : `Poznane przedmioty: ${count} z ${total}`;
   }
   const result: MassContent = {
     ...content,

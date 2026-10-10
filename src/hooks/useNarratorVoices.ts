@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import type { Language } from "../data/massParts";
+import { matchesVoiceLanguage, type Language } from "../data/massParts";
 
-// Voice names are platform-specific. Prefer enhanced/neural English voices when
+// Voice names are platform-specific. Prefer enhanced/neural voices when
 // available, without pretending a basic system voice is a studio recording.
 function score(voice: SpeechSynthesisVoice) {
   const name = voice.name;
@@ -34,7 +34,7 @@ export function useNarratorVoices(language: Language = "en") {
         setVoices(
           synthesis
             .getVoices()
-            .filter((v) => v.lang.toLowerCase().split(/[-_]/)[0] === language)
+            .filter((v) => matchesVoiceLanguage(v.lang, language))
             .sort(
               (a, b) => score(b) - score(a) || a.name.localeCompare(b.name),
             ),
