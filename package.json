@@ -13,7 +13,8 @@
     "test:activities": "node scripts/activities.mjs",
     "test:translations": "node scripts/translations.mjs",
     "test:multilingual-narration": "node scripts/multilingual-narration.mjs",
-    "test:filipino-voices": "node scripts/filipino-voices.mjs"
+    "test:filipino-voices": "node scripts/filipino-voices.mjs",
+    "test:lesson-animations": "node scripts/lesson-animations.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",

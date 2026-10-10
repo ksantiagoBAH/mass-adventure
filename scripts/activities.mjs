@@ -82,7 +82,7 @@ await page.emulateMedia({ reducedMotion: "no-preference" });
 await nav("Next part");
 await axe("Sign of the Cross person accessibility");
 assert.equal(await page.locator(".cross-right-hand").getAttribute("data-step"), "0");
-for (const [step, point] of [[1, { x: 130, y: 140 }], [2, { x: 160, y: 115 }], [3, { x: 100, y: 115 }], [4, { x: 130, y: 153 }]]) {
+for (const [step, point] of [[1, { x: 130, y: 140 }], [2, { x: 160, y: 115 }], [3, { x: 100, y: 115 }], [4, { x: 130, y: 136 }]]) {
   await nav("Next gesture");
   await page.waitForFunction(({ x, y }) => {
     const hand = document.querySelector(".cross-right-hand circle");
@@ -161,13 +161,13 @@ await page.locator(".response-options button").nth(1).click();
 assert.match(await page.locator(".response-feedback").innerText(), /Thanks be to God/);
 await nav("Stop listening");
 await nav("Replay scene");
-assert.notEqual(await page.locator(".sun-rays").evaluate(el => getComputedStyle(el).animationName), "none");
+assert(Number(await page.locator(".storybook-lesson").getAttribute("data-scene-time")) < 1, "Dismissal replay starts at the beginning");
 await page.emulateMedia({ reducedMotion: "reduce" });
-assert.equal(await page.locator(".sun-rays").evaluate(el => getComputedStyle(el).animationName), "none");
+await page.waitForFunction(() => document.querySelector(".storybook-lesson")?.dataset.complete === "true");
 await nav("Adventure Map"); await page.locator(".map-stop").nth(2).click(); await nav("Next part");
-assert.equal(await page.locator(".altar-flames").evaluate(el => getComputedStyle(el).animationName), "none");
+assert.equal(await page.locator(".storybook-lesson").getAttribute("data-motion"), "reduced");
 await page.emulateMedia({ reducedMotion: "no-preference" }); await nav("Replay scene");
-assert.notEqual(await page.locator(".altar-flames").evaluate(el => getComputedStyle(el).animationName), "none");
+assert(Number(await page.locator(".storybook-lesson").getAttribute("data-scene-time")) < 1, "Offerings replay starts at the beginning");
 for (const width of [320, 390, 820, 1440]) {
   await page.setViewportSize({ width, height: 844 });
   assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `Scene width ${width}`);

@@ -825,7 +825,7 @@ export const signOfCrossCopy = {
     { label: "Chest", words: "and of the Son", x: 130, y: 140 },
     { label: "Left shoulder", words: "and of the Holy", x: 160, y: 115 },
     { label: "Right shoulder", words: "Spirit.", x: 100, y: 115 },
-    { label: "Hands together", words: "Amen.", x: 130, y: 153 },
+    { label: "Hands together", words: "Amen.", x: 130, y: 136 },
   ],
 };
 
