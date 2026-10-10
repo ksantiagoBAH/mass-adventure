@@ -996,15 +996,15 @@ activityCopy.explorerChoose|¿Qué te gustaría explorar?|Co chcesz poznać?
 activityCopy.explorerRead|Escuchar este descubrimiento|Posłuchaj o tym odkryciu
 activityCopy.explorerStop|Detener la lectura|Zatrzymaj czytanie
 narratorCopy.title|Una voz para tu aventura|Głos Twojej przygody
-narratorCopy.description|En español usamos las voces de tu dispositivo. La narración grabada con voz generada por IA está disponible en inglés.|Po polsku korzystamy z głosów Twojego urządzenia. Nagrania głosem wygenerowanym przez AI są dostępne po angielsku.
+narratorCopy.description|Escucha a nuestro narrador cálido y pausado en español, o elige una voz de tu dispositivo. Las grabaciones usan una voz generada por IA.|Posłuchaj naszego ciepłego, spokojnego narratora po polsku lub wybierz głos urządzenia. Nagrania korzystają z głosu wygenerowanego przez AI.
 narratorCopy.label|Voz del narrador|Głos narratora
-narratorCopy.automatic|Voz automática en español|Automatyczny głos polski
+narratorCopy.automatic|Narrador cálido (grabado en español)|Ciepły narrator (nagranie po polsku)
 narratorCopy.device|Elegir automáticamente una voz del dispositivo|Wybierz automatycznie głos urządzenia
-narratorCopy.noVoices|Tu dispositivo aún no muestra voces en español. Instala una voz en español en sus ajustes de voz o lee con un adulto.|Urządzenie nie pokazuje jeszcze polskich głosów. Dodaj polski głos w ustawieniach mowy lub czytaj z dorosłym.
+narratorCopy.noVoices|Tu dispositivo aún no muestra voces en español. Nuestro narrador grabado sigue disponible.|Urządzenie nie pokazuje jeszcze polskich głosów. Nasz nagrany narrator jest nadal dostępny.
 narratorCopy.preview|Escuchar una muestra|Posłuchaj próbki
 narratorCopy.stop|Detener la muestra|Zatrzymaj próbkę
 narratorCopy.sample|¡Bienvenido a Mass Adventure! Caminemos juntos. En la Misa nos reunimos como familia de Dios, escuchamos su Palabra y nos acercamos a Jesús. Hay mucho por descubrir.|Witaj w Mass Adventure! Wyruszmy razem. Podczas Mszy gromadzimy się jako rodzina Boża, słuchamy Jego słowa i zbliżamy się do Jezusa. Jest wiele do odkrycia.
-narratorCopy.note|La lectura empieza solo al pulsar. No usamos micrófono ni cuentas de voz. Las voces y su calidad dependen del dispositivo. Tu elección dura esta visita.|Czytanie zaczyna się tylko po dotknięciu przycisku. Nie korzystamy z mikrofonu ani kont głosowych. Dostępność i jakość głosów zależą od urządzenia. Wybór trwa podczas tej wizyty.
+narratorCopy.note|Las grabaciones vienen con la aplicación y se reproducen solo al pulsar. No usamos micrófono ni cuentas de voz. Las voces del dispositivo son una alternativa; su calidad varía. Tu elección dura esta visita.|Nagrania są częścią aplikacji i odtwarzają się tylko po dotknięciu przycisku. Nie korzystamy z mikrofonu ani kont głosowych. Głosy urządzenia to opcja zastępcza; ich jakość jest różna. Wybór trwa podczas tej wizyty.
 explorerReward.name|Explorador de la iglesia|Odkrywca kościoła
 explorerReward.alt|Una pegatina de una iglesia por explorar todos los objetos.|Naklejka z kościołem za poznanie wszystkich przedmiotów.
 explorerReward.hint|¡Explora todos los objetos y gana tu pegatina de Explorador de la iglesia!|Poznaj wszystkie przedmioty, aby zdobyć naklejkę Odkrywcy kościoła!

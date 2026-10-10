@@ -47,7 +47,7 @@ npm run preview
 - `src/components/Icon.tsx`: original inline SVG interface icons.
 - `src/style.css`: responsive layout, palette, focus states, animations, and reduced-motion support.
 - `public/fonts/`: locally hosted Nunito variable font, distributed under the included SIL Open Font License. No Google Fonts network requests.
-- `public/audio/`: 26 lesson MP3s, one preview, four response cues, and seven church discoveries (38 total), generated offline with a warm AI voice. Provenance and license information are included. `src/generated/narration.json` connects clips to their exact source text.
+- `public/audio/`: 26 lesson MP3s, one preview, four response cues, and seven church discoveries per language (114 active recordings total), generated offline with a warm AI voice. Provenance and license information are included. `src/generated/narration*.json` connects clips to their exact source text.
 - `public/artwork/`: two storybook illustrations created from your parish photographs with the built-in image generation tool. The church appears on Home; the altar appears on the Presentation of the Gifts card. The full generation prompts are saved in `public/artwork/README.md`; artwork paths and alt text are editable in `src/data/massParts.ts`.
 - `screenshots/`: four captured key screens.
 - `scripts/verify.mjs`: reproducible browser checks and screenshot capture.
@@ -76,7 +76,7 @@ A priest or catechist should review the simplified explanation of the Real Prese
 
 ## Narrator voices
 
-The default is a warm, gently paced AI-generated narrator: Kokoro `af_heart`, recorded offline at 0.92× speed. All 26 lessons include their explanations, actions, and glossary terms. Parent Corner identifies the AI voice and offers a recorded preview, automatic device narration, and individual English device voices. Recordings work without SpeechSynthesis. Failed or outdated recordings fall back to current lesson text through the browser voice. The selected narrator applies to every lesson and resets on refresh. Audio does not autoplay; leaving a card or preview stops it. Voice settings stay in memory.
+The English default is a warm, gently paced AI-generated narrator: Kokoro `af_heart`, recorded offline at 0.92× speed. All 26 lessons include their explanations, actions, and glossary terms. Parent Corner identifies the AI voice and offers a recorded preview, automatic device narration, and individual English device voices. Recordings work without SpeechSynthesis. Failed or outdated recordings fall back to current lesson text through the browser voice. The selected narrator applies to every lesson and resets on refresh. Audio does not autoplay; leaving a card or preview stops it. Voice settings stay in memory.
 
 To regenerate after editing `src/data/massParts.ts`, install the authoring tool in an isolated folder (not an app dependency). Requires Node.js and FFmpeg on your PATH; first generation downloads the open neural model. Generation runs locally and needs no API key.
 
@@ -143,6 +143,25 @@ The browser icon and 1200 × 630 sharing preview live in `public/branding`. Open
 
 Language options: English, Español (Spanish), and Polski (Polish). The selector is available on every screen. Changing language preserves the current activity and visit-only progress; refresh restores English and clears progress. All translated lessons, quizzes, discovery text, accessibility labels, and interface copy are editable in `src/data/massParts.ts`. Spanish uses Latin American forms such as “ustedes.”
 
-English retains the local recorded narrator. Spanish and Polish use the browser’s matching device voices, with availability and quality depending on the device; no English recordings play in those languages. Install the appropriate speech voice in your device settings if needed. Parent Catechism links still lead to the verified English Vatican pages and are labeled accordingly.
+English retains the local recorded narrator. Spanish and Polish now default to bundled natural AI narration, with matching browser voices available as a fallback or optional choice. No English recordings play in those languages. Parent Catechism links still lead to the verified English Vatican pages and are labeled accordingly.
 
 Run `npm run test:translations` with the dev server running to check translation coverage, all lessons and quizzes, explorer rewards, narration language, language switching, and mobile/tablet accessibility. Before parish use, a fluent Spanish/Polish priest or catechist should review the child-facing translations, especially Real Presence, sacrificial language, Communion preparation, and local liturgical response forms. Spanish response wording was checked against the Vatican’s Spanish General Instruction of the Roman Missal (§§128, 167–168); Polish responses against Polish episcopal/parish catechetical material. These are educational paraphrases, not full Missal translations.
+
+
+## Spanish and Polish recorded narration
+
+Each language includes 38 MP3s: 26 lessons, seven church discoveries, four practice cues, and a preview. They are generated locally with Chatterbox Multilingual V3 through MLX Audio, starting from a ten-second excerpt of our existing **synthetic** English narrator. Polish uses an additional Polish-language sample synthesized from that same voice to improve pronunciation. These are AI voices, not recordings of a human narrator. The app ships only audio files and exact-text manifests; it does not download a model or call a speech API.
+
+To regenerate on Apple Silicon, use an isolated temporary authoring environment (Python 3.12, FFmpeg, Node):
+
+```sh
+python3 -m venv /private/tmp/mass-multilingual-tts
+uv pip install --python /private/tmp/mass-multilingual-tts/bin/python mlx-audio==0.5.8 mlx-whisper==0.4.3
+node scripts/export-narration.mjs /private/tmp/mass-multilingual-tts/scripts.json
+/private/tmp/mass-multilingual-tts/bin/python scripts/generate-multilingual-narration.py --runtime /private/tmp/mass-multilingual-tts
+npm run build
+npm run test:multilingual-narration
+TEST_BROWSER=webkit npm run test:multilingual-narration
+```
+
+Models and intermediate WAVs stay in that temporary folder. Generation is resumable and checks short passages with local Whisper large-v3-turbo transcription, retrying low-confidence passages. The recordings are slowed slightly, normalized to -18 LUFS, and encoded as mono 24 kHz MP3s. Transcription checks do not judge how pleasant a voice sounds; a fluent listener should check pronunciation and delivery. Model license attribution is included in `public/audio/LICENSE-MIT-CHATTERBOX.txt`. Keep each language’s MP3s and manifest together when editing or publishing.

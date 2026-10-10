@@ -149,7 +149,15 @@ Added a single global footer link to the companion site. Production builds passe
 - Added English/Español/Polski selector with document language updates and visit-only selection.
 - Checked translated text coverage; preserved part IDs, quiz answers, art references, and CCC numbers.
 - Both languages passed all 26 lesson cards, 12 quiz questions, seven discoveries, and five rewards.
-- Language changes preserve earned stickers and the current lesson; translated narration uses matching device voices without playing English MP3s.
+- Language changes preserve earned stickers and the current lesson; translated narration uses its own recorded AI narrator by default, with matching device voices as an optional fallback.
 - Mobile and tablet overflow and WCAG AA checks passed for translated home, lessons, quizzes, stickers, and Parent Corner. English regression suite passed.
 - Screenshots: `translation-es-home.png`, `translation-pl-home.png`, and both translated consecration cards.
 - Native-speaker parish review remains recommended for doctrinal and local liturgical wording; linked Catechism pages remain English.
+
+## Spanish and Polish recorded narration
+
+Added 38 bundled MP3s per language, with exact-text manifests and AI voice disclosure in Parent Corner. All 135 generated passages passed local transcription matching, beginning/end checks, and key doctrinal-word checks; low-confidence takes were regenerated. English audio remains unchanged.
+
+Production build and English narration regression passed. Chrome and WebKit verified all 76 new files decode with audible, unclipped signals; actual playback on all 26 lessons, four response cues, seven discoveries, and each preview; stop controls and language cancellation; playback without browser speech services; lazy loading and same-origin requests. Translation coverage, quiz/reward flows, and mobile/tablet accessibility passed.
+
+Automated transcription does not establish natural delivery or flawless pronunciation. The recordings use synthetic AI voices. A fluent Spanish or Polish listener should review pronunciation and pacing; real-device and pastoral review checks above still apply.

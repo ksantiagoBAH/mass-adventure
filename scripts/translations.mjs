@@ -36,7 +36,8 @@ for(const lang of ['es','pl']) {
   window.speechSynthesis.speak=u=>window.__utterances.push({text:u.text,lang:u.lang});
   window.speechSynthesis.cancel=()=>{};
   window.speechSynthesis.getVoices=()=>[{name:'English',voiceURI:'en',lang:'en-US'},{name:'Spanish',voiceURI:'es',lang:'es-MX'},{name:'Polish',voiceURI:'pl',lang:'pl-PL'}];
-  window.Audio=class {constructor(src){window.__audioRequests.push(src)}};
+  // This suite checks device fallback text; multilingual-narration.mjs checks MP3s.
+  window.Audio=undefined;
  });
  await page.goto(process.env.TEST_URL||'http://127.0.0.1:5173');
  await page.locator('#app-language').selectOption(lang);

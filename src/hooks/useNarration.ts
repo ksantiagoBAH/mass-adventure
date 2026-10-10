@@ -1,7 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { useMassContent } from "./useMassContent";
 import recordings from "../generated/narration.json";
-const clips: Record<string, { text: string; file: string }> = recordings;
+import spanishRecordings from "../generated/narration-es.json";
+import polishRecordings from "../generated/narration-pl.json";
+import type { Language } from "../data/massParts";
+const clips: Record<Language, Record<string, { text: string; file: string }>> = { en: recordings, es: spanishRecordings, pl: polishRecordings };
 // A lesson, response cue, or church discovery may read, but never overlap.
 let currentPlayback: { owner: symbol; stop: () => void } | null = null;
 export function useNarration(
@@ -96,7 +99,7 @@ export function useNarration(
     setAudioMessage("");
     setSpeaking(false);
     if (wasActive) return;
-    const clip = language === "en" && recordingId ? clips[recordingId] : undefined;
+    const clip = recordingId ? clips[language][recordingId] : undefined;
     // Never read an old recording after the editable lesson text changes.
     if (!clip || clip.text !== text || typeof Audio !== "function") {
       speak();

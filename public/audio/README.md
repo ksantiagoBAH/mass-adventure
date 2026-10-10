@@ -28,3 +28,15 @@ The Apache 2.0 license is included alongside the recordings for provenance.
 The model, package dependencies, and temporary WAVs are not committed or shipped.
 Review pronunciation of liturgical terms and the calm, reverent delivery with
 a parent or catechist before classroom use.
+
+
+## Spanish and Polish
+
+`es/` and `pl/` each contain 38 locally generated MP3s, using Chatterbox Multilingual V3 (`mlx-community/chatterbox-multilingual-v3`, MIT) through mlx-audio 0.5.8. The starting voice reference is the first ten seconds of the existing Kokoro `af_heart` synthetic preview. Polish then uses a Polish-language synthetic sample derived from that voice, to improve pronunciation. No human voice recording was supplied or cloned for these clips. Reference and model files remain in the temporary authoring environment; only MP3s are distributed.
+
+Sources:
+- https://github.com/resemble-ai/chatterbox
+- https://huggingface.co/mlx-community/chatterbox-multilingual-v3
+- https://github.com/Blaizzy/mlx-audio
+
+The generator uses calm delivery (exaggeration 0.25), a 0.95 tempo adjustment, sentence pauses, and the same MP3 loudness/peak targets as English. It transcribes segments locally with Whisper large-v3-turbo and retries speech that does not closely match the script. A fluent speaker should still review pronunciation, phrasing, and the translated Catholic terms. Device narration remains an optional choice and a fallback; the default in all three languages is the recorded narrator.

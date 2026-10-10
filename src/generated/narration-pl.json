@@ -1,0 +1,154 @@
+{
+  "preview": {
+    "text": "Witaj w Mass Adventure! Wyruszmy razem. Podczas Mszy gromadzimy się jako rodzina Boża, słuchamy Jego słowa i zbliżamy się do Jezusa. Jest wiele do odkrycia.",
+    "file": "audio/pl/preview-7e836239e771.mp3"
+  },
+  "entrance": {
+    "text": "Procesja i pieśń na wejście. Co się dzieje? Ksiądz i ministranci idą do ołtarza. Wstajemy i śpiewamy na początku Mszy Świętej. Dlaczego to robimy? Gromadzimy się jako rodzina Boża, aby oddawać Mu cześć. Spróbuj! Stań prosto i pomyśl, za co chcesz podziękować Bogu.. Ważne słowo: Ołtarz. Święty stół, przy którym sprawowana jest Ofiara Eucharystyczna.",
+    "file": "audio/pl/entrance-50ac03278460.mp3"
+  },
+  "sign": {
+    "text": "Znak krzyża. Co się dzieje? Robimy znak krzyża. Zaczynamy w imię Ojca i Syna, i Ducha Świętego. Dlaczego to robimy? Pamiętamy, że należymy do Boga. Spróbuj! Prawą ręką dotknij czoła, piersi, lewego ramienia, a potem prawego.",
+    "file": "audio/pl/sign-b95781c25a3b.mp3"
+  },
+  "greeting": {
+    "text": "Pozdrowienie. Co się dzieje? Ksiądz wita wszystkich. Mówi: „Pan z wami”. Odpowiadamy: „I z duchem twoim”. Dlaczego to robimy? Te słowa przypominają nam, że Bóg jest z nami. Spróbuj! Poproś dorosłego, by powiedział: „Pan z wami”. Odpowiedz: „I z duchem twoim”.",
+    "file": "audio/pl/greeting-3a33b1f9656d.mp3"
+  },
+  "penitential": {
+    "text": "Akt pokuty. Co się dzieje? Przypominamy sobie, kiedy zrobiliśmy coś złego. Prosimy Boga o miłosierdzie i pomoc, aby lepiej kochać. Dlaczego to robimy? Bóg zaprasza nas, byśmy do Niego wrócili. Spróbuj! Przeproś Boga w ciszy i poproś o pomoc w byciu życzliwym.",
+    "file": "audio/pl/penitential-ecd1398a595c.mp3"
+  },
+  "gloria": {
+    "text": "Chwała na wysokości Bogu. Co się dzieje? Śpiewamy lub odmawiamy radosny hymn uwielbienia. Oddajemy chwałę Bogu za Jego dobroć. Dlaczego to robimy? Wielbimy Boga, bo jest wspaniały. Spróbuj! Powiedz krótkie zdanie uwielbienia Boga.",
+    "file": "audio/pl/gloria-df129c70ec9f.mp3"
+  },
+  "collect": {
+    "text": "Kolekta. Co się dzieje? Ksiądz zaprasza nas do modlitwy. Po chwili ciszy zbiera nasze modlitwy w jedną modlitwę do Boga. Dlaczego to robimy? Modlimy się razem, jednym sercem. Spróbuj! Pomyśl, za kogo chcesz się pomodlić. Słuchaj i odpowiedz: „Amen”.. Ważne słowo: Kolekta. Modlitwa na początku Mszy, która zbiera nasze prośby.",
+    "file": "audio/pl/collect-b223f38667b6.mp3"
+  },
+  "first": {
+    "text": "Pierwsze czytanie. Co się dzieje? Lektor czyta słowa Biblii, często ze Starego Testamentu. Na końcu mówi: „Oto słowo Boże”. Odpowiadamy: „Bogu niech będą dzięki”. Dlaczego to robimy? Bóg uczy nas przez Pismo Święte. Spróbuj! Usiądź i słuchaj w ciszy. Po słowach „Oto słowo Boże” odpowiedz: „Bogu niech będą dzięki”.",
+    "file": "audio/pl/first-68d7d1eafb21.mp3"
+  },
+  "psalm": {
+    "text": "Psalm responsoryjny. Co się dzieje? Słuchamy modlitwy z Księgi Psalmów. Razem śpiewamy lub mówimy odpowiedź. Dlaczego to robimy? Odpowiadamy modlitwą na słowo Boże. Spróbuj! Słuchaj powtarzającego się refrenu i dołącz do niego.. Ważne słowo: Psalm. Modlitwa lub pieśń z Biblii.",
+    "file": "audio/pl/psalm-22f8893c0b1d.mp3"
+  },
+  "second": {
+    "text": "Drugie czytanie. Co się dzieje? W niedziele i szczególne dni słuchamy drugiego czytania, zwykle z listu w Nowym Testamencie. Na końcu lektor mówi: „Oto słowo Boże”. Odpowiadamy: „Bogu niech będą dzięki”. Dlaczego to robimy? Apostołowie uczą nas żyć z Jezusem. Spróbuj! Słuchaj, jak kochać Boga i innych. Po słowach „Oto słowo Boże” odpowiedz: „Bogu niech będą dzięki”.",
+    "file": "audio/pl/second-453760856b50.mp3"
+  },
+  "alleluia": {
+    "text": "Aklamacja przed Ewangelią (Alleluja). Co się dzieje? Wstajemy, aby przyjąć Ewangelię. Zwykle śpiewamy Alleluja, słowo uwielbienia. Dlaczego to robimy? Witamy Jezusa, który mówi do nas w Ewangelii. Spróbuj! Wstań i przygotuj serce do słuchania.. Ważne słowo: Alleluja. Słowo, które znaczy „Chwalcie Pana!”.",
+    "file": "audio/pl/alleluia-883a0bca6ae3.mp3"
+  },
+  "gospel": {
+    "text": "Ewangelia. Co się dzieje? Ksiądz lub diakon czyta Ewangelię. Słuchamy o słowach i czynach Jezusa. Dlaczego to robimy? Jezus uczy nas, jak za Nim iść. Spróbuj! Zrób mały krzyżyk na czole, ustach i sercu.. Ważne słowo: Ewangelia. Dobra Nowina o Jezusie.",
+    "file": "audio/pl/gospel-25bb0aa88002.mp3"
+  },
+  "homily": {
+    "text": "Homilia. Co się dzieje? Ksiądz lub diakon pomaga nam zrozumieć czytania. Pokazuje, jak łączą się z naszym życiem. Dlaczego to robimy? Słowo Boże pomaga nam kochać każdego dnia. Spróbuj! Zapamiętaj jedną myśl, którą możesz wykorzystać w tym tygodniu.. Ważne słowo: Homilia. Wyjaśnienie, które pomaga zrozumieć słowo Boże.",
+    "file": "audio/pl/homily-57ec7ba39440.mp3"
+  },
+  "creed": {
+    "text": "Wyznanie wiary. Co się dzieje? Razem mówimy, w co wierzymy. Mówimy o Ojcu, Synu, Duchu Świętym i Kościele. Dlaczego to robimy? Wyznajemy wspólną wiarę Kościoła. Spróbuj! Powiedz: „Wierzę”, i pomyśl o miłości Boga.. Ważne słowo: Wyznanie wiary. Krótki opis tego, w co wierzy Kościół.",
+    "file": "audio/pl/creed-7c381aea9e7d.mp3"
+  },
+  "faithful": {
+    "text": "Modlitwa wiernych. Co się dzieje? Modlimy się za Kościół i świat. Pamiętamy o ludziach, którzy potrzebują Bożej pomocy. Dlaczego to robimy? Bóg wzywa nas do troski o wszystkich. Spróbuj! Pomyśl o kimś, kto potrzebuje pomocy, i pomódl się za niego.",
+    "file": "audio/pl/faithful-2056cd8ebf71.mp3"
+  },
+  "gifts": {
+    "text": "Przygotowanie darów. Co się dzieje? Chleb i wino są przynoszone do ołtarza. Ofiarujemy Bogu także nasze życie. Dlaczego to robimy? Dziękujemy Bogu za Jego dary. Spróbuj! Pomyśl o dobrym uczynku, który możesz dziś ofiarować Bogu.. Ważne słowo: Ołtarz. Święty stół, przy którym sprawowana jest Ofiara Eucharystyczna.",
+    "file": "audio/pl/gifts-131c4ca6244b.mp3"
+  },
+  "offerings": {
+    "text": "Modlitwa nad darami. Co się dzieje? Ksiądz modli się nad darami. Łączymy się z jego modlitwą i odpowiadamy Amen. Dlaczego to robimy? Prosimy Boga, aby przyjął naszą ofiarę. Spróbuj! Słuchaj i odpowiedz z innymi: „Amen”.",
+    "file": "audio/pl/offerings-4a9170f082ad.mp3"
+  },
+  "eucharistic": {
+    "text": "Modlitwa eucharystyczna. Co się dzieje? Ksiądz prowadzi wielką modlitwę dziękczynienia do Ojca. Jedyna Ofiara Jezusa staje się obecna podczas Mszy Świętej. Dlaczego to robimy? Łączymy się z Jezusem w Jego ofierze dla Ojca. Spróbuj! Słuchaj ze spokojnym sercem i dziękuj Bogu.. Ważne słowo: Eucharystia. Sakrament Ciała i Krwi Jezusa; słowo oznacza dziękczynienie.",
+    "file": "audio/pl/eucharistic-08f55f969c4c.mp3"
+  },
+  "sanctus": {
+    "text": "Święty (Sanctus). Co się dzieje? Razem z aniołami i świętymi wielbimy Boga. Śpiewamy lub mówimy, że Bóg jest święty. Dlaczego to robimy? Oddajemy cześć Bogu z całym Kościołem w niebie i na ziemi. Spróbuj! Dołącz do słów: „Święty, Święty, Święty”.. Ważne słowo: Sanctus. Słowo, które znaczy święty.",
+    "file": "audio/pl/sanctus-0bc627f4607a.mp3"
+  },
+  "consecration": {
+    "text": "Konsekracja. Co się dzieje? Przez słowa Jezusa i moc Ducha Świętego chleb i wino stają się Ciałem i Krwią Jezusa. Ich wygląd i smak się nie zmieniają. Jezus jest prawdziwie obecny: Ciało, Krew, dusza i Bóstwo. Dlaczego to robimy? Jezus daje nam całego siebie w Eucharystii. Spróbuj! Adoruj Jezusa w ciszy i powiedz w sercu: „Jezu, kocham Cię”.. Ważne słowo: Kielich. Święte naczynie używane podczas Mszy.",
+    "file": "audio/pl/consecration-7dc0cde9be48.mp3"
+  },
+  "amen": {
+    "text": "Wielkie Amen. Co się dzieje? Wielka modlitwa kończy się oddaniem chwały Bogu. Odpowiadamy wyraźnym Amen. Dlaczego to robimy? Nasze Amen łączy nas z tą modlitwą. Spróbuj! Powiedz: „Amen”, wyraźnie i radośnie.. Ważne słowo: Amen. Słowo, które mówi Bogu tak: niech tak będzie.",
+    "file": "audio/pl/amen-cb5571c9b647.mp3"
+  },
+  "ourfather": {
+    "text": "Ojcze nasz. Co się dzieje? Modlimy się modlitwą, której nauczył nas Jezus. Nazywamy Boga naszym Ojcem i prosimy o to, czego potrzebujemy. Dlaczego to robimy? Jezus uczy nas ufać kochającemu Ojcu. Spróbuj! Módl się powoli z rodziną. Pomyśl o przebaczaniu innym.",
+    "file": "audio/pl/ourfather-93310c7c2c7b.mp3"
+  },
+  "peace": {
+    "text": "Znak pokoju. Co się dzieje? Modlimy się o pokój i jedność. Możemy przekazać prosty znak pokoju osobom obok nas. Dlaczego to robimy? Chcemy żyć jak jedna rodzina w Chrystusie. Spróbuj! Poćwicz łagodne słowa: „Pokój z tobą”.",
+    "file": "audio/pl/peace-8fc360ebea21.mp3"
+  },
+  "lamb": {
+    "text": "Baranku Boży. Co się dzieje? Gdy ksiądz łamie konsekrowaną Hostię, nazywamy Jezusa Barankiem Bożym. Prosimy Go o miłosierdzie i pokój. Dlaczego to robimy? Jezus oddał życie, aby nas zbawić. Spróbuj! Dołącz do modlitwy spokojnym, uważnym głosem.. Ważne słowo: Baranek Boży. Imię Jezusa, który ofiaruje siebie, aby nas zbawić.",
+    "file": "audio/pl/lamb-d7b5293e5754.mp3"
+  },
+  "communion": {
+    "text": "Komunia Święta. Co się dzieje? Przygotowani katolicy przyjmują Jezusa w Komunii Świętej. Jezus zbliża nas do siebie i do innych. Dlaczego to robimy? Jezus karmi nasze życie z Nim. Spróbuj! Podziękuj Jezusowi w ciszy. Jeśli jeszcze nie było Twojej Pierwszej Komunii, zostań z rodziną i módl się.",
+    "file": "audio/pl/communion-90f296ae846d.mp3"
+  },
+  "blessing": {
+    "text": "Błogosławieństwo końcowe. Co się dzieje? Ksiądz prosi Boga, aby nas pobłogosławił. Robimy znak krzyża. Dlaczego to robimy? Bóg pomaga nam żyć wiarą każdego dnia. Spróbuj! Zrób powoli znak krzyża i odpowiedz: „Amen”.",
+    "file": "audio/pl/blessing-5be81296e687.mp3"
+  },
+  "dismissal": {
+    "text": "Rozesłanie. Co się dzieje? Ksiądz lub diakon posyła nas słowami takimi jak: „Idźcie w pokoju Chrystusa”. Odpowiadamy: „Bogu niech będą dzięki”. Idziemy kochać Boga i służyć innym. Dlaczego to robimy? Msza posyła nas, aby dzielić się miłością Chrystusa. Spróbuj! Po słowach „Idźcie w pokoju Chrystusa” odpowiedz: „Bogu niech będą dzięki”. Wybierz dobry uczynek na dziś.",
+    "file": "audio/pl/dismissal-bd94a1968197.mp3"
+  },
+  "response-greeting": {
+    "text": "Ksiądz mówi: Pan z wami.",
+    "file": "audio/pl/response-greeting-515974280757.mp3"
+  },
+  "response-first": {
+    "text": "Na końcu czytania lektor mówi: Oto słowo Boże.",
+    "file": "audio/pl/response-first-814d0c852d57.mp3"
+  },
+  "response-second": {
+    "text": "Na końcu czytania lektor mówi: Oto słowo Boże.",
+    "file": "audio/pl/response-second-814d0c852d57.mp3"
+  },
+  "response-dismissal": {
+    "text": "Ksiądz lub diakon posyła nas słowami takimi jak: Idźcie w pokoju Chrystusa.",
+    "file": "audio/pl/response-dismissal-691a5ab882d1.mp3"
+  },
+  "explorer-altar": {
+    "text": "Ołtarz jest świętym stołem, przy którym sprawowana jest Ofiara Eucharystyczna. Podczas Mszy gromadzimy się wokół niego, aby oddawać cześć Bogu.",
+    "file": "audio/pl/explorer-altar-391f259fc495.mp3"
+  },
+  "explorer-ambo": {
+    "text": "Ambona to szczególne miejsce, z którego czyta się Biblię. Uważnie słuchamy słowa Bożego.",
+    "file": "audio/pl/explorer-ambo-5aeb1eafd817.mp3"
+  },
+  "explorer-candles": {
+    "text": "Świece dają światło w kościele. Ich światło przypomina nam Jezusa, Światłość świata.",
+    "file": "audio/pl/explorer-candles-45e46279add5.mp3"
+  },
+  "explorer-chalice": {
+    "text": "Kielich to naczynie używane podczas Mszy. Po konsekracji zawiera Najdroższą Krew Jezusa.",
+    "file": "audio/pl/explorer-chalice-f04d5ea36cc6.mp3"
+  },
+  "explorer-tabernacle": {
+    "text": "Tabernakulum to miejsce, w którym przechowuje się konsekrowane Hostie. Jezus jest prawdziwie obecny w Eucharystii. Możemy tu modlić się do Niego w ciszy.",
+    "file": "audio/pl/explorer-tabernacle-14ee12b3f675.mp3"
+  },
+  "explorer-crucifix": {
+    "text": "Krucyfiks to krzyż z wizerunkiem Jezusa. Przypomina, że Jezus oddał życie, aby nas zbawić, bo nas kocha.",
+    "file": "audio/pl/explorer-crucifix-be510988bfe2.mp3"
+  },
+  "explorer-paten": {
+    "text": "Patena to mały talerzyk na Hostię. Po konsekracji Hostia jest prawdziwie Ciałem Jezusa. Traktujemy Eucharystię z wielką miłością i szacunkiem.",
+    "file": "audio/pl/explorer-paten-ffd60dc3f54a.mp3"
+  }
+}

@@ -11,7 +11,8 @@
     "test:stress": "node scripts/stress.mjs",
     "test:narration": "node scripts/narration.mjs",
     "test:activities": "node scripts/activities.mjs",
-    "test:translations": "node scripts/translations.mjs"
+    "test:translations": "node scripts/translations.mjs",
+    "test:multilingual-narration": "node scripts/multilingual-narration.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",
