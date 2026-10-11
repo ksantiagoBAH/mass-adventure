@@ -9,6 +9,7 @@ import { VoiceSettings } from "./components/VoiceSettings";
 import { ChurchExplorer } from "./components/ChurchExplorer";
 import { StickerArtwork } from "./components/StickerArtwork";
 import { AdventureFooter } from "./components/AdventureFooter";
+import { BrandMark } from "./components/BrandMark";
 import {
   writeNavigationHistory,
   cancelPendingHistory,
@@ -167,7 +168,7 @@ export default function App() {
           onClick={() => go("home")}
           aria-label={languageCopy.home}
         >
-          <span className="brand-mark">✦</span>
+          <span className="brand-mark"><BrandMark /></span>
           <span>
             {copy.brand}
             <small>{copy.tagline}</small>

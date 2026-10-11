@@ -1,4 +1,10 @@
 @font-face {
+  font-family: Fraunces;
+  src: url("/fonts/fraunces-variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
   font-family: Nunito;
   src: url("/fonts/nunito-latin.woff2") format("woff2");
   font-weight: 200 900;
@@ -12,7 +18,8 @@
   color: #334b42;
   background: #faf7ef;
   font-synthesis: none;
-  font-weight: 500;
+  font-weight: 450;
+  font-kerning: normal;
   --green: #38664f;
   --yellow: #f4ca61;
   --muted: #5f6e64;
@@ -54,8 +61,11 @@ p {
 h1,
 h2,
 h3 {
-  font-weight: 850;
-  letter-spacing: -0.04em;
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 650;
+  font-optical-sizing: auto;
+  font-variation-settings: "SOFT" 50, "WONK" 1;
+  letter-spacing: -0.025em;
 }
 h1 {
   font-size: 43px;
@@ -66,7 +76,7 @@ h2 {
   line-height: 1.25;
 }
 p {
-  line-height: 1.65;
+  line-height: 1.75;
 }
 svg {
   display: block;
@@ -92,30 +102,33 @@ header {
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   text-align: left;
-  font-size: 24px;
-  font-weight: 900;
-  letter-spacing: -1px;
+  font-family: Fraunces, Georgia, serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "SOFT" 50, "WONK" 1;
+  font-size: 26px;
+  font-weight: 650;
+  letter-spacing: -0.7px;
+  line-height: 1.15;
 }
 .brand small {
   display: block;
-  font-size: 10px;
-  font-weight: 650;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  margin-top: 3px;
+  font-family: Nunito, "Trebuchet MS", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  margin-top: 5px;
+  color: #64705e;
 }
 .brand-mark {
-  font-size: 34px;
-  color: #9c762e;
-  background: #f5df9e;
-  width: 44px;
-  height: 48px;
-  border-radius: 15px;
+  width: 57px;
+  height: 57px;
+  flex-shrink: 0;
   display: grid;
   place-items: center;
 }
+.brand .brand-emblem { width: 100%; height: 100%; }
 header nav {
   display: flex;
   gap: 5px;
@@ -180,7 +193,7 @@ main {
   font-size: 57px;
   line-height: 1.12;
   margin: 22px 0;
-  letter-spacing: -2.8px;
+  letter-spacing: -0.035em;
 }
 .hero h1 span {
   color: #648265;
@@ -1075,16 +1088,16 @@ main {
     margin: 0 22px;
   }
   .brand {
-    font-size: 21px;
+    font-size: 22px;
+    gap: 9px;
   }
   .brand small {
-    font-size: 8px;
-    letter-spacing: 1.2px;
+    font-size: 10px;
+    letter-spacing: 0.1px;
   }
   .brand-mark {
-    width: 36px;
-    height: 41px;
-    font-size: 28px;
+    width: 45px;
+    height: 45px;
   }
   header nav {
     display: none;

@@ -46,7 +46,7 @@ npm run preview
 - `src/components/PartCard.tsx`: accessible card, swipe handling, and read aloud.
 - `src/components/Icon.tsx`: original inline SVG interface icons.
 - `src/style.css`: responsive layout, palette, focus states, animations, and reduced-motion support.
-- `public/fonts/`: locally hosted Nunito variable font, distributed under the included SIL Open Font License. No Google Fonts network requests.
+- `public/fonts/`: locally hosted Nunito body font and Fraunces heading font, distributed under their included SIL Open Font Licenses. Fraunces comes from the [official Google Fonts source](https://github.com/google/fonts/tree/main/ofl/fraunces). No Google Fonts network requests.
 - `public/audio/`: 26 lesson MP3s, one preview, four response cues, and seven church discoveries per language (152 active recordings total), generated offline with a warm AI voice. Provenance and license information are included. `src/generated/narration*.json` connects clips to their exact source text.
 - `public/artwork/`: two storybook illustrations created from your parish photographs with the built-in image generation tool. The church appears on Home; the altar appears on the Presentation of the Gifts card. The full generation prompts are saved in `public/artwork/README.md`; artwork paths and alt text are editable in `src/data/massParts.ts`.
 - `screenshots/`: four captured key screens.
