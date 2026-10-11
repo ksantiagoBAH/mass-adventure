@@ -30,9 +30,11 @@ for(let stop=0;stop<4;stop++) {
      const images=[...svg.querySelectorAll('image')];
      const book=svg.querySelector('.lesson-book');
      const bookAnchored=!book || book.getAttribute('transform')==='translate(183 375)';
-     for(const image of images) if(Number(image.getAttribute('opacity'))>0) window.__usedPoses.add(image.getAttribute('href').split('/').pop());
+     for(const image of images) if(!image.hasAttribute('opacity') || Number(image.getAttribute('opacity'))>0) window.__usedPoses.add(image.getAttribute('href').split('/').pop());
      const sequences=[...svg.querySelectorAll('.pose-sequence')];
-     const normalized=sequences.every(group=>Math.abs([...group.querySelectorAll('image')].reduce((sum,image)=>sum+Number(image.getAttribute('opacity')),0)-1)<.000001);
+     const walkCycles=[...svg.querySelectorAll('.gift-bearer[data-walk-progress] image, .lesson-priest')];
+     for(const image of walkCycles) if(!image.hasAttribute('opacity') || Number(image.getAttribute('opacity'))>0) window.__usedPoses.add(image.getAttribute('href').split('/').pop());
+     const normalized=sequences.every(group=>[...group.querySelectorAll('image')].some(image=>Number(image.getAttribute('opacity'))===1) && [...group.querySelectorAll('image')].every(image=>getComputedStyle(image).mixBlendMode==='normal'));
      const finite=normalized&&images.every(im=>['x','y','width','height'].every(key=>Number.isFinite(Number(im.getAttribute(key)))));
      window.__frameChecks.push({time:Number(svg.dataset.sceneTime),finite:finite&&bookAnchored,invalid:/NaN|Infinity/.test(svg.innerHTML)});
      requestAnimationFrame(tick);
@@ -43,7 +45,7 @@ for(let stop=0;stop<4;stop++) {
     await page.clock.runFor(duration*250+8);
     const current=Number(await svg.getAttribute('data-scene-time'));
     assert(Math.abs(current-duration*fraction)<.1,`${id} advances smoothly to ${fraction}`);
-    if(['gospel','gifts','consecration','peace','blessing','dismissal'].includes(id)) {
+    if(['first','gospel','gifts','communion','consecration','peace','blessing','dismissal'].includes(id)) {
      samples.push({id,fraction,svg:await svg.evaluate(el=>el.outerHTML)});
     }
    }
@@ -62,12 +64,24 @@ for(let stop=0;stop<4;stop++) {
     assert.equal(await svg.locator('.gift-bearer[data-facing=congregation]').count(),2);
    } else if(id==='peace') assert.equal(await svg.locator('.peace-greeting').count(),1);
    else if(id==='gospel') assert.equal(await svg.locator('.gospel-thumb-gesture[data-site=heart]').count(),1);
-   else if(id==='communion') assert.equal(await svg.locator('.communion-reception[data-phase=consume]').count(),1);
+   else if(id==='communion') {
+    assert.equal(await svg.locator('.communion-reception[data-phase=consume]').count(),1);
+    assert.equal(await svg.locator('.communion-host').count(),0,'the host stays in the source drawing with the hands');
+    assert.equal(await svg.locator('clipPath').count(),2,'Communion does not clip or rotate body parts');
+    assert((await svg.locator('.pose-sequence').getAttribute('data-active-poses')).includes('communion-cel-8'));
+
+   }
    else assert(await svg.locator('image').evaluateAll(images=>images.every(im=>!im.getAttribute('href').includes('child')&&!im.getAttribute('href').includes('sign-of-cross'))),`${id} has no foreground children`);
-   const woman=['first','psalm','second'].includes(id);
+   const woman=['first','psalm','second','faithful'].includes(id);
    assert(await svg.locator(id==='gospel'?'.gospel-thumb-gesture':id==='communion'?'.communion-reception':woman?'.lesson-reader':'.lesson-priest').count()>0,`${id} includes the correct speaker`);
-   if(['first','psalm','second','homily'].includes(id)) {
+   if(['first','psalm','second','faithful','homily'].includes(id)) {
     assert.equal(await svg.locator(woman?'.reader-at-ambo':'.priest-at-ambo').count(),1);
+    if(woman) {
+     assert((await svg.locator('.lesson-reader').getAttribute('href')).endsWith('/reader.webp'),'use the complete, uncropped lector');
+     assert.equal(await svg.locator('.ambo-microphone').count(),1,'microphone is in the foreground');
+     assert.equal(await svg.locator('.reader-eyes').count(),1,'lector has registered blink artwork');
+     if(id==='faithful') assert.equal(await svg.locator('.priest-at-altar .lesson-priest').count(),1,'priest is present with the lector');
+    }
     assert.equal(await svg.locator('.lesson-book').getAttribute('data-spine-x'),'183');
     assert.equal(await svg.locator('.lesson-book').getAttribute('data-spine-y'),'375');
    }
@@ -91,10 +105,10 @@ for(let stop=0;stop<4;stop++) {
  }
 }
 assert.equal(seen.length,24);assert.equal(new Set(seen).size,24);assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);
-for(const pose of ['peace-reach','peace-contact','communion-ready-mid','communion-receive-mid','communion-mouth-mid','child-bread-turn-back','child-bread-turn-front','child-wine-turn-back','child-wine-turn-front','priest-host-mid','priest-cup-mid','priest-chalice-mid','priest-blessing-mid']) assert(usedPoses.has(pose+'.webp'),pose+' is displayed during playback');
+for(const pose of [...Array.from({length:8},(_,i)=>'child-walk-'+(i+1)),...Array.from({length:8},(_,i)=>'priest-walk-'+(i+1)),...Array.from({length:8},(_,i)=>'peace-cel-'+(i+1)),...Array.from({length:8},(_,i)=>'communion-cel-'+(i+1)),...Array.from({length:3},(_,i)=>'priest-blink-'+(i+1)),'reader',...Array.from({length:3},(_,i)=>'reader-blink-'+(i+1)),'child-bread-turn-back','child-bread-turn-front','child-wine-turn-back','child-wine-turn-front',...Array.from({length:4},(_,i)=>'priest-host-cel-'+(i+1)),...Array.from({length:4},(_,i)=>'priest-cup-cel-'+(i+1)),'priest-chalice-mid','priest-blessing-mid']) assert(usedPoses.has(pose+'.webp'),pose+' is displayed during playback');
 await page.clock.resume();
 await page.setViewportSize({width:1440,height:1000});
-await page.setContent(`<style>body{margin:16px;background:#fffaf0;font-family:sans-serif}.grid{display:grid;grid-template-columns:repeat(4,340px);gap:12px}svg{width:340px;height:221px}p{margin:0;text-align:center}.pose-sequence > image{mix-blend-mode:plus-lighter}</style><div class="grid">${samples.map(c=>`<div>${c.svg}<p>${c.id}: ${c.fraction*100}%</p></div>`).join('')}</div>`);
+await page.setContent(`<style>body{margin:16px;background:#fffaf0;font-family:sans-serif}.grid{display:grid;grid-template-columns:repeat(4,340px);gap:12px}svg{width:340px;height:221px}p{margin:0;text-align:center}.pose-sequence > image{mix-blend-mode:normal}</style><div class="grid">${samples.map(c=>`<div>${c.svg}<p>${c.id}: ${c.fraction*100}%</p></div>`).join('')}</div>`);
 await page.locator('.grid').screenshot({path:'output/lesson-animations/key-sequences-review.png'});
 console.log(`PASS all 24 new lessons; ${frameCount} animation frames; no browser errors.`);
 await browser.close();

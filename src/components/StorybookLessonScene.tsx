@@ -1,4 +1,4 @@
-import { useEffect, useId, useState } from "react";
+import { createContext, useContext, useEffect, useId, useState } from "react";
 import { useMassContent } from "../hooks/useMassContent";
 import { CartoonArm, rightShoulder } from "./StorybookCharacters";
 import { lessonFrameRatios } from "../data/lessonFrameRatios";
@@ -14,18 +14,74 @@ const clamp = (v:number) => Math.max(0,Math.min(1,v));
 const smooth = (v:number) => {v=clamp(v);return v*v*(3-2*v);};
 const mix = (a:number,b:number,t:number) => a+(b-a)*t;
 type PoseFrame = {at:number;pose:string};
+const AnimationTime = createContext({time:0, duration:0});
+const numberedFrames = (prefix:string,count:number) => Array.from({length:count},(_,i)=>`${prefix}-${i+1}`);
+const childWalk = numberedFrames("child-walk",8);
+const priestWalk = numberedFrames("priest-walk",8);
+let framesPreloaded=false;
+function preloadCartoonFrames() {
+  if(framesPreloaded) return;
+  framesPreloaded=true;
+  for(const pose of [...childWalk,...priestWalk,...numberedFrames("priest-blink",3),"reader",...numberedFrames("reader-blink",3),...numberedFrames("peace-cel",8),...numberedFrames("communion-cel",8),"child-gifts-back","child-bread-turn-back","child-bread-turn-front","child-wine-turn-back","child-wine-turn-front","child-gifts","child-gifts-wine"]) {
+    const image=new Image(); image.src=`${base}lessons/${pose}.webp`;
+  }
+}
+// Walk drawings play on twos, while travel and breathing remain continuous.
+function walkFrame(poses:string[],time:number,offset=0) {return poses[(Math.floor(time*12)+offset)%poses.length];}
+function WalkCycle({poses,time,offset=0,x,y,height,priest=false}:{poses:string[];time:number;offset?:number;x:number;y:number;height:number;priest?:boolean}) {
+  const active=walkFrame(poses,time,offset);
+  return <g className="pose-sequence walk-cycle" data-walk-frame={active}>
+    {poses.map(pose=>priest?<Priest key={pose} pose={pose} x={x} y={y} height={height} opacity={pose===active?1:0} />
+      :<ScenePair key={pose} pose={pose} x={x} y={y} height={height} ratio={lessonFrameRatios[pose]} opacity={pose===active?1:0} />)}
+  </g>;
+}
+function blinkFrame(time:number,duration:number) {
+  if(time>=duration) return 1;
+  const phase=(time+1.4)%4.8;
+  return phase<.075?2:phase<.15?3:phase<.225?2:1;
+}
 function activePoses(frames:PoseFrame[],time:number) {
   let index=0;
   while(index<frames.length-2 && time>=frames[index+1].at) index++;
   const from=frames[index],to=frames[index+1];
   if(from.pose===to.pose) return [{pose:from.pose,opacity:1}];
-  const progress=smooth((time-from.at)/(to.at-from.at));
-  return [{pose:from.pose,opacity:1-progress},{pose:to.pose,opacity:progress}].filter(frame=>frame.opacity>0);
+  // Hold the outgoing drawing opaque. Long two-sided fades expose the
+  // church through the characters and make moving faces look doubled.
+  const blendDuration=Math.min(.16,to.at-from.at);
+  const progress=smooth((time-(to.at-blendDuration))/blendDuration);
+  if(progress===0) return [{pose:from.pose,opacity:1}];
+  if(progress===1) return [{pose:to.pose,opacity:1}];
+  return [{pose:from.pose,opacity:1},{pose:to.pose,opacity:progress}];
 }
 function Priest({pose="priest-prayer",x=770,y=675,height=450,opacity=1}:{pose?:string;x?:number;y?:number;height?:number;opacity?:number}) {
-  const h=pose==="priest-host"?height*1.14:height;
+  const {time,duration}=useContext(AnimationTime);
+  if(pose==="priest-prayer") pose=`priest-blink-${blinkFrame(time,duration)}`;
+  const heightScale=pose==="priest-host"?1.14:pose==="priest-host-cel-4" || pose==="priest-cup-cel-4"?1.06:1;
+  const h=height*heightScale;
   const width=h*lessonFrameRatios[pose];
-  return <image className="lesson-priest" href={`${base}lessons/${pose}.webp`} x={x-width/2} y={y-h} width={width} height={h} opacity={opacity} />;
+  const breath=time<duration?1+Math.sin(time*Math.PI/2)*.0025:1;
+  return <image className="lesson-priest" href={`${base}lessons/${pose}.webp`} x={x-width/2} y={y-h} width={width} height={h} opacity={opacity}
+    transform={`translate(0 ${y*(1-breath)}) scale(1 ${breath})`} />;
+}
+function Reader() {
+  const {time,duration}=useContext(AnimationTime);
+  const frame=blinkFrame(time,duration);
+  const id=useId().replaceAll(":","");
+  // The blink sheets crop the crown. Keep the complete original silhouette
+  // and register only their eyelids over the original face, with soft edges.
+  return <g className="reader-character" data-blink-frame={frame} transform="translate(112.24 205) scale(1.04)">
+    <defs>
+      <radialGradient id={`${id}-eye-edge`}>
+        <stop offset="0.75" stopColor="white" /><stop offset="1" stopColor="black" />
+      </radialGradient>
+      <mask id={`${id}-eyes`} maskUnits="userSpaceOnUse" x="0" y="0" width="188" height="500">
+        <ellipse cx="76" cy="70" rx="16" ry="13" fill={`url(#${id}-eye-edge)`} />
+        <ellipse cx="114" cy="70" rx="16" ry="13" fill={`url(#${id}-eye-edge)`} />
+      </mask>
+    </defs>
+    <image className="lesson-reader" href={`${base}lessons/reader.webp`} x="0" y="0" width="188" height="500" />
+    <image className="reader-eyes" href={`${base}lessons/reader-blink-${frame}.webp`} x="1" y="27.5" width="186" height="450" mask={`url(#${id}-eyes)`} />
+  </g>;
 }
 function Book({x,y,turn=0}:{x:number;y:number;turn?:number}) {
   // Congregation view: exterior covers face us; the page hinges toward the reader.
@@ -51,7 +107,8 @@ function GiftBearer({time,lane,wine=false}:{time:number;lane:number;wine?:boolea
   return <g className="gift-bearer" data-gift={wine?"wine":"bread"} data-facing={front?"congregation":"altar"}
     data-walk-progress={walk.toFixed(3)} data-turn-progress={turn.toFixed(3)}
     transform={`translate(${x} ${feet+bob}) rotate(${sway*180/Math.PI})`}>
-    <PoseSequence frames={frames} time={time} x={0} y={0} height={height} />
+    {time<12?<WalkCycle poses={childWalk} time={time} offset={lane>0?4:0} x={0} y={0} height={height} />
+      :<PoseSequence frames={frames} time={time} x={0} y={0} height={height} />}
   </g>;
 }
 function ScenePair({pose,x,y,height,ratio,opacity=1}:{pose:string;x:number;y:number;height:number;ratio:number;opacity?:number}) {
@@ -61,11 +118,32 @@ function ScenePair({pose,x,y,height,ratio,opacity=1}:{pose:string;x:number;y:num
 function PoseSequence({frames,time,x,y,height,ratio,priest=false}:{frames:PoseFrame[];time:number;x:number;y:number;height:number;ratio?:number;priest?:boolean}) {
   const active=activePoses(frames,time),poses=[...new Set(frames.map(frame=>frame.pose))];
   return <g className="pose-sequence" style={{isolation:"isolate"}} data-active-poses={active.map(frame=>frame.pose).join(",")}>
-    {poses.map(pose=> {
+    {[...poses.filter(pose=>!active.some(frame=>frame.pose===pose)),...active.map(frame=>frame.pose)].map(pose=> {
       const opacity=active.find(frame=>frame.pose===pose)?.opacity || 0;
       return priest?<Priest key={pose} pose={pose} x={x} y={y} height={height} opacity={opacity} />
         :<ScenePair key={pose} pose={pose} x={x} y={y} height={height} ratio={ratio || lessonFrameRatios[pose]} opacity={opacity} />;
     })}
+  </g>;
+}
+// Keep the anatomy and host contact together in each complete drawing.
+// In particular, hold the palm-contact drawing before the priest withdraws.
+const communionFrames:PoseFrame[]=[
+  {at:0,pose:"communion-cel-1"},
+  {at:1.4,pose:"communion-cel-1"},
+  {at:1.8,pose:"communion-cel-2"},
+  {at:2.3,pose:"communion-cel-3"},
+  {at:4.2,pose:"communion-cel-3"},
+  {at:4.6,pose:"communion-cel-4"},
+  {at:5.05,pose:"communion-cel-5"},
+  {at:6.2,pose:"communion-cel-5"},
+  {at:6.65,pose:"communion-cel-6"},
+  {at:8,pose:"communion-cel-6"},
+  {at:8.45,pose:"communion-cel-7"},
+  {at:8.9,pose:"communion-cel-8"},
+];
+function CommunionReception({time:t}:{time:number}) {
+  return <g className="communion-reception" data-phase={t>=8.9?"consume":t>=6.65?"received":t>=5.05?"contact":t>=2.3?"amen":"bow"}>
+    <PoseSequence frames={communionFrames} time={t} x={562} y={548} height={310} ratio={590/710} />
   </g>;
 }
 function GospelThumb({time}:{time:number}) {
@@ -132,11 +210,12 @@ function useSceneTime(duration:number) {
 }
 
 export function StorybookLessonScene({partId,alt}:{partId:string;alt:string}) {
+  useEffect(preloadCartoonFrames,[]);
   const duration=lessonDurations[partId],{time:t,reduced}=useSceneTime(duration);
   const id=useId().replaceAll(":",""),{parishArtwork}=useMassContent();
-  const womanReading=["first","psalm","second"].includes(partId);
+  const womanReading=["first","psalm","second","faithful"].includes(partId);
   const reading=womanReading || ["gospel","homily"].includes(partId);
-  const bookAtAmbo=["alleluia","creed","faithful","offerings","eucharistic","sanctus","consecration","amen","ourfather","lamb"].includes(partId);
+  const bookAtAmbo=["alleluia","creed","offerings","eucharistic","sanctus","consecration","amen","ourfather","lamb"].includes(partId);
   const standing=partId==="dismissal";
   const fullChurch=standing || ["gifts","peace","communion"].includes(partId);
   const background=fullChurch?`${base}procession/church.jpg`:(reading || bookAtAmbo)?`${base}lessons/sanctuary-no-book.webp`:parishArtwork.sanctuary.src;
@@ -154,36 +233,38 @@ export function StorybookLessonScene({partId,alt}:{partId:string;alt:string}) {
   }
   function content() {
     if(partId==="gospel") return <GospelThumb time={t} />;
-    if(reading) return <g className={womanReading?"reader-at-ambo":"priest-at-ambo"} data-speaker={womanReading?"woman":"priest"}>
-      {womanReading?<image className="lesson-reader" href={`${base}lessons/reader.webp`} x={112.24} y={205} width={195.52} height={520} />:<Priest x={210} y={725} height={520} />}
+    if(reading) return <>{partId==="faithful" && atAltar()}<g className={womanReading?"reader-at-ambo":"priest-at-ambo"} data-speaker={womanReading?"woman":"priest"}>
+      {womanReading?<Reader />:<Priest x={210} y={725} height={520} />}
       <g clipPath={`url(#${id}-ambo)`}>{backdrop()}</g>
       <Book x={183} y={375} turn={pageTurn} />
-    </g>;
+      <g className="ambo-microphone" fill="none" stroke="#302a25" strokeLinecap="round">
+        <path d="M116 393L133 347Q143 327 163 316L181 308" strokeWidth="5" />
+        <path d="M178 309L190 304" strokeWidth="11" />
+        <path d="M179 307L188 303" stroke="#625a50" strokeWidth="3" />
+      </g>
+    </g></>;
     if(partId==="dismissal") {
       const walk=smooth(t/14),moving=t<14;
       return <g transform={`translate(0 ${moving?Math.sin(t*5)*.8:0})`}>
-        <Priest x={mix(590,600,walk)} y={mix(530,742,walk)} height={mix(300,470,walk)} />
+        {moving?<WalkCycle poses={priestWalk} time={t} x={mix(590,600,walk)} y={mix(530,742,walk)} height={mix(300,470,walk)} priest />
+          :<Priest x={600} y={742} height={470} />}
       </g>;
     }
     if(partId==="gifts") return <><g className="priest-in-front-of-altar"><Priest x={562} y={480} height={235} /></g><GiftBearer time={t} lane={-1} /><GiftBearer time={t} lane={1} wine /></>;
     if(partId==="peace") {
-      const frames=[{at:0,pose:"peace-ready"},{at:1.5,pose:"peace-ready"},{at:2,pose:"peace-reach"},{at:2.5,pose:"peace-contact"},{at:3,pose:"peace-greeting"}];
+      const frames=[{at:0,pose:"peace-cel-1"},{at:1.5,pose:"peace-cel-1"},
+        ...numberedFrames("peace-cel",8).slice(1).map((pose,i)=>({at:1.5+(i+1)*.22,pose}))];
       return <><Priest x={562} y={480} height={235} /><g className="peace-greeting" data-phase={t>=3?"greeting":"approach"}>
         <PoseSequence frames={frames} time={t} x={600} y={740} height={345} ratio={621/874} />
       </g></>;
     }
-    if(partId==="communion") {
-      const frames=[{at:0,pose:"communion-bow"},{at:2.5,pose:"communion-bow"},{at:3.1,pose:"communion-ready-mid"},{at:3.7,pose:"communion-amen"},
-        {at:5.5,pose:"communion-amen"},{at:6.1,pose:"communion-receive-mid"},{at:6.7,pose:"communion-received"},
-        {at:9,pose:"communion-received"},{at:9.6,pose:"communion-mouth-mid"},{at:10.2,pose:"communion-mouth"}];
-      return <g className="communion-reception" data-phase={t>=10.2?"consume":t>=6.7?"received":t>=3.7?"amen":"bow"}>
-        <PoseSequence frames={frames} time={t} x={562} y={548} height={310} ratio={590/710} />
-      </g>;
-    }
+    if(partId==="communion") return <CommunionReception time={t} />;
     if(partId==="consecration") {
-      return priestSequence([{at:0,pose:"priest-prayer"},{at:1,pose:"priest-prayer"},{at:1.7,pose:"priest-host-mid"},{at:2.4,pose:"priest-host"},
-        {at:6,pose:"priest-host"},{at:6.6,pose:"priest-host-mid"},{at:7.2,pose:"priest-prayer"},
-        {at:8,pose:"priest-prayer"},{at:8.7,pose:"priest-cup-mid"},{at:9.4,pose:"priest-cup"}]);
+      return priestSequence([{at:0,pose:"priest-prayer"},{at:1,pose:"priest-prayer"},
+        ...numberedFrames("priest-host-cel",4).map((pose,i)=>({at:1.2+i*.4,pose})),
+        {at:6,pose:"priest-host-cel-4"},{at:6.3,pose:"priest-host-cel-3"},{at:6.6,pose:"priest-host-cel-2"},
+        {at:6.9,pose:"priest-host-cel-1"},{at:7.2,pose:"priest-prayer"},{at:8,pose:"priest-prayer"},
+        ...numberedFrames("priest-cup-cel",4).map((pose,i)=>({at:8.2+i*.4,pose}))]);
     }
     if(partId==="amen") return priestSequence([{at:0,pose:"priest-prayer"},{at:1,pose:"priest-prayer"},{at:1.75,pose:"priest-chalice-mid"},{at:2.5,pose:"priest-chalice"}]);
     if(partId==="blessing") return priestSequence([{at:0,pose:"priest-prayer"},{at:1,pose:"priest-prayer"},{at:1.75,pose:"priest-blessing-mid"},{at:2.5,pose:"priest-blessing"}]);
@@ -198,12 +279,12 @@ export function StorybookLessonScene({partId,alt}:{partId:string;alt:string}) {
     if(["offerings","eucharistic"].includes(partId)) return <>{atAltar()}<Paten x={680} y={439} /><Chalice x={880} y={415} scale={.85} /></>;
     return atAltar();
   }
-  return <svg className="storybook-lesson" viewBox="0 0 1200 780" role="img" aria-label={alt}
+  return <AnimationTime.Provider value={{time:t,duration}}><svg className="storybook-lesson" viewBox="0 0 1200 780" role="img" aria-label={alt}
     data-part={partId} data-duration={duration} data-scene-time={t.toFixed(2)} data-motion={reduced?"reduced":"full"} data-complete={t>=duration}>
     <defs>
       <clipPath id={`${id}-altar`}><rect width="1200" height="439" /></clipPath>
       <clipPath id={`${id}-ambo`}><rect x="0" y="390" width="370" height="390" /></clipPath>
     </defs>
     <g transform={`translate(600 390) scale(${zoom}) translate(-600 -390)`}>{backdrop()}{content()}{bookAtAmbo && <Book x={183} y={375} turn={pageTurn} />}</g>
-  </svg>;
+  </svg></AnimationTime.Provider>;
 }

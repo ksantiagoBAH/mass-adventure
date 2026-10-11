@@ -1674,4 +1674,4 @@ main {
 
 .storybook-lesson { display: block; width: 100%; height: auto; aspect-ratio: 20 / 13; border-radius: 18px; overflow: hidden; }
 
-.pose-sequence > image { mix-blend-mode: plus-lighter; }
+.pose-sequence > image { mix-blend-mode: normal; }
