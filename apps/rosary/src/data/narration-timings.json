@@ -1,0 +1,8812 @@
+{
+  "prayer:sign-of-cross": {
+    "transcript": "In the name of the Father, and of the Son, and of the Holy Spirit. Amen.",
+    "audioSha256": "1023dc2afb4909fb3b4d6248fa48f9932a06ee7e209d6fa7199a4f4327ca6703",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.06,
+        "end": 0.12,
+        "offset": 0,
+        "endOffset": 2
+      },
+      {
+        "start": 0.12,
+        "end": 0.22,
+        "offset": 3,
+        "endOffset": 6
+      },
+      {
+        "start": 0.22,
+        "end": 0.38,
+        "offset": 7,
+        "endOffset": 11
+      },
+      {
+        "start": 0.38,
+        "end": 0.5,
+        "offset": 12,
+        "endOffset": 14
+      },
+      {
+        "start": 0.5,
+        "end": 0.6,
+        "offset": 15,
+        "endOffset": 18
+      },
+      {
+        "start": 0.6,
+        "end": 0.9,
+        "offset": 19,
+        "endOffset": 26
+      },
+      {
+        "start": 1.46,
+        "end": 1.48,
+        "offset": 27,
+        "endOffset": 30
+      },
+      {
+        "start": 1.48,
+        "end": 1.58,
+        "offset": 31,
+        "endOffset": 33
+      },
+      {
+        "start": 1.58,
+        "end": 1.7,
+        "offset": 34,
+        "endOffset": 37
+      },
+      {
+        "start": 1.7,
+        "end": 2.0,
+        "offset": 38,
+        "endOffset": 42
+      },
+      {
+        "start": 2.42,
+        "end": 2.52,
+        "offset": 43,
+        "endOffset": 46
+      },
+      {
+        "start": 2.52,
+        "end": 2.62,
+        "offset": 47,
+        "endOffset": 49
+      },
+      {
+        "start": 2.62,
+        "end": 2.72,
+        "offset": 50,
+        "endOffset": 53
+      },
+      {
+        "start": 2.72,
+        "end": 2.92,
+        "offset": 54,
+        "endOffset": 58
+      },
+      {
+        "start": 2.92,
+        "end": 3.17,
+        "offset": 59,
+        "endOffset": 66
+      },
+      {
+        "start": 4.0,
+        "end": 4.3,
+        "offset": 67,
+        "endOffset": 72
+      }
+    ]
+  },
+  "prayer:apostles-creed": {
+    "transcript": "I believe in God, the Father almighty, Creator of heaven and earth; and in Jesus Christ, His only Son, our Lord; who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried. He descended into hell; the third day He rose again from the dead; He ascended into heaven, and sits at the right hand of God, the Father almighty; from there He shall come to judge the living and the dead.\n\nI believe in the Holy Spirit, the holy Catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.",
+    "audioSha256": "8673568eb3bdfb45b62b5ab4244a03fe61d68b8e22f1bbab05bf909f5325a4e0",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.16,
+        "end": 0.2,
+        "offset": 0,
+        "endOffset": 1
+      },
+      {
+        "start": 0.2,
+        "end": 0.38,
+        "offset": 2,
+        "endOffset": 9
+      },
+      {
+        "start": 0.38,
+        "end": 0.6,
+        "offset": 10,
+        "endOffset": 12
+      },
+      {
+        "start": 0.6,
+        "end": 1.08,
+        "offset": 13,
+        "endOffset": 17
+      },
+      {
+        "start": 1.58,
+        "end": 1.62,
+        "offset": 18,
+        "endOffset": 21
+      },
+      {
+        "start": 1.7,
+        "end": 1.88,
+        "offset": 22,
+        "endOffset": 28
+      },
+      {
+        "start": 1.88,
+        "end": 2.43,
+        "offset": 29,
+        "endOffset": 38
+      },
+      {
+        "start": 3.18,
+        "end": 3.46,
+        "offset": 39,
+        "endOffset": 46
+      },
+      {
+        "start": 3.46,
+        "end": 3.8,
+        "offset": 47,
+        "endOffset": 49
+      },
+      {
+        "start": 3.8,
+        "end": 4.04,
+        "offset": 50,
+        "endOffset": 56
+      },
+      {
+        "start": 4.04,
+        "end": 4.42,
+        "offset": 57,
+        "endOffset": 60
+      },
+      {
+        "start": 5.36,
+        "end": 5.46,
+        "offset": 61,
+        "endOffset": 67
+      },
+      {
+        "start": 5.46,
+        "end": 5.52,
+        "offset": 68,
+        "endOffset": 71
+      },
+      {
+        "start": 5.52,
+        "end": 5.68,
+        "offset": 72,
+        "endOffset": 74
+      },
+      {
+        "start": 5.68,
+        "end": 5.9,
+        "offset": 75,
+        "endOffset": 80
+      },
+      {
+        "start": 5.9,
+        "end": 6.3,
+        "offset": 81,
+        "endOffset": 88
+      },
+      {
+        "start": 6.72,
+        "end": 6.76,
+        "offset": 89,
+        "endOffset": 92
+      },
+      {
+        "start": 6.76,
+        "end": 6.94,
+        "offset": 93,
+        "endOffset": 97
+      },
+      {
+        "start": 6.94,
+        "end": 7.49,
+        "offset": 98,
+        "endOffset": 102
+      },
+      {
+        "start": 7.68,
+        "end": 7.74,
+        "offset": 103,
+        "endOffset": 106
+      },
+      {
+        "start": 7.74,
+        "end": 8.72,
+        "offset": 107,
+        "endOffset": 112
+      },
+      {
+        "start": 8.72,
+        "end": 8.78,
+        "offset": 113,
+        "endOffset": 116
+      },
+      {
+        "start": 8.78,
+        "end": 8.9,
+        "offset": 117,
+        "endOffset": 120
+      },
+      {
+        "start": 8.9,
+        "end": 9.28,
+        "offset": 121,
+        "endOffset": 130
+      },
+      {
+        "start": 9.28,
+        "end": 9.66,
+        "offset": 131,
+        "endOffset": 133
+      },
+      {
+        "start": 9.66,
+        "end": 9.8,
+        "offset": 134,
+        "endOffset": 137
+      },
+      {
+        "start": 9.8,
+        "end": 10.0,
+        "offset": 138,
+        "endOffset": 142
+      },
+      {
+        "start": 10.0,
+        "end": 10.5,
+        "offset": 143,
+        "endOffset": 150
+      },
+      {
+        "start": 11.2,
+        "end": 11.42,
+        "offset": 151,
+        "endOffset": 155
+      },
+      {
+        "start": 11.42,
+        "end": 11.66,
+        "offset": 156,
+        "endOffset": 158
+      },
+      {
+        "start": 11.66,
+        "end": 11.78,
+        "offset": 159,
+        "endOffset": 162
+      },
+      {
+        "start": 11.78,
+        "end": 12.06,
+        "offset": 163,
+        "endOffset": 169
+      },
+      {
+        "start": 12.06,
+        "end": 12.44,
+        "offset": 170,
+        "endOffset": 175
+      },
+      {
+        "start": 13.1,
+        "end": 13.42,
+        "offset": 176,
+        "endOffset": 184
+      },
+      {
+        "start": 13.46,
+        "end": 13.72,
+        "offset": 185,
+        "endOffset": 190
+      },
+      {
+        "start": 13.72,
+        "end": 14.22,
+        "offset": 191,
+        "endOffset": 198
+      },
+      {
+        "start": 14.22,
+        "end": 14.62,
+        "offset": 199,
+        "endOffset": 206
+      },
+      {
+        "start": 15.06,
+        "end": 15.3,
+        "offset": 207,
+        "endOffset": 210
+      },
+      {
+        "start": 15.3,
+        "end": 16.24,
+        "offset": 211,
+        "endOffset": 221
+      },
+      {
+        "start": 16.42,
+        "end": 16.6,
+        "offset": 222,
+        "endOffset": 227
+      },
+      {
+        "start": 16.6,
+        "end": 17.04,
+        "offset": 228,
+        "endOffset": 231
+      },
+      {
+        "start": 17.04,
+        "end": 17.16,
+        "offset": 232,
+        "endOffset": 235
+      },
+      {
+        "start": 17.16,
+        "end": 17.52,
+        "offset": 236,
+        "endOffset": 243
+      },
+      {
+        "start": 18.32,
+        "end": 18.36,
+        "offset": 244,
+        "endOffset": 246
+      },
+      {
+        "start": 18.36,
+        "end": 18.6,
+        "offset": 247,
+        "endOffset": 256
+      },
+      {
+        "start": 18.6,
+        "end": 19.08,
+        "offset": 257,
+        "endOffset": 261
+      },
+      {
+        "start": 19.08,
+        "end": 20.06,
+        "offset": 262,
+        "endOffset": 267
+      },
+      {
+        "start": 20.06,
+        "end": 20.14,
+        "offset": 268,
+        "endOffset": 271
+      },
+      {
+        "start": 20.14,
+        "end": 20.42,
+        "offset": 272,
+        "endOffset": 277
+      },
+      {
+        "start": 20.42,
+        "end": 20.66,
+        "offset": 278,
+        "endOffset": 281
+      },
+      {
+        "start": 20.66,
+        "end": 20.9,
+        "offset": 282,
+        "endOffset": 284
+      },
+      {
+        "start": 20.9,
+        "end": 21.1,
+        "offset": 285,
+        "endOffset": 289
+      },
+      {
+        "start": 21.1,
+        "end": 21.48,
+        "offset": 290,
+        "endOffset": 295
+      },
+      {
+        "start": 21.48,
+        "end": 21.7,
+        "offset": 296,
+        "endOffset": 300
+      },
+      {
+        "start": 21.74,
+        "end": 21.86,
+        "offset": 301,
+        "endOffset": 304
+      },
+      {
+        "start": 21.86,
+        "end": 22.72,
+        "offset": 305,
+        "endOffset": 310
+      },
+      {
+        "start": 22.76,
+        "end": 22.86,
+        "offset": 311,
+        "endOffset": 313
+      },
+      {
+        "start": 22.86,
+        "end": 23.16,
+        "offset": 314,
+        "endOffset": 322
+      },
+      {
+        "start": 23.16,
+        "end": 23.52,
+        "offset": 323,
+        "endOffset": 327
+      },
+      {
+        "start": 23.52,
+        "end": 24.1,
+        "offset": 328,
+        "endOffset": 335
+      },
+      {
+        "start": 24.34,
+        "end": 24.44,
+        "offset": 336,
+        "endOffset": 339
+      },
+      {
+        "start": 24.44,
+        "end": 24.7,
+        "offset": 340,
+        "endOffset": 344
+      },
+      {
+        "start": 24.7,
+        "end": 25.0,
+        "offset": 345,
+        "endOffset": 347
+      },
+      {
+        "start": 25.0,
+        "end": 25.12,
+        "offset": 348,
+        "endOffset": 351
+      },
+      {
+        "start": 25.12,
+        "end": 25.36,
+        "offset": 352,
+        "endOffset": 357
+      },
+      {
+        "start": 25.36,
+        "end": 25.68,
+        "offset": 358,
+        "endOffset": 362
+      },
+      {
+        "start": 25.68,
+        "end": 25.86,
+        "offset": 363,
+        "endOffset": 365
+      },
+      {
+        "start": 25.86,
+        "end": 25.96,
+        "offset": 366,
+        "endOffset": 370
+      },
+      {
+        "start": 26.46,
+        "end": 26.5,
+        "offset": 371,
+        "endOffset": 374
+      },
+      {
+        "start": 26.64,
+        "end": 26.78,
+        "offset": 375,
+        "endOffset": 381
+      },
+      {
+        "start": 28.02,
+        "end": 28.12,
+        "offset": 382,
+        "endOffset": 391
+      },
+      {
+        "start": 28.12,
+        "end": 28.16,
+        "offset": 392,
+        "endOffset": 396
+      },
+      {
+        "start": 28.16,
+        "end": 28.38,
+        "offset": 397,
+        "endOffset": 402
+      },
+      {
+        "start": 28.38,
+        "end": 28.64,
+        "offset": 403,
+        "endOffset": 405
+      },
+      {
+        "start": 28.64,
+        "end": 28.8,
+        "offset": 406,
+        "endOffset": 411
+      },
+      {
+        "start": 28.8,
+        "end": 29.06,
+        "offset": 412,
+        "endOffset": 416
+      },
+      {
+        "start": 29.06,
+        "end": 29.22,
+        "offset": 417,
+        "endOffset": 419
+      },
+      {
+        "start": 29.22,
+        "end": 29.4,
+        "offset": 420,
+        "endOffset": 425
+      },
+      {
+        "start": 29.4,
+        "end": 29.76,
+        "offset": 426,
+        "endOffset": 429
+      },
+      {
+        "start": 29.78,
+        "end": 30.06,
+        "offset": 430,
+        "endOffset": 436
+      },
+      {
+        "start": 30.06,
+        "end": 30.36,
+        "offset": 437,
+        "endOffset": 440
+      },
+      {
+        "start": 30.4,
+        "end": 30.5,
+        "offset": 441,
+        "endOffset": 444
+      },
+      {
+        "start": 30.5,
+        "end": 30.78,
+        "offset": 445,
+        "endOffset": 450
+      },
+      {
+        "start": 31.6,
+        "end": 31.72,
+        "offset": 452,
+        "endOffset": 453
+      },
+      {
+        "start": 31.72,
+        "end": 31.88,
+        "offset": 454,
+        "endOffset": 461
+      },
+      {
+        "start": 31.88,
+        "end": 32.14,
+        "offset": 462,
+        "endOffset": 464
+      },
+      {
+        "start": 32.14,
+        "end": 32.24,
+        "offset": 465,
+        "endOffset": 468
+      },
+      {
+        "start": 32.24,
+        "end": 32.44,
+        "offset": 469,
+        "endOffset": 473
+      },
+      {
+        "start": 32.44,
+        "end": 32.94,
+        "offset": 474,
+        "endOffset": 481
+      },
+      {
+        "start": 33.52,
+        "end": 33.62,
+        "offset": 482,
+        "endOffset": 485
+      },
+      {
+        "start": 33.62,
+        "end": 33.84,
+        "offset": 486,
+        "endOffset": 490
+      },
+      {
+        "start": 33.84,
+        "end": 34.22,
+        "offset": 491,
+        "endOffset": 499
+      },
+      {
+        "start": 34.22,
+        "end": 34.78,
+        "offset": 500,
+        "endOffset": 507
+      },
+      {
+        "start": 35.34,
+        "end": 35.8,
+        "offset": 508,
+        "endOffset": 511
+      },
+      {
+        "start": 35.8,
+        "end": 35.84,
+        "offset": 512,
+        "endOffset": 521
+      },
+      {
+        "start": 35.84,
+        "end": 36.0,
+        "offset": 522,
+        "endOffset": 524
+      },
+      {
+        "start": 36.0,
+        "end": 36.42,
+        "offset": 525,
+        "endOffset": 532
+      },
+      {
+        "start": 36.82,
+        "end": 37.02,
+        "offset": 533,
+        "endOffset": 536
+      },
+      {
+        "start": 37.1,
+        "end": 37.34,
+        "offset": 537,
+        "endOffset": 548
+      },
+      {
+        "start": 37.64,
+        "end": 37.74,
+        "offset": 549,
+        "endOffset": 551
+      },
+      {
+        "start": 37.74,
+        "end": 38.32,
+        "offset": 552,
+        "endOffset": 557
+      },
+      {
+        "start": 38.7,
+        "end": 38.8,
+        "offset": 558,
+        "endOffset": 561
+      },
+      {
+        "start": 38.8,
+        "end": 39.12,
+        "offset": 562,
+        "endOffset": 574
+      },
+      {
+        "start": 39.12,
+        "end": 39.52,
+        "offset": 575,
+        "endOffset": 577
+      },
+      {
+        "start": 39.52,
+        "end": 39.62,
+        "offset": 578,
+        "endOffset": 581
+      },
+      {
+        "start": 39.62,
+        "end": 40.16,
+        "offset": 582,
+        "endOffset": 587
+      },
+      {
+        "start": 40.44,
+        "end": 40.54,
+        "offset": 588,
+        "endOffset": 591
+      },
+      {
+        "start": 40.54,
+        "end": 40.8,
+        "offset": 592,
+        "endOffset": 596
+      },
+      {
+        "start": 40.8,
+        "end": 41.45,
+        "offset": 597,
+        "endOffset": 609
+      },
+      {
+        "start": 42.4,
+        "end": 42.72,
+        "offset": 610,
+        "endOffset": 615
+      }
+    ]
+  },
+  "prayer:our-father": {
+    "transcript": "Our Father, who art in heaven, hallowed be Thy name; Thy kingdom come; Thy will be done on earth as it is in heaven.\n\nGive us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.",
+    "audioSha256": "c712cf0fe0cf17c2ffffb814e28f2bf8648ea6e7b45ccb9c9f9cbef4d953e2f0",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.2,
+        "end": 0.24,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.24,
+        "end": 0.88,
+        "offset": 4,
+        "endOffset": 11
+      },
+      {
+        "start": 1.26,
+        "end": 1.3,
+        "offset": 12,
+        "endOffset": 15
+      },
+      {
+        "start": 1.3,
+        "end": 1.48,
+        "offset": 16,
+        "endOffset": 19
+      },
+      {
+        "start": 1.48,
+        "end": 1.68,
+        "offset": 20,
+        "endOffset": 22
+      },
+      {
+        "start": 1.68,
+        "end": 2.23,
+        "offset": 23,
+        "endOffset": 30
+      },
+      {
+        "start": 2.72,
+        "end": 2.96,
+        "offset": 31,
+        "endOffset": 39
+      },
+      {
+        "start": 2.96,
+        "end": 3.18,
+        "offset": 40,
+        "endOffset": 42
+      },
+      {
+        "start": 3.18,
+        "end": 3.38,
+        "offset": 43,
+        "endOffset": 46
+      },
+      {
+        "start": 3.38,
+        "end": 4.38,
+        "offset": 47,
+        "endOffset": 52
+      },
+      {
+        "start": 4.54,
+        "end": 4.64,
+        "offset": 53,
+        "endOffset": 56
+      },
+      {
+        "start": 4.64,
+        "end": 4.94,
+        "offset": 57,
+        "endOffset": 64
+      },
+      {
+        "start": 4.94,
+        "end": 5.94,
+        "offset": 65,
+        "endOffset": 70
+      },
+      {
+        "start": 6.04,
+        "end": 6.14,
+        "offset": 71,
+        "endOffset": 74
+      },
+      {
+        "start": 6.14,
+        "end": 6.4,
+        "offset": 75,
+        "endOffset": 79
+      },
+      {
+        "start": 6.4,
+        "end": 6.66,
+        "offset": 80,
+        "endOffset": 82
+      },
+      {
+        "start": 6.66,
+        "end": 6.9,
+        "offset": 83,
+        "endOffset": 87
+      },
+      {
+        "start": 6.9,
+        "end": 7.3,
+        "offset": 88,
+        "endOffset": 90
+      },
+      {
+        "start": 7.3,
+        "end": 7.6,
+        "offset": 91,
+        "endOffset": 96
+      },
+      {
+        "start": 7.6,
+        "end": 8.0,
+        "offset": 97,
+        "endOffset": 99
+      },
+      {
+        "start": 8.0,
+        "end": 8.18,
+        "offset": 100,
+        "endOffset": 102
+      },
+      {
+        "start": 8.18,
+        "end": 8.3,
+        "offset": 103,
+        "endOffset": 105
+      },
+      {
+        "start": 8.3,
+        "end": 8.42,
+        "offset": 106,
+        "endOffset": 108
+      },
+      {
+        "start": 8.42,
+        "end": 8.82,
+        "offset": 109,
+        "endOffset": 116
+      },
+      {
+        "start": 9.58,
+        "end": 9.68,
+        "offset": 118,
+        "endOffset": 122
+      },
+      {
+        "start": 9.68,
+        "end": 9.82,
+        "offset": 123,
+        "endOffset": 125
+      },
+      {
+        "start": 9.82,
+        "end": 10.0,
+        "offset": 126,
+        "endOffset": 130
+      },
+      {
+        "start": 10.0,
+        "end": 10.32,
+        "offset": 131,
+        "endOffset": 134
+      },
+      {
+        "start": 10.32,
+        "end": 10.62,
+        "offset": 135,
+        "endOffset": 138
+      },
+      {
+        "start": 10.62,
+        "end": 10.82,
+        "offset": 139,
+        "endOffset": 144
+      },
+      {
+        "start": 10.82,
+        "end": 11.92,
+        "offset": 145,
+        "endOffset": 151
+      },
+      {
+        "start": 11.92,
+        "end": 12.0,
+        "offset": 152,
+        "endOffset": 155
+      },
+      {
+        "start": 12.0,
+        "end": 12.24,
+        "offset": 156,
+        "endOffset": 163
+      },
+      {
+        "start": 12.24,
+        "end": 12.52,
+        "offset": 164,
+        "endOffset": 166
+      },
+      {
+        "start": 12.52,
+        "end": 12.66,
+        "offset": 167,
+        "endOffset": 170
+      },
+      {
+        "start": 12.66,
+        "end": 13.34,
+        "offset": 171,
+        "endOffset": 181
+      },
+      {
+        "start": 13.34,
+        "end": 14.06,
+        "offset": 182,
+        "endOffset": 184
+      },
+      {
+        "start": 14.06,
+        "end": 14.26,
+        "offset": 185,
+        "endOffset": 187
+      },
+      {
+        "start": 14.26,
+        "end": 14.48,
+        "offset": 188,
+        "endOffset": 195
+      },
+      {
+        "start": 14.48,
+        "end": 14.9,
+        "offset": 196,
+        "endOffset": 201
+      },
+      {
+        "start": 14.9,
+        "end": 15.14,
+        "offset": 202,
+        "endOffset": 205
+      },
+      {
+        "start": 15.14,
+        "end": 15.44,
+        "offset": 206,
+        "endOffset": 214
+      },
+      {
+        "start": 15.44,
+        "end": 16.0,
+        "offset": 215,
+        "endOffset": 222
+      },
+      {
+        "start": 16.0,
+        "end": 17.02,
+        "offset": 223,
+        "endOffset": 226
+      },
+      {
+        "start": 17.08,
+        "end": 17.18,
+        "offset": 227,
+        "endOffset": 230
+      },
+      {
+        "start": 17.18,
+        "end": 17.34,
+        "offset": 231,
+        "endOffset": 235
+      },
+      {
+        "start": 17.34,
+        "end": 17.5,
+        "offset": 236,
+        "endOffset": 238
+      },
+      {
+        "start": 17.5,
+        "end": 17.78,
+        "offset": 239,
+        "endOffset": 242
+      },
+      {
+        "start": 17.78,
+        "end": 18.04,
+        "offset": 243,
+        "endOffset": 247
+      },
+      {
+        "start": 18.04,
+        "end": 18.74,
+        "offset": 248,
+        "endOffset": 259
+      },
+      {
+        "start": 19.24,
+        "end": 19.34,
+        "offset": 260,
+        "endOffset": 263
+      },
+      {
+        "start": 19.34,
+        "end": 19.6,
+        "offset": 264,
+        "endOffset": 271
+      },
+      {
+        "start": 19.6,
+        "end": 19.98,
+        "offset": 272,
+        "endOffset": 274
+      },
+      {
+        "start": 19.98,
+        "end": 20.16,
+        "offset": 275,
+        "endOffset": 279
+      },
+      {
+        "start": 20.16,
+        "end": 20.62,
+        "offset": 280,
+        "endOffset": 285
+      },
+      {
+        "start": 21.18,
+        "end": 21.56,
+        "offset": 286,
+        "endOffset": 291
+      }
+    ]
+  },
+  "prayer:hail-mary": {
+    "transcript": "Hail Mary, full of grace, the Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus.\n\nHoly Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.",
+    "audioSha256": "421578aef0d1254adb4cbda72a94b1bc747f7ba073a364db4d02c234b83430c1",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.22,
+        "end": 0.26,
+        "offset": 0,
+        "endOffset": 4
+      },
+      {
+        "start": 0.26,
+        "end": 0.76,
+        "offset": 5,
+        "endOffset": 10
+      },
+      {
+        "start": 1.22,
+        "end": 1.26,
+        "offset": 11,
+        "endOffset": 15
+      },
+      {
+        "start": 1.26,
+        "end": 1.4,
+        "offset": 16,
+        "endOffset": 18
+      },
+      {
+        "start": 1.4,
+        "end": 1.76,
+        "offset": 19,
+        "endOffset": 25
+      },
+      {
+        "start": 2.18,
+        "end": 2.28,
+        "offset": 26,
+        "endOffset": 29
+      },
+      {
+        "start": 2.28,
+        "end": 2.58,
+        "offset": 30,
+        "endOffset": 34
+      },
+      {
+        "start": 2.58,
+        "end": 2.78,
+        "offset": 35,
+        "endOffset": 37
+      },
+      {
+        "start": 2.78,
+        "end": 2.94,
+        "offset": 38,
+        "endOffset": 42
+      },
+      {
+        "start": 2.94,
+        "end": 3.44,
+        "offset": 43,
+        "endOffset": 48
+      },
+      {
+        "start": 4.04,
+        "end": 4.08,
+        "offset": 49,
+        "endOffset": 56
+      },
+      {
+        "start": 4.08,
+        "end": 4.38,
+        "offset": 57,
+        "endOffset": 60
+      },
+      {
+        "start": 4.38,
+        "end": 4.64,
+        "offset": 61,
+        "endOffset": 65
+      },
+      {
+        "start": 4.64,
+        "end": 4.88,
+        "offset": 66,
+        "endOffset": 71
+      },
+      {
+        "start": 4.88,
+        "end": 5.52,
+        "offset": 72,
+        "endOffset": 78
+      },
+      {
+        "start": 5.7,
+        "end": 5.8,
+        "offset": 79,
+        "endOffset": 82
+      },
+      {
+        "start": 5.8,
+        "end": 6.04,
+        "offset": 83,
+        "endOffset": 90
+      },
+      {
+        "start": 6.04,
+        "end": 6.36,
+        "offset": 91,
+        "endOffset": 93
+      },
+      {
+        "start": 6.36,
+        "end": 6.52,
+        "offset": 94,
+        "endOffset": 97
+      },
+      {
+        "start": 6.66,
+        "end": 6.76,
+        "offset": 98,
+        "endOffset": 103
+      },
+      {
+        "start": 6.76,
+        "end": 6.96,
+        "offset": 104,
+        "endOffset": 106
+      },
+      {
+        "start": 7.08,
+        "end": 7.18,
+        "offset": 107,
+        "endOffset": 110
+      },
+      {
+        "start": 7.18,
+        "end": 7.68,
+        "offset": 111,
+        "endOffset": 116
+      },
+      {
+        "start": 7.7,
+        "end": 8.76,
+        "offset": 117,
+        "endOffset": 123
+      },
+      {
+        "start": 8.92,
+        "end": 9.14,
+        "offset": 125,
+        "endOffset": 129
+      },
+      {
+        "start": 9.14,
+        "end": 9.7,
+        "offset": 130,
+        "endOffset": 135
+      },
+      {
+        "start": 9.84,
+        "end": 10.08,
+        "offset": 136,
+        "endOffset": 142
+      },
+      {
+        "start": 10.08,
+        "end": 10.24,
+        "offset": 143,
+        "endOffset": 145
+      },
+      {
+        "start": 10.24,
+        "end": 10.7,
+        "offset": 146,
+        "endOffset": 150
+      },
+      {
+        "start": 11.16,
+        "end": 11.26,
+        "offset": 151,
+        "endOffset": 155
+      },
+      {
+        "start": 11.4,
+        "end": 11.5,
+        "offset": 156,
+        "endOffset": 159
+      },
+      {
+        "start": 11.5,
+        "end": 11.64,
+        "offset": 160,
+        "endOffset": 162
+      },
+      {
+        "start": 11.64,
+        "end": 11.99,
+        "offset": 163,
+        "endOffset": 171
+      },
+      {
+        "start": 12.52,
+        "end": 12.78,
+        "offset": 172,
+        "endOffset": 175
+      },
+      {
+        "start": 12.78,
+        "end": 13.06,
+        "offset": 176,
+        "endOffset": 179
+      },
+      {
+        "start": 13.06,
+        "end": 13.18,
+        "offset": 180,
+        "endOffset": 182
+      },
+      {
+        "start": 13.18,
+        "end": 13.28,
+        "offset": 183,
+        "endOffset": 186
+      },
+      {
+        "start": 13.4,
+        "end": 13.5,
+        "offset": 187,
+        "endOffset": 191
+      },
+      {
+        "start": 13.5,
+        "end": 13.78,
+        "offset": 192,
+        "endOffset": 194
+      },
+      {
+        "start": 13.78,
+        "end": 13.9,
+        "offset": 195,
+        "endOffset": 198
+      },
+      {
+        "start": 13.9,
+        "end": 14.24,
+        "offset": 199,
+        "endOffset": 205
+      },
+      {
+        "start": 14.66,
+        "end": 14.88,
+        "offset": 206,
+        "endOffset": 211
+      }
+    ]
+  },
+  "prayer:glory-be": {
+    "transcript": "Glory be to the Father, and to the Son, and to the Holy Spirit.\n\nAs it was in the beginning, is now, and ever shall be, world without end. Amen.",
+    "audioSha256": "86aa07e508d8a8b6e8f869ce2e07cf0170f61d8384d04218da3ecabc782ce28d",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.18,
+        "end": 0.22,
+        "offset": 0,
+        "endOffset": 5
+      },
+      {
+        "start": 0.22,
+        "end": 0.58,
+        "offset": 6,
+        "endOffset": 8
+      },
+      {
+        "start": 0.58,
+        "end": 0.78,
+        "offset": 9,
+        "endOffset": 11
+      },
+      {
+        "start": 0.78,
+        "end": 0.9,
+        "offset": 12,
+        "endOffset": 15
+      },
+      {
+        "start": 0.9,
+        "end": 1.4,
+        "offset": 16,
+        "endOffset": 23
+      },
+      {
+        "start": 1.78,
+        "end": 1.82,
+        "offset": 24,
+        "endOffset": 27
+      },
+      {
+        "start": 1.82,
+        "end": 1.92,
+        "offset": 28,
+        "endOffset": 30
+      },
+      {
+        "start": 1.92,
+        "end": 2.04,
+        "offset": 31,
+        "endOffset": 34
+      },
+      {
+        "start": 2.04,
+        "end": 2.34,
+        "offset": 35,
+        "endOffset": 39
+      },
+      {
+        "start": 2.8,
+        "end": 2.9,
+        "offset": 40,
+        "endOffset": 43
+      },
+      {
+        "start": 2.9,
+        "end": 3.02,
+        "offset": 44,
+        "endOffset": 46
+      },
+      {
+        "start": 3.02,
+        "end": 3.14,
+        "offset": 47,
+        "endOffset": 50
+      },
+      {
+        "start": 3.14,
+        "end": 3.38,
+        "offset": 51,
+        "endOffset": 55
+      },
+      {
+        "start": 3.38,
+        "end": 3.68,
+        "offset": 56,
+        "endOffset": 63
+      },
+      {
+        "start": 4.66,
+        "end": 4.8,
+        "offset": 65,
+        "endOffset": 67
+      },
+      {
+        "start": 4.8,
+        "end": 4.88,
+        "offset": 68,
+        "endOffset": 70
+      },
+      {
+        "start": 4.88,
+        "end": 5.08,
+        "offset": 71,
+        "endOffset": 74
+      },
+      {
+        "start": 5.08,
+        "end": 5.3,
+        "offset": 75,
+        "endOffset": 77
+      },
+      {
+        "start": 5.3,
+        "end": 5.38,
+        "offset": 78,
+        "endOffset": 81
+      },
+      {
+        "start": 5.38,
+        "end": 5.88,
+        "offset": 82,
+        "endOffset": 92
+      },
+      {
+        "start": 6.24,
+        "end": 6.34,
+        "offset": 93,
+        "endOffset": 95
+      },
+      {
+        "start": 6.34,
+        "end": 6.72,
+        "offset": 96,
+        "endOffset": 100
+      },
+      {
+        "start": 6.96,
+        "end": 7.0,
+        "offset": 101,
+        "endOffset": 104
+      },
+      {
+        "start": 7.0,
+        "end": 7.32,
+        "offset": 105,
+        "endOffset": 109
+      },
+      {
+        "start": 7.32,
+        "end": 7.58,
+        "offset": 110,
+        "endOffset": 115
+      },
+      {
+        "start": 7.58,
+        "end": 7.96,
+        "offset": 116,
+        "endOffset": 119
+      },
+      {
+        "start": 8.42,
+        "end": 8.64,
+        "offset": 120,
+        "endOffset": 125
+      },
+      {
+        "start": 8.64,
+        "end": 8.94,
+        "offset": 126,
+        "endOffset": 133
+      },
+      {
+        "start": 8.94,
+        "end": 9.3,
+        "offset": 134,
+        "endOffset": 138
+      },
+      {
+        "start": 9.9,
+        "end": 10.26,
+        "offset": 139,
+        "endOffset": 144
+      }
+    ]
+  },
+  "prayer:fatima-prayer": {
+    "transcript": "O my Jesus, forgive us our sins, save us from the fires of hell, lead all souls to heaven, especially those who have most need of Thy mercy.",
+    "audioSha256": "0a35fc0317037847338fc67fb98497ddd5b744eebe2569e858a2afa24f4b3669",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.14,
+        "end": 0.18,
+        "offset": 0,
+        "endOffset": 1
+      },
+      {
+        "start": 0.18,
+        "end": 0.32,
+        "offset": 2,
+        "endOffset": 4
+      },
+      {
+        "start": 0.32,
+        "end": 0.77,
+        "offset": 5,
+        "endOffset": 11
+      },
+      {
+        "start": 1.52,
+        "end": 1.68,
+        "offset": 12,
+        "endOffset": 19
+      },
+      {
+        "start": 1.68,
+        "end": 1.9,
+        "offset": 20,
+        "endOffset": 22
+      },
+      {
+        "start": 1.9,
+        "end": 2.06,
+        "offset": 23,
+        "endOffset": 26
+      },
+      {
+        "start": 2.06,
+        "end": 2.56,
+        "offset": 27,
+        "endOffset": 32
+      },
+      {
+        "start": 3.16,
+        "end": 3.42,
+        "offset": 33,
+        "endOffset": 37
+      },
+      {
+        "start": 3.42,
+        "end": 3.6,
+        "offset": 38,
+        "endOffset": 40
+      },
+      {
+        "start": 3.6,
+        "end": 3.78,
+        "offset": 41,
+        "endOffset": 45
+      },
+      {
+        "start": 3.78,
+        "end": 3.88,
+        "offset": 46,
+        "endOffset": 49
+      },
+      {
+        "start": 3.88,
+        "end": 4.2,
+        "offset": 50,
+        "endOffset": 55
+      },
+      {
+        "start": 4.2,
+        "end": 4.48,
+        "offset": 56,
+        "endOffset": 58
+      },
+      {
+        "start": 4.48,
+        "end": 4.84,
+        "offset": 59,
+        "endOffset": 64
+      },
+      {
+        "start": 5.44,
+        "end": 5.54,
+        "offset": 65,
+        "endOffset": 69
+      },
+      {
+        "start": 5.54,
+        "end": 5.8,
+        "offset": 70,
+        "endOffset": 73
+      },
+      {
+        "start": 5.8,
+        "end": 6.12,
+        "offset": 74,
+        "endOffset": 79
+      },
+      {
+        "start": 6.12,
+        "end": 6.4,
+        "offset": 80,
+        "endOffset": 82
+      },
+      {
+        "start": 6.4,
+        "end": 6.84,
+        "offset": 83,
+        "endOffset": 90
+      },
+      {
+        "start": 7.3,
+        "end": 7.58,
+        "offset": 91,
+        "endOffset": 101
+      },
+      {
+        "start": 7.58,
+        "end": 8.06,
+        "offset": 102,
+        "endOffset": 107
+      },
+      {
+        "start": 8.06,
+        "end": 8.38,
+        "offset": 108,
+        "endOffset": 111
+      },
+      {
+        "start": 8.38,
+        "end": 8.48,
+        "offset": 112,
+        "endOffset": 116
+      },
+      {
+        "start": 8.48,
+        "end": 8.78,
+        "offset": 117,
+        "endOffset": 121
+      },
+      {
+        "start": 8.78,
+        "end": 9.06,
+        "offset": 122,
+        "endOffset": 126
+      },
+      {
+        "start": 9.06,
+        "end": 9.26,
+        "offset": 127,
+        "endOffset": 129
+      },
+      {
+        "start": 9.26,
+        "end": 9.4,
+        "offset": 130,
+        "endOffset": 133
+      },
+      {
+        "start": 9.4,
+        "end": 9.76,
+        "offset": 134,
+        "endOffset": 140
+      }
+    ]
+  },
+  "prayer:hail-holy-queen": {
+    "transcript": "Hail, holy Queen, Mother of mercy, our life, our sweetness, and our hope. To thee do we cry, poor banished children of Eve; to thee do we send up our sighs, mourning and weeping in this valley of tears.\n\nTurn then, most gracious advocate, thine eyes of mercy toward us; and after this our exile, show unto us the blessed fruit of thy womb, Jesus. O clement, O loving, O sweet Virgin Mary.\n\nPray for us, O holy Mother of God.\nThat we may be made worthy of the promises of Christ.",
+    "audioSha256": "b386b64d4612a677f9f5e210175294fe0a5e08f8481af57689fbd290667e5a08",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.26,
+        "end": 0.5,
+        "offset": 0,
+        "endOffset": 5
+      },
+      {
+        "start": 0.82,
+        "end": 0.98,
+        "offset": 6,
+        "endOffset": 10
+      },
+      {
+        "start": 0.98,
+        "end": 1.98,
+        "offset": 11,
+        "endOffset": 17
+      },
+      {
+        "start": 1.98,
+        "end": 2.22,
+        "offset": 18,
+        "endOffset": 24
+      },
+      {
+        "start": 2.22,
+        "end": 2.4,
+        "offset": 25,
+        "endOffset": 27
+      },
+      {
+        "start": 2.4,
+        "end": 2.96,
+        "offset": 28,
+        "endOffset": 34
+      },
+      {
+        "start": 3.46,
+        "end": 3.58,
+        "offset": 35,
+        "endOffset": 38
+      },
+      {
+        "start": 3.58,
+        "end": 4.08,
+        "offset": 39,
+        "endOffset": 44
+      },
+      {
+        "start": 4.26,
+        "end": 4.36,
+        "offset": 45,
+        "endOffset": 48
+      },
+      {
+        "start": 4.36,
+        "end": 4.7,
+        "offset": 49,
+        "endOffset": 59
+      },
+      {
+        "start": 4.7,
+        "end": 5.34,
+        "offset": 60,
+        "endOffset": 63
+      },
+      {
+        "start": 5.34,
+        "end": 5.48,
+        "offset": 64,
+        "endOffset": 67
+      },
+      {
+        "start": 5.48,
+        "end": 6.58,
+        "offset": 68,
+        "endOffset": 73
+      },
+      {
+        "start": 6.58,
+        "end": 6.62,
+        "offset": 74,
+        "endOffset": 76
+      },
+      {
+        "start": 6.62,
+        "end": 6.8,
+        "offset": 77,
+        "endOffset": 81
+      },
+      {
+        "start": 6.8,
+        "end": 7.02,
+        "offset": 82,
+        "endOffset": 84
+      },
+      {
+        "start": 7.02,
+        "end": 7.12,
+        "offset": 85,
+        "endOffset": 87
+      },
+      {
+        "start": 7.12,
+        "end": 7.67,
+        "offset": 88,
+        "endOffset": 92
+      },
+      {
+        "start": 7.82,
+        "end": 7.92,
+        "offset": 93,
+        "endOffset": 97
+      },
+      {
+        "start": 7.92,
+        "end": 8.24,
+        "offset": 98,
+        "endOffset": 106
+      },
+      {
+        "start": 8.24,
+        "end": 8.62,
+        "offset": 107,
+        "endOffset": 115
+      },
+      {
+        "start": 8.62,
+        "end": 8.9,
+        "offset": 116,
+        "endOffset": 118
+      },
+      {
+        "start": 8.9,
+        "end": 9.7,
+        "offset": 119,
+        "endOffset": 123
+      },
+      {
+        "start": 9.7,
+        "end": 9.78,
+        "offset": 124,
+        "endOffset": 126
+      },
+      {
+        "start": 9.78,
+        "end": 9.98,
+        "offset": 127,
+        "endOffset": 131
+      },
+      {
+        "start": 9.98,
+        "end": 10.22,
+        "offset": 132,
+        "endOffset": 134
+      },
+      {
+        "start": 10.22,
+        "end": 10.32,
+        "offset": 135,
+        "endOffset": 137
+      },
+      {
+        "start": 10.32,
+        "end": 10.54,
+        "offset": 138,
+        "endOffset": 142
+      },
+      {
+        "start": 10.54,
+        "end": 10.68,
+        "offset": 143,
+        "endOffset": 145
+      },
+      {
+        "start": 10.68,
+        "end": 10.86,
+        "offset": 146,
+        "endOffset": 149
+      },
+      {
+        "start": 10.86,
+        "end": 11.41,
+        "offset": 150,
+        "endOffset": 156
+      },
+      {
+        "start": 11.74,
+        "end": 11.98,
+        "offset": 157,
+        "endOffset": 165
+      },
+      {
+        "start": 11.98,
+        "end": 12.32,
+        "offset": 166,
+        "endOffset": 169
+      },
+      {
+        "start": 12.32,
+        "end": 12.58,
+        "offset": 170,
+        "endOffset": 177
+      },
+      {
+        "start": 12.58,
+        "end": 12.92,
+        "offset": 178,
+        "endOffset": 180
+      },
+      {
+        "start": 12.92,
+        "end": 13.04,
+        "offset": 181,
+        "endOffset": 185
+      },
+      {
+        "start": 13.04,
+        "end": 13.3,
+        "offset": 186,
+        "endOffset": 192
+      },
+      {
+        "start": 13.3,
+        "end": 13.54,
+        "offset": 193,
+        "endOffset": 195
+      },
+      {
+        "start": 13.54,
+        "end": 13.9,
+        "offset": 196,
+        "endOffset": 202
+      },
+      {
+        "start": 14.72,
+        "end": 14.92,
+        "offset": 204,
+        "endOffset": 208
+      },
+      {
+        "start": 14.92,
+        "end": 15.3,
+        "offset": 209,
+        "endOffset": 214
+      },
+      {
+        "start": 15.38,
+        "end": 15.46,
+        "offset": 215,
+        "endOffset": 219
+      },
+      {
+        "start": 15.46,
+        "end": 15.78,
+        "offset": 220,
+        "endOffset": 228
+      },
+      {
+        "start": 15.78,
+        "end": 16.54,
+        "offset": 229,
+        "endOffset": 238
+      },
+      {
+        "start": 16.9,
+        "end": 17.06,
+        "offset": 239,
+        "endOffset": 244
+      },
+      {
+        "start": 17.06,
+        "end": 17.28,
+        "offset": 245,
+        "endOffset": 249
+      },
+      {
+        "start": 17.28,
+        "end": 17.5,
+        "offset": 250,
+        "endOffset": 252
+      },
+      {
+        "start": 17.5,
+        "end": 17.74,
+        "offset": 253,
+        "endOffset": 258
+      },
+      {
+        "start": 17.74,
+        "end": 18.14,
+        "offset": 259,
+        "endOffset": 265
+      },
+      {
+        "start": 18.14,
+        "end": 19.1,
+        "offset": 266,
+        "endOffset": 269
+      },
+      {
+        "start": 19.12,
+        "end": 19.22,
+        "offset": 270,
+        "endOffset": 273
+      },
+      {
+        "start": 19.22,
+        "end": 19.36,
+        "offset": 274,
+        "endOffset": 279
+      },
+      {
+        "start": 19.36,
+        "end": 19.68,
+        "offset": 280,
+        "endOffset": 284
+      },
+      {
+        "start": 19.68,
+        "end": 19.92,
+        "offset": 285,
+        "endOffset": 288
+      },
+      {
+        "start": 19.92,
+        "end": 20.52,
+        "offset": 289,
+        "endOffset": 295
+      },
+      {
+        "start": 20.94,
+        "end": 21.08,
+        "offset": 296,
+        "endOffset": 300
+      },
+      {
+        "start": 21.08,
+        "end": 21.24,
+        "offset": 301,
+        "endOffset": 305
+      },
+      {
+        "start": 21.24,
+        "end": 21.56,
+        "offset": 306,
+        "endOffset": 308
+      },
+      {
+        "start": 21.56,
+        "end": 21.78,
+        "offset": 309,
+        "endOffset": 312
+      },
+      {
+        "start": 21.78,
+        "end": 22.14,
+        "offset": 313,
+        "endOffset": 320
+      },
+      {
+        "start": 22.14,
+        "end": 22.48,
+        "offset": 321,
+        "endOffset": 326
+      },
+      {
+        "start": 22.48,
+        "end": 22.76,
+        "offset": 327,
+        "endOffset": 329
+      },
+      {
+        "start": 22.76,
+        "end": 22.94,
+        "offset": 330,
+        "endOffset": 333
+      },
+      {
+        "start": 22.94,
+        "end": 23.48,
+        "offset": 334,
+        "endOffset": 339
+      },
+      {
+        "start": 23.78,
+        "end": 23.88,
+        "offset": 340,
+        "endOffset": 346
+      },
+      {
+        "start": 24.76,
+        "end": 24.8,
+        "offset": 347,
+        "endOffset": 348
+      },
+      {
+        "start": 24.8,
+        "end": 25.4,
+        "offset": 349,
+        "endOffset": 357
+      },
+      {
+        "start": 25.64,
+        "end": 25.68,
+        "offset": 358,
+        "endOffset": 359
+      },
+      {
+        "start": 25.68,
+        "end": 26.26,
+        "offset": 360,
+        "endOffset": 367
+      },
+      {
+        "start": 26.52,
+        "end": 26.58,
+        "offset": 368,
+        "endOffset": 369
+      },
+      {
+        "start": 26.58,
+        "end": 27.02,
+        "offset": 370,
+        "endOffset": 375
+      },
+      {
+        "start": 27.02,
+        "end": 27.34,
+        "offset": 376,
+        "endOffset": 382
+      },
+      {
+        "start": 27.34,
+        "end": 27.84,
+        "offset": 383,
+        "endOffset": 388
+      },
+      {
+        "start": 28.42,
+        "end": 28.56,
+        "offset": 390,
+        "endOffset": 394
+      },
+      {
+        "start": 28.56,
+        "end": 28.72,
+        "offset": 395,
+        "endOffset": 398
+      },
+      {
+        "start": 28.72,
+        "end": 29.06,
+        "offset": 399,
+        "endOffset": 402
+      },
+      {
+        "start": 29.2,
+        "end": 29.24,
+        "offset": 403,
+        "endOffset": 404
+      },
+      {
+        "start": 29.24,
+        "end": 29.58,
+        "offset": 405,
+        "endOffset": 409
+      },
+      {
+        "start": 29.58,
+        "end": 29.86,
+        "offset": 410,
+        "endOffset": 416
+      },
+      {
+        "start": 29.86,
+        "end": 30.08,
+        "offset": 417,
+        "endOffset": 419
+      },
+      {
+        "start": 30.08,
+        "end": 30.5,
+        "offset": 420,
+        "endOffset": 424
+      },
+      {
+        "start": 30.94,
+        "end": 31.04,
+        "offset": 425,
+        "endOffset": 429
+      },
+      {
+        "start": 31.04,
+        "end": 31.26,
+        "offset": 430,
+        "endOffset": 432
+      },
+      {
+        "start": 31.26,
+        "end": 31.5,
+        "offset": 433,
+        "endOffset": 436
+      },
+      {
+        "start": 31.5,
+        "end": 31.64,
+        "offset": 437,
+        "endOffset": 439
+      },
+      {
+        "start": 31.64,
+        "end": 31.84,
+        "offset": 440,
+        "endOffset": 444
+      },
+      {
+        "start": 31.84,
+        "end": 32.18,
+        "offset": 445,
+        "endOffset": 451
+      },
+      {
+        "start": 32.18,
+        "end": 32.54,
+        "offset": 452,
+        "endOffset": 454
+      },
+      {
+        "start": 32.54,
+        "end": 32.64,
+        "offset": 455,
+        "endOffset": 458
+      },
+      {
+        "start": 32.86,
+        "end": 32.98,
+        "offset": 459,
+        "endOffset": 467
+      },
+      {
+        "start": 32.98,
+        "end": 33.3,
+        "offset": 468,
+        "endOffset": 470
+      },
+      {
+        "start": 33.3,
+        "end": 33.62,
+        "offset": 471,
+        "endOffset": 478
+      }
+    ]
+  },
+  "prayer:rosary-closing": {
+    "transcript": "O God, whose only-begotten Son, by His life, death, and resurrection, has purchased for us the rewards of eternal life; grant, we beseech Thee, that meditating upon these mysteries of the most holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promise, through the same Christ our Lord. Amen.",
+    "audioSha256": "e3cbaf9c5378cb225ce946944ced8660524d9fa5510051019043f10b392f3033",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.06,
+        "end": 0.12,
+        "offset": 0,
+        "endOffset": 1
+      },
+      {
+        "start": 0.12,
+        "end": 0.7,
+        "offset": 2,
+        "endOffset": 6
+      },
+      {
+        "start": 1.06,
+        "end": 1.1,
+        "offset": 7,
+        "endOffset": 12
+      },
+      {
+        "start": 1.1,
+        "end": 1.82,
+        "offset": 13,
+        "endOffset": 26
+      },
+      {
+        "start": 1.82,
+        "end": 2.5,
+        "offset": 27,
+        "endOffset": 31
+      },
+      {
+        "start": 2.9,
+        "end": 3.0,
+        "offset": 32,
+        "endOffset": 34
+      },
+      {
+        "start": 3.0,
+        "end": 3.18,
+        "offset": 35,
+        "endOffset": 38
+      },
+      {
+        "start": 3.18,
+        "end": 3.63,
+        "offset": 39,
+        "endOffset": 44
+      },
+      {
+        "start": 4.08,
+        "end": 4.18,
+        "offset": 45,
+        "endOffset": 51
+      },
+      {
+        "start": 4.58,
+        "end": 4.62,
+        "offset": 52,
+        "endOffset": 55
+      },
+      {
+        "start": 4.62,
+        "end": 5.48,
+        "offset": 56,
+        "endOffset": 69
+      },
+      {
+        "start": 5.78,
+        "end": 5.88,
+        "offset": 70,
+        "endOffset": 73
+      },
+      {
+        "start": 5.88,
+        "end": 6.2,
+        "offset": 74,
+        "endOffset": 83
+      },
+      {
+        "start": 6.2,
+        "end": 6.58,
+        "offset": 84,
+        "endOffset": 87
+      },
+      {
+        "start": 6.58,
+        "end": 6.76,
+        "offset": 88,
+        "endOffset": 90
+      },
+      {
+        "start": 6.76,
+        "end": 6.96,
+        "offset": 91,
+        "endOffset": 94
+      },
+      {
+        "start": 6.96,
+        "end": 7.28,
+        "offset": 95,
+        "endOffset": 102
+      },
+      {
+        "start": 7.28,
+        "end": 7.6,
+        "offset": 103,
+        "endOffset": 105
+      },
+      {
+        "start": 7.6,
+        "end": 7.9,
+        "offset": 106,
+        "endOffset": 113
+      },
+      {
+        "start": 9.04,
+        "end": 9.14,
+        "offset": 114,
+        "endOffset": 119
+      },
+      {
+        "start": 9.14,
+        "end": 9.44,
+        "offset": 120,
+        "endOffset": 126
+      },
+      {
+        "start": 9.44,
+        "end": 9.5,
+        "offset": 127,
+        "endOffset": 129
+      },
+      {
+        "start": 9.5,
+        "end": 9.96,
+        "offset": 130,
+        "endOffset": 137
+      },
+      {
+        "start": 9.96,
+        "end": 10.28,
+        "offset": 138,
+        "endOffset": 143
+      },
+      {
+        "start": 10.66,
+        "end": 10.74,
+        "offset": 144,
+        "endOffset": 148
+      },
+      {
+        "start": 10.74,
+        "end": 11.26,
+        "offset": 149,
+        "endOffset": 159
+      },
+      {
+        "start": 11.26,
+        "end": 11.6,
+        "offset": 160,
+        "endOffset": 164
+      },
+      {
+        "start": 11.6,
+        "end": 11.94,
+        "offset": 165,
+        "endOffset": 170
+      },
+      {
+        "start": 11.94,
+        "end": 12.38,
+        "offset": 171,
+        "endOffset": 180
+      },
+      {
+        "start": 12.42,
+        "end": 12.74,
+        "offset": 181,
+        "endOffset": 183
+      },
+      {
+        "start": 12.74,
+        "end": 12.84,
+        "offset": 184,
+        "endOffset": 187
+      },
+      {
+        "start": 12.84,
+        "end": 13.04,
+        "offset": 188,
+        "endOffset": 192
+      },
+      {
+        "start": 13.04,
+        "end": 13.44,
+        "offset": 193,
+        "endOffset": 197
+      },
+      {
+        "start": 13.44,
+        "end": 14.04,
+        "offset": 198,
+        "endOffset": 204
+      },
+      {
+        "start": 14.04,
+        "end": 14.24,
+        "offset": 205,
+        "endOffset": 207
+      },
+      {
+        "start": 14.24,
+        "end": 14.36,
+        "offset": 208,
+        "endOffset": 211
+      },
+      {
+        "start": 14.36,
+        "end": 14.64,
+        "offset": 212,
+        "endOffset": 219
+      },
+      {
+        "start": 14.64,
+        "end": 14.98,
+        "offset": 220,
+        "endOffset": 226
+      },
+      {
+        "start": 14.98,
+        "end": 15.58,
+        "offset": 227,
+        "endOffset": 232
+      },
+      {
+        "start": 16.06,
+        "end": 16.16,
+        "offset": 233,
+        "endOffset": 235
+      },
+      {
+        "start": 16.16,
+        "end": 16.28,
+        "offset": 236,
+        "endOffset": 239
+      },
+      {
+        "start": 16.28,
+        "end": 16.66,
+        "offset": 240,
+        "endOffset": 247
+      },
+      {
+        "start": 16.66,
+        "end": 16.98,
+        "offset": 248,
+        "endOffset": 252
+      },
+      {
+        "start": 17.04,
+        "end": 17.14,
+        "offset": 253,
+        "endOffset": 257
+      },
+      {
+        "start": 17.14,
+        "end": 17.36,
+        "offset": 258,
+        "endOffset": 265
+      },
+      {
+        "start": 18.04,
+        "end": 18.14,
+        "offset": 266,
+        "endOffset": 269
+      },
+      {
+        "start": 18.26,
+        "end": 18.36,
+        "offset": 270,
+        "endOffset": 276
+      },
+      {
+        "start": 18.36,
+        "end": 18.8,
+        "offset": 277,
+        "endOffset": 281
+      },
+      {
+        "start": 18.8,
+        "end": 18.96,
+        "offset": 282,
+        "endOffset": 286
+      },
+      {
+        "start": 18.96,
+        "end": 19.36,
+        "offset": 287,
+        "endOffset": 295
+      },
+      {
+        "start": 20.04,
+        "end": 20.12,
+        "offset": 296,
+        "endOffset": 303
+      },
+      {
+        "start": 20.12,
+        "end": 20.26,
+        "offset": 304,
+        "endOffset": 307
+      },
+      {
+        "start": 20.26,
+        "end": 20.5,
+        "offset": 308,
+        "endOffset": 312
+      },
+      {
+        "start": 20.5,
+        "end": 20.78,
+        "offset": 313,
+        "endOffset": 319
+      },
+      {
+        "start": 20.78,
+        "end": 21.22,
+        "offset": 320,
+        "endOffset": 323
+      },
+      {
+        "start": 21.22,
+        "end": 21.68,
+        "offset": 324,
+        "endOffset": 329
+      },
+      {
+        "start": 22.2,
+        "end": 22.54,
+        "offset": 330,
+        "endOffset": 335
+      }
+    ]
+  },
+  "prayer:memorare": {
+    "transcript": "Remember, O most gracious Virgin Mary, that never was it known that anyone who fled to thy protection, implored thy help, or sought thy intercession was left unaided.\n\nInspired by this confidence, I fly unto thee, O Virgin of virgins, my Mother. To thee do I come; before thee I stand, sinful and sorrowful. O Mother of the Word Incarnate, despise not my petitions, but in thy mercy hear and answer me. Amen.",
+    "audioSha256": "0f431757c40a3b018de6f179dbd1da92e3d6820a8662b9b3dc4b5ecb82ee84c4",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.28,
+        "end": 0.66,
+        "offset": 0,
+        "endOffset": 9
+      },
+      {
+        "start": 0.96,
+        "end": 1.0,
+        "offset": 10,
+        "endOffset": 11
+      },
+      {
+        "start": 1.0,
+        "end": 1.12,
+        "offset": 12,
+        "endOffset": 16
+      },
+      {
+        "start": 1.12,
+        "end": 1.7,
+        "offset": 17,
+        "endOffset": 25
+      },
+      {
+        "start": 1.7,
+        "end": 2.02,
+        "offset": 26,
+        "endOffset": 32
+      },
+      {
+        "start": 2.02,
+        "end": 2.68,
+        "offset": 33,
+        "endOffset": 38
+      },
+      {
+        "start": 3.28,
+        "end": 3.32,
+        "offset": 39,
+        "endOffset": 43
+      },
+      {
+        "start": 3.32,
+        "end": 3.6,
+        "offset": 44,
+        "endOffset": 49
+      },
+      {
+        "start": 3.6,
+        "end": 3.92,
+        "offset": 50,
+        "endOffset": 53
+      },
+      {
+        "start": 3.92,
+        "end": 4.06,
+        "offset": 54,
+        "endOffset": 56
+      },
+      {
+        "start": 4.06,
+        "end": 4.28,
+        "offset": 57,
+        "endOffset": 62
+      },
+      {
+        "start": 4.28,
+        "end": 4.56,
+        "offset": 63,
+        "endOffset": 67
+      },
+      {
+        "start": 4.56,
+        "end": 4.92,
+        "offset": 68,
+        "endOffset": 74
+      },
+      {
+        "start": 4.92,
+        "end": 5.3,
+        "offset": 75,
+        "endOffset": 78
+      },
+      {
+        "start": 5.3,
+        "end": 5.56,
+        "offset": 79,
+        "endOffset": 83
+      },
+      {
+        "start": 5.56,
+        "end": 5.78,
+        "offset": 84,
+        "endOffset": 86
+      },
+      {
+        "start": 5.78,
+        "end": 5.92,
+        "offset": 87,
+        "endOffset": 90
+      },
+      {
+        "start": 5.92,
+        "end": 6.62,
+        "offset": 91,
+        "endOffset": 102
+      },
+      {
+        "start": 7.06,
+        "end": 7.46,
+        "offset": 103,
+        "endOffset": 111
+      },
+      {
+        "start": 7.46,
+        "end": 7.64,
+        "offset": 112,
+        "endOffset": 115
+      },
+      {
+        "start": 7.64,
+        "end": 8.06,
+        "offset": 116,
+        "endOffset": 121
+      },
+      {
+        "start": 8.4,
+        "end": 8.5,
+        "offset": 122,
+        "endOffset": 124
+      },
+      {
+        "start": 8.5,
+        "end": 8.74,
+        "offset": 125,
+        "endOffset": 131
+      },
+      {
+        "start": 8.74,
+        "end": 9.04,
+        "offset": 132,
+        "endOffset": 135
+      },
+      {
+        "start": 9.04,
+        "end": 9.58,
+        "offset": 136,
+        "endOffset": 148
+      },
+      {
+        "start": 9.58,
+        "end": 10.06,
+        "offset": 149,
+        "endOffset": 152
+      },
+      {
+        "start": 10.06,
+        "end": 10.3,
+        "offset": 153,
+        "endOffset": 157
+      },
+      {
+        "start": 10.3,
+        "end": 11.05,
+        "offset": 158,
+        "endOffset": 166
+      },
+      {
+        "start": 11.72,
+        "end": 12.18,
+        "offset": 168,
+        "endOffset": 176
+      },
+      {
+        "start": 12.18,
+        "end": 12.4,
+        "offset": 177,
+        "endOffset": 179
+      },
+      {
+        "start": 12.4,
+        "end": 12.6,
+        "offset": 180,
+        "endOffset": 184
+      },
+      {
+        "start": 12.6,
+        "end": 13.64,
+        "offset": 185,
+        "endOffset": 196
+      },
+      {
+        "start": 13.66,
+        "end": 13.7,
+        "offset": 197,
+        "endOffset": 198
+      },
+      {
+        "start": 13.7,
+        "end": 13.96,
+        "offset": 199,
+        "endOffset": 202
+      },
+      {
+        "start": 13.96,
+        "end": 14.28,
+        "offset": 203,
+        "endOffset": 207
+      },
+      {
+        "start": 14.28,
+        "end": 14.7,
+        "offset": 208,
+        "endOffset": 213
+      },
+      {
+        "start": 14.98,
+        "end": 15.08,
+        "offset": 214,
+        "endOffset": 215
+      },
+      {
+        "start": 15.08,
+        "end": 15.54,
+        "offset": 216,
+        "endOffset": 222
+      },
+      {
+        "start": 15.54,
+        "end": 15.82,
+        "offset": 223,
+        "endOffset": 225
+      },
+      {
+        "start": 15.82,
+        "end": 16.58,
+        "offset": 226,
+        "endOffset": 234
+      },
+      {
+        "start": 16.64,
+        "end": 16.72,
+        "offset": 235,
+        "endOffset": 237
+      },
+      {
+        "start": 16.72,
+        "end": 17.02,
+        "offset": 238,
+        "endOffset": 245
+      },
+      {
+        "start": 17.68,
+        "end": 17.78,
+        "offset": 246,
+        "endOffset": 248
+      },
+      {
+        "start": 17.78,
+        "end": 18.0,
+        "offset": 249,
+        "endOffset": 253
+      },
+      {
+        "start": 18.0,
+        "end": 18.22,
+        "offset": 254,
+        "endOffset": 256
+      },
+      {
+        "start": 18.22,
+        "end": 18.38,
+        "offset": 257,
+        "endOffset": 258
+      },
+      {
+        "start": 18.38,
+        "end": 19.26,
+        "offset": 259,
+        "endOffset": 264
+      },
+      {
+        "start": 19.28,
+        "end": 19.56,
+        "offset": 265,
+        "endOffset": 271
+      },
+      {
+        "start": 19.56,
+        "end": 19.82,
+        "offset": 272,
+        "endOffset": 276
+      },
+      {
+        "start": 19.82,
+        "end": 20.04,
+        "offset": 277,
+        "endOffset": 278
+      },
+      {
+        "start": 20.04,
+        "end": 20.59,
+        "offset": 279,
+        "endOffset": 285
+      },
+      {
+        "start": 20.94,
+        "end": 21.1,
+        "offset": 286,
+        "endOffset": 292
+      },
+      {
+        "start": 21.1,
+        "end": 21.64,
+        "offset": 293,
+        "endOffset": 296
+      },
+      {
+        "start": 21.64,
+        "end": 22.12,
+        "offset": 297,
+        "endOffset": 307
+      },
+      {
+        "start": 22.82,
+        "end": 22.92,
+        "offset": 308,
+        "endOffset": 309
+      },
+      {
+        "start": 22.92,
+        "end": 23.2,
+        "offset": 310,
+        "endOffset": 316
+      },
+      {
+        "start": 23.2,
+        "end": 23.5,
+        "offset": 317,
+        "endOffset": 319
+      },
+      {
+        "start": 23.5,
+        "end": 23.6,
+        "offset": 320,
+        "endOffset": 323
+      },
+      {
+        "start": 23.6,
+        "end": 23.84,
+        "offset": 324,
+        "endOffset": 328
+      },
+      {
+        "start": 23.84,
+        "end": 24.34,
+        "offset": 329,
+        "endOffset": 339
+      },
+      {
+        "start": 24.9,
+        "end": 25.16,
+        "offset": 340,
+        "endOffset": 347
+      },
+      {
+        "start": 25.16,
+        "end": 25.62,
+        "offset": 348,
+        "endOffset": 351
+      },
+      {
+        "start": 25.62,
+        "end": 25.84,
+        "offset": 352,
+        "endOffset": 354
+      },
+      {
+        "start": 25.84,
+        "end": 26.62,
+        "offset": 355,
+        "endOffset": 365
+      },
+      {
+        "start": 26.98,
+        "end": 27.08,
+        "offset": 366,
+        "endOffset": 369
+      },
+      {
+        "start": 27.16,
+        "end": 27.26,
+        "offset": 370,
+        "endOffset": 372
+      },
+      {
+        "start": 27.26,
+        "end": 27.44,
+        "offset": 373,
+        "endOffset": 376
+      },
+      {
+        "start": 27.44,
+        "end": 27.82,
+        "offset": 377,
+        "endOffset": 382
+      },
+      {
+        "start": 27.82,
+        "end": 28.44,
+        "offset": 383,
+        "endOffset": 387
+      },
+      {
+        "start": 28.44,
+        "end": 28.86,
+        "offset": 388,
+        "endOffset": 391
+      },
+      {
+        "start": 28.86,
+        "end": 29.18,
+        "offset": 392,
+        "endOffset": 398
+      },
+      {
+        "start": 29.18,
+        "end": 29.3,
+        "offset": 399,
+        "endOffset": 402
+      },
+      {
+        "start": 29.78,
+        "end": 29.96,
+        "offset": 403,
+        "endOffset": 408
+      }
+    ]
+  },
+  "prayer:saint-michael": {
+    "transcript": "Saint Michael the Archangel, defend us in battle. Be our protection against the wickedness and snares of the devil.\n\nMay God rebuke him, we humbly pray; and do thou, O Prince of the heavenly host, by the power of God, cast into hell Satan and all the evil spirits who prowl about the world seeking the ruin of souls. Amen.",
+    "audioSha256": "3d68980253f43f67e9566ba932eef731adb9ed4acec3ee5e2bd8ad1ab0274215",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.18,
+        "end": 0.22,
+        "offset": 0,
+        "endOffset": 5
+      },
+      {
+        "start": 0.22,
+        "end": 0.56,
+        "offset": 6,
+        "endOffset": 13
+      },
+      {
+        "start": 0.56,
+        "end": 0.84,
+        "offset": 14,
+        "endOffset": 17
+      },
+      {
+        "start": 0.84,
+        "end": 1.79,
+        "offset": 18,
+        "endOffset": 28
+      },
+      {
+        "start": 2.24,
+        "end": 2.28,
+        "offset": 29,
+        "endOffset": 35
+      },
+      {
+        "start": 2.28,
+        "end": 2.6,
+        "offset": 36,
+        "endOffset": 38
+      },
+      {
+        "start": 2.6,
+        "end": 2.76,
+        "offset": 39,
+        "endOffset": 41
+      },
+      {
+        "start": 2.76,
+        "end": 3.28,
+        "offset": 42,
+        "endOffset": 49
+      },
+      {
+        "start": 3.88,
+        "end": 3.92,
+        "offset": 50,
+        "endOffset": 52
+      },
+      {
+        "start": 3.92,
+        "end": 4.08,
+        "offset": 53,
+        "endOffset": 56
+      },
+      {
+        "start": 4.08,
+        "end": 4.42,
+        "offset": 57,
+        "endOffset": 67
+      },
+      {
+        "start": 4.42,
+        "end": 4.9,
+        "offset": 68,
+        "endOffset": 75
+      },
+      {
+        "start": 4.9,
+        "end": 5.14,
+        "offset": 76,
+        "endOffset": 79
+      },
+      {
+        "start": 5.14,
+        "end": 5.7,
+        "offset": 80,
+        "endOffset": 90
+      },
+      {
+        "start": 5.7,
+        "end": 5.92,
+        "offset": 91,
+        "endOffset": 94
+      },
+      {
+        "start": 6.02,
+        "end": 6.5,
+        "offset": 95,
+        "endOffset": 101
+      },
+      {
+        "start": 6.5,
+        "end": 6.6,
+        "offset": 102,
+        "endOffset": 104
+      },
+      {
+        "start": 6.6,
+        "end": 6.7,
+        "offset": 105,
+        "endOffset": 108
+      },
+      {
+        "start": 6.7,
+        "end": 7.16,
+        "offset": 109,
+        "endOffset": 115
+      },
+      {
+        "start": 7.84,
+        "end": 7.92,
+        "offset": 117,
+        "endOffset": 120
+      },
+      {
+        "start": 7.92,
+        "end": 8.18,
+        "offset": 121,
+        "endOffset": 124
+      },
+      {
+        "start": 8.18,
+        "end": 8.48,
+        "offset": 125,
+        "endOffset": 131
+      },
+      {
+        "start": 8.48,
+        "end": 8.88,
+        "offset": 132,
+        "endOffset": 136
+      },
+      {
+        "start": 8.88,
+        "end": 9.16,
+        "offset": 137,
+        "endOffset": 139
+      },
+      {
+        "start": 9.16,
+        "end": 9.52,
+        "offset": 140,
+        "endOffset": 146
+      },
+      {
+        "start": 9.52,
+        "end": 10.32,
+        "offset": 147,
+        "endOffset": 152
+      },
+      {
+        "start": 10.52,
+        "end": 10.62,
+        "offset": 153,
+        "endOffset": 156
+      },
+      {
+        "start": 10.62,
+        "end": 10.82,
+        "offset": 157,
+        "endOffset": 159
+      },
+      {
+        "start": 10.82,
+        "end": 11.42,
+        "offset": 160,
+        "endOffset": 165
+      },
+      {
+        "start": 11.48,
+        "end": 11.54,
+        "offset": 166,
+        "endOffset": 167
+      },
+      {
+        "start": 11.54,
+        "end": 11.84,
+        "offset": 168,
+        "endOffset": 174
+      },
+      {
+        "start": 11.84,
+        "end": 12.1,
+        "offset": 175,
+        "endOffset": 177
+      },
+      {
+        "start": 12.1,
+        "end": 12.22,
+        "offset": 178,
+        "endOffset": 181
+      },
+      {
+        "start": 12.22,
+        "end": 12.52,
+        "offset": 182,
+        "endOffset": 190
+      },
+      {
+        "start": 12.52,
+        "end": 13.04,
+        "offset": 191,
+        "endOffset": 196
+      },
+      {
+        "start": 13.32,
+        "end": 13.42,
+        "offset": 197,
+        "endOffset": 199
+      },
+      {
+        "start": 13.42,
+        "end": 13.56,
+        "offset": 200,
+        "endOffset": 203
+      },
+      {
+        "start": 13.56,
+        "end": 13.8,
+        "offset": 204,
+        "endOffset": 209
+      },
+      {
+        "start": 13.8,
+        "end": 14.1,
+        "offset": 210,
+        "endOffset": 212
+      },
+      {
+        "start": 14.1,
+        "end": 14.58,
+        "offset": 213,
+        "endOffset": 217
+      },
+      {
+        "start": 14.94,
+        "end": 15.1,
+        "offset": 218,
+        "endOffset": 222
+      },
+      {
+        "start": 15.1,
+        "end": 15.42,
+        "offset": 223,
+        "endOffset": 227
+      },
+      {
+        "start": 15.42,
+        "end": 15.7,
+        "offset": 228,
+        "endOffset": 232
+      },
+      {
+        "start": 15.7,
+        "end": 16.02,
+        "offset": 233,
+        "endOffset": 238
+      },
+      {
+        "start": 16.02,
+        "end": 16.64,
+        "offset": 239,
+        "endOffset": 242
+      },
+      {
+        "start": 16.64,
+        "end": 16.9,
+        "offset": 243,
+        "endOffset": 246
+      },
+      {
+        "start": 16.9,
+        "end": 17.18,
+        "offset": 247,
+        "endOffset": 250
+      },
+      {
+        "start": 17.18,
+        "end": 17.38,
+        "offset": 251,
+        "endOffset": 255
+      },
+      {
+        "start": 17.38,
+        "end": 17.86,
+        "offset": 256,
+        "endOffset": 263
+      },
+      {
+        "start": 17.86,
+        "end": 18.3,
+        "offset": 264,
+        "endOffset": 267
+      },
+      {
+        "start": 18.52,
+        "end": 18.78,
+        "offset": 268,
+        "endOffset": 273
+      },
+      {
+        "start": 18.78,
+        "end": 18.96,
+        "offset": 274,
+        "endOffset": 279
+      },
+      {
+        "start": 18.96,
+        "end": 19.14,
+        "offset": 280,
+        "endOffset": 283
+      },
+      {
+        "start": 19.14,
+        "end": 19.4,
+        "offset": 284,
+        "endOffset": 289
+      },
+      {
+        "start": 19.4,
+        "end": 19.86,
+        "offset": 290,
+        "endOffset": 297
+      },
+      {
+        "start": 19.86,
+        "end": 20.18,
+        "offset": 298,
+        "endOffset": 301
+      },
+      {
+        "start": 20.18,
+        "end": 20.42,
+        "offset": 302,
+        "endOffset": 306
+      },
+      {
+        "start": 20.42,
+        "end": 20.66,
+        "offset": 307,
+        "endOffset": 309
+      },
+      {
+        "start": 20.66,
+        "end": 21.08,
+        "offset": 310,
+        "endOffset": 316
+      },
+      {
+        "start": 21.74,
+        "end": 22.2,
+        "offset": 317,
+        "endOffset": 322
+      }
+    ]
+  },
+  "prayer:guardian-angel": {
+    "transcript": "Angel of God, my guardian dear, to whom God’s love commits me here, ever this day be at my side, to light and guard, to rule and guide. Amen.",
+    "audioSha256": "f75989080e31cdfa890c8ced80936ded416be589ed9c0db893681138a894f72e",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.18,
+        "end": 0.22,
+        "offset": 0,
+        "endOffset": 5
+      },
+      {
+        "start": 0.22,
+        "end": 0.5,
+        "offset": 6,
+        "endOffset": 8
+      },
+      {
+        "start": 0.5,
+        "end": 1.08,
+        "offset": 9,
+        "endOffset": 13
+      },
+      {
+        "start": 1.4,
+        "end": 1.44,
+        "offset": 14,
+        "endOffset": 16
+      },
+      {
+        "start": 1.44,
+        "end": 1.76,
+        "offset": 17,
+        "endOffset": 25
+      },
+      {
+        "start": 1.76,
+        "end": 2.36,
+        "offset": 26,
+        "endOffset": 31
+      },
+      {
+        "start": 2.9,
+        "end": 3.0,
+        "offset": 32,
+        "endOffset": 34
+      },
+      {
+        "start": 3.0,
+        "end": 3.28,
+        "offset": 35,
+        "endOffset": 39
+      },
+      {
+        "start": 3.28,
+        "end": 3.68,
+        "offset": 40,
+        "endOffset": 45
+      },
+      {
+        "start": 3.68,
+        "end": 3.94,
+        "offset": 46,
+        "endOffset": 50
+      },
+      {
+        "start": 3.94,
+        "end": 4.28,
+        "offset": 51,
+        "endOffset": 58
+      },
+      {
+        "start": 4.28,
+        "end": 4.64,
+        "offset": 59,
+        "endOffset": 61
+      },
+      {
+        "start": 4.64,
+        "end": 5.08,
+        "offset": 62,
+        "endOffset": 67
+      },
+      {
+        "start": 5.68,
+        "end": 5.86,
+        "offset": 68,
+        "endOffset": 72
+      },
+      {
+        "start": 5.86,
+        "end": 6.06,
+        "offset": 73,
+        "endOffset": 77
+      },
+      {
+        "start": 6.06,
+        "end": 6.34,
+        "offset": 78,
+        "endOffset": 81
+      },
+      {
+        "start": 6.34,
+        "end": 6.62,
+        "offset": 82,
+        "endOffset": 84
+      },
+      {
+        "start": 6.62,
+        "end": 6.84,
+        "offset": 85,
+        "endOffset": 87
+      },
+      {
+        "start": 6.84,
+        "end": 7.02,
+        "offset": 88,
+        "endOffset": 90
+      },
+      {
+        "start": 7.02,
+        "end": 7.5,
+        "offset": 91,
+        "endOffset": 96
+      },
+      {
+        "start": 8.02,
+        "end": 8.12,
+        "offset": 97,
+        "endOffset": 99
+      },
+      {
+        "start": 8.12,
+        "end": 8.32,
+        "offset": 100,
+        "endOffset": 105
+      },
+      {
+        "start": 8.32,
+        "end": 8.74,
+        "offset": 106,
+        "endOffset": 109
+      },
+      {
+        "start": 8.74,
+        "end": 9.24,
+        "offset": 110,
+        "endOffset": 116
+      },
+      {
+        "start": 9.62,
+        "end": 9.72,
+        "offset": 117,
+        "endOffset": 119
+      },
+      {
+        "start": 9.72,
+        "end": 9.92,
+        "offset": 120,
+        "endOffset": 124
+      },
+      {
+        "start": 9.92,
+        "end": 10.4,
+        "offset": 125,
+        "endOffset": 128
+      },
+      {
+        "start": 10.4,
+        "end": 10.66,
+        "offset": 129,
+        "endOffset": 135
+      },
+      {
+        "start": 11.48,
+        "end": 11.78,
+        "offset": 136,
+        "endOffset": 141
+      }
+    ]
+  },
+  "prayer:act-of-contrition": {
+    "transcript": "O my God, I am heartily sorry for having offended Thee, and I detest all my sins, because I dread the loss of heaven and the pains of hell; but most of all because they offend Thee, my God, who art all good and deserving of all my love.\n\nI firmly resolve, with the help of Thy grace, to confess my sins, to do penance, and to amend my life. Amen.",
+    "audioSha256": "9a7bc2b199c2f77765708b25de3fcae40a11be7f72f5ea5cc52d66c76c76f60f",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.14,
+        "end": 0.18,
+        "offset": 0,
+        "endOffset": 1
+      },
+      {
+        "start": 0.18,
+        "end": 0.34,
+        "offset": 2,
+        "endOffset": 4
+      },
+      {
+        "start": 0.34,
+        "end": 0.84,
+        "offset": 5,
+        "endOffset": 9
+      },
+      {
+        "start": 1.3,
+        "end": 1.34,
+        "offset": 10,
+        "endOffset": 11
+      },
+      {
+        "start": 1.34,
+        "end": 1.4,
+        "offset": 12,
+        "endOffset": 14
+      },
+      {
+        "start": 1.4,
+        "end": 1.9,
+        "offset": 15,
+        "endOffset": 23
+      },
+      {
+        "start": 1.9,
+        "end": 2.24,
+        "offset": 24,
+        "endOffset": 29
+      },
+      {
+        "start": 2.24,
+        "end": 2.56,
+        "offset": 30,
+        "endOffset": 33
+      },
+      {
+        "start": 2.56,
+        "end": 2.82,
+        "offset": 34,
+        "endOffset": 40
+      },
+      {
+        "start": 2.82,
+        "end": 3.14,
+        "offset": 41,
+        "endOffset": 49
+      },
+      {
+        "start": 3.14,
+        "end": 3.6,
+        "offset": 50,
+        "endOffset": 55
+      },
+      {
+        "start": 4.2,
+        "end": 4.24,
+        "offset": 56,
+        "endOffset": 59
+      },
+      {
+        "start": 4.24,
+        "end": 4.32,
+        "offset": 60,
+        "endOffset": 61
+      },
+      {
+        "start": 4.32,
+        "end": 4.74,
+        "offset": 62,
+        "endOffset": 68
+      },
+      {
+        "start": 4.74,
+        "end": 5.16,
+        "offset": 69,
+        "endOffset": 72
+      },
+      {
+        "start": 5.16,
+        "end": 5.38,
+        "offset": 73,
+        "endOffset": 75
+      },
+      {
+        "start": 5.38,
+        "end": 5.9,
+        "offset": 76,
+        "endOffset": 81
+      },
+      {
+        "start": 6.44,
+        "end": 6.62,
+        "offset": 82,
+        "endOffset": 89
+      },
+      {
+        "start": 6.62,
+        "end": 6.76,
+        "offset": 90,
+        "endOffset": 91
+      },
+      {
+        "start": 6.76,
+        "end": 6.96,
+        "offset": 92,
+        "endOffset": 97
+      },
+      {
+        "start": 6.96,
+        "end": 7.26,
+        "offset": 98,
+        "endOffset": 101
+      },
+      {
+        "start": 7.26,
+        "end": 7.48,
+        "offset": 102,
+        "endOffset": 106
+      },
+      {
+        "start": 7.48,
+        "end": 7.7,
+        "offset": 107,
+        "endOffset": 109
+      },
+      {
+        "start": 7.7,
+        "end": 7.9,
+        "offset": 110,
+        "endOffset": 116
+      },
+      {
+        "start": 7.9,
+        "end": 8.32,
+        "offset": 117,
+        "endOffset": 120
+      },
+      {
+        "start": 8.32,
+        "end": 8.44,
+        "offset": 121,
+        "endOffset": 124
+      },
+      {
+        "start": 8.44,
+        "end": 8.7,
+        "offset": 125,
+        "endOffset": 130
+      },
+      {
+        "start": 8.7,
+        "end": 8.98,
+        "offset": 131,
+        "endOffset": 133
+      },
+      {
+        "start": 8.98,
+        "end": 9.98,
+        "offset": 134,
+        "endOffset": 139
+      },
+      {
+        "start": 9.98,
+        "end": 10.06,
+        "offset": 140,
+        "endOffset": 143
+      },
+      {
+        "start": 10.06,
+        "end": 10.28,
+        "offset": 144,
+        "endOffset": 148
+      },
+      {
+        "start": 10.28,
+        "end": 10.48,
+        "offset": 149,
+        "endOffset": 151
+      },
+      {
+        "start": 10.48,
+        "end": 10.7,
+        "offset": 152,
+        "endOffset": 155
+      },
+      {
+        "start": 10.7,
+        "end": 11.08,
+        "offset": 156,
+        "endOffset": 163
+      },
+      {
+        "start": 11.08,
+        "end": 11.3,
+        "offset": 164,
+        "endOffset": 168
+      },
+      {
+        "start": 11.3,
+        "end": 11.56,
+        "offset": 169,
+        "endOffset": 175
+      },
+      {
+        "start": 11.56,
+        "end": 12.21,
+        "offset": 176,
+        "endOffset": 181
+      },
+      {
+        "start": 12.26,
+        "end": 12.34,
+        "offset": 182,
+        "endOffset": 184
+      },
+      {
+        "start": 12.34,
+        "end": 12.72,
+        "offset": 185,
+        "endOffset": 189
+      },
+      {
+        "start": 13.16,
+        "end": 13.26,
+        "offset": 190,
+        "endOffset": 193
+      },
+      {
+        "start": 13.26,
+        "end": 13.38,
+        "offset": 194,
+        "endOffset": 197
+      },
+      {
+        "start": 13.38,
+        "end": 13.78,
+        "offset": 198,
+        "endOffset": 201
+      },
+      {
+        "start": 13.78,
+        "end": 14.06,
+        "offset": 202,
+        "endOffset": 206
+      },
+      {
+        "start": 14.06,
+        "end": 14.46,
+        "offset": 207,
+        "endOffset": 210
+      },
+      {
+        "start": 14.46,
+        "end": 14.76,
+        "offset": 211,
+        "endOffset": 220
+      },
+      {
+        "start": 14.76,
+        "end": 15.12,
+        "offset": 221,
+        "endOffset": 223
+      },
+      {
+        "start": 15.12,
+        "end": 15.46,
+        "offset": 224,
+        "endOffset": 227
+      },
+      {
+        "start": 15.46,
+        "end": 15.66,
+        "offset": 228,
+        "endOffset": 230
+      },
+      {
+        "start": 15.66,
+        "end": 16.02,
+        "offset": 231,
+        "endOffset": 236
+      },
+      {
+        "start": 16.8,
+        "end": 16.9,
+        "offset": 238,
+        "endOffset": 239
+      },
+      {
+        "start": 16.9,
+        "end": 17.2,
+        "offset": 240,
+        "endOffset": 246
+      },
+      {
+        "start": 17.2,
+        "end": 17.94,
+        "offset": 247,
+        "endOffset": 255
+      },
+      {
+        "start": 18.14,
+        "end": 18.18,
+        "offset": 256,
+        "endOffset": 260
+      },
+      {
+        "start": 18.18,
+        "end": 18.3,
+        "offset": 261,
+        "endOffset": 264
+      },
+      {
+        "start": 18.3,
+        "end": 18.5,
+        "offset": 265,
+        "endOffset": 269
+      },
+      {
+        "start": 18.5,
+        "end": 18.64,
+        "offset": 270,
+        "endOffset": 272
+      },
+      {
+        "start": 18.64,
+        "end": 18.82,
+        "offset": 273,
+        "endOffset": 276
+      },
+      {
+        "start": 18.82,
+        "end": 19.27,
+        "offset": 277,
+        "endOffset": 283
+      },
+      {
+        "start": 19.68,
+        "end": 19.78,
+        "offset": 284,
+        "endOffset": 286
+      },
+      {
+        "start": 19.78,
+        "end": 19.96,
+        "offset": 287,
+        "endOffset": 294
+      },
+      {
+        "start": 19.96,
+        "end": 20.38,
+        "offset": 295,
+        "endOffset": 297
+      },
+      {
+        "start": 20.38,
+        "end": 20.7,
+        "offset": 298,
+        "endOffset": 303
+      },
+      {
+        "start": 20.7,
+        "end": 21.38,
+        "offset": 304,
+        "endOffset": 306
+      },
+      {
+        "start": 21.38,
+        "end": 21.48,
+        "offset": 307,
+        "endOffset": 309
+      },
+      {
+        "start": 21.48,
+        "end": 22.02,
+        "offset": 310,
+        "endOffset": 318
+      },
+      {
+        "start": 22.38,
+        "end": 22.48,
+        "offset": 319,
+        "endOffset": 322
+      },
+      {
+        "start": 22.48,
+        "end": 22.62,
+        "offset": 323,
+        "endOffset": 325
+      },
+      {
+        "start": 22.62,
+        "end": 22.82,
+        "offset": 326,
+        "endOffset": 331
+      },
+      {
+        "start": 22.82,
+        "end": 23.16,
+        "offset": 332,
+        "endOffset": 334
+      },
+      {
+        "start": 23.22,
+        "end": 23.4,
+        "offset": 335,
+        "endOffset": 340
+      },
+      {
+        "start": 24.16,
+        "end": 24.48,
+        "offset": 341,
+        "endOffset": 346
+      }
+    ]
+  },
+  "mystery:Joyful:0": {
+    "transcript": "The Annunciation.\n\nThe angel Gabriel announces that Mary will conceive Jesus, the Son of God, through the Holy Spirit. Although she cannot see the whole path ahead, Mary freely gives her faithful yes to God. This mystery invites us to receive God's will with the same humility, courage, and trust.",
+    "audioSha256": "c77da03f5289726da309e32eb8862019594699727c17d32ac0a933aa76d994d3",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.12,
+        "end": 0.18,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.18,
+        "end": 1.08,
+        "offset": 4,
+        "endOffset": 17
+      },
+      {
+        "start": 1.9,
+        "end": 1.94,
+        "offset": 19,
+        "endOffset": 22
+      },
+      {
+        "start": 1.94,
+        "end": 2.16,
+        "offset": 23,
+        "endOffset": 28
+      },
+      {
+        "start": 2.16,
+        "end": 2.54,
+        "offset": 29,
+        "endOffset": 36
+      },
+      {
+        "start": 2.54,
+        "end": 3.36,
+        "offset": 37,
+        "endOffset": 46
+      },
+      {
+        "start": 3.36,
+        "end": 3.6,
+        "offset": 47,
+        "endOffset": 51
+      },
+      {
+        "start": 3.6,
+        "end": 3.86,
+        "offset": 52,
+        "endOffset": 56
+      },
+      {
+        "start": 3.86,
+        "end": 4.22,
+        "offset": 57,
+        "endOffset": 61
+      },
+      {
+        "start": 4.22,
+        "end": 4.46,
+        "offset": 62,
+        "endOffset": 70
+      },
+      {
+        "start": 4.46,
+        "end": 5.11,
+        "offset": 71,
+        "endOffset": 77
+      },
+      {
+        "start": 5.72,
+        "end": 5.76,
+        "offset": 78,
+        "endOffset": 81
+      },
+      {
+        "start": 5.76,
+        "end": 6.0,
+        "offset": 82,
+        "endOffset": 85
+      },
+      {
+        "start": 6.0,
+        "end": 6.16,
+        "offset": 86,
+        "endOffset": 88
+      },
+      {
+        "start": 6.16,
+        "end": 6.66,
+        "offset": 89,
+        "endOffset": 93
+      },
+      {
+        "start": 6.9,
+        "end": 7.0,
+        "offset": 94,
+        "endOffset": 101
+      },
+      {
+        "start": 7.0,
+        "end": 7.16,
+        "offset": 102,
+        "endOffset": 105
+      },
+      {
+        "start": 7.16,
+        "end": 7.32,
+        "offset": 106,
+        "endOffset": 110
+      },
+      {
+        "start": 7.32,
+        "end": 7.72,
+        "offset": 111,
+        "endOffset": 118
+      },
+      {
+        "start": 8.62,
+        "end": 8.8,
+        "offset": 119,
+        "endOffset": 127
+      },
+      {
+        "start": 8.8,
+        "end": 9.02,
+        "offset": 128,
+        "endOffset": 131
+      },
+      {
+        "start": 9.02,
+        "end": 9.22,
+        "offset": 132,
+        "endOffset": 138
+      },
+      {
+        "start": 9.22,
+        "end": 9.6,
+        "offset": 139,
+        "endOffset": 142
+      },
+      {
+        "start": 9.6,
+        "end": 9.76,
+        "offset": 143,
+        "endOffset": 146
+      },
+      {
+        "start": 9.76,
+        "end": 10.02,
+        "offset": 147,
+        "endOffset": 152
+      },
+      {
+        "start": 10.02,
+        "end": 10.3,
+        "offset": 153,
+        "endOffset": 157
+      },
+      {
+        "start": 10.3,
+        "end": 10.88,
+        "offset": 158,
+        "endOffset": 164
+      },
+      {
+        "start": 11.4,
+        "end": 11.66,
+        "offset": 165,
+        "endOffset": 169
+      },
+      {
+        "start": 11.66,
+        "end": 12.06,
+        "offset": 170,
+        "endOffset": 176
+      },
+      {
+        "start": 12.06,
+        "end": 12.44,
+        "offset": 177,
+        "endOffset": 182
+      },
+      {
+        "start": 12.44,
+        "end": 12.68,
+        "offset": 183,
+        "endOffset": 186
+      },
+      {
+        "start": 12.68,
+        "end": 12.98,
+        "offset": 187,
+        "endOffset": 195
+      },
+      {
+        "start": 12.98,
+        "end": 13.56,
+        "offset": 196,
+        "endOffset": 199
+      },
+      {
+        "start": 13.56,
+        "end": 13.86,
+        "offset": 200,
+        "endOffset": 202
+      },
+      {
+        "start": 13.86,
+        "end": 14.2,
+        "offset": 203,
+        "endOffset": 207
+      },
+      {
+        "start": 14.96,
+        "end": 15.1,
+        "offset": 208,
+        "endOffset": 212
+      },
+      {
+        "start": 15.1,
+        "end": 15.5,
+        "offset": 213,
+        "endOffset": 220
+      },
+      {
+        "start": 15.5,
+        "end": 15.84,
+        "offset": 221,
+        "endOffset": 228
+      },
+      {
+        "start": 15.84,
+        "end": 16.22,
+        "offset": 229,
+        "endOffset": 231
+      },
+      {
+        "start": 16.22,
+        "end": 16.4,
+        "offset": 232,
+        "endOffset": 234
+      },
+      {
+        "start": 16.4,
+        "end": 16.68,
+        "offset": 235,
+        "endOffset": 242
+      },
+      {
+        "start": 16.68,
+        "end": 17.26,
+        "offset": 243,
+        "endOffset": 248
+      },
+      {
+        "start": 17.26,
+        "end": 17.42,
+        "offset": 249,
+        "endOffset": 253
+      },
+      {
+        "start": 17.42,
+        "end": 17.74,
+        "offset": 254,
+        "endOffset": 258
+      },
+      {
+        "start": 17.8,
+        "end": 17.9,
+        "offset": 259,
+        "endOffset": 262
+      },
+      {
+        "start": 17.9,
+        "end": 18.18,
+        "offset": 263,
+        "endOffset": 267
+      },
+      {
+        "start": 18.18,
+        "end": 18.98,
+        "offset": 268,
+        "endOffset": 277
+      },
+      {
+        "start": 19.34,
+        "end": 19.88,
+        "offset": 278,
+        "endOffset": 286
+      },
+      {
+        "start": 20.12,
+        "end": 20.16,
+        "offset": 287,
+        "endOffset": 290
+      },
+      {
+        "start": 20.16,
+        "end": 20.7,
+        "offset": 291,
+        "endOffset": 297
+      }
+    ]
+  },
+  "mystery:Joyful:1": {
+    "transcript": "The Visitation.\n\nMary travels in haste to serve her cousin Elizabeth, carrying Christ within her. John the Baptist leaps in Elizabeth's womb, and Mary responds with the Magnificat. This mystery teaches that genuine encounter with Christ moves us toward joyful service of others.",
+    "audioSha256": "3ae94000cc6ee7e5443cd7c732bd69c08fcb5525ff3f9825846026944cf27db3",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.14,
+        "end": 0.18,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.18,
+        "end": 1.9,
+        "offset": 4,
+        "endOffset": 15
+      },
+      {
+        "start": 1.9,
+        "end": 2.0,
+        "offset": 17,
+        "endOffset": 21
+      },
+      {
+        "start": 2.0,
+        "end": 2.5,
+        "offset": 22,
+        "endOffset": 29
+      },
+      {
+        "start": 2.5,
+        "end": 2.64,
+        "offset": 30,
+        "endOffset": 32
+      },
+      {
+        "start": 2.64,
+        "end": 2.94,
+        "offset": 33,
+        "endOffset": 38
+      },
+      {
+        "start": 3.26,
+        "end": 3.36,
+        "offset": 39,
+        "endOffset": 41
+      },
+      {
+        "start": 3.36,
+        "end": 3.6,
+        "offset": 42,
+        "endOffset": 47
+      },
+      {
+        "start": 3.6,
+        "end": 3.8,
+        "offset": 48,
+        "endOffset": 51
+      },
+      {
+        "start": 3.8,
+        "end": 4.08,
+        "offset": 52,
+        "endOffset": 58
+      },
+      {
+        "start": 4.08,
+        "end": 4.68,
+        "offset": 59,
+        "endOffset": 69
+      },
+      {
+        "start": 5.1,
+        "end": 5.38,
+        "offset": 70,
+        "endOffset": 78
+      },
+      {
+        "start": 5.38,
+        "end": 5.74,
+        "offset": 79,
+        "endOffset": 85
+      },
+      {
+        "start": 5.74,
+        "end": 6.16,
+        "offset": 86,
+        "endOffset": 92
+      },
+      {
+        "start": 6.16,
+        "end": 7.21,
+        "offset": 93,
+        "endOffset": 97
+      },
+      {
+        "start": 7.3,
+        "end": 7.34,
+        "offset": 98,
+        "endOffset": 102
+      },
+      {
+        "start": 7.34,
+        "end": 7.46,
+        "offset": 103,
+        "endOffset": 106
+      },
+      {
+        "start": 7.46,
+        "end": 7.8,
+        "offset": 107,
+        "endOffset": 114
+      },
+      {
+        "start": 7.8,
+        "end": 8.3,
+        "offset": 115,
+        "endOffset": 120
+      },
+      {
+        "start": 8.3,
+        "end": 8.62,
+        "offset": 121,
+        "endOffset": 123
+      },
+      {
+        "start": 8.62,
+        "end": 9.18,
+        "offset": 124,
+        "endOffset": 135
+      },
+      {
+        "start": 9.18,
+        "end": 9.52,
+        "offset": 136,
+        "endOffset": 141
+      },
+      {
+        "start": 9.94,
+        "end": 10.04,
+        "offset": 142,
+        "endOffset": 145
+      },
+      {
+        "start": 10.04,
+        "end": 10.26,
+        "offset": 146,
+        "endOffset": 150
+      },
+      {
+        "start": 10.26,
+        "end": 10.78,
+        "offset": 151,
+        "endOffset": 159
+      },
+      {
+        "start": 10.78,
+        "end": 11.2,
+        "offset": 160,
+        "endOffset": 164
+      },
+      {
+        "start": 11.2,
+        "end": 11.32,
+        "offset": 165,
+        "endOffset": 168
+      },
+      {
+        "start": 11.32,
+        "end": 11.84,
+        "offset": 169,
+        "endOffset": 180
+      },
+      {
+        "start": 12.78,
+        "end": 12.9,
+        "offset": 181,
+        "endOffset": 185
+      },
+      {
+        "start": 12.9,
+        "end": 13.26,
+        "offset": 186,
+        "endOffset": 193
+      },
+      {
+        "start": 13.26,
+        "end": 13.72,
+        "offset": 194,
+        "endOffset": 201
+      },
+      {
+        "start": 13.72,
+        "end": 13.98,
+        "offset": 202,
+        "endOffset": 206
+      },
+      {
+        "start": 13.98,
+        "end": 14.34,
+        "offset": 207,
+        "endOffset": 214
+      },
+      {
+        "start": 14.34,
+        "end": 14.88,
+        "offset": 215,
+        "endOffset": 224
+      },
+      {
+        "start": 14.88,
+        "end": 15.24,
+        "offset": 225,
+        "endOffset": 229
+      },
+      {
+        "start": 15.24,
+        "end": 15.5,
+        "offset": 230,
+        "endOffset": 236
+      },
+      {
+        "start": 15.5,
+        "end": 16.2,
+        "offset": 237,
+        "endOffset": 242
+      },
+      {
+        "start": 16.2,
+        "end": 16.48,
+        "offset": 243,
+        "endOffset": 245
+      },
+      {
+        "start": 16.48,
+        "end": 16.74,
+        "offset": 246,
+        "endOffset": 252
+      },
+      {
+        "start": 16.74,
+        "end": 17.3,
+        "offset": 253,
+        "endOffset": 259
+      },
+      {
+        "start": 17.32,
+        "end": 17.7,
+        "offset": 260,
+        "endOffset": 267
+      },
+      {
+        "start": 17.7,
+        "end": 17.94,
+        "offset": 268,
+        "endOffset": 270
+      },
+      {
+        "start": 17.94,
+        "end": 18.3,
+        "offset": 271,
+        "endOffset": 278
+      }
+    ]
+  },
+  "mystery:Joyful:2": {
+    "transcript": "The Nativity.\n\nThe eternal Son of God enters the world in the poverty and simplicity of Bethlehem. Mary and Joseph welcome him with love, while shepherds become the first witnesses. The Nativity reveals that God's greatness often comes quietly.",
+    "audioSha256": "92a6a4eeaee8486cd8c6f0bfcb28af367ddcfa144df11d90879644704b9f4fb3",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.14,
+        "end": 0.2,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.2,
+        "end": 0.86,
+        "offset": 4,
+        "endOffset": 13
+      },
+      {
+        "start": 1.58,
+        "end": 1.62,
+        "offset": 15,
+        "endOffset": 18
+      },
+      {
+        "start": 1.62,
+        "end": 1.84,
+        "offset": 19,
+        "endOffset": 26
+      },
+      {
+        "start": 1.84,
+        "end": 2.32,
+        "offset": 27,
+        "endOffset": 30
+      },
+      {
+        "start": 2.32,
+        "end": 2.48,
+        "offset": 31,
+        "endOffset": 33
+      },
+      {
+        "start": 2.48,
+        "end": 2.74,
+        "offset": 34,
+        "endOffset": 37
+      },
+      {
+        "start": 2.74,
+        "end": 3.22,
+        "offset": 38,
+        "endOffset": 44
+      },
+      {
+        "start": 3.22,
+        "end": 3.52,
+        "offset": 45,
+        "endOffset": 48
+      },
+      {
+        "start": 3.52,
+        "end": 3.78,
+        "offset": 49,
+        "endOffset": 54
+      },
+      {
+        "start": 3.78,
+        "end": 4.06,
+        "offset": 55,
+        "endOffset": 57
+      },
+      {
+        "start": 4.06,
+        "end": 4.18,
+        "offset": 58,
+        "endOffset": 61
+      },
+      {
+        "start": 4.18,
+        "end": 4.56,
+        "offset": 62,
+        "endOffset": 69
+      },
+      {
+        "start": 4.56,
+        "end": 4.96,
+        "offset": 70,
+        "endOffset": 73
+      },
+      {
+        "start": 5.3,
+        "end": 5.4,
+        "offset": 74,
+        "endOffset": 84
+      },
+      {
+        "start": 5.4,
+        "end": 5.86,
+        "offset": 85,
+        "endOffset": 87
+      },
+      {
+        "start": 5.86,
+        "end": 6.81,
+        "offset": 88,
+        "endOffset": 98
+      },
+      {
+        "start": 7.3,
+        "end": 7.36,
+        "offset": 99,
+        "endOffset": 103
+      },
+      {
+        "start": 7.36,
+        "end": 7.64,
+        "offset": 104,
+        "endOffset": 107
+      },
+      {
+        "start": 7.64,
+        "end": 7.88,
+        "offset": 108,
+        "endOffset": 114
+      },
+      {
+        "start": 7.88,
+        "end": 8.34,
+        "offset": 115,
+        "endOffset": 122
+      },
+      {
+        "start": 8.34,
+        "end": 8.74,
+        "offset": 123,
+        "endOffset": 126
+      },
+      {
+        "start": 8.74,
+        "end": 8.9,
+        "offset": 127,
+        "endOffset": 131
+      },
+      {
+        "start": 8.9,
+        "end": 9.22,
+        "offset": 132,
+        "endOffset": 137
+      },
+      {
+        "start": 9.92,
+        "end": 9.96,
+        "offset": 138,
+        "endOffset": 143
+      },
+      {
+        "start": 9.96,
+        "end": 10.5,
+        "offset": 144,
+        "endOffset": 153
+      },
+      {
+        "start": 10.5,
+        "end": 10.76,
+        "offset": 154,
+        "endOffset": 160
+      },
+      {
+        "start": 10.76,
+        "end": 10.94,
+        "offset": 161,
+        "endOffset": 164
+      },
+      {
+        "start": 10.94,
+        "end": 11.26,
+        "offset": 165,
+        "endOffset": 170
+      },
+      {
+        "start": 11.26,
+        "end": 12.06,
+        "offset": 171,
+        "endOffset": 181
+      },
+      {
+        "start": 12.8,
+        "end": 12.84,
+        "offset": 182,
+        "endOffset": 185
+      },
+      {
+        "start": 12.84,
+        "end": 13.2,
+        "offset": 186,
+        "endOffset": 194
+      },
+      {
+        "start": 13.2,
+        "end": 13.62,
+        "offset": 195,
+        "endOffset": 202
+      },
+      {
+        "start": 13.62,
+        "end": 14.0,
+        "offset": 203,
+        "endOffset": 207
+      },
+      {
+        "start": 14.0,
+        "end": 14.46,
+        "offset": 208,
+        "endOffset": 213
+      },
+      {
+        "start": 14.46,
+        "end": 14.72,
+        "offset": 214,
+        "endOffset": 223
+      },
+      {
+        "start": 14.72,
+        "end": 15.38,
+        "offset": 224,
+        "endOffset": 229
+      },
+      {
+        "start": 15.38,
+        "end": 15.74,
+        "offset": 230,
+        "endOffset": 235
+      },
+      {
+        "start": 15.74,
+        "end": 16.34,
+        "offset": 236,
+        "endOffset": 244
+      }
+    ]
+  },
+  "mystery:Joyful:3": {
+    "transcript": "The Presentation.\n\nMary and Joseph present Jesus in the Temple in faithful obedience to the Law. Simeon recognizes the promised Messiah and foretells both salvation and sorrow. This mystery calls us to dedicate our lives to God.",
+    "audioSha256": "fdc7a9b2fd9f29751f8996dce41e93453b222186bd033f3ad909fd8f68d348ea",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.16,
+        "end": 0.2,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.2,
+        "end": 1.86,
+        "offset": 4,
+        "endOffset": 17
+      },
+      {
+        "start": 1.86,
+        "end": 2.02,
+        "offset": 19,
+        "endOffset": 23
+      },
+      {
+        "start": 2.02,
+        "end": 2.2,
+        "offset": 24,
+        "endOffset": 27
+      },
+      {
+        "start": 2.2,
+        "end": 2.5,
+        "offset": 28,
+        "endOffset": 34
+      },
+      {
+        "start": 2.5,
+        "end": 2.9,
+        "offset": 35,
+        "endOffset": 42
+      },
+      {
+        "start": 2.9,
+        "end": 3.26,
+        "offset": 43,
+        "endOffset": 48
+      },
+      {
+        "start": 3.26,
+        "end": 3.68,
+        "offset": 49,
+        "endOffset": 51
+      },
+      {
+        "start": 3.68,
+        "end": 3.76,
+        "offset": 52,
+        "endOffset": 55
+      },
+      {
+        "start": 3.76,
+        "end": 4.12,
+        "offset": 56,
+        "endOffset": 62
+      },
+      {
+        "start": 4.14,
+        "end": 4.46,
+        "offset": 63,
+        "endOffset": 65
+      },
+      {
+        "start": 4.46,
+        "end": 4.8,
+        "offset": 66,
+        "endOffset": 74
+      },
+      {
+        "start": 4.8,
+        "end": 5.4,
+        "offset": 75,
+        "endOffset": 84
+      },
+      {
+        "start": 5.4,
+        "end": 5.78,
+        "offset": 85,
+        "endOffset": 87
+      },
+      {
+        "start": 5.8,
+        "end": 5.9,
+        "offset": 88,
+        "endOffset": 91
+      },
+      {
+        "start": 5.9,
+        "end": 6.28,
+        "offset": 92,
+        "endOffset": 96
+      },
+      {
+        "start": 6.98,
+        "end": 7.36,
+        "offset": 97,
+        "endOffset": 103
+      },
+      {
+        "start": 7.36,
+        "end": 7.74,
+        "offset": 104,
+        "endOffset": 114
+      },
+      {
+        "start": 7.74,
+        "end": 8.26,
+        "offset": 115,
+        "endOffset": 118
+      },
+      {
+        "start": 8.38,
+        "end": 8.56,
+        "offset": 119,
+        "endOffset": 127
+      },
+      {
+        "start": 8.56,
+        "end": 9.02,
+        "offset": 128,
+        "endOffset": 135
+      },
+      {
+        "start": 9.02,
+        "end": 9.7,
+        "offset": 136,
+        "endOffset": 139
+      },
+      {
+        "start": 9.7,
+        "end": 10.26,
+        "offset": 140,
+        "endOffset": 149
+      },
+      {
+        "start": 10.26,
+        "end": 10.44,
+        "offset": 150,
+        "endOffset": 154
+      },
+      {
+        "start": 10.44,
+        "end": 10.7,
+        "offset": 155,
+        "endOffset": 164
+      },
+      {
+        "start": 10.7,
+        "end": 11.64,
+        "offset": 165,
+        "endOffset": 168
+      },
+      {
+        "start": 11.64,
+        "end": 12.92,
+        "offset": 169,
+        "endOffset": 176
+      },
+      {
+        "start": 12.92,
+        "end": 13.04,
+        "offset": 177,
+        "endOffset": 181
+      },
+      {
+        "start": 13.04,
+        "end": 13.4,
+        "offset": 182,
+        "endOffset": 189
+      },
+      {
+        "start": 13.4,
+        "end": 13.78,
+        "offset": 190,
+        "endOffset": 195
+      },
+      {
+        "start": 13.78,
+        "end": 14.06,
+        "offset": 196,
+        "endOffset": 198
+      },
+      {
+        "start": 14.06,
+        "end": 14.24,
+        "offset": 199,
+        "endOffset": 201
+      },
+      {
+        "start": 14.24,
+        "end": 14.5,
+        "offset": 202,
+        "endOffset": 210
+      },
+      {
+        "start": 14.5,
+        "end": 14.94,
+        "offset": 211,
+        "endOffset": 214
+      },
+      {
+        "start": 14.94,
+        "end": 15.22,
+        "offset": 215,
+        "endOffset": 220
+      },
+      {
+        "start": 15.22,
+        "end": 15.58,
+        "offset": 221,
+        "endOffset": 223
+      },
+      {
+        "start": 15.58,
+        "end": 15.88,
+        "offset": 224,
+        "endOffset": 228
+      }
+    ]
+  },
+  "mystery:Joyful:4": {
+    "transcript": "The Finding in the Temple.\n\nAfter three anxious days, Mary and Joseph find the young Jesus among the teachers in the Temple. Jesus speaks of being in his Father's house, yet returns home and lives obediently. This mystery comforts us when God seems absent.",
+    "audioSha256": "cc29fde24dc34557d15216dfd5529cf7387a21675d172a1e46fe40cdb9684232",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.14,
+        "end": 0.18,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.18,
+        "end": 0.44,
+        "offset": 4,
+        "endOffset": 11
+      },
+      {
+        "start": 0.44,
+        "end": 0.86,
+        "offset": 12,
+        "endOffset": 14
+      },
+      {
+        "start": 0.86,
+        "end": 0.96,
+        "offset": 15,
+        "endOffset": 18
+      },
+      {
+        "start": 0.96,
+        "end": 1.28,
+        "offset": 19,
+        "endOffset": 26
+      },
+      {
+        "start": 2.42,
+        "end": 2.58,
+        "offset": 28,
+        "endOffset": 33
+      },
+      {
+        "start": 2.58,
+        "end": 2.96,
+        "offset": 34,
+        "endOffset": 39
+      },
+      {
+        "start": 2.96,
+        "end": 3.44,
+        "offset": 40,
+        "endOffset": 47
+      },
+      {
+        "start": 3.44,
+        "end": 4.64,
+        "offset": 48,
+        "endOffset": 53
+      },
+      {
+        "start": 4.68,
+        "end": 4.78,
+        "offset": 54,
+        "endOffset": 58
+      },
+      {
+        "start": 4.78,
+        "end": 5.04,
+        "offset": 59,
+        "endOffset": 62
+      },
+      {
+        "start": 5.04,
+        "end": 5.3,
+        "offset": 63,
+        "endOffset": 69
+      },
+      {
+        "start": 5.3,
+        "end": 5.78,
+        "offset": 70,
+        "endOffset": 74
+      },
+      {
+        "start": 5.78,
+        "end": 5.96,
+        "offset": 75,
+        "endOffset": 78
+      },
+      {
+        "start": 5.96,
+        "end": 6.14,
+        "offset": 79,
+        "endOffset": 84
+      },
+      {
+        "start": 6.14,
+        "end": 6.52,
+        "offset": 85,
+        "endOffset": 90
+      },
+      {
+        "start": 6.52,
+        "end": 6.92,
+        "offset": 91,
+        "endOffset": 96
+      },
+      {
+        "start": 6.92,
+        "end": 7.12,
+        "offset": 97,
+        "endOffset": 100
+      },
+      {
+        "start": 7.12,
+        "end": 7.44,
+        "offset": 101,
+        "endOffset": 109
+      },
+      {
+        "start": 7.5,
+        "end": 7.72,
+        "offset": 110,
+        "endOffset": 112
+      },
+      {
+        "start": 7.72,
+        "end": 7.8,
+        "offset": 113,
+        "endOffset": 116
+      },
+      {
+        "start": 7.8,
+        "end": 8.24,
+        "offset": 117,
+        "endOffset": 124
+      },
+      {
+        "start": 9.06,
+        "end": 9.18,
+        "offset": 125,
+        "endOffset": 130
+      },
+      {
+        "start": 9.18,
+        "end": 9.48,
+        "offset": 131,
+        "endOffset": 137
+      },
+      {
+        "start": 9.48,
+        "end": 9.74,
+        "offset": 138,
+        "endOffset": 140
+      },
+      {
+        "start": 9.74,
+        "end": 9.96,
+        "offset": 141,
+        "endOffset": 146
+      },
+      {
+        "start": 9.96,
+        "end": 10.22,
+        "offset": 147,
+        "endOffset": 149
+      },
+      {
+        "start": 10.22,
+        "end": 10.36,
+        "offset": 150,
+        "endOffset": 153
+      },
+      {
+        "start": 10.36,
+        "end": 10.88,
+        "offset": 154,
+        "endOffset": 162
+      },
+      {
+        "start": 10.88,
+        "end": 10.98,
+        "offset": 163,
+        "endOffset": 169
+      },
+      {
+        "start": 11.74,
+        "end": 11.82,
+        "offset": 170,
+        "endOffset": 173
+      },
+      {
+        "start": 11.82,
+        "end": 12.1,
+        "offset": 174,
+        "endOffset": 181
+      },
+      {
+        "start": 12.1,
+        "end": 12.52,
+        "offset": 182,
+        "endOffset": 186
+      },
+      {
+        "start": 12.52,
+        "end": 12.92,
+        "offset": 187,
+        "endOffset": 190
+      },
+      {
+        "start": 12.92,
+        "end": 13.18,
+        "offset": 191,
+        "endOffset": 196
+      },
+      {
+        "start": 13.18,
+        "end": 14.18,
+        "offset": 197,
+        "endOffset": 208
+      },
+      {
+        "start": 14.76,
+        "end": 14.86,
+        "offset": 209,
+        "endOffset": 213
+      },
+      {
+        "start": 14.86,
+        "end": 15.22,
+        "offset": 214,
+        "endOffset": 221
+      },
+      {
+        "start": 15.22,
+        "end": 15.8,
+        "offset": 222,
+        "endOffset": 230
+      },
+      {
+        "start": 15.8,
+        "end": 16.0,
+        "offset": 231,
+        "endOffset": 233
+      },
+      {
+        "start": 16.0,
+        "end": 16.3,
+        "offset": 234,
+        "endOffset": 238
+      },
+      {
+        "start": 16.3,
+        "end": 16.52,
+        "offset": 239,
+        "endOffset": 242
+      },
+      {
+        "start": 16.52,
+        "end": 16.84,
+        "offset": 243,
+        "endOffset": 248
+      },
+      {
+        "start": 16.84,
+        "end": 17.54,
+        "offset": 249,
+        "endOffset": 256
+      }
+    ]
+  },
+  "mystery:Sorrowful:0": {
+    "transcript": "The Agony in the Garden.\n\nIn Gethsemane, Jesus experiences profound sorrow as he faces betrayal, abandonment, and death. He honestly brings his anguish to the Father and freely prays that the Father's will be done. This mystery teaches us to surrender to God.",
+    "audioSha256": "91c9d180fcd15ec57b8a702cd6dde38436c61ecd5b4c572109804e612b7cd018",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.04,
+        "end": 0.14,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.14,
+        "end": 0.6,
+        "offset": 4,
+        "endOffset": 9
+      },
+      {
+        "start": 0.6,
+        "end": 0.88,
+        "offset": 10,
+        "endOffset": 12
+      },
+      {
+        "start": 0.88,
+        "end": 0.98,
+        "offset": 13,
+        "endOffset": 16
+      },
+      {
+        "start": 0.98,
+        "end": 1.68,
+        "offset": 17,
+        "endOffset": 24
+      },
+      {
+        "start": 2.3,
+        "end": 2.34,
+        "offset": 26,
+        "endOffset": 28
+      },
+      {
+        "start": 2.34,
+        "end": 3.16,
+        "offset": 29,
+        "endOffset": 40
+      },
+      {
+        "start": 3.6,
+        "end": 3.64,
+        "offset": 41,
+        "endOffset": 46
+      },
+      {
+        "start": 3.64,
+        "end": 4.36,
+        "offset": 47,
+        "endOffset": 58
+      },
+      {
+        "start": 4.36,
+        "end": 4.7,
+        "offset": 59,
+        "endOffset": 67
+      },
+      {
+        "start": 4.7,
+        "end": 5.56,
+        "offset": 68,
+        "endOffset": 74
+      },
+      {
+        "start": 6.16,
+        "end": 6.26,
+        "offset": 75,
+        "endOffset": 77
+      },
+      {
+        "start": 6.26,
+        "end": 6.38,
+        "offset": 78,
+        "endOffset": 80
+      },
+      {
+        "start": 6.38,
+        "end": 6.64,
+        "offset": 81,
+        "endOffset": 86
+      },
+      {
+        "start": 6.64,
+        "end": 7.56,
+        "offset": 87,
+        "endOffset": 96
+      },
+      {
+        "start": 7.84,
+        "end": 8.6,
+        "offset": 97,
+        "endOffset": 109
+      },
+      {
+        "start": 8.84,
+        "end": 8.94,
+        "offset": 110,
+        "endOffset": 113
+      },
+      {
+        "start": 8.94,
+        "end": 9.59,
+        "offset": 114,
+        "endOffset": 120
+      },
+      {
+        "start": 10.24,
+        "end": 10.28,
+        "offset": 121,
+        "endOffset": 123
+      },
+      {
+        "start": 10.28,
+        "end": 10.68,
+        "offset": 124,
+        "endOffset": 132
+      },
+      {
+        "start": 10.68,
+        "end": 11.08,
+        "offset": 133,
+        "endOffset": 139
+      },
+      {
+        "start": 11.08,
+        "end": 11.34,
+        "offset": 140,
+        "endOffset": 143
+      },
+      {
+        "start": 11.34,
+        "end": 11.66,
+        "offset": 144,
+        "endOffset": 151
+      },
+      {
+        "start": 11.66,
+        "end": 11.94,
+        "offset": 152,
+        "endOffset": 154
+      },
+      {
+        "start": 11.94,
+        "end": 12.02,
+        "offset": 155,
+        "endOffset": 158
+      },
+      {
+        "start": 12.02,
+        "end": 12.3,
+        "offset": 159,
+        "endOffset": 165
+      },
+      {
+        "start": 12.3,
+        "end": 12.92,
+        "offset": 166,
+        "endOffset": 169
+      },
+      {
+        "start": 12.92,
+        "end": 13.28,
+        "offset": 170,
+        "endOffset": 176
+      },
+      {
+        "start": 13.28,
+        "end": 13.94,
+        "offset": 177,
+        "endOffset": 182
+      },
+      {
+        "start": 13.94,
+        "end": 14.08,
+        "offset": 183,
+        "endOffset": 187
+      },
+      {
+        "start": 14.08,
+        "end": 14.18,
+        "offset": 188,
+        "endOffset": 191
+      },
+      {
+        "start": 14.32,
+        "end": 14.68,
+        "offset": 192,
+        "endOffset": 200
+      },
+      {
+        "start": 14.68,
+        "end": 14.88,
+        "offset": 201,
+        "endOffset": 205
+      },
+      {
+        "start": 14.88,
+        "end": 15.16,
+        "offset": 206,
+        "endOffset": 208
+      },
+      {
+        "start": 15.16,
+        "end": 15.56,
+        "offset": 209,
+        "endOffset": 214
+      },
+      {
+        "start": 16.42,
+        "end": 16.52,
+        "offset": 215,
+        "endOffset": 219
+      },
+      {
+        "start": 16.52,
+        "end": 16.92,
+        "offset": 220,
+        "endOffset": 227
+      },
+      {
+        "start": 16.92,
+        "end": 17.3,
+        "offset": 228,
+        "endOffset": 235
+      },
+      {
+        "start": 17.3,
+        "end": 17.58,
+        "offset": 236,
+        "endOffset": 238
+      },
+      {
+        "start": 17.58,
+        "end": 17.8,
+        "offset": 239,
+        "endOffset": 241
+      },
+      {
+        "start": 17.8,
+        "end": 18.16,
+        "offset": 242,
+        "endOffset": 251
+      },
+      {
+        "start": 18.16,
+        "end": 18.52,
+        "offset": 252,
+        "endOffset": 254
+      },
+      {
+        "start": 18.52,
+        "end": 18.86,
+        "offset": 255,
+        "endOffset": 259
+      }
+    ]
+  },
+  "mystery:Sorrowful:1": {
+    "transcript": "The Scourging at the Pillar.\n\nThough innocent, Jesus is bound and brutally scourged by Roman soldiers. He accepts physical pain and humiliation without surrendering his love for humanity. Contemplating his wounds calls us to compassion.",
+    "audioSha256": "3eacc867bbd8a0f19f52d6f3dd751ff727bcf4957aac6de776e9750820cd901e",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.14,
+        "end": 0.18,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.18,
+        "end": 0.66,
+        "offset": 4,
+        "endOffset": 13
+      },
+      {
+        "start": 0.66,
+        "end": 0.92,
+        "offset": 14,
+        "endOffset": 16
+      },
+      {
+        "start": 0.92,
+        "end": 1.08,
+        "offset": 17,
+        "endOffset": 20
+      },
+      {
+        "start": 1.08,
+        "end": 1.73,
+        "offset": 21,
+        "endOffset": 28
+      },
+      {
+        "start": 2.5,
+        "end": 2.58,
+        "offset": 30,
+        "endOffset": 36
+      },
+      {
+        "start": 2.58,
+        "end": 3.24,
+        "offset": 37,
+        "endOffset": 46
+      },
+      {
+        "start": 3.7,
+        "end": 3.86,
+        "offset": 47,
+        "endOffset": 52
+      },
+      {
+        "start": 3.86,
+        "end": 4.12,
+        "offset": 53,
+        "endOffset": 55
+      },
+      {
+        "start": 4.12,
+        "end": 4.46,
+        "offset": 56,
+        "endOffset": 61
+      },
+      {
+        "start": 4.46,
+        "end": 4.9,
+        "offset": 62,
+        "endOffset": 65
+      },
+      {
+        "start": 4.9,
+        "end": 5.28,
+        "offset": 66,
+        "endOffset": 74
+      },
+      {
+        "start": 5.28,
+        "end": 6.1,
+        "offset": 75,
+        "endOffset": 83
+      },
+      {
+        "start": 6.16,
+        "end": 6.26,
+        "offset": 84,
+        "endOffset": 86
+      },
+      {
+        "start": 6.26,
+        "end": 6.5,
+        "offset": 87,
+        "endOffset": 92
+      },
+      {
+        "start": 6.5,
+        "end": 7.14,
+        "offset": 93,
+        "endOffset": 102
+      },
+      {
+        "start": 7.92,
+        "end": 8.02,
+        "offset": 103,
+        "endOffset": 105
+      },
+      {
+        "start": 8.02,
+        "end": 8.26,
+        "offset": 106,
+        "endOffset": 113
+      },
+      {
+        "start": 8.26,
+        "end": 8.8,
+        "offset": 114,
+        "endOffset": 122
+      },
+      {
+        "start": 8.8,
+        "end": 9.24,
+        "offset": 123,
+        "endOffset": 127
+      },
+      {
+        "start": 9.24,
+        "end": 9.46,
+        "offset": 128,
+        "endOffset": 131
+      },
+      {
+        "start": 9.46,
+        "end": 9.82,
+        "offset": 132,
+        "endOffset": 143
+      },
+      {
+        "start": 9.82,
+        "end": 10.68,
+        "offset": 144,
+        "endOffset": 151
+      },
+      {
+        "start": 10.68,
+        "end": 11.58,
+        "offset": 152,
+        "endOffset": 164
+      },
+      {
+        "start": 11.58,
+        "end": 11.72,
+        "offset": 165,
+        "endOffset": 168
+      },
+      {
+        "start": 11.72,
+        "end": 11.98,
+        "offset": 169,
+        "endOffset": 173
+      },
+      {
+        "start": 11.98,
+        "end": 12.22,
+        "offset": 174,
+        "endOffset": 177
+      },
+      {
+        "start": 12.22,
+        "end": 12.68,
+        "offset": 178,
+        "endOffset": 187
+      },
+      {
+        "start": 13.58,
+        "end": 14.08,
+        "offset": 188,
+        "endOffset": 201
+      },
+      {
+        "start": 14.08,
+        "end": 14.28,
+        "offset": 202,
+        "endOffset": 205
+      },
+      {
+        "start": 14.28,
+        "end": 14.54,
+        "offset": 206,
+        "endOffset": 212
+      },
+      {
+        "start": 14.54,
+        "end": 15.16,
+        "offset": 213,
+        "endOffset": 218
+      },
+      {
+        "start": 15.16,
+        "end": 15.58,
+        "offset": 219,
+        "endOffset": 221
+      },
+      {
+        "start": 15.58,
+        "end": 15.9,
+        "offset": 222,
+        "endOffset": 224
+      },
+      {
+        "start": 15.9,
+        "end": 16.56,
+        "offset": 225,
+        "endOffset": 236
+      }
+    ]
+  },
+  "mystery:Sorrowful:2": {
+    "transcript": "The Crowning with Thorns.\n\nThe soldiers clothe Jesus in mock royalty, press thorns upon his head, and ridicule him as king. Their cruelty unknowingly points toward the truth: Christ's kingship is revealed through humility, sacrifice, and love.",
+    "audioSha256": "ee407131da4e7c48ddad47853443772a4a9d4db0e1e16d8b39f2a8ea6b2df4d6",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.16,
+        "end": 0.2,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.22,
+        "end": 0.66,
+        "offset": 4,
+        "endOffset": 12
+      },
+      {
+        "start": 0.66,
+        "end": 0.84,
+        "offset": 13,
+        "endOffset": 17
+      },
+      {
+        "start": 0.84,
+        "end": 1.94,
+        "offset": 18,
+        "endOffset": 25
+      },
+      {
+        "start": 2.32,
+        "end": 2.36,
+        "offset": 27,
+        "endOffset": 30
+      },
+      {
+        "start": 2.36,
+        "end": 2.64,
+        "offset": 31,
+        "endOffset": 39
+      },
+      {
+        "start": 2.64,
+        "end": 3.28,
+        "offset": 40,
+        "endOffset": 46
+      },
+      {
+        "start": 3.28,
+        "end": 3.56,
+        "offset": 47,
+        "endOffset": 52
+      },
+      {
+        "start": 3.56,
+        "end": 3.92,
+        "offset": 53,
+        "endOffset": 55
+      },
+      {
+        "start": 3.92,
+        "end": 4.14,
+        "offset": 56,
+        "endOffset": 60
+      },
+      {
+        "start": 4.14,
+        "end": 4.94,
+        "offset": 61,
+        "endOffset": 69
+      },
+      {
+        "start": 5.46,
+        "end": 5.56,
+        "offset": 70,
+        "endOffset": 75
+      },
+      {
+        "start": 5.56,
+        "end": 5.98,
+        "offset": 76,
+        "endOffset": 82
+      },
+      {
+        "start": 5.98,
+        "end": 6.28,
+        "offset": 83,
+        "endOffset": 87
+      },
+      {
+        "start": 6.28,
+        "end": 6.54,
+        "offset": 88,
+        "endOffset": 91
+      },
+      {
+        "start": 6.54,
+        "end": 6.92,
+        "offset": 92,
+        "endOffset": 97
+      },
+      {
+        "start": 7.2,
+        "end": 7.24,
+        "offset": 98,
+        "endOffset": 101
+      },
+      {
+        "start": 7.24,
+        "end": 7.52,
+        "offset": 102,
+        "endOffset": 110
+      },
+      {
+        "start": 7.52,
+        "end": 8.02,
+        "offset": 111,
+        "endOffset": 114
+      },
+      {
+        "start": 8.02,
+        "end": 8.2,
+        "offset": 115,
+        "endOffset": 117
+      },
+      {
+        "start": 8.2,
+        "end": 8.95,
+        "offset": 118,
+        "endOffset": 123
+      },
+      {
+        "start": 9.46,
+        "end": 9.5,
+        "offset": 124,
+        "endOffset": 129
+      },
+      {
+        "start": 9.5,
+        "end": 9.9,
+        "offset": 130,
+        "endOffset": 137
+      },
+      {
+        "start": 9.9,
+        "end": 10.88,
+        "offset": 138,
+        "endOffset": 149
+      },
+      {
+        "start": 10.88,
+        "end": 11.18,
+        "offset": 150,
+        "endOffset": 156
+      },
+      {
+        "start": 11.18,
+        "end": 11.48,
+        "offset": 157,
+        "endOffset": 163
+      },
+      {
+        "start": 11.48,
+        "end": 11.7,
+        "offset": 164,
+        "endOffset": 167
+      },
+      {
+        "start": 11.7,
+        "end": 12.08,
+        "offset": 168,
+        "endOffset": 174
+      },
+      {
+        "start": 12.82,
+        "end": 13.26,
+        "offset": 175,
+        "endOffset": 183
+      },
+      {
+        "start": 13.26,
+        "end": 13.72,
+        "offset": 184,
+        "endOffset": 192
+      },
+      {
+        "start": 13.72,
+        "end": 13.94,
+        "offset": 193,
+        "endOffset": 195
+      },
+      {
+        "start": 13.94,
+        "end": 14.16,
+        "offset": 196,
+        "endOffset": 204
+      },
+      {
+        "start": 14.16,
+        "end": 14.56,
+        "offset": 205,
+        "endOffset": 212
+      },
+      {
+        "start": 14.56,
+        "end": 15.42,
+        "offset": 213,
+        "endOffset": 222
+      },
+      {
+        "start": 15.68,
+        "end": 16.72,
+        "offset": 223,
+        "endOffset": 233
+      },
+      {
+        "start": 16.72,
+        "end": 16.76,
+        "offset": 234,
+        "endOffset": 237
+      },
+      {
+        "start": 16.76,
+        "end": 17.06,
+        "offset": 238,
+        "endOffset": 243
+      }
+    ]
+  },
+  "mystery:Sorrowful:3": {
+    "transcript": "The Carrying of the Cross.\n\nJesus carries the instrument of his execution toward Calvary, weakened yet steadfast in love. Simon of Cyrene is compelled to help bear the cross. This mystery invites us to carry our own crosses faithfully.",
+    "audioSha256": "4ea7ac1b86a69ecc71a46ba7a95d198baa4ce80f2db8ef4a70078296d0e06173",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.12,
+        "end": 0.16,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.16,
+        "end": 0.6,
+        "offset": 4,
+        "endOffset": 12
+      },
+      {
+        "start": 0.6,
+        "end": 0.9,
+        "offset": 13,
+        "endOffset": 15
+      },
+      {
+        "start": 0.9,
+        "end": 1.04,
+        "offset": 16,
+        "endOffset": 19
+      },
+      {
+        "start": 1.04,
+        "end": 1.79,
+        "offset": 20,
+        "endOffset": 26
+      },
+      {
+        "start": 2.36,
+        "end": 2.66,
+        "offset": 28,
+        "endOffset": 33
+      },
+      {
+        "start": 2.66,
+        "end": 2.98,
+        "offset": 34,
+        "endOffset": 41
+      },
+      {
+        "start": 2.98,
+        "end": 3.22,
+        "offset": 42,
+        "endOffset": 45
+      },
+      {
+        "start": 3.22,
+        "end": 3.48,
+        "offset": 46,
+        "endOffset": 56
+      },
+      {
+        "start": 3.48,
+        "end": 3.92,
+        "offset": 57,
+        "endOffset": 59
+      },
+      {
+        "start": 3.92,
+        "end": 4.08,
+        "offset": 60,
+        "endOffset": 63
+      },
+      {
+        "start": 4.08,
+        "end": 4.58,
+        "offset": 64,
+        "endOffset": 73
+      },
+      {
+        "start": 4.58,
+        "end": 5.14,
+        "offset": 74,
+        "endOffset": 80
+      },
+      {
+        "start": 5.14,
+        "end": 5.94,
+        "offset": 81,
+        "endOffset": 89
+      },
+      {
+        "start": 6.46,
+        "end": 6.68,
+        "offset": 90,
+        "endOffset": 98
+      },
+      {
+        "start": 6.68,
+        "end": 7.2,
+        "offset": 99,
+        "endOffset": 102
+      },
+      {
+        "start": 7.2,
+        "end": 7.68,
+        "offset": 103,
+        "endOffset": 112
+      },
+      {
+        "start": 7.68,
+        "end": 8.2,
+        "offset": 113,
+        "endOffset": 115
+      },
+      {
+        "start": 8.2,
+        "end": 9.24,
+        "offset": 116,
+        "endOffset": 121
+      },
+      {
+        "start": 9.24,
+        "end": 9.44,
+        "offset": 122,
+        "endOffset": 127
+      },
+      {
+        "start": 9.44,
+        "end": 9.6,
+        "offset": 128,
+        "endOffset": 130
+      },
+      {
+        "start": 9.6,
+        "end": 10.06,
+        "offset": 131,
+        "endOffset": 137
+      },
+      {
+        "start": 10.06,
+        "end": 10.34,
+        "offset": 138,
+        "endOffset": 140
+      },
+      {
+        "start": 10.34,
+        "end": 10.7,
+        "offset": 141,
+        "endOffset": 150
+      },
+      {
+        "start": 10.7,
+        "end": 11.1,
+        "offset": 151,
+        "endOffset": 153
+      },
+      {
+        "start": 11.1,
+        "end": 11.28,
+        "offset": 154,
+        "endOffset": 158
+      },
+      {
+        "start": 11.28,
+        "end": 11.52,
+        "offset": 159,
+        "endOffset": 163
+      },
+      {
+        "start": 11.52,
+        "end": 11.68,
+        "offset": 164,
+        "endOffset": 167
+      },
+      {
+        "start": 11.68,
+        "end": 12.1,
+        "offset": 168,
+        "endOffset": 174
+      },
+      {
+        "start": 12.9,
+        "end": 13.02,
+        "offset": 175,
+        "endOffset": 179
+      },
+      {
+        "start": 13.02,
+        "end": 13.4,
+        "offset": 180,
+        "endOffset": 187
+      },
+      {
+        "start": 13.4,
+        "end": 13.76,
+        "offset": 188,
+        "endOffset": 195
+      },
+      {
+        "start": 13.76,
+        "end": 14.16,
+        "offset": 196,
+        "endOffset": 198
+      },
+      {
+        "start": 14.16,
+        "end": 14.32,
+        "offset": 199,
+        "endOffset": 201
+      },
+      {
+        "start": 14.32,
+        "end": 14.56,
+        "offset": 202,
+        "endOffset": 207
+      },
+      {
+        "start": 14.56,
+        "end": 14.82,
+        "offset": 208,
+        "endOffset": 211
+      },
+      {
+        "start": 14.82,
+        "end": 15.12,
+        "offset": 212,
+        "endOffset": 215
+      },
+      {
+        "start": 15.12,
+        "end": 15.5,
+        "offset": 216,
+        "endOffset": 223
+      },
+      {
+        "start": 15.5,
+        "end": 16.08,
+        "offset": 224,
+        "endOffset": 235
+      }
+    ]
+  },
+  "mystery:Sorrowful:4": {
+    "transcript": "The Crucifixion.\n\nJesus is crucified and gives his life for the salvation of the world. From the cross he offers forgiveness and places himself completely in the Father's hands. This mystery reveals the depth of divine love.",
+    "audioSha256": "91aeb9c4bd53cbee6725bb41e0f72e2e8973fcfa95fd377794784fa676f747d4",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.16,
+        "end": 0.2,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.2,
+        "end": 1.84,
+        "offset": 4,
+        "endOffset": 16
+      },
+      {
+        "start": 1.84,
+        "end": 2.16,
+        "offset": 18,
+        "endOffset": 23
+      },
+      {
+        "start": 2.16,
+        "end": 2.3,
+        "offset": 24,
+        "endOffset": 26
+      },
+      {
+        "start": 2.3,
+        "end": 3.06,
+        "offset": 27,
+        "endOffset": 36
+      },
+      {
+        "start": 3.06,
+        "end": 3.42,
+        "offset": 37,
+        "endOffset": 40
+      },
+      {
+        "start": 3.42,
+        "end": 3.66,
+        "offset": 41,
+        "endOffset": 46
+      },
+      {
+        "start": 3.66,
+        "end": 3.92,
+        "offset": 47,
+        "endOffset": 50
+      },
+      {
+        "start": 3.92,
+        "end": 4.24,
+        "offset": 51,
+        "endOffset": 55
+      },
+      {
+        "start": 4.24,
+        "end": 4.46,
+        "offset": 56,
+        "endOffset": 59
+      },
+      {
+        "start": 4.46,
+        "end": 4.56,
+        "offset": 60,
+        "endOffset": 63
+      },
+      {
+        "start": 4.56,
+        "end": 4.9,
+        "offset": 64,
+        "endOffset": 73
+      },
+      {
+        "start": 4.92,
+        "end": 5.42,
+        "offset": 74,
+        "endOffset": 76
+      },
+      {
+        "start": 5.42,
+        "end": 5.54,
+        "offset": 77,
+        "endOffset": 80
+      },
+      {
+        "start": 5.54,
+        "end": 5.92,
+        "offset": 81,
+        "endOffset": 87
+      },
+      {
+        "start": 6.7,
+        "end": 6.74,
+        "offset": 88,
+        "endOffset": 92
+      },
+      {
+        "start": 6.74,
+        "end": 6.88,
+        "offset": 93,
+        "endOffset": 96
+      },
+      {
+        "start": 6.88,
+        "end": 7.12,
+        "offset": 97,
+        "endOffset": 102
+      },
+      {
+        "start": 7.12,
+        "end": 7.52,
+        "offset": 103,
+        "endOffset": 105
+      },
+      {
+        "start": 7.52,
+        "end": 7.82,
+        "offset": 106,
+        "endOffset": 112
+      },
+      {
+        "start": 7.82,
+        "end": 8.32,
+        "offset": 113,
+        "endOffset": 124
+      },
+      {
+        "start": 8.9,
+        "end": 9.0,
+        "offset": 125,
+        "endOffset": 128
+      },
+      {
+        "start": 9.0,
+        "end": 9.26,
+        "offset": 129,
+        "endOffset": 135
+      },
+      {
+        "start": 9.26,
+        "end": 9.66,
+        "offset": 136,
+        "endOffset": 143
+      },
+      {
+        "start": 9.66,
+        "end": 10.34,
+        "offset": 144,
+        "endOffset": 154
+      },
+      {
+        "start": 10.34,
+        "end": 10.82,
+        "offset": 155,
+        "endOffset": 157
+      },
+      {
+        "start": 10.82,
+        "end": 10.88,
+        "offset": 158,
+        "endOffset": 161
+      },
+      {
+        "start": 10.88,
+        "end": 11.34,
+        "offset": 162,
+        "endOffset": 170
+      },
+      {
+        "start": 11.34,
+        "end": 11.7,
+        "offset": 171,
+        "endOffset": 177
+      },
+      {
+        "start": 12.5,
+        "end": 12.64,
+        "offset": 178,
+        "endOffset": 182
+      },
+      {
+        "start": 12.64,
+        "end": 13.02,
+        "offset": 183,
+        "endOffset": 190
+      },
+      {
+        "start": 13.02,
+        "end": 13.42,
+        "offset": 191,
+        "endOffset": 198
+      },
+      {
+        "start": 13.42,
+        "end": 13.72,
+        "offset": 199,
+        "endOffset": 202
+      },
+      {
+        "start": 13.72,
+        "end": 14.0,
+        "offset": 203,
+        "endOffset": 208
+      },
+      {
+        "start": 14.24,
+        "end": 14.34,
+        "offset": 209,
+        "endOffset": 211
+      },
+      {
+        "start": 14.34,
+        "end": 14.6,
+        "offset": 212,
+        "endOffset": 218
+      },
+      {
+        "start": 14.6,
+        "end": 15.18,
+        "offset": 219,
+        "endOffset": 224
+      }
+    ]
+  },
+  "mystery:Glorious:0": {
+    "transcript": "The Resurrection.\n\nOn the third day, the tomb is found empty and the risen Jesus appears to his disciples. His Resurrection conquers sin and death, confirms his promises, and becomes the foundation of Christian hope.",
+    "audioSha256": "734b6fb3dc2d4042acab0c5d978cb35745882a7faf6ffe50760a6af885d46370",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.08,
+        "end": 0.14,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.14,
+        "end": 1.76,
+        "offset": 4,
+        "endOffset": 17
+      },
+      {
+        "start": 1.76,
+        "end": 1.8,
+        "offset": 19,
+        "endOffset": 21
+      },
+      {
+        "start": 1.8,
+        "end": 1.88,
+        "offset": 22,
+        "endOffset": 25
+      },
+      {
+        "start": 1.88,
+        "end": 2.08,
+        "offset": 26,
+        "endOffset": 31
+      },
+      {
+        "start": 2.08,
+        "end": 2.58,
+        "offset": 32,
+        "endOffset": 36
+      },
+      {
+        "start": 2.92,
+        "end": 2.96,
+        "offset": 37,
+        "endOffset": 40
+      },
+      {
+        "start": 2.96,
+        "end": 3.16,
+        "offset": 41,
+        "endOffset": 45
+      },
+      {
+        "start": 3.16,
+        "end": 3.42,
+        "offset": 46,
+        "endOffset": 48
+      },
+      {
+        "start": 3.42,
+        "end": 3.62,
+        "offset": 49,
+        "endOffset": 54
+      },
+      {
+        "start": 3.62,
+        "end": 4.12,
+        "offset": 55,
+        "endOffset": 60
+      },
+      {
+        "start": 4.12,
+        "end": 4.76,
+        "offset": 61,
+        "endOffset": 64
+      },
+      {
+        "start": 4.76,
+        "end": 4.86,
+        "offset": 65,
+        "endOffset": 68
+      },
+      {
+        "start": 4.86,
+        "end": 5.14,
+        "offset": 69,
+        "endOffset": 74
+      },
+      {
+        "start": 5.14,
+        "end": 5.54,
+        "offset": 75,
+        "endOffset": 80
+      },
+      {
+        "start": 5.54,
+        "end": 5.98,
+        "offset": 81,
+        "endOffset": 88
+      },
+      {
+        "start": 6.0,
+        "end": 6.36,
+        "offset": 89,
+        "endOffset": 91
+      },
+      {
+        "start": 6.36,
+        "end": 6.5,
+        "offset": 92,
+        "endOffset": 95
+      },
+      {
+        "start": 6.5,
+        "end": 6.96,
+        "offset": 96,
+        "endOffset": 106
+      },
+      {
+        "start": 7.9,
+        "end": 7.96,
+        "offset": 107,
+        "endOffset": 110
+      },
+      {
+        "start": 7.96,
+        "end": 8.36,
+        "offset": 111,
+        "endOffset": 123
+      },
+      {
+        "start": 8.36,
+        "end": 9.24,
+        "offset": 124,
+        "endOffset": 132
+      },
+      {
+        "start": 9.24,
+        "end": 9.5,
+        "offset": 133,
+        "endOffset": 136
+      },
+      {
+        "start": 9.5,
+        "end": 9.78,
+        "offset": 137,
+        "endOffset": 140
+      },
+      {
+        "start": 9.78,
+        "end": 10.14,
+        "offset": 141,
+        "endOffset": 147
+      },
+      {
+        "start": 10.68,
+        "end": 10.96,
+        "offset": 148,
+        "endOffset": 156
+      },
+      {
+        "start": 10.96,
+        "end": 11.28,
+        "offset": 157,
+        "endOffset": 160
+      },
+      {
+        "start": 11.28,
+        "end": 12.04,
+        "offset": 161,
+        "endOffset": 170
+      },
+      {
+        "start": 12.38,
+        "end": 12.42,
+        "offset": 171,
+        "endOffset": 174
+      },
+      {
+        "start": 12.42,
+        "end": 12.66,
+        "offset": 175,
+        "endOffset": 182
+      },
+      {
+        "start": 12.66,
+        "end": 12.96,
+        "offset": 183,
+        "endOffset": 186
+      },
+      {
+        "start": 13.06,
+        "end": 13.42,
+        "offset": 187,
+        "endOffset": 197
+      },
+      {
+        "start": 13.42,
+        "end": 13.9,
+        "offset": 198,
+        "endOffset": 200
+      },
+      {
+        "start": 14.02,
+        "end": 14.12,
+        "offset": 201,
+        "endOffset": 210
+      },
+      {
+        "start": 14.12,
+        "end": 14.66,
+        "offset": 211,
+        "endOffset": 216
+      }
+    ]
+  },
+  "mystery:Glorious:1": {
+    "transcript": "The Ascension.\n\nAfter preparing his disciples for their mission, Jesus ascends to the Father. His departure is not abandonment: he reigns in glory, intercedes for his people, and promises the Holy Spirit.",
+    "audioSha256": "1bccf8af1c5c1dbc209460e734ef277f12a2248de1367bd8c1773c0c781de994",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.08,
+        "end": 0.16,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.16,
+        "end": 0.72,
+        "offset": 4,
+        "endOffset": 14
+      },
+      {
+        "start": 1.6,
+        "end": 1.74,
+        "offset": 16,
+        "endOffset": 21
+      },
+      {
+        "start": 1.74,
+        "end": 2.18,
+        "offset": 22,
+        "endOffset": 31
+      },
+      {
+        "start": 2.18,
+        "end": 2.44,
+        "offset": 32,
+        "endOffset": 35
+      },
+      {
+        "start": 2.44,
+        "end": 2.78,
+        "offset": 36,
+        "endOffset": 45
+      },
+      {
+        "start": 2.78,
+        "end": 3.18,
+        "offset": 46,
+        "endOffset": 49
+      },
+      {
+        "start": 3.18,
+        "end": 3.32,
+        "offset": 50,
+        "endOffset": 55
+      },
+      {
+        "start": 3.32,
+        "end": 4.17,
+        "offset": 56,
+        "endOffset": 64
+      },
+      {
+        "start": 4.46,
+        "end": 4.6,
+        "offset": 65,
+        "endOffset": 70
+      },
+      {
+        "start": 4.6,
+        "end": 5.2,
+        "offset": 71,
+        "endOffset": 78
+      },
+      {
+        "start": 5.2,
+        "end": 5.44,
+        "offset": 79,
+        "endOffset": 81
+      },
+      {
+        "start": 5.44,
+        "end": 5.54,
+        "offset": 82,
+        "endOffset": 85
+      },
+      {
+        "start": 5.54,
+        "end": 6.02,
+        "offset": 86,
+        "endOffset": 93
+      },
+      {
+        "start": 6.72,
+        "end": 6.78,
+        "offset": 94,
+        "endOffset": 97
+      },
+      {
+        "start": 6.78,
+        "end": 7.02,
+        "offset": 98,
+        "endOffset": 107
+      },
+      {
+        "start": 7.02,
+        "end": 7.46,
+        "offset": 108,
+        "endOffset": 110
+      },
+      {
+        "start": 7.46,
+        "end": 7.7,
+        "offset": 111,
+        "endOffset": 114
+      },
+      {
+        "start": 7.7,
+        "end": 8.3,
+        "offset": 115,
+        "endOffset": 127
+      },
+      {
+        "start": 9.02,
+        "end": 9.12,
+        "offset": 128,
+        "endOffset": 130
+      },
+      {
+        "start": 9.12,
+        "end": 9.7,
+        "offset": 131,
+        "endOffset": 137
+      },
+      {
+        "start": 9.7,
+        "end": 9.8,
+        "offset": 138,
+        "endOffset": 140
+      },
+      {
+        "start": 9.8,
+        "end": 10.3,
+        "offset": 141,
+        "endOffset": 147
+      },
+      {
+        "start": 10.78,
+        "end": 11.22,
+        "offset": 148,
+        "endOffset": 158
+      },
+      {
+        "start": 11.22,
+        "end": 11.5,
+        "offset": 159,
+        "endOffset": 162
+      },
+      {
+        "start": 11.5,
+        "end": 11.62,
+        "offset": 163,
+        "endOffset": 166
+      },
+      {
+        "start": 11.62,
+        "end": 12.16,
+        "offset": 167,
+        "endOffset": 174
+      },
+      {
+        "start": 12.42,
+        "end": 12.52,
+        "offset": 175,
+        "endOffset": 178
+      },
+      {
+        "start": 12.52,
+        "end": 12.94,
+        "offset": 179,
+        "endOffset": 187
+      },
+      {
+        "start": 12.94,
+        "end": 13.32,
+        "offset": 188,
+        "endOffset": 191
+      },
+      {
+        "start": 13.32,
+        "end": 13.54,
+        "offset": 192,
+        "endOffset": 196
+      },
+      {
+        "start": 13.54,
+        "end": 14.16,
+        "offset": 197,
+        "endOffset": 204
+      }
+    ]
+  },
+  "mystery:Glorious:2": {
+    "transcript": "The Descent of the Holy Spirit.\n\nMary and the apostles remain together in prayer until the Holy Spirit descends at Pentecost. Wind, fire, and new languages signify God's power. This mystery asks us to welcome the Spirit's gifts.",
+    "audioSha256": "aea944699b4f1fdf6d343af80a17a491486bdef0dbcd8e7f5e0cb75d07a6d886",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.14,
+        "end": 0.18,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.18,
+        "end": 0.54,
+        "offset": 4,
+        "endOffset": 11
+      },
+      {
+        "start": 0.54,
+        "end": 0.84,
+        "offset": 12,
+        "endOffset": 14
+      },
+      {
+        "start": 0.84,
+        "end": 0.98,
+        "offset": 15,
+        "endOffset": 18
+      },
+      {
+        "start": 0.98,
+        "end": 1.18,
+        "offset": 19,
+        "endOffset": 23
+      },
+      {
+        "start": 1.18,
+        "end": 1.93,
+        "offset": 24,
+        "endOffset": 31
+      },
+      {
+        "start": 2.9,
+        "end": 3.04,
+        "offset": 33,
+        "endOffset": 37
+      },
+      {
+        "start": 3.04,
+        "end": 3.24,
+        "offset": 38,
+        "endOffset": 41
+      },
+      {
+        "start": 3.24,
+        "end": 3.36,
+        "offset": 42,
+        "endOffset": 45
+      },
+      {
+        "start": 3.36,
+        "end": 3.68,
+        "offset": 46,
+        "endOffset": 54
+      },
+      {
+        "start": 3.68,
+        "end": 4.12,
+        "offset": 55,
+        "endOffset": 61
+      },
+      {
+        "start": 4.12,
+        "end": 4.56,
+        "offset": 62,
+        "endOffset": 70
+      },
+      {
+        "start": 4.56,
+        "end": 4.88,
+        "offset": 71,
+        "endOffset": 73
+      },
+      {
+        "start": 4.88,
+        "end": 5.18,
+        "offset": 74,
+        "endOffset": 80
+      },
+      {
+        "start": 5.18,
+        "end": 5.64,
+        "offset": 81,
+        "endOffset": 86
+      },
+      {
+        "start": 5.64,
+        "end": 5.86,
+        "offset": 87,
+        "endOffset": 90
+      },
+      {
+        "start": 5.86,
+        "end": 6.04,
+        "offset": 91,
+        "endOffset": 95
+      },
+      {
+        "start": 6.04,
+        "end": 6.5,
+        "offset": 96,
+        "endOffset": 102
+      },
+      {
+        "start": 6.5,
+        "end": 7.06,
+        "offset": 103,
+        "endOffset": 111
+      },
+      {
+        "start": 7.06,
+        "end": 7.26,
+        "offset": 112,
+        "endOffset": 114
+      },
+      {
+        "start": 7.26,
+        "end": 7.54,
+        "offset": 115,
+        "endOffset": 125
+      },
+      {
+        "start": 8.8,
+        "end": 9.24,
+        "offset": 126,
+        "endOffset": 131
+      },
+      {
+        "start": 9.46,
+        "end": 10.0,
+        "offset": 132,
+        "endOffset": 137
+      },
+      {
+        "start": 10.02,
+        "end": 10.06,
+        "offset": 138,
+        "endOffset": 141
+      },
+      {
+        "start": 10.06,
+        "end": 10.24,
+        "offset": 142,
+        "endOffset": 145
+      },
+      {
+        "start": 10.24,
+        "end": 10.74,
+        "offset": 146,
+        "endOffset": 155
+      },
+      {
+        "start": 10.74,
+        "end": 11.2,
+        "offset": 156,
+        "endOffset": 163
+      },
+      {
+        "start": 11.2,
+        "end": 11.96,
+        "offset": 164,
+        "endOffset": 169
+      },
+      {
+        "start": 11.96,
+        "end": 13.21,
+        "offset": 170,
+        "endOffset": 176
+      },
+      {
+        "start": 13.22,
+        "end": 13.28,
+        "offset": 177,
+        "endOffset": 181
+      },
+      {
+        "start": 13.28,
+        "end": 13.64,
+        "offset": 182,
+        "endOffset": 189
+      },
+      {
+        "start": 13.64,
+        "end": 14.0,
+        "offset": 190,
+        "endOffset": 194
+      },
+      {
+        "start": 14.0,
+        "end": 14.3,
+        "offset": 195,
+        "endOffset": 197
+      },
+      {
+        "start": 14.3,
+        "end": 14.48,
+        "offset": 198,
+        "endOffset": 200
+      },
+      {
+        "start": 14.48,
+        "end": 14.82,
+        "offset": 201,
+        "endOffset": 208
+      },
+      {
+        "start": 14.82,
+        "end": 15.06,
+        "offset": 209,
+        "endOffset": 212
+      },
+      {
+        "start": 15.06,
+        "end": 15.52,
+        "offset": 213,
+        "endOffset": 221
+      },
+      {
+        "start": 15.52,
+        "end": 15.62,
+        "offset": 222,
+        "endOffset": 228
+      }
+    ]
+  },
+  "mystery:Glorious:3": {
+    "transcript": "The Assumption of Mary.\n\nAt the completion of her earthly life, Mary is taken body and soul into heavenly glory. Her Assumption flows from her unique union with Christ and anticipates the resurrection promised to all the faithful.",
+    "audioSha256": "2fba62497354243bb6a5d4dcf9f71fa4aa8143100f8b79299b34d5747267e2c7",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.16,
+        "end": 0.2,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.2,
+        "end": 0.56,
+        "offset": 4,
+        "endOffset": 14
+      },
+      {
+        "start": 0.56,
+        "end": 0.98,
+        "offset": 15,
+        "endOffset": 17
+      },
+      {
+        "start": 0.98,
+        "end": 1.48,
+        "offset": 18,
+        "endOffset": 23
+      },
+      {
+        "start": 2.32,
+        "end": 2.4,
+        "offset": 25,
+        "endOffset": 27
+      },
+      {
+        "start": 2.4,
+        "end": 2.48,
+        "offset": 28,
+        "endOffset": 31
+      },
+      {
+        "start": 2.48,
+        "end": 2.8,
+        "offset": 32,
+        "endOffset": 42
+      },
+      {
+        "start": 2.8,
+        "end": 3.22,
+        "offset": 43,
+        "endOffset": 45
+      },
+      {
+        "start": 3.22,
+        "end": 3.36,
+        "offset": 46,
+        "endOffset": 49
+      },
+      {
+        "start": 3.36,
+        "end": 3.68,
+        "offset": 50,
+        "endOffset": 57
+      },
+      {
+        "start": 3.68,
+        "end": 4.1,
+        "offset": 58,
+        "endOffset": 63
+      },
+      {
+        "start": 4.78,
+        "end": 4.88,
+        "offset": 64,
+        "endOffset": 68
+      },
+      {
+        "start": 4.88,
+        "end": 5.16,
+        "offset": 69,
+        "endOffset": 71
+      },
+      {
+        "start": 5.16,
+        "end": 5.46,
+        "offset": 72,
+        "endOffset": 77
+      },
+      {
+        "start": 5.46,
+        "end": 5.78,
+        "offset": 78,
+        "endOffset": 82
+      },
+      {
+        "start": 5.78,
+        "end": 6.18,
+        "offset": 83,
+        "endOffset": 86
+      },
+      {
+        "start": 6.18,
+        "end": 6.56,
+        "offset": 87,
+        "endOffset": 91
+      },
+      {
+        "start": 6.56,
+        "end": 6.92,
+        "offset": 92,
+        "endOffset": 96
+      },
+      {
+        "start": 6.92,
+        "end": 7.34,
+        "offset": 97,
+        "endOffset": 105
+      },
+      {
+        "start": 7.34,
+        "end": 8.0,
+        "offset": 106,
+        "endOffset": 112
+      },
+      {
+        "start": 8.72,
+        "end": 8.76,
+        "offset": 113,
+        "endOffset": 116
+      },
+      {
+        "start": 8.76,
+        "end": 9.16,
+        "offset": 117,
+        "endOffset": 127
+      },
+      {
+        "start": 9.16,
+        "end": 9.52,
+        "offset": 128,
+        "endOffset": 133
+      },
+      {
+        "start": 9.52,
+        "end": 9.9,
+        "offset": 134,
+        "endOffset": 138
+      },
+      {
+        "start": 9.9,
+        "end": 10.06,
+        "offset": 139,
+        "endOffset": 142
+      },
+      {
+        "start": 10.06,
+        "end": 10.34,
+        "offset": 143,
+        "endOffset": 149
+      },
+      {
+        "start": 10.34,
+        "end": 10.82,
+        "offset": 150,
+        "endOffset": 155
+      },
+      {
+        "start": 10.82,
+        "end": 11.08,
+        "offset": 156,
+        "endOffset": 160
+      },
+      {
+        "start": 11.08,
+        "end": 11.3,
+        "offset": 161,
+        "endOffset": 167
+      },
+      {
+        "start": 11.94,
+        "end": 12.04,
+        "offset": 168,
+        "endOffset": 171
+      },
+      {
+        "start": 12.04,
+        "end": 12.8,
+        "offset": 172,
+        "endOffset": 183
+      },
+      {
+        "start": 12.8,
+        "end": 12.9,
+        "offset": 184,
+        "endOffset": 187
+      },
+      {
+        "start": 12.9,
+        "end": 13.28,
+        "offset": 188,
+        "endOffset": 200
+      },
+      {
+        "start": 13.28,
+        "end": 13.9,
+        "offset": 201,
+        "endOffset": 209
+      },
+      {
+        "start": 14.1,
+        "end": 14.2,
+        "offset": 210,
+        "endOffset": 212
+      },
+      {
+        "start": 14.2,
+        "end": 14.52,
+        "offset": 213,
+        "endOffset": 216
+      },
+      {
+        "start": 14.52,
+        "end": 14.7,
+        "offset": 217,
+        "endOffset": 220
+      },
+      {
+        "start": 14.7,
+        "end": 15.24,
+        "offset": 221,
+        "endOffset": 230
+      }
+    ]
+  },
+  "mystery:Glorious:4": {
+    "transcript": "The Coronation of Mary.\n\nMary shares in the victory of her Son and is honored as Queen of Heaven and Earth. Her queenship is maternal and humble, always leading the faithful toward Christ and interceding for them.",
+    "audioSha256": "bcae090337fb9a54f3181f28b8e4ee0d3216649ae4423ca85b9d8b3a55c2b8be",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.06,
+        "end": 0.12,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.18,
+        "end": 0.72,
+        "offset": 4,
+        "endOffset": 14
+      },
+      {
+        "start": 0.72,
+        "end": 1.08,
+        "offset": 15,
+        "endOffset": 17
+      },
+      {
+        "start": 1.08,
+        "end": 2.43,
+        "offset": 18,
+        "endOffset": 23
+      },
+      {
+        "start": 2.62,
+        "end": 2.72,
+        "offset": 25,
+        "endOffset": 29
+      },
+      {
+        "start": 2.72,
+        "end": 3.16,
+        "offset": 30,
+        "endOffset": 36
+      },
+      {
+        "start": 3.16,
+        "end": 3.34,
+        "offset": 37,
+        "endOffset": 39
+      },
+      {
+        "start": 3.34,
+        "end": 3.42,
+        "offset": 40,
+        "endOffset": 43
+      },
+      {
+        "start": 3.42,
+        "end": 3.74,
+        "offset": 44,
+        "endOffset": 51
+      },
+      {
+        "start": 3.76,
+        "end": 4.0,
+        "offset": 52,
+        "endOffset": 54
+      },
+      {
+        "start": 4.0,
+        "end": 4.14,
+        "offset": 55,
+        "endOffset": 58
+      },
+      {
+        "start": 4.14,
+        "end": 4.48,
+        "offset": 59,
+        "endOffset": 62
+      },
+      {
+        "start": 4.94,
+        "end": 5.04,
+        "offset": 63,
+        "endOffset": 66
+      },
+      {
+        "start": 5.04,
+        "end": 5.18,
+        "offset": 67,
+        "endOffset": 69
+      },
+      {
+        "start": 5.18,
+        "end": 5.56,
+        "offset": 70,
+        "endOffset": 77
+      },
+      {
+        "start": 5.56,
+        "end": 5.88,
+        "offset": 78,
+        "endOffset": 80
+      },
+      {
+        "start": 5.88,
+        "end": 6.22,
+        "offset": 81,
+        "endOffset": 86
+      },
+      {
+        "start": 6.22,
+        "end": 6.48,
+        "offset": 87,
+        "endOffset": 89
+      },
+      {
+        "start": 6.48,
+        "end": 6.74,
+        "offset": 90,
+        "endOffset": 96
+      },
+      {
+        "start": 6.74,
+        "end": 7.08,
+        "offset": 97,
+        "endOffset": 100
+      },
+      {
+        "start": 7.08,
+        "end": 7.4,
+        "offset": 101,
+        "endOffset": 107
+      },
+      {
+        "start": 8.26,
+        "end": 8.3,
+        "offset": 108,
+        "endOffset": 111
+      },
+      {
+        "start": 8.3,
+        "end": 8.78,
+        "offset": 112,
+        "endOffset": 121
+      },
+      {
+        "start": 8.78,
+        "end": 8.98,
+        "offset": 122,
+        "endOffset": 124
+      },
+      {
+        "start": 8.98,
+        "end": 9.2,
+        "offset": 125,
+        "endOffset": 133
+      },
+      {
+        "start": 9.2,
+        "end": 9.84,
+        "offset": 134,
+        "endOffset": 137
+      },
+      {
+        "start": 9.84,
+        "end": 10.38,
+        "offset": 138,
+        "endOffset": 145
+      },
+      {
+        "start": 10.96,
+        "end": 11.2,
+        "offset": 146,
+        "endOffset": 152
+      },
+      {
+        "start": 11.2,
+        "end": 11.52,
+        "offset": 153,
+        "endOffset": 160
+      },
+      {
+        "start": 11.52,
+        "end": 11.7,
+        "offset": 161,
+        "endOffset": 164
+      },
+      {
+        "start": 11.7,
+        "end": 11.98,
+        "offset": 165,
+        "endOffset": 173
+      },
+      {
+        "start": 11.98,
+        "end": 12.38,
+        "offset": 174,
+        "endOffset": 180
+      },
+      {
+        "start": 12.38,
+        "end": 12.72,
+        "offset": 181,
+        "endOffset": 187
+      },
+      {
+        "start": 12.72,
+        "end": 13.4,
+        "offset": 188,
+        "endOffset": 191
+      },
+      {
+        "start": 13.4,
+        "end": 14.1,
+        "offset": 192,
+        "endOffset": 203
+      },
+      {
+        "start": 14.1,
+        "end": 14.24,
+        "offset": 204,
+        "endOffset": 207
+      },
+      {
+        "start": 14.24,
+        "end": 14.48,
+        "offset": 208,
+        "endOffset": 213
+      }
+    ]
+  },
+  "mystery:Luminous:0": {
+    "transcript": "The Baptism in the Jordan.\n\nJesus enters the Jordan and receives baptism from John, identifying himself with the people he has come to save. The Spirit descends like a dove and the Father's voice declares Jesus to be his beloved Son.",
+    "audioSha256": "08a709c832636054b472f567be92e7f27a26228bb6e2448380b4a3b5168e526e",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.1,
+        "end": 0.16,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.16,
+        "end": 0.72,
+        "offset": 4,
+        "endOffset": 11
+      },
+      {
+        "start": 0.72,
+        "end": 0.96,
+        "offset": 12,
+        "endOffset": 14
+      },
+      {
+        "start": 0.96,
+        "end": 1.08,
+        "offset": 15,
+        "endOffset": 18
+      },
+      {
+        "start": 1.08,
+        "end": 1.68,
+        "offset": 19,
+        "endOffset": 26
+      },
+      {
+        "start": 2.34,
+        "end": 2.56,
+        "offset": 28,
+        "endOffset": 33
+      },
+      {
+        "start": 2.56,
+        "end": 2.94,
+        "offset": 34,
+        "endOffset": 40
+      },
+      {
+        "start": 2.94,
+        "end": 3.16,
+        "offset": 41,
+        "endOffset": 44
+      },
+      {
+        "start": 3.16,
+        "end": 3.46,
+        "offset": 45,
+        "endOffset": 51
+      },
+      {
+        "start": 3.46,
+        "end": 3.84,
+        "offset": 52,
+        "endOffset": 55
+      },
+      {
+        "start": 3.84,
+        "end": 4.1,
+        "offset": 56,
+        "endOffset": 64
+      },
+      {
+        "start": 4.1,
+        "end": 4.6,
+        "offset": 65,
+        "endOffset": 72
+      },
+      {
+        "start": 4.6,
+        "end": 5.06,
+        "offset": 73,
+        "endOffset": 77
+      },
+      {
+        "start": 5.06,
+        "end": 5.54,
+        "offset": 78,
+        "endOffset": 83
+      },
+      {
+        "start": 6.08,
+        "end": 6.32,
+        "offset": 84,
+        "endOffset": 95
+      },
+      {
+        "start": 6.32,
+        "end": 6.94,
+        "offset": 96,
+        "endOffset": 103
+      },
+      {
+        "start": 6.94,
+        "end": 7.36,
+        "offset": 104,
+        "endOffset": 108
+      },
+      {
+        "start": 7.36,
+        "end": 7.48,
+        "offset": 109,
+        "endOffset": 112
+      },
+      {
+        "start": 7.48,
+        "end": 7.82,
+        "offset": 113,
+        "endOffset": 119
+      },
+      {
+        "start": 7.82,
+        "end": 8.06,
+        "offset": 120,
+        "endOffset": 122
+      },
+      {
+        "start": 8.06,
+        "end": 8.16,
+        "offset": 123,
+        "endOffset": 126
+      },
+      {
+        "start": 8.16,
+        "end": 8.36,
+        "offset": 127,
+        "endOffset": 131
+      },
+      {
+        "start": 8.36,
+        "end": 8.52,
+        "offset": 132,
+        "endOffset": 134
+      },
+      {
+        "start": 8.52,
+        "end": 8.94,
+        "offset": 135,
+        "endOffset": 140
+      },
+      {
+        "start": 9.7,
+        "end": 9.74,
+        "offset": 141,
+        "endOffset": 144
+      },
+      {
+        "start": 9.74,
+        "end": 10.08,
+        "offset": 145,
+        "endOffset": 151
+      },
+      {
+        "start": 10.08,
+        "end": 10.6,
+        "offset": 152,
+        "endOffset": 160
+      },
+      {
+        "start": 10.6,
+        "end": 10.82,
+        "offset": 161,
+        "endOffset": 165
+      },
+      {
+        "start": 10.82,
+        "end": 10.96,
+        "offset": 166,
+        "endOffset": 167
+      },
+      {
+        "start": 10.96,
+        "end": 11.2,
+        "offset": 168,
+        "endOffset": 172
+      },
+      {
+        "start": 11.2,
+        "end": 11.82,
+        "offset": 173,
+        "endOffset": 176
+      },
+      {
+        "start": 11.82,
+        "end": 11.92,
+        "offset": 177,
+        "endOffset": 180
+      },
+      {
+        "start": 11.92,
+        "end": 12.42,
+        "offset": 181,
+        "endOffset": 189
+      },
+      {
+        "start": 12.42,
+        "end": 12.68,
+        "offset": 190,
+        "endOffset": 195
+      },
+      {
+        "start": 12.68,
+        "end": 12.98,
+        "offset": 196,
+        "endOffset": 204
+      },
+      {
+        "start": 13.08,
+        "end": 13.66,
+        "offset": 205,
+        "endOffset": 210
+      },
+      {
+        "start": 13.66,
+        "end": 14.02,
+        "offset": 211,
+        "endOffset": 213
+      },
+      {
+        "start": 14.02,
+        "end": 14.18,
+        "offset": 214,
+        "endOffset": 216
+      },
+      {
+        "start": 14.18,
+        "end": 14.4,
+        "offset": 217,
+        "endOffset": 220
+      },
+      {
+        "start": 14.4,
+        "end": 14.72,
+        "offset": 221,
+        "endOffset": 228
+      },
+      {
+        "start": 14.72,
+        "end": 15.4,
+        "offset": 229,
+        "endOffset": 233
+      }
+    ]
+  },
+  "mystery:Luminous:1": {
+    "transcript": "The Wedding at Cana.\n\nAt Cana, Mary notices the wedding family's need and brings it quietly to Jesus. Her instruction, 'Do whatever he tells you,' prepares the servants to witness water transformed into abundant wine.",
+    "audioSha256": "c54b0592a22034f9ac480125f10349fca994ef3dd9fe6cc644d7ffac9b2df074",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.12,
+        "end": 0.18,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.18,
+        "end": 0.4,
+        "offset": 4,
+        "endOffset": 11
+      },
+      {
+        "start": 0.4,
+        "end": 0.78,
+        "offset": 12,
+        "endOffset": 14
+      },
+      {
+        "start": 0.78,
+        "end": 1.73,
+        "offset": 15,
+        "endOffset": 20
+      },
+      {
+        "start": 2.02,
+        "end": 2.08,
+        "offset": 22,
+        "endOffset": 24
+      },
+      {
+        "start": 2.08,
+        "end": 2.7,
+        "offset": 25,
+        "endOffset": 30
+      },
+      {
+        "start": 3.06,
+        "end": 3.14,
+        "offset": 31,
+        "endOffset": 35
+      },
+      {
+        "start": 3.14,
+        "end": 3.56,
+        "offset": 36,
+        "endOffset": 43
+      },
+      {
+        "start": 3.56,
+        "end": 3.8,
+        "offset": 44,
+        "endOffset": 47
+      },
+      {
+        "start": 3.8,
+        "end": 4.0,
+        "offset": 48,
+        "endOffset": 55
+      },
+      {
+        "start": 4.0,
+        "end": 4.6,
+        "offset": 56,
+        "endOffset": 64
+      },
+      {
+        "start": 4.62,
+        "end": 4.88,
+        "offset": 65,
+        "endOffset": 69
+      },
+      {
+        "start": 5.24,
+        "end": 5.34,
+        "offset": 70,
+        "endOffset": 73
+      },
+      {
+        "start": 5.34,
+        "end": 5.56,
+        "offset": 74,
+        "endOffset": 80
+      },
+      {
+        "start": 5.56,
+        "end": 5.74,
+        "offset": 81,
+        "endOffset": 83
+      },
+      {
+        "start": 5.74,
+        "end": 6.04,
+        "offset": 84,
+        "endOffset": 91
+      },
+      {
+        "start": 6.04,
+        "end": 6.5,
+        "offset": 92,
+        "endOffset": 94
+      },
+      {
+        "start": 6.5,
+        "end": 6.8,
+        "offset": 95,
+        "endOffset": 101
+      },
+      {
+        "start": 7.78,
+        "end": 7.82,
+        "offset": 102,
+        "endOffset": 105
+      },
+      {
+        "start": 7.82,
+        "end": 8.56,
+        "offset": 106,
+        "endOffset": 118
+      },
+      {
+        "start": 9.02,
+        "end": 9.12,
+        "offset": 119,
+        "endOffset": 122
+      },
+      {
+        "start": 9.12,
+        "end": 9.36,
+        "offset": 123,
+        "endOffset": 131
+      },
+      {
+        "start": 9.36,
+        "end": 9.84,
+        "offset": 132,
+        "endOffset": 134
+      },
+      {
+        "start": 9.84,
+        "end": 10.08,
+        "offset": 135,
+        "endOffset": 140
+      },
+      {
+        "start": 10.08,
+        "end": 11.14,
+        "offset": 141,
+        "endOffset": 146
+      },
+      {
+        "start": 11.14,
+        "end": 11.18,
+        "offset": 147,
+        "endOffset": 155
+      },
+      {
+        "start": 11.18,
+        "end": 11.46,
+        "offset": 156,
+        "endOffset": 159
+      },
+      {
+        "start": 11.46,
+        "end": 11.76,
+        "offset": 160,
+        "endOffset": 168
+      },
+      {
+        "start": 11.76,
+        "end": 12.06,
+        "offset": 169,
+        "endOffset": 171
+      },
+      {
+        "start": 12.06,
+        "end": 12.32,
+        "offset": 172,
+        "endOffset": 179
+      },
+      {
+        "start": 12.32,
+        "end": 12.78,
+        "offset": 180,
+        "endOffset": 185
+      },
+      {
+        "start": 12.78,
+        "end": 13.34,
+        "offset": 186,
+        "endOffset": 197
+      },
+      {
+        "start": 13.34,
+        "end": 14.04,
+        "offset": 198,
+        "endOffset": 202
+      },
+      {
+        "start": 14.04,
+        "end": 14.38,
+        "offset": 203,
+        "endOffset": 211
+      },
+      {
+        "start": 14.38,
+        "end": 15.1,
+        "offset": 212,
+        "endOffset": 217
+      }
+    ]
+  },
+  "mystery:Luminous:2": {
+    "transcript": "The Proclamation of the Kingdom.\n\nJesus announces that the kingdom of God is at hand and calls every person to repentance and faith. Through his teaching, forgiveness, healing, and mercy, he reveals what life under God's reign looks like.",
+    "audioSha256": "80e81d31c5561b1b58956af5718624f46295fbcfec406dcbb9e6ce1bbe08a2ef",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.08,
+        "end": 0.12,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.12,
+        "end": 0.62,
+        "offset": 4,
+        "endOffset": 16
+      },
+      {
+        "start": 0.62,
+        "end": 1.18,
+        "offset": 17,
+        "endOffset": 19
+      },
+      {
+        "start": 1.18,
+        "end": 1.28,
+        "offset": 20,
+        "endOffset": 23
+      },
+      {
+        "start": 1.28,
+        "end": 2.53,
+        "offset": 24,
+        "endOffset": 32
+      },
+      {
+        "start": 2.56,
+        "end": 2.8,
+        "offset": 34,
+        "endOffset": 39
+      },
+      {
+        "start": 2.8,
+        "end": 3.32,
+        "offset": 40,
+        "endOffset": 49
+      },
+      {
+        "start": 3.32,
+        "end": 3.58,
+        "offset": 50,
+        "endOffset": 54
+      },
+      {
+        "start": 3.58,
+        "end": 3.68,
+        "offset": 55,
+        "endOffset": 58
+      },
+      {
+        "start": 3.68,
+        "end": 4.0,
+        "offset": 59,
+        "endOffset": 66
+      },
+      {
+        "start": 4.0,
+        "end": 4.24,
+        "offset": 67,
+        "endOffset": 69
+      },
+      {
+        "start": 4.24,
+        "end": 4.48,
+        "offset": 70,
+        "endOffset": 73
+      },
+      {
+        "start": 4.48,
+        "end": 4.78,
+        "offset": 74,
+        "endOffset": 76
+      },
+      {
+        "start": 4.78,
+        "end": 4.92,
+        "offset": 77,
+        "endOffset": 79
+      },
+      {
+        "start": 4.92,
+        "end": 5.22,
+        "offset": 80,
+        "endOffset": 84
+      },
+      {
+        "start": 5.76,
+        "end": 5.86,
+        "offset": 85,
+        "endOffset": 88
+      },
+      {
+        "start": 5.86,
+        "end": 6.06,
+        "offset": 89,
+        "endOffset": 94
+      },
+      {
+        "start": 6.06,
+        "end": 6.44,
+        "offset": 95,
+        "endOffset": 100
+      },
+      {
+        "start": 6.44,
+        "end": 7.04,
+        "offset": 101,
+        "endOffset": 107
+      },
+      {
+        "start": 7.04,
+        "end": 7.2,
+        "offset": 108,
+        "endOffset": 110
+      },
+      {
+        "start": 7.34,
+        "end": 7.44,
+        "offset": 111,
+        "endOffset": 121
+      },
+      {
+        "start": 7.44,
+        "end": 8.02,
+        "offset": 122,
+        "endOffset": 125
+      },
+      {
+        "start": 8.02,
+        "end": 8.14,
+        "offset": 126,
+        "endOffset": 132
+      },
+      {
+        "start": 9.22,
+        "end": 9.26,
+        "offset": 133,
+        "endOffset": 140
+      },
+      {
+        "start": 9.26,
+        "end": 9.42,
+        "offset": 141,
+        "endOffset": 144
+      },
+      {
+        "start": 9.42,
+        "end": 9.87,
+        "offset": 145,
+        "endOffset": 154
+      },
+      {
+        "start": 10.32,
+        "end": 11.0,
+        "offset": 155,
+        "endOffset": 167
+      },
+      {
+        "start": 11.22,
+        "end": 11.76,
+        "offset": 168,
+        "endOffset": 176
+      },
+      {
+        "start": 11.8,
+        "end": 11.84,
+        "offset": 177,
+        "endOffset": 180
+      },
+      {
+        "start": 11.84,
+        "end": 12.44,
+        "offset": 181,
+        "endOffset": 187
+      },
+      {
+        "start": 12.9,
+        "end": 12.94,
+        "offset": 188,
+        "endOffset": 190
+      },
+      {
+        "start": 12.94,
+        "end": 13.24,
+        "offset": 191,
+        "endOffset": 198
+      },
+      {
+        "start": 13.24,
+        "end": 13.58,
+        "offset": 199,
+        "endOffset": 203
+      },
+      {
+        "start": 13.58,
+        "end": 13.82,
+        "offset": 204,
+        "endOffset": 208
+      },
+      {
+        "start": 13.82,
+        "end": 14.22,
+        "offset": 209,
+        "endOffset": 214
+      },
+      {
+        "start": 14.22,
+        "end": 14.66,
+        "offset": 215,
+        "endOffset": 220
+      },
+      {
+        "start": 14.66,
+        "end": 14.84,
+        "offset": 221,
+        "endOffset": 226
+      },
+      {
+        "start": 14.84,
+        "end": 15.14,
+        "offset": 227,
+        "endOffset": 232
+      },
+      {
+        "start": 15.14,
+        "end": 15.52,
+        "offset": 233,
+        "endOffset": 238
+      }
+    ]
+  },
+  "mystery:Luminous:3": {
+    "transcript": "The Transfiguration.\n\nJesus reveals his glory to Peter, James, and John upon the mountain. Moses and Elijah appear beside him, and the Father's voice commands the disciples to listen to his beloved Son.",
+    "audioSha256": "fc9053a6a6346894a11fb426de794c94b91e552e4e9bc680fda09ae494b42ae7",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.14,
+        "end": 0.18,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.18,
+        "end": 2.12,
+        "offset": 4,
+        "endOffset": 20
+      },
+      {
+        "start": 2.12,
+        "end": 2.36,
+        "offset": 22,
+        "endOffset": 27
+      },
+      {
+        "start": 2.36,
+        "end": 2.7,
+        "offset": 28,
+        "endOffset": 35
+      },
+      {
+        "start": 2.7,
+        "end": 3.04,
+        "offset": 36,
+        "endOffset": 39
+      },
+      {
+        "start": 3.04,
+        "end": 3.34,
+        "offset": 40,
+        "endOffset": 45
+      },
+      {
+        "start": 3.34,
+        "end": 3.66,
+        "offset": 46,
+        "endOffset": 48
+      },
+      {
+        "start": 3.66,
+        "end": 4.4,
+        "offset": 49,
+        "endOffset": 55
+      },
+      {
+        "start": 4.46,
+        "end": 4.9,
+        "offset": 56,
+        "endOffset": 62
+      },
+      {
+        "start": 4.9,
+        "end": 4.94,
+        "offset": 63,
+        "endOffset": 66
+      },
+      {
+        "start": 4.94,
+        "end": 5.24,
+        "offset": 67,
+        "endOffset": 71
+      },
+      {
+        "start": 5.24,
+        "end": 5.66,
+        "offset": 72,
+        "endOffset": 76
+      },
+      {
+        "start": 5.66,
+        "end": 5.86,
+        "offset": 77,
+        "endOffset": 80
+      },
+      {
+        "start": 5.86,
+        "end": 6.61,
+        "offset": 81,
+        "endOffset": 90
+      },
+      {
+        "start": 7.06,
+        "end": 7.16,
+        "offset": 91,
+        "endOffset": 96
+      },
+      {
+        "start": 7.16,
+        "end": 8.08,
+        "offset": 97,
+        "endOffset": 100
+      },
+      {
+        "start": 8.08,
+        "end": 8.12,
+        "offset": 101,
+        "endOffset": 107
+      },
+      {
+        "start": 8.12,
+        "end": 8.24,
+        "offset": 108,
+        "endOffset": 114
+      },
+      {
+        "start": 8.32,
+        "end": 8.72,
+        "offset": 115,
+        "endOffset": 121
+      },
+      {
+        "start": 8.72,
+        "end": 9.14,
+        "offset": 122,
+        "endOffset": 126
+      },
+      {
+        "start": 9.52,
+        "end": 9.6,
+        "offset": 127,
+        "endOffset": 130
+      },
+      {
+        "start": 9.6,
+        "end": 9.7,
+        "offset": 131,
+        "endOffset": 134
+      },
+      {
+        "start": 9.7,
+        "end": 10.18,
+        "offset": 135,
+        "endOffset": 143
+      },
+      {
+        "start": 10.18,
+        "end": 10.38,
+        "offset": 144,
+        "endOffset": 149
+      },
+      {
+        "start": 10.38,
+        "end": 10.7,
+        "offset": 150,
+        "endOffset": 158
+      },
+      {
+        "start": 10.7,
+        "end": 11.18,
+        "offset": 159,
+        "endOffset": 162
+      },
+      {
+        "start": 11.18,
+        "end": 11.44,
+        "offset": 163,
+        "endOffset": 172
+      },
+      {
+        "start": 11.44,
+        "end": 11.88,
+        "offset": 173,
+        "endOffset": 175
+      },
+      {
+        "start": 11.88,
+        "end": 12.18,
+        "offset": 176,
+        "endOffset": 182
+      },
+      {
+        "start": 12.18,
+        "end": 12.56,
+        "offset": 183,
+        "endOffset": 185
+      },
+      {
+        "start": 12.56,
+        "end": 12.72,
+        "offset": 186,
+        "endOffset": 189
+      },
+      {
+        "start": 12.72,
+        "end": 12.96,
+        "offset": 190,
+        "endOffset": 197
+      },
+      {
+        "start": 12.96,
+        "end": 13.56,
+        "offset": 198,
+        "endOffset": 202
+      }
+    ]
+  },
+  "mystery:Luminous:4": {
+    "transcript": "The Institution of the Eucharist.\n\nAt the Last Supper, Jesus gives the apostles bread and wine as his Body and Blood and commands them to continue this memorial. The Eucharist makes present his self-giving sacrifice.",
+    "audioSha256": "7933558aba4b73fdf0bed6f8dee921a4cbb0e5b0201877d04b9eaeb7e36698d4",
+    "model": "base.en",
+    "words": [
+      {
+        "start": 0.08,
+        "end": 0.16,
+        "offset": 0,
+        "endOffset": 3
+      },
+      {
+        "start": 0.16,
+        "end": 0.64,
+        "offset": 4,
+        "endOffset": 15
+      },
+      {
+        "start": 0.64,
+        "end": 1.2,
+        "offset": 16,
+        "endOffset": 18
+      },
+      {
+        "start": 1.2,
+        "end": 1.32,
+        "offset": 19,
+        "endOffset": 22
+      },
+      {
+        "start": 1.32,
+        "end": 1.78,
+        "offset": 23,
+        "endOffset": 33
+      },
+      {
+        "start": 2.78,
+        "end": 2.84,
+        "offset": 35,
+        "endOffset": 37
+      },
+      {
+        "start": 2.84,
+        "end": 2.92,
+        "offset": 38,
+        "endOffset": 41
+      },
+      {
+        "start": 2.92,
+        "end": 3.12,
+        "offset": 42,
+        "endOffset": 46
+      },
+      {
+        "start": 3.12,
+        "end": 3.62,
+        "offset": 47,
+        "endOffset": 54
+      },
+      {
+        "start": 4.24,
+        "end": 4.34,
+        "offset": 55,
+        "endOffset": 60
+      },
+      {
+        "start": 4.34,
+        "end": 4.66,
+        "offset": 61,
+        "endOffset": 66
+      },
+      {
+        "start": 4.66,
+        "end": 4.86,
+        "offset": 67,
+        "endOffset": 70
+      },
+      {
+        "start": 4.86,
+        "end": 5.18,
+        "offset": 71,
+        "endOffset": 79
+      },
+      {
+        "start": 5.18,
+        "end": 5.68,
+        "offset": 80,
+        "endOffset": 85
+      },
+      {
+        "start": 5.68,
+        "end": 5.98,
+        "offset": 86,
+        "endOffset": 89
+      },
+      {
+        "start": 5.98,
+        "end": 6.3,
+        "offset": 90,
+        "endOffset": 94
+      },
+      {
+        "start": 6.3,
+        "end": 6.66,
+        "offset": 95,
+        "endOffset": 97
+      },
+      {
+        "start": 6.66,
+        "end": 6.84,
+        "offset": 98,
+        "endOffset": 101
+      },
+      {
+        "start": 6.84,
+        "end": 7.1,
+        "offset": 102,
+        "endOffset": 106
+      },
+      {
+        "start": 7.1,
+        "end": 7.44,
+        "offset": 107,
+        "endOffset": 110
+      },
+      {
+        "start": 7.44,
+        "end": 7.72,
+        "offset": 111,
+        "endOffset": 116
+      },
+      {
+        "start": 8.22,
+        "end": 8.32,
+        "offset": 117,
+        "endOffset": 120
+      },
+      {
+        "start": 8.32,
+        "end": 8.58,
+        "offset": 121,
+        "endOffset": 129
+      },
+      {
+        "start": 8.58,
+        "end": 8.96,
+        "offset": 130,
+        "endOffset": 134
+      },
+      {
+        "start": 8.96,
+        "end": 9.14,
+        "offset": 135,
+        "endOffset": 137
+      },
+      {
+        "start": 9.14,
+        "end": 9.48,
+        "offset": 138,
+        "endOffset": 146
+      },
+      {
+        "start": 9.48,
+        "end": 9.82,
+        "offset": 147,
+        "endOffset": 151
+      },
+      {
+        "start": 9.82,
+        "end": 10.42,
+        "offset": 152,
+        "endOffset": 161
+      },
+      {
+        "start": 11.18,
+        "end": 11.22,
+        "offset": 162,
+        "endOffset": 165
+      },
+      {
+        "start": 11.22,
+        "end": 11.66,
+        "offset": 166,
+        "endOffset": 175
+      },
+      {
+        "start": 11.66,
+        "end": 11.94,
+        "offset": 176,
+        "endOffset": 181
+      },
+      {
+        "start": 11.94,
+        "end": 12.26,
+        "offset": 182,
+        "endOffset": 189
+      },
+      {
+        "start": 12.26,
+        "end": 12.7,
+        "offset": 190,
+        "endOffset": 193
+      },
+      {
+        "start": 12.7,
+        "end": 13.34,
+        "offset": 194,
+        "endOffset": 205
+      },
+      {
+        "start": 13.34,
+        "end": 13.7,
+        "offset": 206,
+        "endOffset": 216
+      }
+    ]
+  }
+}

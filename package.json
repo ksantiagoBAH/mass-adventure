@@ -14,7 +14,11 @@
     "test:translations": "node scripts/translations.mjs",
     "test:multilingual-narration": "node scripts/multilingual-narration.mjs",
     "test:filipino-voices": "node scripts/filipino-voices.mjs",
-    "test:lesson-animations": "node scripts/lesson-animations.mjs"
+    "test:lesson-animations": "node scripts/lesson-animations.mjs",
+    "build:sites": "node scripts/build-sites.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src vite.config.ts",
+    "check:sites": "npm run lint && npm run typecheck && npm --prefix apps/at-the-table run lint && npm --prefix apps/at-the-table run typecheck && npm --prefix apps/at-the-table run test:references && npm --prefix apps/rosary run lint && npm --prefix apps/rosary run typecheck && npm --prefix apps/rosary test"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -22,12 +26,16 @@
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.13.0",
+    "@eslint/js": "^9.39.5",
     "@fontsource-variable/nunito": "^5.3.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.0.4",
+    "eslint": "^9.39.5",
+    "globals": "^16.5.0",
     "playwright": "^1.56.0",
     "typescript": "^5.9.3",
+    "typescript-eslint": "^8.71.2",
     "vite": "^7.1.9"
   }
 }

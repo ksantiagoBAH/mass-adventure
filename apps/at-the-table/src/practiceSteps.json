@@ -1,0 +1,471 @@
+{
+  "en": {
+    "entrance": [
+      "Arrive a few minutes early.",
+      "Put away distractions, notice the altar, and make space for a quiet intention.",
+      "Join the singing as you are able."
+    ],
+    "cross": [
+      "In Latin Catholic practice, use your right hand: forehead, chest, left shoulder, right shoulder.",
+      "Pray attentively rather than rushing the gesture."
+    ],
+    "greeting": [
+      "At the customary greeting, respond: “And with your spirit.”",
+      "Listen to the dialogue as prayer, not merely an introduction."
+    ],
+    "penitential": [
+      "Use the silence to name a concrete failure and ask for mercy.",
+      "Join the responses with hope.",
+      "Seek sacramental Reconciliation when needed."
+    ],
+    "gloria": [
+      "Join the hymn when it is used.",
+      "Let its movement from praise to petition draw your attention to Christ."
+    ],
+    "collect": [
+      "Offer an intention in the silence.",
+      "Listen to the prayer and make its request your own through your Amen."
+    ],
+    "first": [
+      "Sit and listen.",
+      "At the usual conclusion, respond: “Thanks be to God.”",
+      "Read the Sunday passages before Mass if you can."
+    ],
+    "psalm": [
+      "Listen to each verse and join the refrain.",
+      "Carry one phrase into the coming week."
+    ],
+    "second": [
+      "Listen for a practical invitation.",
+      "Respond “Thanks be to God” at the usual conclusion."
+    ],
+    "acclamation": [
+      "Stand as you are able and join the acclamation.",
+      "In Lent, notice the different acclamation used."
+    ],
+    "gospel": [
+      "Remain standing as you are able.",
+      "Make the small crosses on forehead, lips, and chest, asking that the Gospel shape your mind, words, and heart."
+    ],
+    "homily": [
+      "Listen with openness.",
+      "Write down one insight afterward and discuss it with your sponsor or formation group."
+    ],
+    "creed": [
+      "Follow the text in the parish worship aid.",
+      "Bring unfamiliar phrases to OCIA; understanding grows through prayer, conversation, and study."
+    ],
+    "intercessions": [
+      "Join the parish response.",
+      "Include someone whose needs you have overlooked, and consider how you could help."
+    ],
+    "gifts": [
+      "During the preparation, quietly offer a part of your week.",
+      "Connect your financial or practical support of the parish with care for people in need."
+    ],
+    "offerings": [
+      "Join the invitation and listen to the prayer.",
+      "Respond Amen attentively."
+    ],
+    "eucharistic": [
+      "Listen to the whole prayer.",
+      "Join the acclamations and follow the parish’s posture guidance, with accommodation for health and mobility."
+    ],
+    "sanctus": [
+      "Join the acclamation.",
+      "Let praise lead into attentive silence as the prayer continues."
+    ],
+    "consecration": [
+      "Adore quietly.",
+      "Bring questions about the Real Presence to your catechist; take time to study and pray rather than rushing toward a conclusion."
+    ],
+    "memorial": [
+      "Join the acclamation printed in the worship aid.",
+      "Listen as the prayer remembers the Church and entrusts people to God."
+    ],
+    "amen": [
+      "Sing or say the Amen with the assembly.",
+      "Notice that the Lord’s Prayer begins the Communion Rite that follows."
+    ],
+    "our-father": [
+      "Pray the familiar words slowly enough to notice one petition.",
+      "Follow local guidance about posture."
+    ],
+    "peace": [
+      "Offer the sign calmly to those nearby, following local practice.",
+      "Plan a step toward reconciliation where one is needed."
+    ],
+    "lamb": [
+      "Join the litany and ask for mercy and peace.",
+      "Observe the parish’s posture directions as you are able."
+    ],
+    "communion": [
+      "If you have not yet been admitted to Communion, remain in prayer and speak with your OCIA team.",
+      "Those receiving follow parish directions and answer Amen to the minister."
+    ],
+    "thanksgiving": [
+      "Allow a few moments of quiet.",
+      "Listen to the final prayer and join the Amen."
+    ],
+    "blessing": [
+      "Receive the blessing prayerfully and make the Sign of the Cross when appropriate."
+    ],
+    "dismissal": [
+      "Respond “Thanks be to God.”",
+      "Before leaving, choose one concrete way to live the Gospel this week."
+    ]
+  },
+  "es": {
+    "entrance": [
+      "Llega unos minutos antes.",
+      "Deja a un lado las distracciones, mira el altar y dedica un momento a una intención personal.",
+      "Participa en el canto según puedas."
+    ],
+    "cross": [
+      "En la práctica católica latina, usa la mano derecha: frente, pecho, hombro izquierdo y hombro derecho.",
+      "Reza con atención, sin apresurarte."
+    ],
+    "greeting": [
+      "Responde al saludo habitual: «Y con tu espíritu».",
+      "Escucha el diálogo como una oración."
+    ],
+    "penitential": [
+      "En el silencio, reconoce una falta concreta y pide misericordia.",
+      "Participa en las respuestas con esperanza.",
+      "Acude al sacramento de la Reconciliación cuando sea necesario."
+    ],
+    "gloria": [
+      "Participa en el himno cuando corresponda.",
+      "Deja que sus palabras de alabanza y súplica orienten tu atención hacia Cristo."
+    ],
+    "collect": [
+      "Presenta una intención en el silencio.",
+      "Escucha la oración y haz tuya su petición al responder Amén."
+    ],
+    "first": [
+      "Permanece sentado y escucha.",
+      "Al concluir, responde: «Te alabamos, Señor».",
+      "Si puedes, lee los pasajes del domingo antes de la Misa."
+    ],
+    "psalm": [
+      "Escucha cada estrofa y participa en la respuesta.",
+      "Conserva una frase para orar durante la semana."
+    ],
+    "second": [
+      "Escucha una invitación que puedas llevar a la práctica.",
+      "Al concluir, responde: «Te alabamos, Señor»."
+    ],
+    "acclamation": [
+      "Ponte de pie según puedas y participa en la aclamación.",
+      "En Cuaresma, observa que se utiliza una aclamación diferente."
+    ],
+    "gospel": [
+      "Permanece de pie según puedas.",
+      "Haz las pequeñas cruces en la frente, los labios y el pecho, pidiendo que el Evangelio transforme tus pensamientos, tus palabras y tu corazón."
+    ],
+    "homily": [
+      "Escucha con apertura.",
+      "Después, anota una idea y coméntala con tu padrino, madrina o grupo de formación."
+    ],
+    "creed": [
+      "Sigue el texto de la guía de tu parroquia.",
+      "Lleva a la formación las frases que no entiendas; la comprensión crece mediante la oración, el diálogo y el estudio."
+    ],
+    "intercessions": [
+      "Participa en la respuesta de la parroquia.",
+      "Incluye a alguien cuyas necesidades hayas pasado por alto y piensa cómo podrías ayudar."
+    ],
+    "gifts": [
+      "Durante la preparación, ofrece en silencio una parte de tu semana.",
+      "Relaciona tu apoyo económico o práctico a la parroquia con el cuidado de quienes lo necesitan."
+    ],
+    "offerings": [
+      "Participa en la invitación y escucha la oración.",
+      "Responde Amén con atención."
+    ],
+    "eucharistic": [
+      "Escucha toda la plegaria.",
+      "Participa en las aclamaciones y sigue las indicaciones de tu parroquia sobre las posturas, teniendo en cuenta tu salud y movilidad."
+    ],
+    "sanctus": [
+      "Participa en la aclamación.",
+      "Deja que la alabanza dé paso a un silencio atento mientras continúa la plegaria."
+    ],
+    "consecration": [
+      "Adora en silencio.",
+      "Lleva tus preguntas sobre la presencia real a tu catequista.",
+      "Dedica tiempo al estudio y la oración, sin apresurarte a sacar conclusiones."
+    ],
+    "memorial": [
+      "Participa en la aclamación de la guía de tu parroquia.",
+      "Escucha cómo la plegaria recuerda a la Iglesia y confía las personas a Dios."
+    ],
+    "amen": [
+      "Canta o recita el Amén con la asamblea.",
+      "Observa que el Padre nuestro inicia el rito de la Comunión que sigue."
+    ],
+    "our-father": [
+      "Reza con atención para detenerte en una petición.",
+      "Sigue las indicaciones locales sobre la postura."
+    ],
+    "peace": [
+      "Ofrece el signo de paz con calma a quienes están cerca, siguiendo la práctica local.",
+      "Piensa en un paso hacia la reconciliación donde haga falta."
+    ],
+    "lamb": [
+      "Participa en la letanía y pide misericordia y paz.",
+      "Sigue las indicaciones de postura de tu parroquia según puedas."
+    ],
+    "communion": [
+      "Si todavía no has sido admitido a la Comunión, permanece en oración y habla con tu equipo de formación.",
+      "Quienes comulgan siguen las indicaciones de la parroquia y responden Amén al ministro."
+    ],
+    "thanksgiving": [
+      "Dedica unos momentos al silencio.",
+      "Escucha la oración después de la Comunión y participa en el Amén."
+    ],
+    "blessing": [
+      "Recibe la bendición con atención y haz la señal de la cruz cuando corresponda."
+    ],
+    "dismissal": [
+      "Responde: «Demos gracias a Dios».",
+      "Antes de salir, elige una manera concreta de vivir el Evangelio esta semana."
+    ]
+  },
+  "pl": {
+    "entrance": [
+      "Przyjdź kilka minut wcześniej.",
+      "Odłóż to, co rozprasza, spójrz na ołtarz i przygotuj osobistą intencję.",
+      "Włącz się w śpiew, na ile możesz."
+    ],
+    "cross": [
+      "W obrządku łacińskim użyj prawej ręki: dotknij czoła, piersi, lewego ramienia i prawego ramienia.",
+      "Módl się uważnie, bez pośpiechu."
+    ],
+    "greeting": [
+      "Na zwykłe pozdrowienie odpowiedz: „I z duchem twoim”.",
+      "Słuchaj tego dialogu jako modlitwy."
+    ],
+    "penitential": [
+      "W ciszy uznaj konkretną winę i poproś o miłosierdzie.",
+      "Włącz się w odpowiedzi z nadzieją.",
+      "Gdy potrzeba, przystąp do sakramentu pokuty i pojednania."
+    ],
+    "gloria": [
+      "Włącz się w hymn, gdy jest przewidziany.",
+      "Niech jego słowa uwielbienia i prośby skierują twoją uwagę ku Chrystusowi."
+    ],
+    "collect": [
+      "W ciszy przedstaw swoją intencję.",
+      "Wsłuchaj się w modlitwę i uczyń ją własną, odpowiadając Amen."
+    ],
+    "first": [
+      "Usiądź i słuchaj.",
+      "Na zakończenie odpowiedz: „Bogu niech będą dzięki”.",
+      "Jeśli możesz, przeczytaj niedzielne czytania przed Mszą."
+    ],
+    "psalm": [
+      "Słuchaj każdej zwrotki i włączaj się w refren.",
+      "Zachowaj jedną myśl do modlitwy w nadchodzącym tygodniu."
+    ],
+    "second": [
+      "Słuchaj, szukając konkretnego wezwania.",
+      "Na zakończenie odpowiedz: „Bogu niech będą dzięki”."
+    ],
+    "acclamation": [
+      "Wstań, jeśli możesz, i włącz się w aklamację.",
+      "W Wielkim Poście zwróć uwagę na inną aklamację."
+    ],
+    "gospel": [
+      "Pozostań w pozycji stojącej, jeśli możesz.",
+      "Zrób małe znaki krzyża na czole, ustach i piersi, prosząc, by Ewangelia kształtowała twoje myśli, słowa i serce."
+    ],
+    "homily": [
+      "Słuchaj z otwartością.",
+      "Później zapisz jedną myśl i porozmawiaj o niej z osobą towarzyszącą ci w formacji lub z grupą."
+    ],
+    "creed": [
+      "Korzystaj z tekstu używanego w parafii.",
+      "Pytaj podczas formacji o niezrozumiałe sformułowania.",
+      "Zrozumienie wzrasta przez modlitwę, rozmowę i naukę."
+    ],
+    "intercessions": [
+      "Włącz się w odpowiedź używaną w parafii.",
+      "Pamiętaj o kimś, czyje potrzeby dotąd umykały twojej uwadze, i zastanów się, jak możesz pomóc."
+    ],
+    "gifts": [
+      "Podczas przygotowania darów ofiaruj w ciszy część swojego tygodnia.",
+      "Połącz materialne lub praktyczne wsparcie parafii z troską o potrzebujących."
+    ],
+    "offerings": [
+      "Włącz się w dialog i słuchaj modlitwy.",
+      "Odpowiedz Amen z uwagą."
+    ],
+    "eucharistic": [
+      "Słuchaj całej modlitwy.",
+      "Włączaj się w aklamacje i stosuj się do wskazań parafii dotyczących postawy ciała, uwzględniając zdrowie i sprawność."
+    ],
+    "sanctus": [
+      "Włącz się w aklamację.",
+      "Niech uwielbienie prowadzi do uważnej ciszy podczas dalszej modlitwy."
+    ],
+    "consecration": [
+      "Adoruj w ciszy.",
+      "Porozmawiaj z katechistą o pytaniach dotyczących rzeczywistej obecności.",
+      "Poświęć czas na naukę i modlitwę, bez pośpiechu."
+    ],
+    "memorial": [
+      "Włącz się w aklamację używaną w parafii.",
+      "Słuchaj, jak modlitwa wspomina Kościół i powierza ludzi Bogu."
+    ],
+    "amen": [
+      "Zaśpiewaj lub wypowiedz Amen ze zgromadzonymi.",
+      "Zwróć uwagę, że Ojcze nasz rozpoczyna następujące potem obrzędy Komunii."
+    ],
+    "our-father": [
+      "Módl się uważnie, zatrzymując się myślą przy jednej prośbie.",
+      "Stosuj się do miejscowych wskazań dotyczących postawy ciała."
+    ],
+    "peace": [
+      "Spokojnie przekaż znak pokoju osobom blisko ciebie, zgodnie z miejscowym zwyczajem.",
+      "Zaplanuj krok ku pojednaniu tam, gdzie jest potrzebne."
+    ],
+    "lamb": [
+      "Włącz się w wezwania o miłosierdzie i pokój.",
+      "Przyjmij postawę wskazaną w parafii, na ile możesz."
+    ],
+    "communion": [
+      "Jeśli nie jesteś jeszcze dopuszczony do Komunii, trwaj na modlitwie i porozmawiaj z zespołem formacyjnym.",
+      "Przyjmujący stosują się do wskazań parafii i odpowiadają szafarzowi Amen."
+    ],
+    "thanksgiving": [
+      "Pozwól sobie na chwilę ciszy.",
+      "Słuchaj modlitwy po Komunii i odpowiedz Amen."
+    ],
+    "blessing": [
+      "Przyjmij błogosławieństwo w skupieniu i wykonaj znak krzyża w odpowiednim momencie."
+    ],
+    "dismissal": [
+      "Odpowiedz: „Bogu niech będą dzięki”.",
+      "Przed wyjściem wybierz jeden konkretny sposób życia Ewangelią w tym tygodniu."
+    ]
+  },
+  "tl": {
+    "entrance": [
+      "Dumating nang ilang minuto bago magsimula.",
+      "Isantabi ang mga nakagagambala, tumingin sa altar, at maghanda ng isang intensiyon sa katahimikan.",
+      "Makiawit ayon sa iyong kakayahan."
+    ],
+    "cross": [
+      "Sa kaugaliang Katolikong Latin, gamitin ang kanang kamay: noo, dibdib, kaliwang balikat, at kanang balikat.",
+      "Manalangin nang may pansin at huwag magmadali."
+    ],
+    "greeting": [
+      "Sa karaniwang pagbati, tumugon: “At sumainyo rin.”",
+      "Pakinggan ang palitan ng mga salita bilang panalangin."
+    ],
+    "penitential": [
+      "Sa katahimikan, kilalanin ang isang pagkukulang at humingi ng awa.",
+      "Makibahagi sa mga tugon nang may pag-asa.",
+      "Lumapit sa sakramento ng Pakikipagkasundo kung kinakailangan."
+    ],
+    "gloria": [
+      "Makibahagi kapag ginagamit ang himno.",
+      "Ituon kay Kristo ang iyong pansin habang nagpapasalamat at humihingi ng awa."
+    ],
+    "collect": [
+      "Iharap ang iyong intensiyon sa katahimikan.",
+      "Pakinggan ang panalangin at makiisa rito sa iyong Amen."
+    ],
+    "first": [
+      "Umupo at makinig.",
+      "Sa pagtatapos, tumugon: “Salamat sa Diyos.”",
+      "Kung maaari, basahin ang mga pagbasa ng Linggo bago ang Misa."
+    ],
+    "psalm": [
+      "Pakinggan ang bawat taludtod at makibahagi sa tugon.",
+      "Pumili ng isang pahayag na maaari mong dalhin sa panalangin sa buong linggo."
+    ],
+    "second": [
+      "Makinig para sa isang konkretong paanyaya.",
+      "Sa pagtatapos, tumugon: “Salamat sa Diyos.”"
+    ],
+    "acclamation": [
+      "Tumayo kung kaya at makiawit.",
+      "Sa Kuwaresma, pakinggan ang ibang pagbubunying ginagamit."
+    ],
+    "gospel": [
+      "Manatiling nakatayo kung kaya.",
+      "Gumawa ng maliliit na tanda ng krus sa noo, labi, at dibdib, na hinihiling na hubugin ng Ebanghelyo ang iyong isip, salita, at puso."
+    ],
+    "homily": [
+      "Makinig nang may bukas na puso.",
+      "Pagkatapos, isulat ang isang natutuhan at pag-usapan ito sa taong gumagabay sa iyo o sa iyong pangkat sa paghubog ng pananampalataya."
+    ],
+    "creed": [
+      "Sundan ang anyong ginagamit ng parokya.",
+      "Itanong sa iyong katekista ang mga salitang hindi malinaw sa iyo.",
+      "Lumalalim ang pag-unawa sa pamamagitan ng panalangin, pag-uusap, at pag-aaral."
+    ],
+    "intercessions": [
+      "Makibahagi sa tugong ginagamit sa parokya.",
+      "Alalahanin ang taong hindi mo gaanong napapansin at isipin kung paano mo siya matutulungan."
+    ],
+    "gifts": [
+      "Tahimik na ialay ang isang bahagi ng iyong linggo.",
+      "Iugnay ang iyong materyal o praktikal na tulong sa parokya sa malasakit sa mga nangangailangan."
+    ],
+    "offerings": [
+      "Makibahagi sa palitan ng mga tugon at pakinggan ang panalangin.",
+      "Sumagot ng Amen nang may pansin."
+    ],
+    "eucharistic": [
+      "Pakinggan ang buong panalangin.",
+      "Makibahagi sa mga pagbubunyi at sundin ang gabay ng parokya sa pagtayo o pagluhod ayon sa iyong kalusugan at kakayahan."
+    ],
+    "sanctus": [
+      "Makibahagi sa pagbubunyi.",
+      "Hayaang ihanda ka ng papuri para sa mataimtim na pakikinig sa kasunod na panalangin."
+    ],
+    "consecration": [
+      "Sumamba sa katahimikan.",
+      "Ibahagi sa iyong katekista ang mga tanong tungkol sa tunay na presensiya.",
+      "Maglaan ng panahon sa pag-aaral at panalangin nang hindi nagmamadali."
+    ],
+    "memorial": [
+      "Makibahagi sa pagbubunying ginagamit ng parokya.",
+      "Pakinggan kung paano ipinagdarasal ang Simbahan at ipinagkakatiwala sa Diyos ang mga tao."
+    ],
+    "amen": [
+      "Awitin o sabihin ang Amen kasama ng sambayanan.",
+      "Pansining nagsisimula sa Ama Namin ang kasunod na mga ritwal ng Komunyon."
+    ],
+    "our-father": [
+      "Manalangin nang may pansin at pagnilayan ang isang kahilingan.",
+      "Sundin ang lokal na gabay sa kilos at tindig habang nagdarasal."
+    ],
+    "peace": [
+      "Magbigay ng tanda ng kapayapaan sa mga katabi nang mahinahon, ayon sa lokal na kaugalian.",
+      "Magplano ng isang hakbang tungo sa pakikipagkasundo kung saan ito kailangan."
+    ],
+    "lamb": [
+      "Makibahagi sa mga kahilingan ng awa at kapayapaan.",
+      "Sundin ang gabay ng parokya sa tindig ayon sa iyong kakayahan."
+    ],
+    "communion": [
+      "Kung hindi ka pa maaaring tumanggap ng Komunyon, manatili sa panalangin at kausapin ang pangkat na gumagabay sa iyo.",
+      "Ang mga tumatanggap ay sumusunod sa gabay ng parokya at sumasagot ng Amen sa tagapagbigay."
+    ],
+    "thanksgiving": [
+      "Maglaan ng sandali sa katahimikan.",
+      "Pakinggan ang panalangin matapos ang Komunyon at tumugon ng Amen."
+    ],
+    "blessing": [
+      "Tanggapin ang basbas nang may pansin at gumawa ng tanda ng krus sa tamang sandali."
+    ],
+    "dismissal": [
+      "Tumugon: “Salamat sa Diyos.”",
+      "Bago umalis, pumili ng isang konkretong paraan ng pagsasabuhay ng Mabuting Balita sa linggong ito."
+    ]
+  }
+}

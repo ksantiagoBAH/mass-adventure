@@ -1,0 +1,1913 @@
+{
+  "entrance": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The community assembles as the ministers enter and the opening chant or song begins.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/entrance-0-1f483c698313.mp3",
+        "duration": 7.175
+      },
+      {
+        "text": "Why does it matter? Bring your whole life into worship: your work, relationships, gratitude, and unanswered questions. Faith grows in a community that receives each person as someone God calls by name.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/entrance-1-718ba84706e4.mp3",
+        "duration": 14.025
+      },
+      {
+        "text": "What do I do? Arrive a few minutes early. Put away distractions, notice the altar, and make space for a quiet intention. Join the singing as you are able.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/entrance-2-b67e3af4978f.mp3",
+        "duration": 12.2
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/entrance-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Everyone: The entrance chant or hymn selected for this Mass. Use the parish worship aid for its words.",
+        "label": "Everyone",
+        "row": 0,
+        "file": "audio/entrance-4-4384a8d23e10.mp3",
+        "duration": 8.025
+      },
+      {
+        "text": "A note about this part of Mass. The entrance song or antiphon varies. There is no single fixed spoken response here.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/entrance-5-d5e923c0a04f.mp3",
+        "duration": 10.425
+      }
+    ]
+  },
+  "penitential": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? We acknowledge our need for mercy and ask the Lord to heal us.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/penitential-0-bb1aeee4ef99.mp3",
+        "duration": 5.125
+      },
+      {
+        "text": "Why does it matter? Honest repentance allows grace to reach the places we prefer to hide. Christian conversion involves responsibility for our actions together with trust that God desires our restoration.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/penitential-1-4522f77852a9.mp3",
+        "duration": 14.5
+      },
+      {
+        "text": "What do I do? Use the silence to name a concrete failure and ask for mercy. Join the responses with hope. Seek sacramental Reconciliation when needed.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/penitential-2-906b3c61916d.mp3",
+        "duration": 12.05
+      },
+      {
+        "text": "Now, pray with the Church using these words: The priest chooses one of the approved forms. Use the form led at your parish.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/penitential-3-9b925b61b06f.mp3",
+        "duration": 9.225
+      },
+      {
+        "text": "Everyone, Form A (Confiteor): I confess to almighty God\nand to you, my brothers and sisters,\nthat I have greatly sinned,\nin my thoughts and in my words,\nin what I have done and in what I have failed to do,\nthrough my fault, through my fault,\nthrough my most grievous fault;\ntherefore I ask blessed Mary ever-Virgin,\nall the Angels and Saints,\nand you, my brothers and sisters,\nto pray for me to the Lord our God.",
+        "label": "Everyone · Form A (Confiteor)",
+        "row": 0,
+        "file": "audio/penitential-4-3271f67e9339.mp3",
+        "duration": 35.85
+      },
+      {
+        "text": "Priest, Form B: Have mercy on us, O Lord.",
+        "label": "Priest · Form B",
+        "row": 1,
+        "file": "audio/penitential-5-81c01648f31b.mp3",
+        "duration": 3.9
+      },
+      {
+        "text": "We respond, Form B: For we have sinned against you.",
+        "label": "We respond · Form B",
+        "row": 2,
+        "file": "audio/penitential-6-e16c3ceb9dc4.mp3",
+        "duration": 4.075
+      },
+      {
+        "text": "Priest, Form B: Show us, O Lord, your mercy.",
+        "label": "Priest · Form B",
+        "row": 3,
+        "file": "audio/penitential-7-674d3ecb0dc0.mp3",
+        "duration": 3.85
+      },
+      {
+        "text": "We respond, Form B: And grant us your salvation.",
+        "label": "We respond · Form B",
+        "row": 4,
+        "file": "audio/penitential-8-d3a388486cb6.mp3",
+        "duration": 4.425
+      },
+      {
+        "text": "Minister, Form C: Invocations addressed to Christ precede each Lord, have mercy or Christ, have mercy response. The invocations vary.",
+        "label": "Minister · Form C",
+        "row": 5,
+        "file": "audio/penitential-9-423a3c3c1ad5.mp3",
+        "duration": 10.9
+      },
+      {
+        "text": "We respond, Kyrie (minister leads each line): Lord, have mercy.\nChrist, have mercy.\nLord, have mercy.",
+        "label": "We respond · Kyrie (minister leads each line)",
+        "row": 6,
+        "file": "audio/penitential-10-dd4357512edb.mp3",
+        "duration": 9.775
+      },
+      {
+        "text": "We respond, Greek alternative (minister leads each line): Kyrie, eleison.\nChriste, eleison.\nKyrie, eleison.",
+        "label": "We respond · Greek alternative (minister leads each line)",
+        "row": 7,
+        "file": "audio/penitential-11-2ca79c3603af.mp3",
+        "duration": 10.025
+      },
+      {
+        "text": "Priest: A prayer asking for mercy, forgiveness, and everlasting life.",
+        "label": "Priest",
+        "row": 8,
+        "file": "audio/penitential-12-acb1b1f152d7.mp3",
+        "duration": 5.275
+      },
+      {
+        "text": "We respond: Amen.",
+        "label": "We respond",
+        "row": 9,
+        "file": "audio/penitential-13-0aebb9338481.mp3",
+        "duration": 2.625
+      },
+      {
+        "text": "A note about this part of Mass. The Kyrie follows unless it has already been included. It may be sung or said in Greek. A sprinkling rite can replace the Penitential Act; follow its prayer and song.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/penitential-14-ee3071137ffe.mp3",
+        "duration": 15.775
+      }
+    ]
+  },
+  "first": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? A reader proclaims the First Reading, usually from the Old Testament. During the Easter season, it is normally from the Acts of the Apostles in the New Testament.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/first-0-aa5309a7d533.mp3",
+        "duration": 12.025958
+      },
+      {
+        "text": "Why does it matter? Listen for God’s faithfulness across generations. The stories of Israel invite us to consider how God forms a people through promises, deliverance, and the patient work of conversion.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/first-1-926e211631cb.mp3",
+        "duration": 13.95
+      },
+      {
+        "text": "What do I do? Sit and listen. At the usual conclusion, respond: “Thanks be to God.” Read the Sunday passages before Mass if you can.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/first-2-14ed22439d79.mp3",
+        "duration": 11.3
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/first-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Reader: Proclaims the first reading assigned for the day.",
+        "label": "Reader",
+        "row": 0,
+        "file": "audio/first-4-d524a4caa3ce.mp3",
+        "duration": 4.225958
+      },
+      {
+        "text": "Reader, conclusion: The word of the Lord.",
+        "label": "Reader · conclusion",
+        "row": 1,
+        "file": "audio/first-5-19265a7edbc4.mp3",
+        "duration": 3.625958
+      },
+      {
+        "text": "We respond: Thanks be to God.",
+        "label": "We respond",
+        "row": 2,
+        "file": "audio/first-6-f540df0d96b5.mp3",
+        "duration": 3.125
+      },
+      {
+        "text": "Readings for the celebration: Find the assigned Scripture readings, Psalm response, and Gospel acclamation for the day.",
+        "label": "Readings for the celebration",
+        "row": 3,
+        "file": "audio/first-7-66b3de9457e7.mp3",
+        "duration": 7.875
+      },
+      {
+        "text": "A note about this part of Mass. The reading itself varies. The reader announces its conclusion as the word of the Lord.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/first-8-387d30018e69.mp3",
+        "duration": 10.35
+      }
+    ]
+  },
+  "acclamation": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The community welcomes the Gospel with an acclamation.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/acclamation-0-9205d55924a9.mp3",
+        "duration": 4.875
+      },
+      {
+        "text": "Why does it matter? Welcoming Christ’s word calls for receptivity. A short sung response can help us turn from passive observation to a deliberate willingness to hear and follow.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/acclamation-1-2ed069890f61.mp3",
+        "duration": 12.7
+      },
+      {
+        "text": "What do I do? Stand as you are able and join the acclamation. In Lent, notice the different acclamation used.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/acclamation-2-4587efba05ff.mp3",
+        "duration": 8.425958
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/acclamation-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Everyone, outside Lent: Alleluia.",
+        "label": "Everyone · outside Lent",
+        "row": 0,
+        "file": "audio/acclamation-4-d6ccb0fbcd85.mp3",
+        "duration": 3.5
+      },
+      {
+        "text": "Cantor: The Gospel verse assigned for this Mass.",
+        "label": "Cantor",
+        "row": 1,
+        "file": "audio/acclamation-5-75ad1c7af45b.mp3",
+        "duration": 4.1
+      },
+      {
+        "text": "Everyone, repeat outside Lent: Alleluia.",
+        "label": "Everyone · repeat outside Lent",
+        "row": 2,
+        "file": "audio/acclamation-6-7c67886e1e2a.mp3",
+        "duration": 3.9
+      },
+      {
+        "text": "Everyone, during Lent: The Lenten Gospel acclamation printed in the worship aid.",
+        "label": "Everyone · during Lent",
+        "row": 3,
+        "file": "audio/acclamation-7-aff91dfd1c6d.mp3",
+        "duration": 6.075
+      },
+      {
+        "text": "Readings for the celebration: Find the assigned Scripture readings, Psalm response, and Gospel acclamation for the day.",
+        "label": "Readings for the celebration",
+        "row": 4,
+        "file": "audio/acclamation-8-66b3de9457e7.mp3",
+        "duration": 7.875
+      },
+      {
+        "text": "A note about this part of Mass. The verse and Lenten acclamation vary. Alleluia is not sung or said during Lent.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/acclamation-9-7d40bd8ab225.mp3",
+        "duration": 10.5
+      }
+    ]
+  },
+  "creed": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? On Sundays and solemnities, the assembly ordinarily professes the Creed.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/creed-0-23b4f7e9cdf4.mp3",
+        "duration": 6.5
+      },
+      {
+        "text": "Why does it matter? Faith involves both personal trust and belonging to a community that hands on what it has received. The Creed offers a framework for study and a place to name honest questions.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/creed-1-6a954707bae0.mp3",
+        "duration": 13.65
+      },
+      {
+        "text": "What do I do? Follow the text in the parish worship aid. Bring unfamiliar phrases to OCIA; understanding grows through prayer, conversation, and study.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/creed-2-2d5a42366191.mp3",
+        "duration": 11.225
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/creed-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Everyone, Nicene Creed: I believe in one God, the Father almighty,\nmaker of heaven and earth,\nof all things visible and invisible.\nI believe in one Lord Jesus Christ,\nthe Only Begotten Son of God,\nborn of the Father before all ages.\nGod from God, Light from Light,\ntrue God from true God,\nbegotten, not made, consubstantial with the Father;\nthrough him all things were made.\nFor us men and for our salvation\nhe came down from heaven,\nand by the Holy Spirit was incarnate\nof the Virgin Mary,\nand became man.\nFor our sake he was crucified under Pontius Pilate,\nhe suffered death and was buried,\nand rose again on the third day\nin accordance with the Scriptures.\nHe ascended into heaven\nand is seated at the right hand of the Father.\nHe will come again in glory\nto judge the living and the dead\nand his kingdom will have no end.\nI believe in the Holy Spirit,\nthe Lord, the giver of life,\nwho proceeds from the Father and the Son,\nwho with the Father and the Son\nis adored and glorified,\nwho has spoken through the prophets.\nI believe in one, holy, catholic and apostolic Church.\nI confess one Baptism for the forgiveness of sins\nand I look forward to the resurrection of the dead\nand the life of the world to come. Amen.",
+        "label": "Everyone · Nicene Creed",
+        "row": 0,
+        "file": "audio/creed-4-864e18f9315f.mp3",
+        "duration": 108.075
+      },
+      {
+        "text": "Everyone, approved alternative: Apostles’ Creed, especially in Lent and Easter.",
+        "label": "Everyone · approved alternative",
+        "row": 1,
+        "file": "audio/creed-5-476847496b51.mp3",
+        "duration": 6.225
+      },
+      {
+        "text": "A note about this part of Mass. The Creed concludes with Amen. All bow at the words about the Incarnation; on Christmas and the Annunciation, all genuflect at those words. A renewal of baptismal promises replaces the Creed in certain celebrations.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/creed-6-54816a10b860.mp3",
+        "duration": 19.7
+      }
+    ]
+  },
+  "offerings": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The priest invites prayer and concludes the preparation of the gifts.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/offerings-0-0f683e6fa2fc.mp3",
+        "duration": 5.575
+      },
+      {
+        "text": "Why does it matter? An offering makes room for gratitude and surrender. Ask God to receive your life and teach you to give freely, especially where generosity feels difficult.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/offerings-1-d527d353fcc0.mp3",
+        "duration": 12.2
+      },
+      {
+        "text": "What do I do? Join the invitation and listen to the prayer. Respond Amen attentively.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/offerings-2-860213880e17.mp3",
+        "duration": 7.45
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/offerings-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Priest: Pray, brethren, that my sacrifice and yours may be acceptable to God, the almighty Father.",
+        "label": "Priest",
+        "row": 0,
+        "file": "audio/offerings-4-bccc9cfa8cd8.mp3",
+        "duration": 7.175
+      },
+      {
+        "text": "We respond: May the Lord accept the sacrifice at your hands\nfor the praise and glory of his name,\nfor our good\nand the good of all his holy Church.",
+        "label": "We respond",
+        "row": 1,
+        "file": "audio/offerings-5-472ceca30921.mp3",
+        "duration": 12.575
+      },
+      {
+        "text": "Priest: The Prayer over the Offerings appointed for the day.",
+        "label": "Priest",
+        "row": 2,
+        "file": "audio/offerings-6-19133d66f1f9.mp3",
+        "duration": 4.275
+      },
+      {
+        "text": "We respond: Amen.",
+        "label": "We respond",
+        "row": 3,
+        "file": "audio/offerings-7-0aebb9338481.mp3",
+        "duration": 2.625
+      },
+      {
+        "text": "A note about this part of Mass. The priest’s prayer changes with the day.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/offerings-8-c06ec6ee6571.mp3",
+        "duration": 6.325
+      }
+    ]
+  },
+  "consecration": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The prayer invokes the Holy Spirit and recounts Christ’s words and actions at the Last Supper.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/consecration-0-db88074a449e.mp3",
+        "duration": 7.15
+      },
+      {
+        "text": "Why does it matter? By the power of Christ’s word and the Holy Spirit, bread and wine become his Body and Blood. The Church calls this change transubstantiation: appearances remain, while Christ is truly, really, and substantially present.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/consecration-1-60c474da8f17.mp3",
+        "duration": 16.45
+      },
+      {
+        "text": "What do I do? Adore quietly. Bring questions about the Real Presence to your catechist; take time to study and pray rather than rushing toward a conclusion.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/consecration-2-7be716f82a01.mp3",
+        "duration": 11.1
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/consecration-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Priest: Epiclesis: the invocation of the Holy Spirit over the gifts.",
+        "label": "Priest",
+        "row": 0,
+        "file": "audio/consecration-4-ab99624ce054.mp3",
+        "duration": 5.475
+      },
+      {
+        "text": "Priest: Institution narrative and words of consecration over the bread and wine.",
+        "label": "Priest",
+        "row": 1,
+        "file": "audio/consecration-5-40a57e51759d.mp3",
+        "duration": 5.75
+      },
+      {
+        "text": "We participate: Listen and adore in silence. There is no prescribed spoken congregational response during the consecration.",
+        "label": "We participate",
+        "row": 2,
+        "file": "audio/consecration-6-d6eb67c6c2d8.mp3",
+        "duration": 9.875
+      },
+      {
+        "text": "A note about this part of Mass. The wording of these prayers differs between Eucharistic Prayers; the priest uses the prayer selected for this celebration. The memorial acclamation follows in the next lesson.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/consecration-7-a41325aa4e03.mp3",
+        "duration": 14.675
+      }
+    ]
+  },
+  "our-father": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The assembly prays the prayer Jesus taught his disciples.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/our-father-0-473d293b3319.mp3",
+        "duration": 5.1
+      },
+      {
+        "text": "Why does it matter? Naming God as Father invites trust and recognizes others as brothers and sisters. Asking for bread and forgiveness touches both our deepest needs and the way we treat our neighbors.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/our-father-1-c12a6731f53b.mp3",
+        "duration": 13.875
+      },
+      {
+        "text": "What do I do? Pray the familiar words slowly enough to notice one petition. Follow local guidance about posture.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/our-father-2-19372fd75f03.mp3",
+        "duration": 8.6
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/our-father-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Priest: At the Savior's command and formed by divine teaching, we dare to say:",
+        "label": "Priest",
+        "row": 0,
+        "file": "audio/our-father-4-f7d25d876cbb.mp3",
+        "duration": 5.725
+      },
+      {
+        "text": "Everyone, Our Father: Our Father, who art in heaven,\nhallowed be thy name;\nthy kingdom come;\nthy will be done on earth as it is in heaven.\nGive us this day our daily bread;\nand forgive us our trespasses\nas we forgive those who trespass against us;\nand lead us not into temptation,\nbut deliver us from evil.",
+        "label": "Everyone · Our Father",
+        "row": 1,
+        "file": "audio/our-father-5-781aa8cc1c95.mp3",
+        "duration": 27.275
+      },
+      {
+        "text": "Priest: Embolism: the prayer for deliverance from evil and for peace.",
+        "label": "Priest",
+        "row": 2,
+        "file": "audio/our-father-6-aeae02744158.mp3",
+        "duration": 5.2
+      },
+      {
+        "text": "Everyone, after the priest’s prayer: For the kingdom,\nthe power and the glory are yours\nnow and for ever.",
+        "label": "Everyone · after the priest’s prayer",
+        "row": 3,
+        "file": "audio/our-father-7-50162fd4596d.mp3",
+        "duration": 9.225
+      },
+      {
+        "text": "A note about this part of Mass. At Mass, do not add Amen immediately after the Our Father. The priest’s prayer follows, and then the people give the concluding acclamation from the Order of Mass.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/our-father-8-5412ef311ed4.mp3",
+        "duration": 13.975
+      }
+    ]
+  },
+  "communion": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? Those properly prepared receive Christ sacramentally; others remain in prayer.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/communion-0-97b0c2427dff.mp3",
+        "duration": 6.45
+      },
+      {
+        "text": "Why does it matter? Communion unites the recipient with Christ and his Church. Receiving calls for faith, sacramental preparation, and a disposition of grace. An OCIA lesson or completed course does not itself establish readiness to receive.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/communion-1-938c1eb99280.mp3",
+        "duration": 17.625
+      },
+      {
+        "text": "What do I do? If you have not yet been admitted to Communion, remain in prayer and speak with your OCIA team. Those receiving follow parish directions and answer Amen to the minister.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/communion-2-d3b442328346.mp3",
+        "duration": 12.3
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/communion-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Priest: Behold the Lamb of God,\nbehold him who takes away the sins of the world.\nBlessed are those called to the supper of the Lamb.",
+        "label": "Priest",
+        "row": 0,
+        "file": "audio/communion-4-edf00290c2cc.mp3",
+        "duration": 10.425
+      },
+      {
+        "text": "Everyone: Lord, I am not worthy\nthat you should enter under my roof,\nbut only say the word\nand my soul shall be healed.",
+        "label": "Everyone",
+        "row": 1,
+        "file": "audio/communion-5-5d9413bdb775.mp3",
+        "duration": 11.25
+      },
+      {
+        "text": "Minister, when offering the host: The Body of Christ.",
+        "label": "Minister · when offering the host",
+        "row": 2,
+        "file": "audio/communion-6-a520f08a3607.mp3",
+        "duration": 4.075
+      },
+      {
+        "text": "Person receiving: Amen.",
+        "label": "Person receiving",
+        "row": 3,
+        "file": "audio/communion-7-2055f8c3e1f1.mp3",
+        "duration": 2.95
+      },
+      {
+        "text": "Minister, when offering the chalice: The Blood of Christ.",
+        "label": "Minister · when offering the chalice",
+        "row": 4,
+        "file": "audio/communion-8-a1ca4bbfd6cb.mp3",
+        "duration": 4.125
+      },
+      {
+        "text": "Person receiving: Amen.",
+        "label": "Person receiving",
+        "row": 5,
+        "file": "audio/communion-9-2055f8c3e1f1.mp3",
+        "duration": 2.95
+      },
+      {
+        "text": "A note about this part of Mass. The Communion chant or hymn varies. Those not receiving Communion remain in prayer; no spoken response to a minister is required from them.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/communion-10-459e9158efc1.mp3",
+        "duration": 13.45
+      }
+    ]
+  },
+  "dismissal": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The dismissal sends the assembly to live what it has celebrated.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/dismissal-0-7af648e619d2.mp3",
+        "duration": 5.425958
+      },
+      {
+        "text": "Why does it matter? Worship bears fruit in love of neighbor. Choose an achievable act of discipleship: contact someone isolated, serve a person in need, keep a difficult promise, or make time for prayer.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/dismissal-1-11f8b2943555.mp3",
+        "duration": 14.175
+      },
+      {
+        "text": "What do I do? Respond “Thanks be to God.” Before leaving, choose one concrete way to live the Gospel this week.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/dismissal-2-8f456bcd0c90.mp3",
+        "duration": 8.425958
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/dismissal-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Deacon or priest, one of these dismissals: Go forth, the Mass is ended.\nOR Go and announce the Gospel of the Lord.\nOR Go in peace, glorifying the Lord by your life.\nOR Go in peace.",
+        "label": "Deacon or priest · one of these dismissals",
+        "row": 0,
+        "file": "audio/dismissal-4-014979d4c54d.mp3",
+        "duration": 15.125
+      },
+      {
+        "text": "We respond: Thanks be to God.",
+        "label": "We respond",
+        "row": 1,
+        "file": "audio/dismissal-5-f540df0d96b5.mp3",
+        "duration": 3.125
+      },
+      {
+        "text": "A note about this part of Mass. A concluding hymn may follow and changes with the parish or occasion. During the Easter Octave and on Pentecost, a double Alleluia is added to the dismissal and the people’s response.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/dismissal-6-17b2d66b3a8d.mp3",
+        "duration": 15.775
+      }
+    ]
+  },
+  "cross": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The celebration begins in the name of the Father, the Son, and the Holy Spirit.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/cross-0-b0a3f12993df.mp3",
+        "duration": 6.4
+      },
+      {
+        "text": "Why does it matter? This familiar gesture names the Trinity and places our prayer under the sign of Christ’s saving Cross. Repeating it slowly can become a daily reminder that Christian life belongs to God.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/cross-1-7b86c6ff99c1.mp3",
+        "duration": 13.975
+      },
+      {
+        "text": "What do I do? In Latin Catholic practice, use your right hand: forehead, chest, left shoulder, right shoulder. Pray attentively rather than rushing the gesture.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/cross-2-99ff874b1fb1.mp3",
+        "duration": 11.075
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/cross-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Priest, everyone makes the gesture: In the name of the Father, and of the Son, and of the Holy Spirit.",
+        "label": "Priest · everyone makes the gesture",
+        "row": 0,
+        "file": "audio/cross-4-1976672dae6c.mp3",
+        "duration": 6.775
+      },
+      {
+        "text": "We respond: Amen.",
+        "label": "We respond",
+        "row": 1,
+        "file": "audio/cross-5-0aebb9338481.mp3",
+        "duration": 2.625
+      }
+    ]
+  },
+  "gloria": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? On appointed days, the assembly sings or says a hymn of praise.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/gloria-0-dbe8c612c604.mp3",
+        "duration": 5.65
+      },
+      {
+        "text": "Why does it matter? Praise teaches us to look beyond our immediate needs and delight in God’s goodness. Consider what it means to worship God even when life is difficult or an answer to prayer seems distant.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/gloria-1-22cfd5caba16.mp3",
+        "duration": 14.125
+      },
+      {
+        "text": "What do I do? Join the hymn when it is used. Let its movement from praise to petition draw your attention to Christ.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/gloria-2-5c0765b1d825.mp3",
+        "duration": 8.575
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/gloria-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Everyone, Gloria: Glory to God in the highest,\nand on earth peace to people of good will.\nWe praise you,\nwe bless you,\nwe adore you,\nwe glorify you,\nwe give you thanks for your great glory,\nLord God, heavenly King,\nO God, almighty Father.\nLord Jesus Christ, Only Begotten Son,\nLord God, Lamb of God, Son of the Father,\nyou take away the sins of the world,\nhave mercy on us;\nyou take away the sins of the world,\nreceive our prayer;\nyou are seated at the right hand of the Father,\nhave mercy on us.\nFor you alone are the Holy One,\nyou alone are the Lord,\nyou alone are the Most High,\nJesus Christ,\nwith the Holy Spirit,\nin the glory of God the Father.\nAmen.",
+        "label": "Everyone · Gloria",
+        "row": 0,
+        "file": "audio/gloria-4-4a63180f2c72.mp3",
+        "duration": 65
+      },
+      {
+        "text": "A note about this part of Mass. The whole hymn is sung or recited when prescribed. It ends with Amen. It is ordinarily omitted in Advent and Lent, with exceptions for prescribed celebrations.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/gloria-5-0606a73ac8f5.mp3",
+        "duration": 16.5
+      }
+    ]
+  },
+  "psalm": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The assembly responds to the reading with a psalm, often sung.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/psalm-0-5eb4039b9582.mp3",
+        "duration": 5.3
+      },
+      {
+        "text": "Why does it matter? The Psalms give us language for joy, fear, anger, trust, and sorrow. They allow prayer to be honest while gradually directing our attention toward God.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/psalm-1-4f8067bfcd2d.mp3",
+        "duration": 11.75
+      },
+      {
+        "text": "What do I do? Listen to each verse and join the refrain. Carry one phrase into the coming week.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/psalm-2-3c4add5d207e.mp3",
+        "duration": 7.725
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/psalm-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Cantor or reader: The Responsorial Psalm appointed for the day.",
+        "label": "Cantor or reader",
+        "row": 0,
+        "file": "audio/psalm-4-ccd4ea6088b4.mp3",
+        "duration": 5.175
+      },
+      {
+        "text": "We respond: Repeat the Psalm refrain announced by the cantor or printed in the worship aid.",
+        "label": "We respond",
+        "row": 1,
+        "file": "audio/psalm-5-14a51319f81c.mp3",
+        "duration": 6.575
+      },
+      {
+        "text": "Readings for the celebration: Find the assigned Scripture readings, Psalm response, and Gospel acclamation for the day.",
+        "label": "Readings for the celebration",
+        "row": 2,
+        "file": "audio/psalm-6-66b3de9457e7.mp3",
+        "duration": 7.875
+      },
+      {
+        "text": "A note about this part of Mass. The Psalm response changes. Listen to its first presentation rather than assuming the same words each week.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/psalm-7-a5ff0b7fa252.mp3",
+        "duration": 11.8
+      }
+    ]
+  },
+  "gospel": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? A deacon or priest proclaims a passage from Matthew, Mark, Luke, or John.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/gospel-0-9cf20d3fef55.mp3",
+        "duration": 6.225
+      },
+      {
+        "text": "Why does it matter? Encounter Jesus in his words, actions, death, and Resurrection. Imagine yourself among those who hear him: what attracts you, unsettles you, or invites a response?",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/gospel-1-f609018a3cf7.mp3",
+        "duration": 12.95
+      },
+      {
+        "text": "What do I do? Remain standing as you are able. Make the small crosses on forehead, lips, and chest, asking that the Gospel shape your mind, words, and heart.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/gospel-2-64468e7beaca.mp3",
+        "duration": 11.025
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/gospel-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Deacon or priest: The Lord be with you.",
+        "label": "Deacon or priest",
+        "row": 0,
+        "file": "audio/gospel-4-b1dd3a186ebc.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "We respond: And with your spirit.",
+        "label": "We respond",
+        "row": 1,
+        "file": "audio/gospel-5-9c0a07403047.mp3",
+        "duration": 3.075
+      },
+      {
+        "text": "Deacon or priest, names the Gospel writer: A reading from the holy Gospel according to _____.",
+        "label": "Deacon or priest · names the Gospel writer",
+        "row": 2,
+        "file": "audio/gospel-6-71731d16b0ec.mp3",
+        "duration": 6.65
+      },
+      {
+        "text": "We respond: Glory to you, O Lord.",
+        "label": "We respond",
+        "row": 3,
+        "file": "audio/gospel-7-b02fb4bfd31f.mp3",
+        "duration": 3.325
+      },
+      {
+        "text": "Deacon or priest: Proclaims the assigned Gospel passage.",
+        "label": "Deacon or priest",
+        "row": 4,
+        "file": "audio/gospel-8-9e65926477e8.mp3",
+        "duration": 4.925
+      },
+      {
+        "text": "Deacon or priest, conclusion: The Gospel of the Lord.",
+        "label": "Deacon or priest · conclusion",
+        "row": 5,
+        "file": "audio/gospel-9-7042f1d780da.mp3",
+        "duration": 4.375
+      },
+      {
+        "text": "We respond: Praise to you, Lord Jesus Christ.",
+        "label": "We respond",
+        "row": 6,
+        "file": "audio/gospel-10-5f1bbc0c3830.mp3",
+        "duration": 4
+      },
+      {
+        "text": "Readings for the celebration: Find the assigned Scripture readings, Psalm response, and Gospel acclamation for the day.",
+        "label": "Readings for the celebration",
+        "row": 7,
+        "file": "audio/gospel-11-66b3de9457e7.mp3",
+        "duration": 7.875
+      },
+      {
+        "text": "A note about this part of Mass. The Gospel passage changes. Make the small crosses on forehead, lips, and chest at the opening announcement.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/gospel-12-49a190f96f1c.mp3",
+        "duration": 11.575
+      }
+    ]
+  },
+  "intercessions": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The community prays for the Church, the world, people in need, and the local community.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/intercessions-0-e772c144a7b7.mp3",
+        "duration": 6.725
+      },
+      {
+        "text": "Why does it matter? Let your prayer widen beyond those you already know. Intercession can develop attention to suffering and lead naturally to service, advocacy, and generosity.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/intercessions-1-b0b18b305a65.mp3",
+        "duration": 12.625958
+      },
+      {
+        "text": "What do I do? Join the parish response. Include someone whose needs you have overlooked, and consider how you could help.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/intercessions-2-87cd674c8c00.mp3",
+        "duration": 8.55
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/intercessions-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Priest: Introduces the Universal Prayer.",
+        "label": "Priest",
+        "row": 0,
+        "file": "audio/intercessions-4-b73055297673.mp3",
+        "duration": 3.625958
+      },
+      {
+        "text": "Deacon or reader: Announces each prayer intention.",
+        "label": "Deacon or reader",
+        "row": 1,
+        "file": "audio/intercessions-5-a86175082891.mp3",
+        "duration": 4.425
+      },
+      {
+        "text": "We respond, a common example: Lord, hear our prayer.",
+        "label": "We respond · a common example",
+        "row": 2,
+        "file": "audio/intercessions-6-297d220f0c88.mp3",
+        "duration": 4.425
+      },
+      {
+        "text": "Priest: Concludes the petitions with a prayer.",
+        "label": "Priest",
+        "row": 3,
+        "file": "audio/intercessions-7-8be67b472ac4.mp3",
+        "duration": 3.675
+      },
+      {
+        "text": "We respond: Amen.",
+        "label": "We respond",
+        "row": 4,
+        "file": "audio/intercessions-8-0aebb9338481.mp3",
+        "duration": 2.625
+      },
+      {
+        "text": "A note about this part of Mass. The intentions and congregational response vary. Use the response announced at your parish; the example is not required at every Mass.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/intercessions-9-7f7c5f6a3573.mp3",
+        "duration": 13.525
+      }
+    ]
+  },
+  "eucharistic": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The priest leads the great prayer of thanksgiving, with the assembly joining through its acclamations.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/eucharistic-0-f013f17ad9a4.mp3",
+        "duration": 7.375
+      },
+      {
+        "text": "Why does it matter? The Church gives thanks for God’s saving work, remembers Christ’s Paschal mystery, and intercedes for the living and the dead. This is a sacrificial memorial of Christ’s one offering, not a new crucifixion.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/eucharistic-1-4f1dbfdfe4b5.mp3",
+        "duration": 14.8
+      },
+      {
+        "text": "What do I do? Listen to the whole prayer. Join the acclamations and follow the parish’s posture guidance, with accommodation for health and mobility.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/eucharistic-2-fa497f7acdb4.mp3",
+        "duration": 10.675
+      },
+      {
+        "text": "Now, pray with the Church using these words: The opening dialogue is followed by the Preface and the rest of the Eucharistic Prayer.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/eucharistic-3-310124951e84.mp3",
+        "duration": 8.375
+      },
+      {
+        "text": "Priest: The Lord be with you.",
+        "label": "Priest",
+        "row": 0,
+        "file": "audio/eucharistic-4-e16c0ac88a0f.mp3",
+        "duration": 2.85
+      },
+      {
+        "text": "We respond: And with your spirit.",
+        "label": "We respond",
+        "row": 1,
+        "file": "audio/eucharistic-5-9c0a07403047.mp3",
+        "duration": 3.075
+      },
+      {
+        "text": "Priest: Lift up your hearts.",
+        "label": "Priest",
+        "row": 2,
+        "file": "audio/eucharistic-6-94dc52db7c45.mp3",
+        "duration": 2.9
+      },
+      {
+        "text": "We respond: We lift them up to the Lord.",
+        "label": "We respond",
+        "row": 3,
+        "file": "audio/eucharistic-7-ff2b1dc3e9d4.mp3",
+        "duration": 3.3
+      },
+      {
+        "text": "Priest: Let us give thanks to the Lord our God.",
+        "label": "Priest",
+        "row": 4,
+        "file": "audio/eucharistic-8-65a7a580625c.mp3",
+        "duration": 3.8
+      },
+      {
+        "text": "We respond: It is right and just.",
+        "label": "We respond",
+        "row": 5,
+        "file": "audio/eucharistic-9-4b6eb2519e5a.mp3",
+        "duration": 3.275
+      },
+      {
+        "text": "Priest: The Preface for the celebration.",
+        "label": "Priest",
+        "row": 6,
+        "file": "audio/eucharistic-10-23f5ecec19ed.mp3",
+        "duration": 3.475
+      },
+      {
+        "text": "Priest: The chosen Eucharistic Prayer (I, II, III, IV, or another permitted prayer).",
+        "label": "Priest",
+        "row": 7,
+        "file": "audio/eucharistic-11-eb869b281fc8.mp3",
+        "duration": 7.075
+      },
+      {
+        "text": "A note about this part of Mass. The Sanctus, memorial acclamation, and Great Amen are the people’s responses within this prayer. Their lessons follow. Do not recite the priest’s parts with him.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/eucharistic-12-989205e50f00.mp3",
+        "duration": 15.475
+      }
+    ]
+  },
+  "memorial": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The assembly acclaims the mystery of faith, and the Eucharistic Prayer continues.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/memorial-0-0da142e8bdc0.mp3",
+        "duration": 6.4
+      },
+      {
+        "text": "Why does it matter? Remembering Christ’s death and Resurrection gives hope beyond our present circumstances. The prayer also places us in relationship with the whole Church, including those who have died.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/memorial-1-7a84f28730df.mp3",
+        "duration": 13.575
+      },
+      {
+        "text": "What do I do? Join the acclamation printed in the worship aid. Listen as the prayer remembers the Church and entrusts people to God.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/memorial-2-d7b03f7c363c.mp3",
+        "duration": 9.55
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/memorial-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Priest: The mystery of faith.",
+        "label": "Priest",
+        "row": 0,
+        "file": "audio/memorial-4-5066a8116244.mp3",
+        "duration": 2.825
+      },
+      {
+        "text": "Everyone, option A: We proclaim your Death, O Lord,\nand profess your Resurrection\nuntil you come again.",
+        "label": "Everyone · option A",
+        "row": 1,
+        "file": "audio/memorial-5-a3b5e805f064.mp3",
+        "duration": 9.3
+      },
+      {
+        "text": "Everyone, option B: When we eat this Bread and drink this Cup,\nwe proclaim your Death, O Lord,\nuntil you come again.",
+        "label": "Everyone · option B",
+        "row": 2,
+        "file": "audio/memorial-6-81b89bf53673.mp3",
+        "duration": 10.1
+      },
+      {
+        "text": "Everyone, option C: Save us, Savior of the world,\nfor by your Cross and Resurrection,\nyou have set us free.",
+        "label": "Everyone · option C",
+        "row": 3,
+        "file": "audio/memorial-7-56c8ff141378.mp3",
+        "duration": 9.65
+      },
+      {
+        "text": "Priest: Continues the memorial, offering, and intercessions of the chosen Eucharistic Prayer.",
+        "label": "Priest",
+        "row": 4,
+        "file": "audio/memorial-8-3b05e23ca4e8.mp3",
+        "duration": 6.325
+      },
+      {
+        "text": "A note about this part of Mass. Use one approved acclamation, as led at your parish. The people do not say all three in sequence.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/memorial-9-15ad0b0a741a.mp3",
+        "duration": 11.05
+      }
+    ]
+  },
+  "peace": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The Church prays for peace and unity, and a sign of peace may be exchanged.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/peace-0-8bd44a6da3d0.mp3",
+        "duration": 6.325
+      },
+      {
+        "text": "Why does it matter? Christ’s peace asks more of us than courtesy. Let this gesture call to mind the work of reconciliation that continues beyond the church doors.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/peace-1-702813b13988.mp3",
+        "duration": 11.275
+      },
+      {
+        "text": "What do I do? Offer the sign calmly to those nearby, following local practice. Plan a step toward reconciliation where one is needed.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/peace-2-df6c1252c3bf.mp3",
+        "duration": 10.2
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/peace-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Priest: Prayer to Christ for the Church’s peace and unity.",
+        "label": "Priest",
+        "row": 0,
+        "file": "audio/peace-4-00612e069022.mp3",
+        "duration": 4.375
+      },
+      {
+        "text": "We respond: Amen.",
+        "label": "We respond",
+        "row": 1,
+        "file": "audio/peace-5-0aebb9338481.mp3",
+        "duration": 2.625
+      },
+      {
+        "text": "Priest: The peace of the Lord be with you always.",
+        "label": "Priest",
+        "row": 2,
+        "file": "audio/peace-6-7a21ab08e8ed.mp3",
+        "duration": 3.75
+      },
+      {
+        "text": "We respond: And with your spirit.",
+        "label": "We respond",
+        "row": 3,
+        "file": "audio/peace-7-9c0a07403047.mp3",
+        "duration": 3.075
+      },
+      {
+        "text": "Deacon or priest, when used: Invites everyone to exchange a sign of peace.",
+        "label": "Deacon or priest · when used",
+        "row": 4,
+        "file": "audio/peace-8-3123dce1524f.mp3",
+        "duration": 5.875
+      },
+      {
+        "text": "A note about this part of Mass. There is no prescribed formula for each person’s personal exchange of peace. Follow your parish’s practice.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/peace-9-482dddbe6e28.mp3",
+        "duration": 11.5
+      }
+    ]
+  },
+  "thanksgiving": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The community gives thanks in silence or song, followed by the prayer after Communion.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/thanksgiving-0-6ba973a5d979.mp3",
+        "duration": 6.85
+      },
+      {
+        "text": "Why does it matter? Prayer does not need to fill every moment with words. Rest in God’s presence and consider how what you have received can bear fruit through patience, compassion, and service.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/thanksgiving-1-f5e2edae8e7d.mp3",
+        "duration": 12.925
+      },
+      {
+        "text": "What do I do? Allow a few moments of quiet. Listen to the final prayer and join the Amen.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/thanksgiving-2-95fa5e2dcfef.mp3",
+        "duration": 7.575
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/thanksgiving-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Everyone: Silent thanksgiving, or the appointed Communion hymn or song of praise.",
+        "label": "Everyone",
+        "row": 0,
+        "file": "audio/thanksgiving-4-39afa30dd768.mp3",
+        "duration": 6.15
+      },
+      {
+        "text": "Priest: Let us pray.",
+        "label": "Priest",
+        "row": 1,
+        "file": "audio/thanksgiving-5-466d7bffdbf7.mp3",
+        "duration": 2.5
+      },
+      {
+        "text": "Priest: The Prayer after Communion appointed for the day.",
+        "label": "Priest",
+        "row": 2,
+        "file": "audio/thanksgiving-6-86b363193de8.mp3",
+        "duration": 4.275
+      },
+      {
+        "text": "We respond: Amen.",
+        "label": "We respond",
+        "row": 3,
+        "file": "audio/thanksgiving-7-0aebb9338481.mp3",
+        "duration": 2.625
+      },
+      {
+        "text": "A note about this part of Mass. There is no fixed text for personal silent thanksgiving. The priest’s Prayer after Communion changes with the celebration.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/thanksgiving-8-16bd616287a1.mp3",
+        "duration": 11.9
+      }
+    ]
+  },
+  "greeting": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The priest greets the assembly, which responds to him.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/greeting-0-2dab96abd6ad.mp3",
+        "duration": 4.7
+      },
+      {
+        "text": "Why does it matter? A greeting at Mass expresses a relationship of worship and service. The community’s answer recognizes the minister’s role and joins the assembly in a common prayer.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/greeting-1-e501d86ecc25.mp3",
+        "duration": 12.875
+      },
+      {
+        "text": "What do I do? At the customary greeting, respond: “And with your spirit.” Listen to the dialogue as prayer, not merely an introduction.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/greeting-2-19780f11cf61.mp3",
+        "duration": 9.525
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/greeting-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Priest, one greeting option: The Lord be with you.",
+        "label": "Priest · one greeting option",
+        "row": 0,
+        "file": "audio/greeting-4-b1096ddd9a7b.mp3",
+        "duration": 4.1
+      },
+      {
+        "text": "We respond: And with your spirit.",
+        "label": "We respond",
+        "row": 1,
+        "file": "audio/greeting-5-9c0a07403047.mp3",
+        "duration": 3.075
+      },
+      {
+        "text": "A note about this part of Mass. The priest may use another approved greeting; the people give the same response. A bishop may greet the assembly with a greeting of peace.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/greeting-6-37e4e8103c8e.mp3",
+        "duration": 12.7
+      }
+    ]
+  },
+  "collect": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? After an invitation to pray and a brief silence, the priest voices the opening prayer.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/collect-0-29d36cf80633.mp3",
+        "duration": 7.025
+      },
+      {
+        "text": "Why does it matter? Silence gives room for personal intentions before the common prayer. Learn to listen to its language: what does the Church ask of God, and what kind of life does that request invite?",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/collect-1-6f050df99bc8.mp3",
+        "duration": 13.725
+      },
+      {
+        "text": "What do I do? Offer an intention in the silence. Listen to the prayer and make its request your own through your Amen.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/collect-2-afef796577db.mp3",
+        "duration": 8.625
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/collect-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Priest: Let us pray.",
+        "label": "Priest",
+        "row": 0,
+        "file": "audio/collect-4-466d7bffdbf7.mp3",
+        "duration": 2.5
+      },
+      {
+        "text": "Everyone: A short silence for personal prayer.",
+        "label": "Everyone",
+        "row": 1,
+        "file": "audio/collect-5-fad452c411e1.mp3",
+        "duration": 3.825
+      },
+      {
+        "text": "Priest: The Collect (opening prayer) appointed for this Mass.",
+        "label": "Priest",
+        "row": 2,
+        "file": "audio/collect-6-cd8491e49760.mp3",
+        "duration": 4.3
+      },
+      {
+        "text": "We respond: Amen.",
+        "label": "We respond",
+        "row": 3,
+        "file": "audio/collect-7-0aebb9338481.mp3",
+        "duration": 2.625
+      },
+      {
+        "text": "A note about this part of Mass. The Collect changes with the day or occasion. The people listen to the priest’s prayer and give the concluding Amen.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/collect-8-c3379a38cf2e.mp3",
+        "duration": 11.575
+      }
+    ]
+  },
+  "second": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? On Sundays and solemnities, the Second Reading comes from the New Testament: an apostolic letter or the Book of Revelation.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/second-0-edcc5924d364.mp3",
+        "duration": 9.525
+      },
+      {
+        "text": "Why does it matter? The apostolic writings speak to communities learning to live the Gospel amid ordinary pressures. Ask how their encouragement and correction address your family, workplace, and parish.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/second-1-3b925339939a.mp3",
+        "duration": 13.625
+      },
+      {
+        "text": "What do I do? Listen for a practical invitation. Respond “Thanks be to God” at the usual conclusion.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/second-2-e7a3048d46bb.mp3",
+        "duration": 8.05
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/second-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Reader: Proclaims the second reading assigned for the day.",
+        "label": "Reader",
+        "row": 0,
+        "file": "audio/second-4-b24164420ed9.mp3",
+        "duration": 4.225958
+      },
+      {
+        "text": "Reader, conclusion: The word of the Lord.",
+        "label": "Reader · conclusion",
+        "row": 1,
+        "file": "audio/second-5-19265a7edbc4.mp3",
+        "duration": 3.625958
+      },
+      {
+        "text": "We respond: Thanks be to God.",
+        "label": "We respond",
+        "row": 2,
+        "file": "audio/second-6-f540df0d96b5.mp3",
+        "duration": 3.125
+      },
+      {
+        "text": "Readings for the celebration: Find the assigned Scripture readings, Psalm response, and Gospel acclamation for the day.",
+        "label": "Readings for the celebration",
+        "row": 3,
+        "file": "audio/second-7-66b3de9457e7.mp3",
+        "duration": 7.875
+      },
+      {
+        "text": "A note about this part of Mass. This reading is ordinarily included on Sundays and solemnities; many weekday Masses do not have it.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/second-8-ae850f43be02.mp3",
+        "duration": 10.175
+      }
+    ]
+  },
+  "homily": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The ordained preacher reflects on the readings and the mystery being celebrated.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/homily-0-b3210a170d05.mp3",
+        "duration": 6.2
+      },
+      {
+        "text": "Why does it matter? Keep listening for a connection between Scripture and your life. A useful question after the homily is what you can actually practice during the week.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/homily-1-f04fdc6afe2b.mp3",
+        "duration": 11.1
+      },
+      {
+        "text": "What do I do? Listen with openness. Write down one insight afterward and discuss it with your sponsor or formation group.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/homily-2-aba041e5dfae.mp3",
+        "duration": 9.525
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/homily-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Priest or deacon: The homily: an explanation of the readings and the mystery being celebrated.",
+        "label": "Priest or deacon",
+        "row": 0,
+        "file": "audio/homily-4-fd97b09c545d.mp3",
+        "duration": 6.925
+      },
+      {
+        "text": "We listen: There is no prescribed congregational response at the end of the homily.",
+        "label": "We listen",
+        "row": 1,
+        "file": "audio/homily-5-8917c547672e.mp3",
+        "duration": 5.675
+      },
+      {
+        "text": "A note about this part of Mass. A brief silence can follow. Do not add a response simply because another part of Mass uses it.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/homily-6-882a384fea6d.mp3",
+        "duration": 11
+      }
+    ]
+  },
+  "gifts": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? Bread and wine are brought to the altar and prepared for the Eucharistic celebration.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/gifts-0-1d3685afe3d0.mp3",
+        "duration": 6.6
+      },
+      {
+        "text": "Why does it matter? Consider the human labor represented by these gifts. Your own work, service, struggles, and generosity can become an offering to God alongside the material gifts.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/gifts-1-dc302c034915.mp3",
+        "duration": 13.05
+      },
+      {
+        "text": "What do I do? During the preparation, quietly offer a part of your week. Connect your financial or practical support of the parish with care for people in need.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/gifts-2-021926612d03.mp3",
+        "duration": 11.125
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/gifts-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Priest: Blessing prayers over the bread and wine.",
+        "label": "Priest",
+        "row": 0,
+        "file": "audio/gifts-4-1430779eadf5.mp3",
+        "duration": 3.775
+      },
+      {
+        "text": "We may respond, when said aloud: Blessed be God for ever.",
+        "label": "We may respond · when said aloud",
+        "row": 1,
+        "file": "audio/gifts-5-b6fbc24c3eb6.mp3",
+        "duration": 4.525
+      },
+      {
+        "text": "Deacon or priest, quietly: Prayer while mixing water and wine.",
+        "label": "Deacon or priest · quietly",
+        "row": 2,
+        "file": "audio/gifts-6-f28890e927a7.mp3",
+        "duration": 4.725
+      },
+      {
+        "text": "Priest, quietly: Prayer of humility and prayer at the washing of hands.",
+        "label": "Priest · quietly",
+        "row": 3,
+        "file": "audio/gifts-7-1595f5a88598.mp3",
+        "duration": 5.1
+      },
+      {
+        "text": "A note about this part of Mass. If a song accompanies preparation, the blessing prayers are usually said quietly; there is no spoken response from the people at that point.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/gifts-8-f61e6c8575d3.mp3",
+        "duration": 12.325
+      }
+    ]
+  },
+  "sanctus": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? Within the Eucharistic Prayer, the assembly joins a song of praise.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/sanctus-0-bf518eb50f8a.mp3",
+        "duration": 5.675
+      },
+      {
+        "text": "Why does it matter? Holiness draws us toward awe, humility, and love. Worship gives us an opportunity to see beyond our own plans and recognize that life is held within God’s greater purpose.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/sanctus-1-532afdf1e6b8.mp3",
+        "duration": 13.575
+      },
+      {
+        "text": "What do I do? Join the acclamation. Let praise lead into attentive silence as the prayer continues.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/sanctus-2-260b11f995fc.mp3",
+        "duration": 7.925
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/sanctus-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Everyone, Sanctus: Holy, Holy, Holy Lord God of hosts.\nHeaven and earth are full of your glory.\nHosanna in the highest.\nBlessed is he who comes in the name of the Lord.\nHosanna in the highest.",
+        "label": "Everyone · Sanctus",
+        "row": 0,
+        "file": "audio/sanctus-4-19c36f0995e4.mp3",
+        "duration": 16.85
+      },
+      {
+        "text": "A note about this part of Mass. The same approved prayer is sung or recited. The whole acclamation includes praise of God’s holiness and the Hosanna.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/sanctus-5-2db9175f6f14.mp3",
+        "duration": 12
+      }
+    ]
+  },
+  "amen": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The Eucharistic Prayer concludes in praise, and the people give their Amen.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/amen-0-9c4f167091e7.mp3",
+        "duration": 6.075
+      },
+      {
+        "text": "Why does it matter? Amen expresses assent: we make the prayer our own. Consider the relationship between what we affirm in worship and what we choose afterward.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/amen-1-346f9eb3e61e.mp3",
+        "duration": 11.05
+      },
+      {
+        "text": "What do I do? Sing or say the Amen with the assembly. Notice that the Lord’s Prayer begins the Communion Rite that follows.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/amen-2-8e6c80d95e48.mp3",
+        "duration": 9.1
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/amen-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Priest: Through him, and with him, and in him, O God, almighty Father, in the unity of the Holy Spirit, all glory and honor is yours, for ever and ever.",
+        "label": "Priest",
+        "row": 0,
+        "file": "audio/amen-4-34f661623665.mp3",
+        "duration": 10.025
+      },
+      {
+        "text": "Everyone: Amen.",
+        "label": "Everyone",
+        "row": 1,
+        "file": "audio/amen-5-25ec4214c075.mp3",
+        "duration": 2.475
+      },
+      {
+        "text": "A note about this part of Mass. This is the Great Amen: the assembly’s assent to the entire Eucharistic Prayer. It may be sung.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/amen-6-534d368b121f.mp3",
+        "duration": 10.9
+      }
+    ]
+  },
+  "lamb": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The consecrated bread is broken, accompanied by the Lamb of God.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/lamb-0-fc170c5a2f06.mp3",
+        "duration": 5.825
+      },
+      {
+        "text": "Why does it matter? The title Lamb of God recalls Christ’s self-giving love. The broken bread invites reflection on the unity of a community nourished by the one Lord.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/lamb-1-5fa006f7fffb.mp3",
+        "duration": 12.3
+      },
+      {
+        "text": "What do I do? Join the litany and ask for mercy and peace. Observe the parish’s posture directions as you are able.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/lamb-2-144094569e75.mp3",
+        "duration": 8.8
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/lamb-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Everyone, Lamb of God: Lamb of God, you take away the sins of the world,\nhave mercy on us.\nLamb of God, you take away the sins of the world,\nhave mercy on us.\nLamb of God, you take away the sins of the world,\ngrant us peace.",
+        "label": "Everyone · Lamb of God",
+        "row": 0,
+        "file": "audio/lamb-4-5660b363b442.mp3",
+        "duration": 19.725
+      },
+      {
+        "text": "A note about this part of Mass. The invocation asking for mercy is ordinarily repeated twice; the final invocation asks for peace. The invocations may continue as needed while the bread is broken.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/lamb-5-93e9ad52a4b7.mp3",
+        "duration": 15.625958
+      }
+    ]
+  },
+  "blessing": {
+    "voice": "Emma",
+    "accent": "British English",
+    "synthetic": true,
+    "segments": [
+      {
+        "text": "What happens? The priest blesses the people before they depart.",
+        "label": "What happens?",
+        "row": -1,
+        "file": "audio/blessing-0-7c51eb9d4218.mp3",
+        "duration": 4.55
+      },
+      {
+        "text": "Why does it matter? Receive the blessing as encouragement for the life to which God calls you. Ask for the grace to carry patience, courage, and mercy into the ordinary places of your week.",
+        "label": "Why does it matter?",
+        "row": -1,
+        "file": "audio/blessing-1-1dcdf6f12c2b.mp3",
+        "duration": 12.275
+      },
+      {
+        "text": "What do I do? Receive the blessing prayerfully and make the Sign of the Cross when appropriate.",
+        "label": "What do I do?",
+        "row": -1,
+        "file": "audio/blessing-2-9fa124127675.mp3",
+        "duration": 6.15
+      },
+      {
+        "text": "Now, pray with the Church using these words.",
+        "label": "What we say",
+        "row": -1,
+        "file": "audio/blessing-3-05e29372b6c1.mp3",
+        "duration": 3.6
+      },
+      {
+        "text": "Priest: The Lord be with you.",
+        "label": "Priest",
+        "row": 0,
+        "file": "audio/blessing-4-e16c0ac88a0f.mp3",
+        "duration": 2.85
+      },
+      {
+        "text": "We respond: And with your spirit.",
+        "label": "We respond",
+        "row": 1,
+        "file": "audio/blessing-5-9c0a07403047.mp3",
+        "duration": 3.075
+      },
+      {
+        "text": "Priest: May almighty God bless you, the Father, and the Son, and the Holy Spirit.",
+        "label": "Priest",
+        "row": 2,
+        "file": "audio/blessing-6-7c9f9a625e07.mp3",
+        "duration": 5.575
+      },
+      {
+        "text": "We respond: Amen.",
+        "label": "We respond",
+        "row": 3,
+        "file": "audio/blessing-7-0aebb9338481.mp3",
+        "duration": 2.625
+      },
+      {
+        "text": "A note about this part of Mass. A solemn blessing or prayer over the people may be used instead. Listen to the instructions and respond Amen at the appropriate conclusions.",
+        "label": "Prayer notes",
+        "row": -1,
+        "file": "audio/blessing-8-c1cbcd16e811.mp3",
+        "duration": 13.15
+      }
+    ]
+  }
+}

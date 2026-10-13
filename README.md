@@ -1,3 +1,34 @@
+# Catholic learning and prayer sites
+
+One source repository builds and publishes all three React/TypeScript/Vite websites:
+
+| Site | Source | Live address |
+| --- | --- | --- |
+| Mass Adventure | `src/`, `public/` | https://ksantiagobah.github.io/mass-adventure/ |
+| At the Table | `apps/at-the-table/` | https://ksantiagobah.github.io/mass-adventure/at-the-table/ |
+| Rosary & Divine Mercy | `apps/rosary/` | https://ksantiagobah.github.io/mass-adventure/rosary/ |
+
+Each site's footer links to the other two. Rosary also includes the companion sites in its desktop sidebar. Existing `/at-the-table/` and `/rosary-web/` addresses forward to these canonical locations, preserving query strings and prayer screen hashes. Their old repositories retain history and only publish compatibility redirects; edit this repository for future site work.
+
+## Build and check all sites
+
+```sh
+npm ci
+npm ci --prefix apps/at-the-table
+npm ci --prefix apps/rosary
+npm run check:sites
+npm run build:sites
+python3 -m http.server 5190 --directory site-dist
+```
+
+Open http://localhost:5190/ for Mass Adventure, `/at-the-table/` for the adult site, and `/rosary/` for prayer. The build writes all three static applications into `site-dist`. One GitHub Actions workflow checks and publishes that directory. Each app keeps its SDK-compatible dependency lock and independent Vite configuration.
+
+`node scripts/verify-suite.mjs` checks the combined production preview in Chrome and WebKit. It verifies reciprocal links and both prayer views at phone, tablet, and desktop sizes, including short windows: video, text, large beads, and audio fit together without overlap. Narration scrolls within the reader rather than moving the page. `TEST_URL` selects another combined build address.
+
+The native Expo application remains separate. Web prayer preferences continue using namespaced localStorage on the same origin, so old bookmarks retain their browser-local saved sessions after forwarding. The sites have no shared account or backend.
+
+---
+
 # Mass Adventure
 
 [Live app](https://ksantiagoBAH.github.io/mass-adventure/) · [GitHub repository](https://github.com/ksantiagoBAH/mass-adventure)

@@ -1,0 +1,43 @@
+{
+  "name": "ocia-companion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5174",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4174",
+    "test": "node scripts/verify.mjs",
+    "lint": "eslint src vite.config.ts",
+    "typecheck": "tsc --noEmit",
+    "test:language": "node scripts/verify-language.mjs",
+    "test:reading": "node scripts/verify-reading.mjs",
+    "test:audio": "node scripts/verify-audio.mjs",
+    "generate:narration": "node scripts/generate-narration.mjs",
+    "test:theme": "node scripts/verify-theme.mjs",
+    "test:references": "node scripts/verify-references.mjs",
+    "generate:share-card": "node scripts/generate-share-card.mjs",
+    "generate:icons": "node scripts/generate-icons.mjs",
+    "test:polish": "node scripts/verify-polish.mjs",
+    "test:tagalog": "node scripts/verify-tagalog.mjs",
+    "test:ux": "node scripts/verify-ux.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@eslint/js": "^10.0.1",
+    "@fontsource-variable/nunito": "^5.3.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0",
+    "playwright": "^1.56.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.71.1",
+    "vite": "^7.1.9"
+  }
+}

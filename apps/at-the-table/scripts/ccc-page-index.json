@@ -1,0 +1,206 @@
+{
+  "checked": "2026-10-09",
+  "source": "Paragraph numbers extracted from the live Vatican pages; no prayer or Catechism text is copied.",
+  "pages": [
+    {
+      "url": "https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_3/iv_the_liturgical_celebration_of_the_eucharist.html",
+      "paragraphs": [
+        1345,
+        1346,
+        1347,
+        1348,
+        1349,
+        1350,
+        1351,
+        1352,
+        1353,
+        1354,
+        1355
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_3/v_the_sacramental_sacrifice_thanksgiving_memorial_presence.html",
+      "paragraphs": [
+        1356,
+        1357,
+        1358,
+        1359,
+        1360,
+        1361,
+        1362,
+        1363,
+        1364,
+        1365,
+        1366,
+        1367,
+        1368,
+        1369,
+        1370,
+        1371,
+        1372,
+        1373,
+        1374,
+        1375,
+        1376,
+        1377,
+        1378,
+        1379,
+        1380,
+        1381
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_3/vi_the_paschal_banquet.html",
+      "paragraphs": [
+        1382,
+        1383,
+        1384,
+        1385,
+        1386,
+        1387,
+        1388,
+        1389,
+        1390,
+        1391,
+        1392,
+        1393,
+        1394,
+        1395,
+        1396,
+        1397,
+        1398,
+        1399,
+        1400,
+        1401
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/content/catechism/en/part_three/section_two/chapter_one/article_2/iii_the_christian_name.html",
+      "paragraphs": [
+        2156,
+        2157,
+        2158,
+        2159
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_two/article_4/iv_interior_penance.html",
+      "paragraphs": [
+        1430,
+        1431,
+        1432,
+        1433
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/content/catechism/en/part_four/section_one/chapter_one/article_3/v_prayer_of_praise.html",
+      "paragraphs": [
+        2639,
+        2640,
+        2641,
+        2642,
+        2643
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/content/catechism/en/part_two/section_one/chapter_two/article_1/ii_how_is_the_liturgy_celebrated.html",
+      "paragraphs": [
+        1145,
+        1146,
+        1147,
+        1148,
+        1149,
+        1150,
+        1151,
+        1152,
+        1153,
+        1154,
+        1155,
+        1156,
+        1157,
+        1158,
+        1159,
+        1160,
+        1161,
+        1162
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/content/catechism/en/part_one/section_two.index.html",
+      "paragraphs": [
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/content/catechism/en/part_four/section_two.index.html",
+      "paragraphs": [
+        2759,
+        2760
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_two/article_4/paragraph_2_jesus_died_crucified.html",
+      "paragraphs": [
+        595,
+        596,
+        597,
+        598,
+        599,
+        600,
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        612,
+        613,
+        614,
+        615,
+        616,
+        617,
+        618,
+        619,
+        620,
+        621,
+        622,
+        623
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/content/catechism/en/part_four/section_one/chapter_one/article_3/i_blessing_and_adoration.html",
+      "paragraphs": [
+        2626,
+        2627,
+        2628
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_3/ii_what_is_this_sacrament_called.html",
+      "paragraphs": [
+        1328,
+        1329,
+        1330,
+        1331,
+        1332
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-name: Deploy Mass Adventure to GitHub Pages
+name: Deploy Catholic sites to GitHub Pages
 
 on:
   push:
@@ -26,15 +26,17 @@ jobs:
           node-version: '22'
           cache: npm
       - name: Install dependencies
-        run: npm ci
-      - name: Build and type-check
-        run: npm run build
+        run: npm ci && npm ci --prefix apps/at-the-table && npm ci --prefix apps/rosary
+      - name: Lint, type-check, and verify sites
+        run: npm run check:sites
+      - name: Build all three sites
+        run: npm run build:sites
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload static site
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         with:
-          path: dist
+          path: site-dist
 
   deploy:
     environment:
