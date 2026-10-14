@@ -188,3 +188,5 @@ body.themed-app[data-reading-theme="light"] .reference-prayers>details[open]>sum
 .stained-glass .glass-symbol{stroke:#20292d;fill:none}
 [data-reading-theme="dark"] .lesson-vignette.stained-glass{filter:drop-shadow(0 0 12px #64b8d52b) drop-shadow(0 5px 6px #00000040)}
 [data-reading-theme="dark"] .stained-glass .glass-stone{fill:#8f8879;stroke:#5c574d}
+
+.mass-map .resume-card{width:100%;margin:0 0 28px}

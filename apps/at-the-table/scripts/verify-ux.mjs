@@ -24,6 +24,7 @@ try{
  await page.getByRole('button',{name:'Next lesson',exact:false}).click();assert.equal(new URL(page.url()).hash,'#mass/collect');
  await page.goBack();assert.equal(await page.locator('h1').innerText(),'Gloria');await page.goForward();assert.equal(await page.locator('h1').innerText(),'Collect: the opening prayer');
  await page.getByRole('button',{name:'Home',exact:true}).click();
+ assert.equal(await page.locator('.resume-card').count(),0);await page.getByRole('button',{name:'Mass map',exact:true}).click();
  assert((await page.locator('.resume-card h2').innerText()).includes('Collect'));
  await page.locator('.resume-card .primary').click();assert.equal(new URL(page.url()).hash,'#mass/collect');
  await page.getByRole('button',{name:'Increase reading text size',exact:true}).click();
