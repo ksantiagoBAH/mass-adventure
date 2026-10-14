@@ -21,7 +21,8 @@
     "test:polish": "node scripts/verify-polish.mjs",
     "test:tagalog": "node scripts/verify-tagalog.mjs",
     "test:ux": "node scripts/verify-ux.mjs",
-    "test:bible": "node scripts/verify-bible.mjs"
+    "test:bible": "node scripts/verify-bible.mjs",
+    "test:prayer": "node scripts/verify-prayer.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",

@@ -9,7 +9,7 @@ const base=process.env.TEST_URL||'http://127.0.0.1:5174';
 try {
  await mkdir('screenshots',{recursive:true});await page.goto(base+'/#home');
  await page.getByLabel('Language / Idioma').selectOption('tl');
- assert.equal(await page.locator('html').getAttribute('lang'),'tl');assert.match(await page.locator('h1').innerText(),/Lumago sa pananampalataya/);
+ assert.equal(await page.locator('html').getAttribute('lang'),'tl');assert.match(await page.locator('h1').innerText(),/Isang lugar para matuto/);
  for (const theme of ['light','dark']) {
   if(theme==='dark')await page.locator('.global-theme-toggle').click();
   for(const width of [320,375,768,1280]) {

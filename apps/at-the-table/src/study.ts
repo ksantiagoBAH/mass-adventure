@@ -5,14 +5,14 @@ import {polishSpoken} from './polishSpoken';
 import {tagalogSpoken} from './tagalogSpoken';
 import {prayerScript} from './reading';
 import type {Locale} from './Language';
-export type Page='lessons'|'bible'|'home'|'map'|'mass'|'journey'|'resources'|'visit'|'prayers';
+export type Page='prayer'|'lessons'|'bible'|'home'|'map'|'mass'|'journey'|'resources'|'visit'|'prayers';
 export type Route={page:Page;unitIndex:number;lessonIndex:number;quiz:boolean};
 export function readRoute(hash=location.hash):Route {
  const [page,id]=hash.slice(1).split('/');
  const base:Route={page:'home',unitIndex:0,lessonIndex:0,quiz:false};
  if(page==='mass'&&id){for(const [ui,unit] of units.entries()){const li=unit.lessons.findIndex(l=>l.id===id);if(li>=0)return {...base,page:'mass',unitIndex:ui,lessonIndex:li};}return {...base,page:'map'};}
  if(page==='check'){const ui=units.findIndex(u=>u.id===id);return ui>=0?{...base,page:'mass',unitIndex:ui,lessonIndex:units[ui].lessons.length-1,quiz:true}:{...base,page:'map'};}
- return ['home','lessons','bible','map','mass','journey','resources','visit','prayers'].includes(page)?{...base,page:page as Page}:base;
+ return ['home','prayer','lessons','bible','map','mass','journey','resources','visit','prayers'].includes(page)?{...base,page:page as Page}:base;
 }
 export function wordsFor(locale:Locale,id:string){return prayerScript(({en:spoken,es:spanishSpoken,pl:polishSpoken,tl:tagalogSpoken})[locale][id]);}
 const aliases:Record<string,string>={

@@ -1,6 +1,6 @@
 # At the Table: An OCIA Companion
 
-An adult OCIA learning hub with separate pages for the Catholic Mass, the Books of the Bible, and the OCIA journey. It shares this repository and deployment with Mass Adventure and Rosary.
+An adult OCIA companion with separate Learn and Pray areas. Learn contains the Catholic Mass, the Books of the Bible, and the OCIA journey; Pray contains the integrated Rosary, Divine Mercy Chaplet, mysteries, and prayer library. It shares this repository and deployment with Mass Adventure and Rosary.
 
 ## Run
 
@@ -131,3 +131,9 @@ Explored cards and four activity badges are stored locally under `ocia-bible-dis
 The user’s photographed book lists and summary handouts inspired the shelf structure and summary themes. Summaries are original adaptations, with Catholic additions and corrections rather than literal transcriptions. The handouts list 39 Old Testament books; this lesson includes the seven additional books in the Catholic canon and notes the fuller Esther and Daniel texts. Sources: [Catechism §§120–130](https://www.vatican.va/content/catechism/en/part_one/section_one/chapter_two/article_3/iv_the_canon_of_scripture.html) and [USCCB book introductions](https://www.usccb.org/offices/new-american-bible/books-bible). Book-family labels are teaching aids, not a chronological ordering or a judgment of importance.
 
 Run `npm run test:bible` against the combined preview (`TEST_URL` may override the default port 5190). It covers all 73 summaries, the canon, navigation, deep links, four games, saved progress, storage failures, phone/tablet/desktop layouts, light/dark themes, Chromium/WebKit, and automated WCAG checks.
+
+## Unified Learn and Pray landing page
+
+The homepage separates learning paths from prayer devotions. `#prayer/rosary`, `#prayer/chaplet`, `#prayer/mysteries`, and `#prayer/prayers` open the prayer experience within At the Table. The shared navigation remains available; a full-screen link optionally opens the standalone prayer app. The existing Rosary app is embedded from the same origin with `?embedded=1`, hiding its duplicate sidebar/footer while preserving its videos, text, beads, male/female narration, speed controls, and saved position. Changing devotion or leaving the prayer section removes the old frame and its media. Prayer progress uses the same existing `rosary-web:*` storage as the standalone app. There is no copied prayer content or additional backend.
+
+The shared header’s measured height determines the prayer frame’s available viewport space. On short phones, prayer text can scroll inside its reading panel while the meditation video and beads remain visible. Prayer material is currently English; the surrounding landing and navigation are available in the existing four languages. Run `npm run test:prayer` for integration tests in Chromium and WebKit, both themes, and four viewport sizes.

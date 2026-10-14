@@ -16,6 +16,7 @@ import { Player } from './Player';
 import { Media } from './Media';
 import { readSaved, save } from './storage';
 
+const embedded = new URLSearchParams(location.search).get('embedded') === '1';
 type Page = 'today' | 'rosary' | 'chaplet' | 'mysteries' | 'prayers';
 const pages: { id: Page; label: string; icon: string }[] = [{ id: 'today', label: 'Today', icon: '☀' }, { id: 'rosary', label: 'The Rosary', icon: '◎' }, { id: 'chaplet', label: 'Divine Mercy', icon: '✧' }, { id: 'mysteries', label: 'Mysteries', icon: '▧' }, { id: 'prayers', label: 'Prayers', icon: '✝' }];
 const pageFromHash = (): Page => pages.find(p => p.id === location.hash.slice(1).split('/')[0])?.id ?? 'today';
@@ -76,7 +77,7 @@ export default function App() {
     const recording = recordingForVoice(id, voice);
     return <div className="reading-panel">{settings}<Player key={`${id}:${voice}`} activeKey={`${id}:${voice}`} recording={recording} timing={timingForNarration(id, recording?.transcript, voice)} title={title} text={text} auto={false} playing={playing} setPlaying={setPlaying} fontSize={fontSize}/></div>;
   }
-  return <div className={`app-shell ${(inSession && (page === 'rosary' || page === 'chaplet')) ? 'meditating' : ''}`}>
+  return <div className={`app-shell ${embedded ? 'embedded' : ''} ${(inSession && (page === 'rosary' || page === 'chaplet')) ? 'meditating' : ''}`}>
     <a href="#main" className="skip-link">Skip to content</a>
     <aside className="sidebar"><a className="brand" href="#today" onClick={e => { e.preventDefault(); navigate('today'); }}><span className="brand-mark">✝</span><span>Rosary<small>A quiet space for prayer</small></span></a>
       <nav aria-label="Main navigation">{pages.map(p => <a key={p.id} href={`#${p.id}`} aria-current={page === p.id ? 'page' : undefined} onClick={e => { e.preventDefault(); navigate(p.id); }}><span aria-hidden="true">{p.icon}</span>{p.label}</a>)}</nav>
