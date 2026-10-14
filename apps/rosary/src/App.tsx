@@ -42,7 +42,7 @@ export default function App() {
   const [query, setQuery] = useState('');
   const [storageError, setStorageError] = useState(false);
   useEffect(() => {
-    const changed = () => { if (location.hash === '#main') return; setPage(pageFromHash()); setInSession(false); setPlaying(false); setPrayer(null); setReflection(null); };
+    const changed = () => { if (location.hash === '#main') return; setPage(pageFromHash()); setInSession(false); setPlaying(false); setPrayer(null); setReflection(null); window.scrollTo(0, 0); };
     const tick = () => setDate(new Date());
     window.addEventListener('hashchange', changed); const timer = setInterval(tick, 60000);
     return () => { window.removeEventListener('hashchange', changed); clearInterval(timer); };

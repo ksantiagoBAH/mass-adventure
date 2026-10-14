@@ -18,7 +18,7 @@ for(const engine of [chromium,webkit]){
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   const axe=await new AxeBuilder({page}).include('.rosary-footer').withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();assert.deepEqual(axe.violations.map(v=>v.id),[]);
   await footer.screenshot({path:`output/footer-${engine.name()}-${width}.png`});
-  await footer.getByRole('link',{name:'Divine Mercy Chaplet'}).click();await page.getByRole('button',{name:'Start Chaplet'}).click();
+  await footer.getByRole('link',{name:'Divine Mercy Chaplet'}).click();await page.getByRole('heading',{name:'The Divine Mercy Chaplet.'}).waitFor();assert.equal(await page.evaluate(()=>scrollY),0,'Footer links open the screen at the top');await page.getByRole('button',{name:'Start Chaplet'}).click();
   assert.equal(await footer.isVisible(),false,'Footer stays hidden during meditation');
   const controls=await page.locator('.audio-controls').boundingBox();assert.ok(controls.y+controls.height<=900);
   console.log(`${engine.name()} ${width}: footer links, credit, accessibility, and meditation viewport passed`);await context.close();
