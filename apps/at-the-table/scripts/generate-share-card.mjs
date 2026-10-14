@@ -21,7 +21,7 @@ try{
  .content{display:grid;grid-template-columns:590px 420px;gap:46px;align-items:center;margin-top:42px}
  h1{font:normal 82px/1.08 Georgia,serif;letter-spacing:-3px;margin:0 0 28px}.tagline{font-size:40px;line-height:1.3;font-weight:500;letter-spacing:-1px;margin:0}.tagline span{color:#76541a}
  .meta{font-size:18px;color:#606573;margin:31px 0 0}.illustration{display:block;width:420px;height:330px}.caption{text-align:center;font-size:17px;color:#606573;margin-top:22px}
- </style></head><body><div class="label"><span class="cross">✦</span> An OCIA companion</div><div class="content"><div><h1>At the Table</h1><p class="tagline">Understand the Mass.<br/><span>One step at a time.</span></p><p class="meta">28 guided lessons · Scripture &amp; tradition</p></div><div>${art}<div class="caption">Word · Sacrament · Community</div></div></div></body></html>`);
+ </style></head><body><div class="label"><span class="cross">✦</span> An OCIA companion</div><div class="content"><div><h1>At the Table</h1><p class="tagline">Grow in faith.<br/><span>One step at a time.</span></p><p class="meta">Mass · Bible · Your OCIA journey</p></div><div>${art}<div class="caption">Word · Sacrament · Community</div></div></div></body></html>`);
  await page.evaluate(()=>document.fonts.ready);
  await page.screenshot({path:fileURLToPath(new URL('public/share-card.png',root))});
  console.log('Created public/share-card.png (1200 × 630)');

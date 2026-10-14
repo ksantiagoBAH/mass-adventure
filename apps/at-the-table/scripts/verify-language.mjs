@@ -9,7 +9,7 @@ const base=process.env.TEST_URL||'http://127.0.0.1:5174';
 try {
  await mkdir('screenshots',{recursive:true});await page.goto(base+'/#home');
  await page.getByLabel('Language / Idioma').selectOption('es');
- assert.equal(await page.locator('html').getAttribute('lang'),'es');assert.match(await page.locator('h1').innerText(),/Comprende la Misa/);
+ assert.equal(await page.locator('html').getAttribute('lang'),'es');assert.match(await page.locator('h1').innerText(),/Crece en la fe/);
  for (const theme of ['light','dark']) {
   if(theme==='dark')await page.locator('.global-theme-toggle').click();
   for(const width of [320,375,768,1280]) {
@@ -42,7 +42,7 @@ try {
   await page.getByRole('button',{name:'Volver a la lección',exact:true}).click();await page.locator('.back-map').click();
  }
  assert.equal(total,28);
- await page.locator('.map-card').first().click();await page.locator('.completion-button').click();
+ await page.locator('.map-card').first().click();if(await page.locator('.completion-button').getAttribute('aria-pressed')==='false')await page.locator('.completion-button').click();
  await page.getByLabel('Language / Idioma').selectOption('en');
  assert.equal(await page.locator('h1').innerText(),'Entrance & gathering');assert.equal(await page.locator('.completion-button').getAttribute('aria-pressed'),'true');assert.equal(await page.locator('.audio-player').count(),1);
  await page.reload();assert.equal(await page.getByLabel('Language / Idioma').inputValue(),'en');

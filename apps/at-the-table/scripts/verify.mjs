@@ -17,7 +17,7 @@ try{
  for(const width of [320,390,768,1440]){await page.setViewportSize({width,height:1000});await check(`welcome ${width}px`)}
  await page.locator('h1').focus();
  await page.screenshot({path:'screenshots/welcome-desktop.png',fullPage:true});
- await page.locator('.hero .primary').click();
+ await page.locator('.hero .primary').click();await page.locator('.lesson-hub-card').filter({hasText:'The Catholic Mass'}).click();
  await check('Mass map desktop');
  await page.getByRole('button',{name:/1.*We gather.*Introductory Rites/}).click();
  await check('lesson desktop');

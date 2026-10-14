@@ -1,0 +1,38 @@
+export type ShelfId = 'law'|'history'|'wisdom'|'major'|'minor'|'gospels'|'acts'|'letters'|'revelation';
+export type BibleBook = {id:string;name:string;shelf:ShelfId;testament:'old'|'new';aliases:string;number:number};
+export const shelves: {id:ShelfId;title:string;short:string;testament:'old'|'new';symbol:string;description:string;notice:string;prompt:string}[] = [
+ {id:'law',title:'Law · The Pentateuch',short:'Law',testament:'old',symbol:'tablets',description:'The five opening books introduce creation, covenant, the Exodus, and the formation of Israel as a people called to live with God.',notice:'Follow the relationship between God and his people. Law belongs within the story of that covenant.',prompt:'Where do you notice a fresh beginning or an invitation to trust?'},
+ {id:'history',title:'Historical books',short:'History',testament:'old',symbol:'scroll',description:'Stories of Israel’s life in the land, leaders, exile, return, and faithful people. These books invite theological reflection on a people’s story.',notice:'Notice choices, consequences, courage, and God’s faithfulness. “Historical” is a shelf label, not a claim that every passage uses the same literary form.',prompt:'What does this story reveal about faithfulness in ordinary life?'},
+ {id:'wisdom',title:'Poetry & Wisdom',short:'Wisdom',testament:'old',symbol:'harp',description:'Prayer, poetry, questions about suffering, and wisdom for living well. This shelf gives language to praise, grief, love, and the search for meaning.',notice:'Poetry often uses images and parallel lines. Read slowly rather than treating every image as a literal description.',prompt:'Which image or question would you carry into prayer?'},
+ {id:'major',title:'Major Prophets',short:'Major Prophets',testament:'old',symbol:'scroll',description:'A learning shelf for Isaiah, Jeremiah, Lamentations, Baruch, Ezekiel, and Daniel. These writings speak of judgment, hope, exile, renewal, and fidelity.',notice:'“Major” describes the traditional grouping and the length of the larger prophetic writings, not the importance of their message. Lamentations includes poetry; Daniel also includes apocalyptic visions.',prompt:'Where do you hear a call to conversion or a promise of hope?'},
+ {id:'minor',title:'The Twelve · Minor Prophets',short:'Minor Prophets',testament:'old',symbol:'scroll',description:'Twelve shorter prophetic books, from Hosea to Malachi. Their voices challenge injustice and unfaithfulness while calling people back to God.',notice:'“Minor” means shorter, not less important. These voices belong within the history and circumstances of Israel.',prompt:'What might faithfulness and justice look like in your community?'},
+ {id:'gospels',title:'The four Gospels',short:'Gospels',testament:'new',symbol:'book',description:'Matthew, Mark, Luke, and John proclaim the life, teaching, death, and Resurrection of Jesus Christ. Each has its own way of telling the good news.',notice:'Read a passage within the whole Gospel. Four accounts give complementary witnesses rather than four identical retellings.',prompt:'What do you learn about Jesus, and how might you respond?'},
+ {id:'acts',title:'Acts · The Church begins',short:'Acts',testament:'new',symbol:'globe',description:'Acts of the Apostles follows the early Church’s witness and mission through the work of the Holy Spirit.',notice:'Notice how prayer, community, and mission belong together.',prompt:'What helps this community share its faith?'},
+ {id:'letters',title:'Letters · The Epistles',short:'Letters',testament:'new',symbol:'quill',description:'Twenty-one writings traditionally grouped as letters offer teaching, encouragement, and guidance for Christian communities and believers.',notice:'Ask who is being addressed and what concern is being answered. Not every writing on this shelf has the same letter form.',prompt:'What encouragement or practical challenge speaks to you?'},
+ {id:'revelation',title:'Revelation · Hope in Christ',short:'Revelation',testament:'new',symbol:'lamp',description:'Revelation uses apocalyptic visions and symbols to proclaim hope and God’s victory, calling believers to faithful witness.',notice:'Read its symbols in context. This learning shelf is not a timetable for predicting dates.',prompt:'Which image helps you reflect on hope and faithfulness?'},
+];
+const lists: Record<ShelfId,string[]> = {
+ law:['Genesis','Exodus','Leviticus','Numbers','Deuteronomy'],
+ history:['Joshua','Judges','Ruth','1 Samuel','2 Samuel','1 Kings','2 Kings','1 Chronicles','2 Chronicles','Ezra','Nehemiah','Tobit','Judith','Esther','1 Maccabees','2 Maccabees'],
+ wisdom:['Job','Psalms','Proverbs','Ecclesiastes','Song of Songs','Wisdom','Sirach'],
+ major:['Isaiah','Jeremiah','Lamentations','Baruch','Ezekiel','Daniel'],
+ minor:['Hosea','Joel','Amos','Obadiah','Jonah','Micah','Nahum','Habakkuk','Zephaniah','Haggai','Zechariah','Malachi'],
+ gospels:['Matthew','Mark','Luke','John'],acts:['Acts'],
+ letters:['Romans','1 Corinthians','2 Corinthians','Galatians','Ephesians','Philippians','Colossians','1 Thessalonians','2 Thessalonians','1 Timothy','2 Timothy','Titus','Philemon','Hebrews','James','1 Peter','2 Peter','1 John','2 John','3 John','Jude'],
+ revelation:['Revelation'],
+};
+export const books: BibleBook[] = shelves.flatMap(s=>lists[s.id].map((name,index)=>({id:name.toLowerCase().replaceAll(' ','-'),name,shelf:s.id,testament:s.testament,number:index+1,aliases:name==='Song of Songs'?'Song of Solomon':name==='Sirach'?'Ecclesiasticus':name==='Wisdom'?'Wisdom of Solomon':name==='Acts'?'Acts of the Apostles':name==='Revelation'?'Apocalypse':name==='Psalms'?'Psalm':''})));
+export const canonSource='https://www.vatican.va/content/catechism/en/part_one/section_one/chapter_two/article_3/iv_the_canon_of_scripture.html';
+export const bibleSource='https://www.usccb.org/offices/new-american-bible/books-bible';
+export const categorySources: Record<ShelfId,string> = {
+ law:'https://bible.usccb.org/bible/thepentateuch/0',history:'https://bible.usccb.org/bible/historicalintroduction/0',wisdom:'https://bible.usccb.org/bible/wisdombooks/0',major:'https://bible.usccb.org/bible/propheticbooks/0',minor:'https://bible.usccb.org/bible/propheticbooks/0',gospels:'https://bible.usccb.org/bible/gospelsintroduction/0',acts:'https://bible.usccb.org/bible/acts/0',letters:'https://bible.usccb.org/bible/newtestamentletters/0',revelation:'https://bible.usccb.org/bible/revelation/0',
+};
+export const sortDeck=['Genesis','Psalms','Matthew','Romans','Tobit','Jonah','Acts','Baruch','Revelation','Sirach'].map(name=>books.find(b=>b.name===name)!);
+export const openingOrder=lists.law;
+export const referenceMissions=[
+ {reference:'John 3:16',book:'John',chapter:3,verse:16,choices:['John','1 John','Jonah'],tip:'John is a Gospel. 1 John is a different book on the Letters shelf.'},
+ {reference:'Psalm 23:1',book:'Psalms',chapter:23,verse:1,choices:['Proverbs','Psalms','Romans'],tip:'An individual psalm is written “Psalm”; the collection is the Book of Psalms.'},
+ {reference:'1 Corinthians 13:4',book:'1 Corinthians',chapter:13,verse:4,choices:['Corinthians','1 Corinthians','2 Corinthians'],tip:'The leading 1 is part of the book’s name. It is not the chapter number.'},
+];
+export function parseDiscoveries(raw:unknown):string[]{return Array.isArray(raw)?[...new Set(raw.filter((id):id is string=>typeof id==='string'&&books.some(b=>b.id===id)))]:[]}
+export function parseBadges(raw:unknown):string[]{return Array.isArray(raw)?[...new Set(raw.filter((id):id is string=>typeof id==='string'&&['shelf-sort','book-order','reference-reader','book-detective'].includes(id)))]:[]}

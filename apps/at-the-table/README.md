@@ -1,6 +1,6 @@
 # At the Table: An OCIA Companion
 
-A separate adult version of Mass Adventure with a calm editorial lesson experience for understanding and participating in the Catholic Mass. The original children's application is unchanged.
+An adult OCIA learning hub with separate pages for the Catholic Mass, the Books of the Bible, and the OCIA journey. It shares this repository and deployment with Mass Adventure and Rosary.
 
 ## Run
 
@@ -18,7 +18,7 @@ npm run build
 npm run preview
 ```
 
-Production files are generated in this folder's `dist/`. The relative Vite base supports static hosting in a subdirectory. No deployment or changes to the children's GitHub Pages workflow have been made.
+Production files are generated in this folder's `dist/`. The relative Vite base supports static hosting in a subdirectory. The root `npm run build:sites` command builds all three apps for the shared GitHub Pages deployment.
 
 ## Adult experience
 
@@ -31,7 +31,7 @@ Production files are generated in this folder's `dist/`. The relative Vite base 
 - Lesson progress saved on this browser. Blocked browser storage leaves the app usable and displays a warning.
 - Responsive layouts, keyboard controls, focus indicators, reduced-motion support, and original Mass Adventure SVG illustrations on the map. Lessons use Georgia and system sans serif fonts without additional font downloads.
 
-This is a Mass study companion, not a complete parish OCIA curriculum. Study progress does not establish readiness for the sacraments. A priest or catechist should review the adult content before parish use, particularly sacramental preparation, local posture, Communion guidance, and the handling of baptized candidates.
+This is a growing OCIA study companion, not a complete parish OCIA curriculum. Study progress does not establish readiness for the sacraments. A priest or catechist should review the adult content before parish use, particularly sacramental preparation, local posture, Communion guidance, and the handling of baptized candidates.
 
 ## Content and sources
 
@@ -114,3 +114,20 @@ Reading text size applies to lesson explanations and prayers and is remembered b
 Run `npm run test:ux` against the local server (or set `TEST_URL`). It covers lesson URLs, history, skip-link focus, resume, text-size persistence, quoted guidance, progress, prayer search, all four languages, quick guides, narrow-screen layouts, WCAG checks, and unavailable browser storage. Existing build, lint, lesson, reading, and audio checks remain available.
 
 The homepage introduces the app as a simple guide to the Catholic Mass, with separate entry points for exploring lessons and attending a first Mass. Original SVG branding uses a cross and shared table; the footer repeats that motif with learning links and creator credits. The lesson audio player uses a neutral label without displaying the narrator’s name or accent.
+
+## Books of the Bible lesson
+
+Open `#lessons` for the subject hub or `#bible/library` for the Catholic Bible library. The library includes all 73 books (46 Old Testament, 27 New Testament), searchable book names, alternate names, and summary themes, Testament/family filters, and a discovery dialog for every book. Each card includes an original concise book summary, literary-family context, a reading prompt, and a USCCB source link.
+
+Four untimed activities offer gentle retry feedback:
+
+- Find the shelf: match ten books to literary families.
+- Put books in order: arrange the five books of the Pentateuch with keyboard-accessible arrow controls.
+- Scripture treasure hunt: assemble book/chapter/verse tiles for three references and discover each passage’s theme.
+- Follow the clues: identify eight books from their story summaries.
+
+Explored cards and four activity badges are stored locally under `ocia-bible-discoveries-v1` and `ocia-bible-badges-v1`. Storage failures leave the activities usable. Book dialogs have deep links such as `#bible/book/tobit`. Existing Mass progress and narration remain independent. The lesson hub is localized; the new Bible lesson is currently English and explicitly says so when another language is selected.
+
+The user’s photographed book lists and summary handouts inspired the shelf structure and summary themes. Summaries are original adaptations, with Catholic additions and corrections rather than literal transcriptions. The handouts list 39 Old Testament books; this lesson includes the seven additional books in the Catholic canon and notes the fuller Esther and Daniel texts. Sources: [Catechism §§120–130](https://www.vatican.va/content/catechism/en/part_one/section_one/chapter_two/article_3/iv_the_canon_of_scripture.html) and [USCCB book introductions](https://www.usccb.org/offices/new-american-bible/books-bible). Book-family labels are teaching aids, not a chronological ordering or a judgment of importance.
+
+Run `npm run test:bible` against the combined preview (`TEST_URL` may override the default port 5190). It covers all 73 summaries, the canon, navigation, deep links, four games, saved progress, storage failures, phone/tablet/desktop layouts, light/dark themes, Chromium/WebKit, and automated WCAG checks.
