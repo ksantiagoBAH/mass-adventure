@@ -42,7 +42,7 @@ for (const engine of ['chromium','webkit']) {
   await page.getByRole('heading',{name:'Our Father',exact:true}).waitFor();
   assert.equal(await page.getByLabel(/^Speed/).inputValue(),'2');
   await page.getByRole('button',{name:'Save & exit'}).click();
-  await page.getByRole('link',{name:'Divine Mercy',exact:false}).click();
+  await page.getByRole('navigation',{name:'Main navigation'}).getByRole('link',{name:'Divine Mercy',exact:false}).click();
   if(width>600){ const video=await page.locator('.chaplet-setup video').boundingBox(); const options=await page.locator('.chaplet-setup .setup-panel').boundingBox(); assert.ok(options.y>=video.y+video.height, 'Chaplet setup text under video'); }
   await page.getByRole('button',{name:'Start Chaplet'}).click();
   const video=await page.locator('.visual-panel video').boundingBox(); const text=await page.locator('.reader').boundingBox(); const controls=await page.locator('.audio-controls').boundingBox(); assert.ok(video.y>=0 && video.y+video.height<=960, 'Chaplet video in viewport'); assert.ok(text.y>=0 && text.y+text.height<=960, 'Chaplet prayer in viewport'); assert.ok(controls.y+controls.height<=960, 'Chaplet controls in viewport');

@@ -156,3 +156,28 @@
 .meditating .bead-panel{flex:0 0 auto}
 .meditating .related-sites{display:none}
 @media(max-height:800px) and (min-width:851px){.meditating .sidebar-bottom{display:none}}
+/* A shared family of sites, expressed in Rosary's candlelight palette. */
+.rosary-footer{position:relative;max-width:1368px;margin:34px 36px 24px;padding:50px 32px 0;border:1px solid #5d4a30;border-radius:14px;background:radial-gradient(ellipse at 15% 0%,#47341d44,transparent 60%),linear-gradient(135deg,#261e16,#1b1611);overflow:hidden;color:var(--muted);font-size:12px}
+.rosary-footer-flourish{position:absolute;top:0;left:0;width:100%;height:52px;color:#a18450;opacity:.75;pointer-events:none}
+.rosary-footer-body{display:grid;grid-template-columns:1.2fr .9fr 1.1fr;gap:32px;padding:18px 0 32px}
+.rosary-footer-brand{display:flex;align-items:center;gap:12px;color:#f6eddd}
+.rosary-footer-brand>span{font:36px Georgia,serif;color:var(--gold)}
+.rosary-footer-brand strong{font:34px Georgia,serif;letter-spacing:-.5px}
+.rosary-footer-identity p{color:#e7d4b6;font:20px/1.4 Georgia,serif;margin:15px 0 10px}
+.rosary-footer-identity>span{display:block;line-height:1.9;font-size:12px}
+.rosary-footer h2{font:11px/1.6 Arial,sans-serif;text-transform:uppercase;letter-spacing:1.4px;color:var(--gold);margin:3px 0 14px}
+.rosary-footer nav a{color:#e9dfcf;text-decoration:none;min-height:44px}
+.rosary-footer-prayers{display:flex;flex-direction:column}
+.rosary-footer-prayers a{padding:10px 0;line-height:1.7;font-size:12px}
+.rosary-footer nav a:hover{color:#ffdda0}
+.rosary-footer-companions{display:flex;flex-direction:column;gap:12px}
+.rosary-footer-companions h2{margin-bottom:2px}
+.rosary-footer-companions a{display:block;padding:14px 16px;border:1px solid #645037;border-radius:8px;background:#1c171280}
+.rosary-footer-companions a>span{display:flex;justify-content:space-between;gap:12px;font:18px/1.4 Georgia,serif}
+.rosary-footer-companions small{display:block;margin-top:6px;color:var(--muted);font-size:11px;line-height:1.7}
+.rosary-footer-bottom{display:flex;justify-content:space-between;gap:20px;align-items:center;border-top:1px solid #4a3c2b;padding:19px 0;font-size:10px;line-height:1.8}
+.rosary-footer-bottom>span{color:#d6bb8d}
+@media(min-width:1700px){.rosary-footer{margin-left:auto;margin-right:auto}}
+@media(max-width:1100px){.rosary-footer-body{grid-template-columns:1fr 1fr}.rosary-footer-identity{grid-column:1/-1}.rosary-footer-identity>span br{display:none}}
+@media(max-width:850px){.rosary-footer{margin:28px 24px 20px;padding:45px 24px 0}.rosary-footer-body{gap:24px}}
+@media(max-width:600px){.rosary-footer{margin:25px 18px 18px;padding:42px 22px 0}.rosary-footer-body{grid-template-columns:1fr;gap:26px;padding-bottom:26px}.rosary-footer-identity{grid-column:auto}.rosary-footer-brand strong{font-size:31px}.rosary-footer-bottom{display:block;font-size:10px}.rosary-footer-bottom p{margin-top:7px}.rosary-footer-prayers{display:grid;grid-template-columns:1fr 1fr;column-gap:16px}.rosary-footer-prayers h2{grid-column:1/-1}.rosary-footer-prayers a{font-size:11px}.rosary-footer-flourish{height:44px}}
