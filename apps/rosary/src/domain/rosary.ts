@@ -27,6 +27,7 @@ export function buildRosarySteps(set: MysterySet, includeFatima: boolean): Rosar
       { beadIndex: index + 1, hailNumber: index + 1 });
   });
   add('opening-glory', 'glory-be', 'opening', 'Give glory to the Holy Trinity.', { beadIndex: 3 });
+  if (includeFatima) add('opening-fatima', 'fatima-prayer', 'opening', 'After the opening Glory Be, pray the Fatima Prayer.', { beadIndex: 3 });
   for (let decade = 0; decade < 5; decade++) {
     const bead = 4 + decade * 11;
     steps.push({ id: `mystery-${decade}`, title: mysteries[set].list[decade],
@@ -46,7 +47,15 @@ export function buildRosarySteps(set: MysterySet, includeFatima: boolean): Rosar
   return steps;
 }
 
-export type RosarySession = { version: 1; set: MysterySet; includeFatima: boolean; position: number };
+export type RosarySession = { version: 2; set: MysterySet; includeFatima: boolean; position: number };
+
+// The medal joins the opening strand to the two ends of the five-decade loop.
+export function rosaryMedalPlacement(step: RosaryStep): 'before' | 'after' | null {
+  if (step.phase === 'opening' || step.phase === 'closing') return 'after';
+  if (step.mysteryIndex === 0) return 'before';
+  if (step.mysteryIndex === 4) return 'after';
+  return null;
+}
 
 export function beadLabel(step: RosaryStep): string {
   if (step.phase === 'closing') return 'All 59 beads complete';
@@ -62,9 +71,13 @@ export function advanceAfterNarration(session: RosarySession, finishedStepId: st
 export function parseRosarySession(value: unknown): RosarySession | null {
   if (!value || typeof value !== 'object') return null;
   const session = value as Record<string, unknown>;
-  if (session.version !== 1 || !mysterySets.includes(session.set as MysterySet) ||
+  if ((session.version !== 1 && session.version !== 2) || !mysterySets.includes(session.set as MysterySet) ||
       typeof session.includeFatima !== 'boolean' || !Number.isInteger(session.position)) return null;
   const length = buildRosarySteps(session.set as MysterySet, session.includeFatima).length;
-  if ((session.position as number) < 0 || (session.position as number) > length) return null;
-  return { version: 1, set: session.set as MysterySet, includeFatima: session.includeFatima, position: session.position as number };
+  const oldSequence = session.version === 1 && session.includeFatima;
+  const savedLength = length - (oldSequence ? 1 : 0);
+  if ((session.position as number) < 0 || (session.position as number) > savedLength) return null;
+  // Preserve the prayer being resumed, including already-completed rosaries.
+  const position = (session.position as number) + (oldSequence && (session.position as number) >= 7 ? 1 : 0);
+  return { version: 2, set: session.set as MysterySet, includeFatima: session.includeFatima, position };
 }

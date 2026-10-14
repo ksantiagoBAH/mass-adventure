@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { artwork, mysteries, mysterySets, type MysterySet } from './data/mysteries';
 import { prayerIds, prayers, type PrayerId } from './data/prayers';
 import { resolveMysteryName, rotatingIndex } from './domain/calendar';
-import { buildRosarySteps, beadLabel, parseRosarySession, type RosarySession } from './domain/rosary';
+import { buildRosarySteps, beadLabel, parseRosarySession, rosaryMedalPlacement, type RosarySession } from './domain/rosary';
 import { buildChapletSteps, chapletBeadProgress, parseChapletSession, type ChapletSession } from './domain/chaplet';
 import { parseNarrationVoice, type NarrationVoice } from './domain/narration-voice';
 import { recordingForVoice } from './data/voice-recordings';
@@ -55,7 +55,7 @@ export default function App() {
   function navigate(id: Page) { setPlaying(false); setInSession(false); setReflection(null); setPrayer(null); setPage(id); location.hash = id; window.scrollTo(0, 0); }
   function start(resume = false) {
     setPlaying(false);
-    if (page === 'rosary' && (!resume || !rosary)) setRosary({ version: 1, set, includeFatima: fatima, position: 0 });
+    if (page === 'rosary' && (!resume || !rosary)) setRosary({ version: 2, set, includeFatima: fatima, position: 0 });
     if (page === 'chaplet' && (!resume || !chaplet)) setChaplet({ version: 1, includeOpening: opening, includeClosing: closing, position: 0 });
     setInSession(true); window.scrollTo(0, 0);
   }
@@ -103,7 +103,8 @@ export default function App() {
           const count = isRosary ? (rs.phase === 'opening' ? 4 : 11) : chapletBeadProgress(cs).count;
           const beadStart = isRosary && rs.phase !== 'opening' ? 4 + 11 * (rs.mysteryIndex ?? 4) : 0;
           const bead = isRosary ? rs.beadIndex ?? -1 : chapletBeadProgress(cs).activeIndex;
-          return <><div className="prayer-progress"><div><span>{label}</span><span>{position + 1} / {steps.length} prayers</span></div><progress max={steps.length} value={position + 1}/></div><div className="meditation-grid"><div className="visual-panel"><Media key={`${isRosary ? rosary?.set : 'chaplet'}:${imageIndex}`} image={isRosary ? artwork[rosary!.set][imageIndex] : chapletVideos[imageIndex].still} video={isRosary ? mysteryVideos[rosary!.set][imageIndex] : chapletVideos[imageIndex].source} title={isRosary ? mysteries[rosary!.set].list[imageIndex] : chapletVideos[imageIndex].title}/><div className="bead-panel"><p className="eyebrow">{step.instruction}</p><div className="beads" role="img" aria-label={label}><span aria-hidden="true">✝</span>{Array.from({ length: count }, (_, index) => { const absolute = index + beadStart; return <i key={index} className={`${absolute === bead ? 'active' : ''} ${absolute < bead || step.phase === 'closing' ? 'done' : ''} ${index === 0 ? 'large' : ''}`}><span>{index === 0 ? '' : index}</span></i>; })}</div></div></div>
+          const medal = isRosary ? rosaryMedalPlacement(rs) : null;
+          return <><div className="prayer-progress"><div><span>{label}</span><span>{position + 1} / {steps.length} prayers</span></div><progress max={steps.length} value={position + 1}/></div><div className="meditation-grid"><div className="visual-panel"><Media key={`${isRosary ? rosary?.set : 'chaplet'}:${imageIndex}`} image={isRosary ? artwork[rosary!.set][imageIndex] : chapletVideos[imageIndex].still} video={isRosary ? mysteryVideos[rosary!.set][imageIndex] : chapletVideos[imageIndex].source} title={isRosary ? mysteries[rosary!.set].list[imageIndex] : chapletVideos[imageIndex].title}/><div className="bead-panel"><p className="eyebrow">{step.instruction}</p><div className="beads" role="img" aria-label={label}>{(!isRosary || rs.phase === 'opening') && <span aria-hidden="true">✝</span>}{medal === 'before' && <span className="rosary-medal" aria-hidden="true">M</span>}{Array.from({ length: count }, (_, index) => { const absolute = index + beadStart; return <i key={index} className={`${absolute === bead ? 'active' : ''} ${absolute < bead || step.phase === 'closing' ? 'done' : ''} ${index === 0 ? 'large' : ''}`}><span>{index === 0 ? '' : index}</span></i>; })}{medal === 'after' && <span className={`rosary-medal ${rs.phase === 'closing' ? 'medal-active' : ''}`} aria-hidden="true">M</span>}</div></div></div>
             <div className="reading-panel">{settings}<Player key={`${step.id}:${voice}`} activeKey={`${step.id}:${voice}`} recording={recording} timing={timing} title={step.title} text={step.text} auto={guided} advance={() => jump(position + 1, true)} previous={position > 0 ? () => jump(position - 1) : undefined} next={() => jump(position + 1)} playing={playing} setPlaying={setPlaying} fontSize={fontSize}/></div>
             <details className="contents"><summary>Prayer contents</summary><p className="eyebrow">Prayer contents</p><h2>Your path</h2>{steps.map((item, index) => (item.phase !== 'decade' || (isRosary ? item.id.startsWith('mystery-') : item.id.startsWith('father-'))) && <button key={item.id} className={index === position || (item.phase === 'decade' && step.phase === 'decade' && ('mysteryIndex' in item ? item.mysteryIndex === rs?.mysteryIndex : 'decade' in item && item.decade === cs?.decade)) ? 'selected' : ''} onClick={() => jump(index)}>{item.phase === 'decade' ? <><small>{isRosary ? `Mystery ${(rs && 'mysteryIndex' in item ? item.mysteryIndex ?? 0 : 0) + 1}` : `Decade ${'decade' in item ? (item.decade ?? 0) + 1 : 1}`}</small>{isRosary ? item.title : 'Divine Mercy'}</> : item.title}</button>)}</details></div></>;
         })()}

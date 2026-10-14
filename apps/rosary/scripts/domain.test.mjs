@@ -14,17 +14,17 @@ function load(name) {
   vm.runInNewContext(`(function(require,module,exports){${code}\n})`, { Date, Object })(require, module, module.exports);
   return module.exports;
 }
-const { buildRosarySteps, parseRosarySession, advanceAfterNarration } = load('src/domain/rosary');
+const { buildRosarySteps, parseRosarySession, advanceAfterNarration, rosaryMedalPlacement } = load('src/domain/rosary');
 const { buildChapletSteps, parseChapletSession, advanceChapletAfterNarration } = load('src/domain/chaplet');
 test('Rosary preserves 53 Hail Marys, five meditations, optional Fatima, and completion validation', () => {
   for (const set of ['Joyful','Sorrowful','Glorious','Luminous']) {
     const steps = buildRosarySteps(set, true);
     assert.equal(steps.filter(s => s.prayerId === 'hail-mary').length, 53);
     assert.equal(steps.filter(s => s.id.startsWith('mystery-')).length, 5);
-    assert.equal(steps.length - buildRosarySteps(set, false).length, 5);
-    assert.ok(parseRosarySession({version:1,set,includeFatima:true,position:steps.length}));
-    assert.equal(parseRosarySession({version:1,set,includeFatima:true,position:steps.length+1}), null);
-    const session = {version:1,set,includeFatima:true,position:0};
+    assert.equal(steps.length - buildRosarySteps(set, false).length, 6);
+    assert.ok(parseRosarySession({version:2,set,includeFatima:true,position:steps.length}));
+    assert.equal(parseRosarySession({version:2,set,includeFatima:true,position:steps.length+1}), null);
+    const session = {version:2,set,includeFatima:true,position:0};
     assert.equal(advanceAfterNarration(session, 'stale').position, 0);
     assert.equal(advanceAfterNarration(session, steps[0].id).position, 1);
   }
@@ -50,5 +50,21 @@ test('Every audio timing matches its exact recording transcript', () => {
  for (const [catalog,file] of [[recordings,'narration-timings'],[femaleRecordings,'female-narration-timings']]) {
    const timings=JSON.parse(fs.readFileSync(`src/data/${file}.json`));
    for(const [id,recording] of Object.entries(catalog)) { assert.equal(timings[id].transcript,recording.transcript,id); assert.ok(timings[id].words.length>0); }
+ }
+});
+
+test('Opening Fatima and medal placement match the app, and old saves resume the same prayer', () => {
+ for(const set of ['Joyful','Sorrowful','Glorious','Luminous']) {
+  const steps=buildRosarySteps(set,true);
+  assert.deepEqual(Array.from(steps.slice(6,9), s=>s.id), ['opening-glory','opening-fatima','mystery-0']);
+  const old=steps.filter(s=>s.id!=='opening-fatima');
+  for(let position=0;position<=old.length;position++) {
+   const saved=parseRosarySession({version:1,set,includeFatima:true,position});
+   assert.equal(saved.version,2);assert.equal(steps[saved.position]?.id,old[position]?.id);
+   assert.equal(parseRosarySession(saved).position,saved.position);
+  }
+  for(const step of steps) {
+   assert.equal(rosaryMedalPlacement(step),step.phase!=='decade'||step.mysteryIndex===4?'after':step.mysteryIndex===0?'before':null);
+  }
  }
 });
