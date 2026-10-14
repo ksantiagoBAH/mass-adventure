@@ -13,7 +13,7 @@ export const mysteryVideos: Record<MysterySet, readonly [string, string, string,
   Sorrowful: [
     asset("rosary/mystery-sorrowful-01.mp4"),
     asset("rosary/mystery-sorrowful-02.mp4"),
-    asset("rosary/mystery-sorrowful-03.mp4"),
+    asset("rosary/mystery-sorrowful-03.mp4") + "?v=428c85df8c87",
     asset("rosary/mystery-sorrowful-04.mp4"),
     asset("rosary/mystery-sorrowful-05.mp4"),
   ],

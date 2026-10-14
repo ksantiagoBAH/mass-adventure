@@ -113,7 +113,7 @@ export type MysterySet = keyof typeof mysteries;
 export const mysterySets = Object.keys(mysteries) as MysterySet[];
 export const artwork = {
   Joyful: [asset("rosary/joyful-v2-1.jpg"), asset("rosary/joyful-v2-2.jpg"), asset("rosary/joyful-v2-3.jpg"), asset("rosary/joyful-v2-4.jpg"), asset("rosary/joyful-v2-5.jpg")],
-  Sorrowful: [asset("rosary/sorrowful-v2-1.jpg"), asset("rosary/sorrowful-v2-2.jpg"), asset("rosary/sorrowful-v2-3.jpg"), asset("rosary/sorrowful-v2-4.jpg"), asset("rosary/sorrowful-v2-5.jpg")],
+  Sorrowful: [asset("rosary/sorrowful-v2-1.jpg"), asset("rosary/sorrowful-v2-2.jpg"), asset("rosary/sorrowful-v2-3.jpg") + "?v=6d023c08bbfb", asset("rosary/sorrowful-v2-4.jpg"), asset("rosary/sorrowful-v2-5.jpg")],
   Glorious: [asset("rosary/Glorious1.jpg"), asset("rosary/Glorious2.jpg"), asset("rosary/Glorious3-sharp.jpg"), asset("rosary/Glorious4.jpg"), asset("rosary/Glorious5.jpg")],
   Luminous: [asset("rosary/Lum1.jpg"), asset("rosary/Lum2.jpg"), asset("rosary/Lum3.jpg"), asset("rosary/Lum4.jpg"), asset("rosary/Lum5.jpg")],
 };
