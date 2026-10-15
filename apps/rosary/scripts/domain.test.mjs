@@ -64,7 +64,7 @@ test('Opening Fatima and medal placement match the app, and old saves resume the
    assert.equal(parseRosarySession(saved).position,saved.position);
   }
   for(const step of steps) {
-   assert.equal(rosaryMedalPlacement(step),step.phase!=='decade'||step.mysteryIndex===4?'after':step.mysteryIndex===0?'before':null);
+   assert.equal(rosaryMedalPlacement(step),step.phase==='opening'?null:step.phase==='closing'||step.mysteryIndex===4?'after':step.mysteryIndex===0?'after-first-bead':null);
   }
  }
 });

@@ -49,10 +49,11 @@ export function buildRosarySteps(set: MysterySet, includeFatima: boolean): Rosar
 
 export type RosarySession = { version: 2; set: MysterySet; includeFatima: boolean; position: number };
 
-// The medal joins the opening strand to the two ends of the five-decade loop.
-export function rosaryMedalPlacement(step: RosaryStep): 'before' | 'after' | null {
-  if (step.phase === 'opening' || step.phase === 'closing') return 'after';
-  if (step.mysteryIndex === 0) return 'before';
+// The first mystery's Our Father bead sits on the strand before the medal.
+export function rosaryMedalPlacement(step: RosaryStep): 'after-first-bead' | 'after' | null {
+  if (step.phase === 'opening') return null;
+  if (step.phase === 'closing') return 'after';
+  if (step.mysteryIndex === 0) return 'after-first-bead';
   if (step.mysteryIndex === 4) return 'after';
   return null;
 }
